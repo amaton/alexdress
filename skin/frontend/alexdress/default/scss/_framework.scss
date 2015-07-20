@@ -57,3 +57,10 @@
 @import "mixin/triangle";
 @import "mixin/typography";
 @import "mixin/loading-overlay";
+
+
+// ----------------------------------------------
+// Sprite
+@import "compass/utilities/sprites";
+@import "icons/*.png";
+@include all-icons-sprites;
