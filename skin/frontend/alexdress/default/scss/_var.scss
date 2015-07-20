@@ -58,7 +58,7 @@ $bp-xlarge: 1199px;
 
 // Spacing
 
-$gap: 10px;
+$gap: 20px;
 
 $trim: 30px;
 // This will get applied on viewports smaller than 480px
@@ -94,6 +94,10 @@ $c-red: #CF5050;
 $c-yellow: #FFDD15;
 $c-black: #000000;
 $c-gray: #333333;
+$c-violet:#712c6b;
+$c-lightviolet:#b896b5;
+$c-lightgray:#deddde;
+$c-white:#fff;
 
 // =============================================
 // Base Colors
@@ -110,9 +114,10 @@ $c-text-primary: $c-blue;
 
 // Interaction
 
-$c-action: $c-blue;
+$c-action: $c-violet;
 $c-stimulus: darken($c-blue, 15%);
 $c-subtle: #A0A0A0;
+$c-highlight:$c-lightviolet;
 
 // Notifications
 
@@ -171,7 +176,7 @@ $c-h6: $c-text;
 
 // Link
 $c-link: $c-action;
-$c-link-hover: darken($c-action, 5%);
+$c-link-hover: $c-action;
 $c-link-focus: $c-action;
 $c-link-active: darken($c-action, (5% / 2));
 
@@ -218,7 +223,7 @@ $c-email-highlighted-border: #FFF74C;
 
 // Font Stacks
 
-$f-stack-sans: 'Helvetica Neue', Verdana, Arial, sans-serif;
+$f-stack-sans: 'OpenGost Type B', Arial, sans-serif;
 $f-stack-serif: Georgia, Times, 'Times New Roman', serif;
 $f-stack-special: 'Raleway', 'Helvetica Neue', Verdana, Arial, sans-serif;
 

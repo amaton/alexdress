@@ -31,9 +31,9 @@ $mq-fixed-value: 1024;
 
 // ----------------------------------------------
 */
-/* line 64, icons/*.png */
-.icons-sprite, .icons-delivery, .icons-return, .icons-support {
-  background-image: url('/skin/frontend/alexdress/default/images/icons-sc0f9b432de.png');
+/* line 112, icons/*.png */
+.icons-sprite, .icons-delivery, .icons-lang_cs, .icons-lang_de, .icons-lang_dropdown, .icons-lang_en, .icons-lang_fr, .icons-lang_ru, .icons-return, .icons-support {
+  background-image: url('/skin/frontend/alexdress/default/images/icons-s88e8ec710e.png');
   background-repeat: no-repeat;
 }
 
@@ -43,13 +43,43 @@ $mq-fixed-value: 1024;
 }
 
 /* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lang_cs {
+  background-position: 0 -25px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lang_de {
+  background-position: 0 -57px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lang_dropdown {
+  background-position: 0 -89px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lang_en {
+  background-position: 0 -106px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lang_fr {
+  background-position: 0 -138px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lang_ru {
+  background-position: 0 -170px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-return {
-  background-position: 0 -15px;
+  background-position: 0 -202px;
 }
 
 /* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-support {
-  background-position: 0 -34px;
+  background-position: 0 -231px;
 }
 
 /* ============================================ *
@@ -127,7 +157,7 @@ body.cms-home .slideshow-container {
  */
 /* line 96, ../scss/content/_home.scss */
 .promos {
-  margin: 0 0 10px 0;
+  margin: 0 0 20px 0;
   padding: 0;
   width: 100%;
 }

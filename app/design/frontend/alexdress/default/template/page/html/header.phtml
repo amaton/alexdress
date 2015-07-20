@@ -29,15 +29,21 @@
 ?>
 
 <div class="header-language-background">
-    <div class="header-language-container">
-        <div class="store-language-container">
-            <?php echo $this->getChildHtml('store_language') ?>
-        </div>
-
-        <?php echo $this->getChildHtml('currency_switcher') ?>
-
-        <p class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?> <?php echo $this->getAdditionalHtml() ?></p>
+	<div class="header-extra">
+  	<a href="#" class="header-link header-link--delivery"><?php echo $this->__('Payment/delivery') ?></a>
+		<a href="#" class="header-link header-link--return"><?php echo $this->__('Free return') ?></a>
+		<a href="#" class="header-link header-link--support"><?php echo $this->__('Support') ?></a>
+	</div>
+  <div class="header-language-container">
+    <div class="store-language-container">
+      <?php echo $this->getChildHtml('store_language') ?>
     </div>
+  </div>
+	<div class="header-account">
+  	<a href="<?php echo $this->getUrl('customer/account/login') ?>" class="header-link"><?php echo $this->__('Sign in') ?></a>
+		<span>|</span>
+		<a href="<?php echo $this->getUrl('customer/account/login') ?>" class="header-link"><?php echo $this->__('Sign up') ?></a>
+	</div>
 </div>
 
 <header id="header" class="page-header">
@@ -65,13 +71,10 @@
             </a>
 
             <div class="account-cart-wrapper">
-                <a href="<?php echo $this->helper('customer')->getAccountUrl(); ?>" data-target-element="#header-account" class="skip-link skip-account">
+						                <a href="<?php echo $this->helper('customer')->getAccountUrl(); ?>" data-target-element="#header-account" class="skip-link skip-account">
                     <span class="icon"></span>
                     <span class="label"><?php echo $this->__('Account'); ?></span>
                 </a>
-
-                <!-- Cart -->
-
                 <div class="header-minicart">
                     <?php echo $this->getChildHtml('minicart_head'); ?>
                 </div>

@@ -88,13 +88,13 @@ li.centinel-logos div.input-box  {
  * Labels
  */
 
-label {
+/*label {
     display: inline-block;
     font-size: $f-size-s;
     font-family: $f-stack-special;
     font-weight: 600;
     @include not-selectable;
-}
+} */
 
 label.required:after,
 span.required:after {

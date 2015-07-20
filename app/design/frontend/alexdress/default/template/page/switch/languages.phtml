@@ -1,0 +1,55 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<?php
+/**
+ * Language switcher template
+ *
+ * @see Mage_Page_Block_Switch
+ */
+?>
+<?php if(count($this->getStores())>1): ?>
+<form class="form-language" action="" method="get">
+	<div class="lang-current">
+		<div class="lang-icon lang-icon--<?php echo Mage::app()->getStore()->getCode(); ?>"></div>
+	</div>
+	<div class="lang-dropdown">
+	<div class="lang-list">
+		<div class="lang-list-title"><?php echo $this->__('Language') ?></div>
+		<?php foreach ($this->getStores() as $_lang): ?>
+			<input type="radio" name="language" id="lang-icon--<?php echo $this->escapeHtml($_lang->getCode()) ?>" /><label class="lang-icon lang-icon--<?php echo $this->escapeHtml($_lang->getCode()) ?>" for="lang-icon--<?php echo $this->escapeHtml($_lang->getCode()) ?>"></label>
+		<?php endforeach; ?>
+	</div>
+	<div class="cur-list">
+	<div class="lang-list-title"><?php echo $this->__('Currency') ?></div>
+  	<input type="radio" name="currency" id="cur-icon--eur"/><label class="cur-icon cur-icon--eur" for="cur-icon--eur">eur</label>
+		<input type="radio" name="currency" id="cur-icon--usd"/><label class="cur-icon cur-icon--usd" for="cur-icon--usd">usd</label>
+		<input type="radio" name="currency" id="cur-icon--rur"/><label class="cur-icon cur-icon--rur" for="cur-icon--rur">rur</label>
+	</div>
+	<button class="lang-dropdown-submit" type="submit"><?php echo $this->__('Select') ?></button>
+	</div>
+</form>
+<?php endif; ?>
