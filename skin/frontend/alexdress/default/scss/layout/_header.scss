@@ -37,6 +37,7 @@
 
     .page-header-container {
         position: relative;
+				height:80px;
     }
 
 }
@@ -51,6 +52,7 @@
 
 .header-language-background {
 	max-width: $max-container-width;
+	margin: 0 auto;
   padding: 0 $trim;
 	font-size:16px;
 	line-height:1;
@@ -152,7 +154,7 @@
 	.form-language:hover &{
     display:flex;
 		background: $c-lightgray;
-    padding: 10px 10px 30px 10px;
+    padding: 10px 10px 32px 10px;
     position: absolute;
     right: 0;
     z-index: 200;
@@ -261,13 +263,11 @@
  * ============================================ */
 
 .logo {
-    display: block;
-    float: left;
+    float:left;
     width: 65%;
     min-width: 100px;
-    min-height: 44px;
-    text-align: center;
     padding: $gap;
+		max-width:300px;
 
     img {
         max-width: 100%;
@@ -290,8 +290,16 @@
 @include bp(min-width, $bp-medium + 1) {
 
     .logo {
-        max-width: 300px;
-        min-height: 90px;
+        max-width: 350px;
+				display:block;
+				margin:0 auto;
+				float:none;
+				position:absolute;
+				left:50%;
+				top:50%;
+				transform:translate(-50%,-50%);
+				padding:0;
+
 
         .small {
             display: none;
@@ -479,7 +487,7 @@ a.skip-link {
 
 .account-cart-wrapper {
     position: absolute;
-    top:0px;
+    bottom:0
     right:0px;
 
     @include bp(max-width, $bp-medium) {
