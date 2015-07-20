@@ -4136,7 +4136,7 @@ a.skip-link {
 /* line 488, ../scss/layout/_header.scss */
 .account-cart-wrapper {
   position: absolute;
-  bottom: 20px;
+  bottom: 0;
   right: 0px;
 }
 @media only screen and (max-width: 770px) {
@@ -4199,13 +4199,14 @@ a.skip-link {
     display: block;
     /* Force visibility */
     background: #712c6b;
+    margin-top: 10px;
   }
 }
 /* ============================================ *
  * Nav Primary
  * ============================================ */
 @media only screen and (min-width: 771px) {
-  /* line 99, ../scss/layout/_header-nav.scss */
+  /* line 100, ../scss/layout/_header-nav.scss */
   .nav-primary {
     display: block;
     margin-top: 15px;
@@ -4218,29 +4219,29 @@ a.skip-link {
 /* ============================================ *
  * General Navigation Styles
  * ============================================ */
-/* line 117, ../scss/layout/_header-nav.scss */
+/* line 118, ../scss/layout/_header-nav.scss */
 .nav-primary a {
   text-decoration: none;
   position: relative;
   display: block;
   color: #fff;
 }
-/* line 124, ../scss/layout/_header-nav.scss */
+/* line 125, ../scss/layout/_header-nav.scss */
 .nav-primary li {
   position: relative;
 }
-/* line 128, ../scss/layout/_header-nav.scss */
+/* line 129, ../scss/layout/_header-nav.scss */
 .nav-primary li.level1 a {
   border-bottom: 1px solid #CCCCCC;
 }
 
-/* line 134, ../scss/layout/_header-nav.scss */
+/* line 135, ../scss/layout/_header-nav.scss */
 .nav-primary .menu-active > ul.level0,
 .nav-primary li.level0 li.sub-menu-active > ul {
   display: block;
 }
 
-/* line 139, ../scss/layout/_header-nav.scss */
+/* line 140, ../scss/layout/_header-nav.scss */
 .nav-primary li.level0 > a {
   text-transform: uppercase;
 }
@@ -4249,24 +4250,24 @@ a.skip-link {
  * Small Viewports - Accordion Style Menu
  * ============================================ */
 @media only screen and (max-width: 770px) {
-  /* line 152, ../scss/layout/_header-nav.scss */
+  /* line 153, ../scss/layout/_header-nav.scss */
   .nav-primary a.level0,
   .nav-primary a {
     line-height: 35px;
   }
-  /* line 158, ../scss/layout/_header-nav.scss */
+  /* line 159, ../scss/layout/_header-nav.scss */
   .nav-primary li.level0 ul {
     display: none;
   }
-  /* line 163, ../scss/layout/_header-nav.scss */
+  /* line 164, ../scss/layout/_header-nav.scss */
   .nav-primary li.level0 li {
     padding: 0 0 0 25px;
   }
-  /* line 167, ../scss/layout/_header-nav.scss */
+  /* line 168, ../scss/layout/_header-nav.scss */
   .nav-primary li.level1 a {
     padding: 0 15px 0 25px;
   }
-  /* line 171, ../scss/layout/_header-nav.scss */
+  /* line 172, ../scss/layout/_header-nav.scss */
   .nav-primary li.parent > a:after {
     content: '';
     position: absolute;
@@ -4282,7 +4283,7 @@ a.skip-link {
     right: auto;
     margin-top: -5px;
   }
-  /* line 180, ../scss/layout/_header-nav.scss */
+  /* line 181, ../scss/layout/_header-nav.scss */
   .nav-primary li.parent.sub-menu-active > a:after,
   .nav-primary li.parent.menu-active > a:after {
     content: '';
@@ -4299,7 +4300,7 @@ a.skip-link {
     right: auto;
     margin-top: -5px;
   }
-  /* line 189, ../scss/layout/_header-nav.scss */
+  /* line 190, ../scss/layout/_header-nav.scss */
   .nav-primary li.menu-active > a,
   .nav-primary li.sub-menu-active > a {
     color: #712c6b;
@@ -4309,7 +4310,7 @@ a.skip-link {
  * Large Viewports - Dropdown Menu
  * ============================================ */
 @media only screen and (min-width: 771px) {
-  /* line 202, ../scss/layout/_header-nav.scss */
+  /* line 203, ../scss/layout/_header-nav.scss */
   .nav-primary {
     /* Default styles for 1+ drop-down menus */
     /* Level 2+ */
@@ -4317,29 +4318,31 @@ a.skip-link {
     /* Correct menus that will hang off the page (class added by js) */
     /* Level 1+ */
   }
-  /* line 204, ../scss/layout/_header-nav.scss */
+  /* line 205, ../scss/layout/_header-nav.scss */
   .nav-primary a.level0 {
-    padding: 0 25px;
+    font-size: 24px;
+    margin-right: 15px;
+    padding: 4px 0;
   }
-  /* line 208, ../scss/layout/_header-nav.scss */
+  /* line 211, ../scss/layout/_header-nav.scss */
   .nav-primary li.level0,
   .nav-primary a.level0 {
     display: inline-block;
   }
-  /* line 213, ../scss/layout/_header-nav.scss */
+  /* line 216, ../scss/layout/_header-nav.scss */
   .nav-primary li:last-child > a {
     border-bottom: none;
   }
-  /* line 217, ../scss/layout/_header-nav.scss */
+  /* line 220, ../scss/layout/_header-nav.scss */
   .nav-primary a:hover,
   .nav-primary li:hover > a {
     color: #712c6b;
   }
-  /* line 222, ../scss/layout/_header-nav.scss */
+  /* line 225, ../scss/layout/_header-nav.scss */
   .nav-primary .menu-active {
     z-index: 200;
   }
-  /* line 227, ../scss/layout/_header-nav.scss */
+  /* line 230, ../scss/layout/_header-nav.scss */
   .nav-primary li.level0 ul {
     background: #FBFBFB;
     border: solid 1px #CCCCCC;
@@ -4354,31 +4357,31 @@ a.skip-link {
     display: none;
     /* Hide until displayed. */
   }
-  /* line 240, ../scss/layout/_header-nav.scss */
+  /* line 243, ../scss/layout/_header-nav.scss */
   .nav-primary li.level1 ul {
     left: 60px;
     top: 15px;
   }
-  /* line 246, ../scss/layout/_header-nav.scss */
+  /* line 249, ../scss/layout/_header-nav.scss */
   .nav-primary li.level0 ul.level0.position-test {
     display: block;
   }
-  /* line 251, ../scss/layout/_header-nav.scss */
+  /* line 254, ../scss/layout/_header-nav.scss */
   .nav-primary li.level0 ul.level0.spill {
     right: 0;
     left: auto;
   }
-  /* line 256, ../scss/layout/_header-nav.scss */
+  /* line 259, ../scss/layout/_header-nav.scss */
   .nav-primary li.level0 ul.level0.spill li.level1 ul {
     left: auto;
     right: 50px;
     top: 20px;
   }
-  /* line 264, ../scss/layout/_header-nav.scss */
+  /* line 267, ../scss/layout/_header-nav.scss */
   .nav-primary li.level0 li.parent > a {
     position: relative;
   }
-  /* line 267, ../scss/layout/_header-nav.scss */
+  /* line 270, ../scss/layout/_header-nav.scss */
   .nav-primary li.level0 li.parent > a:after {
     content: '';
     position: absolute;
@@ -4394,7 +4397,7 @@ a.skip-link {
     margin-top: -3px;
   }
 }
-/* line 278, ../scss/layout/_header-nav.scss */
+/* line 281, ../scss/layout/_header-nav.scss */
 .nav-primary li.menu-active > ul {
   display: block;
 }
