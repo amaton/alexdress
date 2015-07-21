@@ -580,14 +580,12 @@ a.button:hover {
 
 .breadcrumbs {
     overflow: hidden;
-    margin: -15px 0 15px;
+    margin: -20px 0 10px;
 }
 
 .breadcrumbs li {
     float: left;
-    font-size: $f-size-xs;
-    font-family: $f-stack-special;
-    text-transform: uppercase;
+    font-size: 16px;
 }
 
 .breadcrumbs a {
@@ -606,7 +604,7 @@ a.button:hover {
 
 .breadcrumbs span {
     float: left;
-    padding: 0 7px;
+    padding: 0 2px;
 }
 
 @include bp(max-width, $bp-medium) {
