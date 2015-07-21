@@ -56,7 +56,7 @@
 }
 
 // Implement custom grid breakpoints for grids that are contained within widgets
-@include bp(min-width, $bp-xlarge) {
+/*@include bp(min-width, $bp-xlarge) {
     .col2-left-layout,
     .col2-right-layout,
     .col3-layout
@@ -75,4 +75,4 @@
             @include product-grid(5, 960, "widget");
         }
     }
-}
+} */

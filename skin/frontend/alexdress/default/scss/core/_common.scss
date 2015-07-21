@@ -764,7 +764,7 @@ a.button:hover {
 .col-left,
 .col-right,
 .col-main {
-    padding: 0 10px;
+    padding: 0;
 }
 
 .col-left {
@@ -804,7 +804,7 @@ a.button:hover {
 .col2-left-layout {
     .col-main {
         float: right;
-        padding-right: 0; /* Remove the 15px padding */
+        padding: 0;
     }
 }
 
@@ -1430,7 +1430,6 @@ span.weee {
 .no-touch .product-img-box .product-image:not(.zoom-available):hover {
     position: relative;
     display: block;
-    border: 1px solid $c-module-border-light;
 }
 
 @include bp (max-width, $bp-medium) {

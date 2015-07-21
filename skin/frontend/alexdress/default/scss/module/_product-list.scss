@@ -86,25 +86,6 @@ p.product-name {
  * Product Grid
  * ============================================ */
 
-$product-column-spacing: 20px;
-
-.products-grid {
-    position: relative;
-}
-
-.products-grid:after {
-    @include clearfix;
-}
-
-.products-grid > li {
-    position: relative;
-    margin-bottom: $product-column-spacing;
-    text-align: center;
-
-    &:after {
-        @include clearfix;
-    }
-}
 
 .products-grid .product-image {
     width: 100%;
@@ -162,116 +143,6 @@ $productsGridActionHeight: 85px;
     margin-bottom: 0;
 }
 
-// ---------------------------------------------
-
-/* Config: Two columns + flexible gutter */
-
-// Container: 480 - (2 * 20 trim) = 440
-// Math: (440 - (20 gutter)) / 2 items = 210
-
-.products-grid > li {
-    float: left;
-    width: percentage(210 / 440);
-    margin-right: percentage(20 / 440);
-}
-
-.products-grid > li:nth-child(odd) {
-    clear: left;
-}
-
-.products-grid > li:nth-child(even) {
-    margin-right: 0;
-}
-
-.products-grid .product-image {
-    margin-bottom: 5px;
-
-    @include loadingOverlay();
-}
-
-// ---------------------------------------------
-
-@include bp(min-width, $bp-xsmall + 1) {
-    /* Config: Three columns + flexible gutter */
-    // Container: 600 - (2 * 30 trim wide) = 540
-    $column-count: 3;
-    $column-gutters: 2;
-    $container: 600 - (2 * $trim);
-
-    // Math: (540 - (2 * 30 gutter)) / 3 items = 160
-    $column-width: ($container - ($column-gutters * $product-column-spacing)) / $column-count;
-
-    .products-grid {
-        /* Undo two-column config */
-        > li:nth-child(odd) {
-            clear: none;
-        }
-        > li:nth-child(even) {
-            margin-right: percentage($product-column-spacing / $container);
-        }
-
-        /* Set three-column config */
-        > li {
-            width: percentage($column-width / $container);
-            margin-right: percentage($product-column-spacing / $container);
-        }
-        > li:nth-child(#{$column-count}n+1) {
-            clear: left;
-        }
-        > li:nth-child(#{$column-count}n) {
-            margin-right: 0;
-        }
-    }
-}
-
-// This mixin outputs the styles to allow for grids with more than 3 columns
-@mixin product-grid($column-count, $container-width, $class-append:"") {
-
-    // Allow this mixin to be used for more specific purposes, such as grids contained within widgets
-    @if $class-append != "" {
-        $class-append: -#{$class-append};
-    }
-
-    /* Config: Columns + flexible gutter */
-    $column-gutters: ($column-count) - 1;
-    $container: $container-width - (2 * $trim);
-    $column-width: ($container - ($column-gutters * $product-column-spacing)) / $column-count;
-
-    /* Undo three-column config */
-    .products-grid--max-#{$column-count}-col#{$class-append} > li:nth-child(odd) {
-        clear: none;
-    }
-    .products-grid--max-#{$column-count}-col#{$class-append} > li:nth-child(3n+1) {
-        clear: none;
-    }
-    .products-grid--max-#{$column-count}-col#{$class-append} > li:nth-child(even),
-    .products-grid--max-#{$column-count}-col#{$class-append} > li:nth-child(3n) {
-        margin-right: percentage($product-column-spacing / $container);
-    }
-
-    /* Set column config */
-    .products-grid--max-#{$column-count}-col#{$class-append} > li {
-        margin-right: percentage($product-column-spacing / $container);
-    }
-    .products-grid--max-#{$column-count}-col#{$class-append} > li {
-        width: percentage($column-width / $container);
-        margin-right: percentage($product-column-spacing / $container);
-    }
-    .products-grid--max-#{$column-count}-col#{$class-append} > li:nth-child(#{$column-count}n+1) {
-        clear: left;
-    }
-    .products-grid--max-#{$column-count}-col#{$class-append} > li:nth-child(#{$column-count}n) {
-        margin-right: 0;
-    }
-}
-
-// ---------------------------------------------
-
-@include bp(min-width, 960px) {
-    @include product-grid(4, 960);
-    @include product-grid(5, 960);
-    @include product-grid(6, 960);
-}
 
 /* ============================================ *
  * Product List
@@ -676,4 +547,48 @@ $productsGridActionHeight: 85px;
 .block-layered-nav .actions {
     text-align: right;
     margin-bottom: $element-spacing;
+}
+
+// Product list
+
+.products-grid{
+  display:flex;
+	flex-flow:row wrap;
+	li{
+    width:25%;
+		border:1px solid $c-lightgray;
+		border-left:none;
+		border-top:none;
+	}
+}
+
+@include bp(min-width, $bp-small+1) {
+
+.products-grid{
+	li{
+		&:first-child,&:nth-child(5n){
+      border-left:1px solid $c-lightgray;
+		}
+		&:first-child,&:nth-child(2),&:nth-child(3),&:nth-child(4){
+      border-top:1px solid $c-lightgray;
+		}
+	}
+}
+
+}
+
+@include bp(max-width, $bp-small) {
+
+.products-grid{
+	li{
+    width:50%;
+		&:nth-child(odd){
+      border-left:1px solid $c-lightgray;
+		}
+		&:first-child,&:nth-child(2){
+      border-top:1px solid $c-lightgray;
+		}
+	}
+}
+
 }
