@@ -396,11 +396,13 @@ $productsGridActionHeight: 85px;
 .mini-products-list {
 
     .product-image {
-        float: left;
-        min-width: 50px;
-    }
-    .product-details {
-        margin-left: 60px;
+			display:block;
+			border:none;
+			img{
+        display:block;
+				width:100%;
+				height:auto;
+			}
     }
 
     // Vertically center product name

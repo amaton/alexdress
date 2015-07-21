@@ -41,7 +41,22 @@
     .icon {
         @extend .icon-sprite;
         background-position: -0px (-100px + ($toolbar-icon-padding-offset/2) + 1px);
+					&:after{
+            content:"";
+						position:absolute;
+						top:15px;
+						left:4px;
+						width:44px;
+						height:29px;
+						@include icons-sprite(minicart);
+						display:none;
+					}
+
     }
+
+		.count-subtotal{
+      display:none;
+		}
 }
 
 // ---------------------------------------------
@@ -50,21 +65,37 @@
 
     .skip-cart {
         width: auto;
-        padding: 0 10px;
+				height:58px;
+        font-size:18px;
+				position:relative;
+				.icon{
+					width:56px;
+					height:56px;
+          border:2px solid $c-action;
+					border-radius:28px;
+					background:$c-white;
+					position:relative;
+					vertical-align:top;
+					z-index:250;
+					&:after{
+            display:block;
+					}
+				}
     }
 
     .skip-cart:hover {
     }
 
     #header-cart.skip-active {
-        @include menu;
+        border:2px solid $c-action;
         display: block;
         position: absolute;
         z-index: 200;
-        top: 40px;
-        right: 0;
-        width: 320px;
-        background: white;
+        top: 100%;
+				margin-top:-8px;
+        left: 0;
+        width: 240px;
+        background: $c-white;
     }
 
 }
@@ -109,7 +140,7 @@
 @include bp(min-width, $bp-medium + 1) {
     .skip-cart {
         color: $c-action;
-        text-transform: uppercase;
+
 
         &:hover {
             text-decoration: none;
@@ -117,23 +148,21 @@
 
         .count {
             @include border-radius(0px);
-            position: static;
+            position: absolute;
+						left:66px;
+						top:34px;
             background: none;
-            margin-left: 0px;
-            font-size: $f-size;
+            margin-left: 0;
+            font-size: 18px;
             width: auto;
-
-            &:before {
-                content: '(';
-            }
-            &:after {
-                content: ')';
-            }
+						.count-subtotal{
+              display:inline;
+						}
         }
     }
     .skip-cart .count,
     .skip-link.skip-active .count {
-        color: $c-action;
+        color: $c-highlight;
     }
 }
 
@@ -199,14 +228,11 @@
 }
 
 .mini-cart-list .product-image {
-    position: absolute;
-    left: 15px;
-    top: 15px;
+	display:block;
 }
 
 .mini-cart-list .product-image img {
-    width: 60px;
-    height: 60px;
+	display:block;
 }
 
 //.mini-cart-list .details { }

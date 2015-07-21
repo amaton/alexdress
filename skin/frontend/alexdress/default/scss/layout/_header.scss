@@ -345,7 +345,6 @@
     float: left;
     width: 20%;
     height: 44px;
-    background: #FFFFFF;
     color: $c-text;
     line-height: 42px;
     text-align: center;
@@ -487,10 +486,13 @@ a.skip-link {
 
 .account-cart-wrapper {
     position: absolute;
-    bottom:0;
-    right:0px;
-
     @include bp(max-width, $bp-medium) {
         position: static;
     }
+
+		@include bp(min-width, $bp-medium+1) {
+    bottom:-38px;
+    left:100%;
+		margin-left:-220px;
+		}
 }

@@ -42,10 +42,10 @@ if(empty($_cartQty)) {
 
 <div class="minicart-wrapper">
 
-    <p class="block-subtitle">
-        <?php echo $this->__('Recently added item(s)') ?>
-        <a class="close skip-link-close" href="#" title="<?php echo $this->__('Close'); ?>">&times;</a>
-    </p>
+    <div class="block-subtitle">
+        <?php echo $this->__('In your cart') ?>
+        <div class="close skip-link-close" href="#" title="<?php echo $this->__('Close'); ?>">&times;</div>
+    </div>
 
     <?php $_items = $this->getRecentItems() ?>
     <?php $countItems = count($_items); ?>
@@ -73,33 +73,29 @@ if(empty($_cartQty)) {
             <?php echo $this->getChildHtml('cart_promotion') ?>
         </div>
         <div class="block-content">
-            <p class="subtotal">
+            <div class="subtotal">
                 <?php if ($this->canApplyMsrp()): ?>
                     <span class="map-cart-sidebar-total"><?php echo $this->__('ORDER TOTAL WILL BE DISPLAYED BEFORE YOU SUBMIT THE ORDER'); ?></span>
                 <?php else: ?>
-                    <span class="label"><?php echo $this->__('Cart Subtotal:') ?></span> <?php echo Mage::helper('checkout')->formatPrice($this->getSubtotal()) ?>
+                    <?php echo Mage::helper('checkout')->formatPrice($this->getSubtotal()) ?>
                     <?php if ($_subtotalInclTax = $this->getSubtotalInclTax()): ?>
                         <br />(<?php echo Mage::helper('checkout')->formatPrice($_subtotalInclTax) ?> <?php echo Mage::helper('tax')->getIncExcText(true) ?>)
                     <?php endif; ?>
                 <?php endif; ?>
-            </p>
+            </div>
         </div>
 
 
         <div class="minicart-actions">
             <?php if($_cartQty && $this->isPossibleOnepageCheckout()): ?>
-                <ul class="checkout-types minicart">
-                    <?php echo $this->getChildHtml('extra_actions') ?>
-                    <li>
-                        <a title="<?php echo $this->__('Checkout') ?>" class="button checkout-button" href="<?php echo $this->getCheckoutUrl() ?>">
+
+                        <a title="<?php echo $this->__('Checkout') ?>" class="minicart-checkout" href="<?php echo $this->getCheckoutUrl() ?>">
                             <?php echo $this->__('Checkout') ?>
                         </a>
-                    </li>
-                </ul>
             <?php endif ?>
-            <a class="cart-link" href="<?php echo $this->getUrl('checkout/cart'); ?>">
-                <?php echo $this->__('View Shopping Cart'); ?>
-            </a>
+            <!--<a class="cart-link" href="<?php echo $this->getUrl('checkout/cart'); ?>">
+                <?php //echo $this->__('View Shopping Cart'); ?>
+            </a>-->
         </div>
 
     <?php else: ?>

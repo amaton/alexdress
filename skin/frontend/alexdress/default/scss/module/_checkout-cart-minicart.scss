@@ -29,6 +29,7 @@
 
 .header-minicart {
     display: inline-block;
+		position:relative;
 
     @include bp(max-width, $bp-medium) {
         display: block;
@@ -54,55 +55,45 @@
         display: none;
     }
     .block-subtitle {
-        color: #50A4CF;
-        font-family: $f-stack-special;
-        font-size: 10px;
-        font-weight: bold;
-        line-height: 1.4;
-        padding: 5px;
-        text-align: center;
-        text-transform: uppercase;
+        color: $c-action;
+        font-size: 18px;
+        padding: 10px;
         margin-bottom: 0px;
 
         .close {
-            width: 40px;
-            float: right;
-            display: block;
-            color: $c-text;
-            text-decoration: none;
-            font-weight: normal;
+            color: $c-action;
+            cursor:pointer;
             font-size: 30px;
             position: absolute;
-            top: -8px;
-            right: $box-spacing - 13px;
+						right:10px;
+            top: 5px;
         }
+
     }
     .mini-products-list {
-        padding: $box-spacing;
-        padding-top: 0px;
+        padding: 10px;
+        display:flex;
+				flex-flow:row wrap;
 
         li {
-            padding: 8px 5px 8px 11px;
-            border-bottom: 1px solid #DDDDDD;
-            position: relative;
+          width:50%;
+					&.odd{
+            padding-right:10px;
+					}
+					&.even{
+            padding-left:10px;
+					}
 
-            &.last {
-                border: none;
-            }
-
-            .product-details {
-                position: relative;
-            }
         }
     }
 
     .product-details {
         .product-name {
-            padding-top: 0px;
-            font-weight: bold;
-
+            padding-top: 5px;
+						font-size:16px;
+						text-align:center;
             a {
-                color: $c-action;
+                color: $c-text;
             }
         }
     }
@@ -152,16 +143,16 @@
     }
 
     .subtotal {
-        background-color: #DDDDDD;
-        text-align: center;
-        line-height: 2em;
-
+        background-color: $c-lightgray;
+        text-align: right;
+				font-size:16px;
+        padding:8px 10px;
         .label {
             color: white;
             text-transform: uppercase;
         }
         .price {
-            color: $c-text-primary;
+            color: $c-action;
         }
     }
 
@@ -175,6 +166,16 @@
         .checkout-button {
             min-width: 145px;
         }
+
+				.minicart-checkout{
+					display:inline-block;
+          padding:5px 15px;
+					margin:0 auto;
+					background:$c-action;
+					color:$c-white;
+					text-decoration:none;
+          font-size:18px;
+				}
 
         .cart-link {
             height: 33px;
