@@ -32,9 +32,9 @@ $mq-fixed-value: 1024;
 // ----------------------------------------------
 */
 @import "http://webfonts.ru/import/opengost.css";
-/* line 128, icons/*.png */
-.icons-sprite, .icons-delivery, .icons-lang_cs, .icons-lang_de, .icons-lang_dropdown, .icons-lang_en, .icons-lang_fr, .icons-lang_ru, .icons-lens, .icons-minicart, .icons-return, .icons-support, .header-link--delivery, .header-link--return, .header-link--support, .lang-current:after, .lang-icon--default, .lang-icon--german, .lang-icon--french, #search_mini_form .search-button:before, .skip-cart .icon:after {
-  background-image: url('/skin/frontend/alexdress/default/images/icons-s4de8791d61.png');
+/* line 208, icons/*.png */
+.icons-sprite, .icons-delivery, .icons-dhl, .icons-lang_cs, .icons-lang_de, .icons-lang_dropdown, .icons-lang_en, .icons-lang_fr, .icons-lang_ru, .icons-lens, .icons-mastercard, .icons-minicart, .icons-paypal, .icons-return, .icons-social_fb, .icons-social_gp, .icons-social_in, .icons-social_th, .icons-social_tw, .icons-social_vk, .icons-support, .icons-visa, .header-link--delivery, .header-link--return, .header-link--support, .lang-current:after, .lang-icon--default, .lang-icon--german, .lang-icon--french, #search_mini_form .search-button:before, .skip-cart .icon:after, .footer-payment.payment--visa, .footer-payment.payment--mastercard, .footer-payment.payment--paypal, .footer-dhl, .footer-social-link.social--fb, .footer-social-link.social--vk, .footer-social-link.social--th, .footer-social-link.social--in, .footer-social-link.social--tw, .footer-social-link.social--gp {
+  background-image: url('/skin/frontend/alexdress/default/images/icons-s6eb5be3f05.png');
   background-repeat: no-repeat;
 }
 
@@ -44,53 +44,103 @@ $mq-fixed-value: 1024;
 }
 
 /* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icons-lang_cs {
+.icons-dhl {
   background-position: 0 -25px;
 }
 
 /* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lang_cs {
+  background-position: 0 -52px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-lang_de {
-  background-position: 0 -57px;
+  background-position: 0 -84px;
 }
 
 /* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-lang_dropdown {
-  background-position: 0 -89px;
+  background-position: 0 -116px;
 }
 
 /* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-lang_en {
-  background-position: 0 -106px;
+  background-position: 0 -133px;
 }
 
 /* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-lang_fr {
-  background-position: 0 -138px;
+  background-position: 0 -165px;
 }
 
 /* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-lang_ru {
-  background-position: 0 -170px;
+  background-position: 0 -197px;
 }
 
 /* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-lens {
-  background-position: 0 -202px;
+  background-position: 0 -229px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-mastercard {
+  background-position: 0 -257px;
 }
 
 /* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-minicart {
-  background-position: 0 -230px;
+  background-position: 0 -297px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-paypal {
+  background-position: 0 -336px;
 }
 
 /* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-return {
-  background-position: 0 -269px;
+  background-position: 0 -376px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-social_fb {
+  background-position: 0 -405px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-social_gp {
+  background-position: 0 -446px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-social_in {
+  background-position: 0 -487px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-social_th {
+  background-position: 0 -528px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-social_tw {
+  background-position: 0 -569px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-social_vk {
+  background-position: 0 -610px;
 }
 
 /* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-support {
-  background-position: 0 -298px;
+  background-position: 0 -651px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-visa {
+  background-position: 0 -677px;
 }
 
 /*! normalize.css v2.0.1 | MIT License | git.io/normalize */
@@ -594,13 +644,25 @@ input[type="search"] {
 @viewport {
   width: device-width;
 }
-/* line 45, ../scss/core/_common.scss */
+/* line 44, ../scss/core/_common.scss */
+::-moz-selection {
+  color: #fff;
+  background: #712c6b;
+}
+
+/* line 49, ../scss/core/_common.scss */
+::selection {
+  color: #fff;
+  background: #712c6b;
+}
+
+/* line 55, ../scss/core/_common.scss */
 a, button {
   -ms-touch-action: manipulation;
   touch-action: manipulation;
 }
 
-/* line 50, ../scss/core/_common.scss */
+/* line 60, ../scss/core/_common.scss */
 body,
 button,
 input,
@@ -613,20 +675,20 @@ textarea {
   line-height: 1;
 }
 
-/* line 62, ../scss/core/_common.scss */
+/* line 72, ../scss/core/_common.scss */
 a {
   color: #712c6b;
   text-decoration: none;
   outline: none !important;
 }
 
-/* line 68, ../scss/core/_common.scss */
+/* line 78, ../scss/core/_common.scss */
 a:hover {
   color: #712c6b;
   text-decoration: underline;
 }
 
-/* line 73, ../scss/core/_common.scss */
+/* line 83, ../scss/core/_common.scss */
 ol,
 ul {
   list-style: none;
@@ -637,7 +699,7 @@ ul {
 /* ============================================ *
  * Typography
  * ============================================ */
-/* line 84, ../scss/core/_common.scss */
+/* line 94, ../scss/core/_common.scss */
 h1, .h1 {
   margin: 0;
   margin-bottom: 0.7em;
@@ -651,7 +713,7 @@ h1, .h1 {
   text-transform: uppercase;
 }
 
-/* line 86, ../scss/core/_common.scss */
+/* line 96, ../scss/core/_common.scss */
 h2, .h2 {
   margin: 0;
   margin-bottom: 0.5em;
@@ -665,7 +727,7 @@ h2, .h2 {
   text-transform: uppercase;
 }
 
-/* line 88, ../scss/core/_common.scss */
+/* line 98, ../scss/core/_common.scss */
 h3, .h3 {
   margin: 0;
   margin-bottom: 10px;
@@ -679,7 +741,7 @@ h3, .h3 {
   text-transform: uppercase;
 }
 
-/* line 90, ../scss/core/_common.scss */
+/* line 100, ../scss/core/_common.scss */
 h4, .h4 {
   margin: 0;
   margin-bottom: 10px;
@@ -693,7 +755,7 @@ h4, .h4 {
   text-transform: uppercase;
 }
 
-/* line 92, ../scss/core/_common.scss */
+/* line 102, ../scss/core/_common.scss */
 h5, .h5 {
   margin: 0;
   margin-bottom: 10px;
@@ -707,7 +769,7 @@ h5, .h5 {
   text-transform: uppercase;
 }
 
-/* line 94, ../scss/core/_common.scss */
+/* line 104, ../scss/core/_common.scss */
 h6, .h6 {
   margin: 0;
   margin-bottom: 5px;
@@ -724,35 +786,35 @@ h6, .h6 {
 /* ============================================ *
  * Shared Classes
  * ============================================ */
-/* line 100, ../scss/core/_common.scss */
+/* line 110, ../scss/core/_common.scss */
 .address-list address {
   margin-bottom: 1em;
 }
 
-/* line 104, ../scss/core/_common.scss */
+/* line 114, ../scss/core/_common.scss */
 .availability {
   margin-bottom: 0;
   font-size: 13px;
   text-transform: uppercase;
 }
 
-/* line 110, ../scss/core/_common.scss */
+/* line 120, ../scss/core/_common.scss */
 .availability .label {
   display: none;
 }
 
-/* line 114, ../scss/core/_common.scss */
+/* line 124, ../scss/core/_common.scss */
 .availability.in-stock {
   color: #11B400;
 }
 
-/* line 118, ../scss/core/_common.scss */
+/* line 128, ../scss/core/_common.scss */
 .availability.available-soon,
 .availability.out-of-stock {
   color: #DF280A;
 }
 
-/* line 123, ../scss/core/_common.scss */
+/* line 133, ../scss/core/_common.scss */
 .availability-only {
   color: #DF280A;
   margin-bottom: 10px;
@@ -761,7 +823,7 @@ h6, .h6 {
 /* -------------------------------------------- *
  * Page Titles
  */
-/* line 132, ../scss/core/_common.scss */
+/* line 142, ../scss/core/_common.scss */
 .page-title h1,
 .page-title h2,
 .product-name h1,
@@ -779,25 +841,25 @@ h6, .h6 {
 /* -------------------------------------------- *
  * Block Module
  */
-/* line 143, ../scss/core/_common.scss */
+/* line 153, ../scss/core/_common.scss */
 .block,
 .col-left-first {
   margin-bottom: 20px;
 }
 
-/* line 148, ../scss/core/_common.scss */
+/* line 158, ../scss/core/_common.scss */
 .col-left-first .block:last-of-type {
   margin-bottom: 0;
 }
 
-/* line 152, ../scss/core/_common.scss */
+/* line 162, ../scss/core/_common.scss */
 .block-title {
   position: relative;
   padding: 10px 0 0;
   margin-bottom: 5px;
   border-top: 1px solid #CCCCCC;
 }
-/* line 158, ../scss/core/_common.scss */
+/* line 168, ../scss/core/_common.scss */
 .block-title h2,
 .block-title h3,
 .block-title strong {
@@ -816,65 +878,65 @@ h6, .h6 {
   text-transform: uppercase;
   font-weight: 600;
 }
-/* line 167, ../scss/core/_common.scss */
+/* line 177, ../scss/core/_common.scss */
 .block-title small {
   font-size: 100%;
   font-weight: normal;
   color: #A0A0A0;
 }
 
-/* line 175, ../scss/core/_common.scss */
+/* line 185, ../scss/core/_common.scss */
 body:not(.customer-account) .block:first-child .block-title {
   border-top: none;
   padding-top: 0;
 }
 
-/* line 180, ../scss/core/_common.scss */
+/* line 190, ../scss/core/_common.scss */
 .block-subtitle {
   font-weight: bold;
   margin-bottom: 7px;
 }
 
-/* line 185, ../scss/core/_common.scss */
+/* line 195, ../scss/core/_common.scss */
 .block-content {
   margin-top: 5px;
 }
 
-/* line 189, ../scss/core/_common.scss */
+/* line 199, ../scss/core/_common.scss */
 .block-content.unpad {
   padding: 0;
 }
 
-/* line 193, ../scss/core/_common.scss */
+/* line 203, ../scss/core/_common.scss */
 .block-content li.item {
   margin: 0 0 10px 9px;
 }
 
-/* line 197, ../scss/core/_common.scss */
+/* line 207, ../scss/core/_common.scss */
 .block-content li.item:last-child {
   margin-bottom: 0;
 }
 
-/* line 201, ../scss/core/_common.scss */
+/* line 211, ../scss/core/_common.scss */
 .block .actions {
   margin: 10px 0 0;
 }
-/* line 204, ../scss/core/_common.scss */
+/* line 214, ../scss/core/_common.scss */
 .block .actions:after {
   content: '';
   display: table;
   clear: both;
 }
-/* line 208, ../scss/core/_common.scss */
+/* line 218, ../scss/core/_common.scss */
 .block .actions a {
   float: left;
 }
-/* line 211, ../scss/core/_common.scss */
+/* line 221, ../scss/core/_common.scss */
 .block .actions .button {
   float: right;
 }
 
-/* line 219, ../scss/core/_common.scss */
+/* line 229, ../scss/core/_common.scss */
 .col-left .block .actions .button ~ a,
 .col-right .block .actions .button ~ a {
   line-height: 33px;
@@ -882,11 +944,11 @@ body:not(.customer-account) .block:first-child .block-title {
 }
 
 @media only screen and (max-width: 770px) {
-  /* line 229, ../scss/core/_common.scss */
+  /* line 239, ../scss/core/_common.scss */
   .sidebar .block:not(.block-layered-nav) {
     margin-bottom: 0;
   }
-  /* line 232, ../scss/core/_common.scss */
+  /* line 242, ../scss/core/_common.scss */
   .sidebar .block:not(.block-layered-nav) .block-title {
     padding: 0;
     margin-top: 0;
@@ -894,7 +956,7 @@ body:not(.customer-account) .block:first-child .block-title {
     border-top: none;
     margin-bottom: 0;
   }
-  /* line 239, ../scss/core/_common.scss */
+  /* line 249, ../scss/core/_common.scss */
   .sidebar .block:not(.block-layered-nav) .block-title > strong {
     margin: 0;
     margin-bottom: 10px;
@@ -943,7 +1005,7 @@ body:not(.customer-account) .block:first-child .block-title {
   .sidebar .block:not(.block-layered-nav) .block-title > strong:hover {
     background-color: #ececec;
   }
-  /* line 248, ../scss/core/_common.scss */
+  /* line 258, ../scss/core/_common.scss */
   .sidebar .block:not(.block-layered-nav) .block-title.active > strong {
     margin: 0;
     margin-bottom: 10px;
@@ -988,7 +1050,7 @@ body:not(.customer-account) .block:first-child .block-title {
   .sidebar .block:not(.block-layered-nav) .block-title.active > strong:hover {
     background-color: #ececec;
   }
-  /* line 254, ../scss/core/_common.scss */
+  /* line 264, ../scss/core/_common.scss */
   .sidebar .block:not(.block-layered-nav) .block-content {
     padding: 10px;
     margin-top: 0;
@@ -996,7 +1058,7 @@ body:not(.customer-account) .block:first-child .block-title {
     border-style: solid;
     border-color: #CCCCCC;
   }
-  /* line 264, ../scss/core/_common.scss */
+  /* line 274, ../scss/core/_common.scss */
   .sidebar .block:last-of-type {
     border-bottom: 1px solid #CCCCCC;
   }
@@ -1004,31 +1066,31 @@ body:not(.customer-account) .block:first-child .block-title {
 /* -------------------------------------------- *
  * Secondary Navigation
  */
-/* line 276, ../scss/core/_common.scss */
+/* line 286, ../scss/core/_common.scss */
 .block-account .block-title,
 .block-cms-menu .block-title {
   padding-top: 0;
   border-top: none;
 }
-/* line 281, ../scss/core/_common.scss */
+/* line 291, ../scss/core/_common.scss */
 .block-account li,
 .block-cms-menu li {
   text-transform: uppercase;
   font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   margin: 7px 0;
 }
-/* line 286, ../scss/core/_common.scss */
+/* line 296, ../scss/core/_common.scss */
 .block-account li strong,
 .block-cms-menu li strong {
   font-weight: 400;
   color: #712c6b;
 }
-/* line 291, ../scss/core/_common.scss */
+/* line 301, ../scss/core/_common.scss */
 .block-account li a,
 .block-cms-menu li a {
   color: #636363;
 }
-/* line 294, ../scss/core/_common.scss */
+/* line 304, ../scss/core/_common.scss */
 .block-account li a:hover,
 .block-cms-menu li a:hover {
   color: #712c6b;
@@ -1038,7 +1100,7 @@ body:not(.customer-account) .block:first-child .block-title {
  * Buttons
  * ============================================ */
 /* Secondary Buttons */
-/* line 306, ../scss/core/_common.scss */
+/* line 316, ../scss/core/_common.scss */
 .cart .buttons-set .button,
 .cart-table .button,
 .sidebar .actions .button,
@@ -1047,7 +1109,7 @@ body:not(.customer-account) .block:first-child .block-title {
   color: #636363;
   padding: 7px 15px;
 }
-/* line 314, ../scss/core/_common.scss */
+/* line 324, ../scss/core/_common.scss */
 .cart .buttons-set .button:hover,
 .cart-table .button:hover,
 .sidebar .actions .button:hover,
@@ -1055,7 +1117,7 @@ body:not(.customer-account) .block:first-child .block-title {
   background: #d0d0d0;
   cursor: pointer;
 }
-/* line 319, ../scss/core/_common.scss */
+/* line 329, ../scss/core/_common.scss */
 .cart .buttons-set .button:active,
 .cart-table .button:active,
 .sidebar .actions .button:active,
@@ -1063,7 +1125,7 @@ body:not(.customer-account) .block:first-child .block-title {
   background: #c4c4c4;
   color: #636363;
 }
-/* line 324, ../scss/core/_common.scss */
+/* line 334, ../scss/core/_common.scss */
 .cart .buttons-set .button:focus,
 .cart-table .button:focus,
 .sidebar .actions .button:focus,
@@ -1073,13 +1135,13 @@ body:not(.customer-account) .block:first-child .block-title {
   outline: none;
 }
 
-/* line 331, ../scss/core/_common.scss */
+/* line 341, ../scss/core/_common.scss */
 .sidebar .actions button.button {
   white-space: normal;
 }
 
 /* Primary Buttons */
-/* line 337, ../scss/core/_common.scss */
+/* line 347, ../scss/core/_common.scss */
 .button,
 .cart-table .product-cart-actions .button,
 #co-shipping-method-form .buttons-set .button,
@@ -1098,7 +1160,7 @@ body:not(.customer-account) .block:first-child .block-title {
   vertical-align: middle;
   white-space: nowrap;
 }
-/* line 355, ../scss/core/_common.scss */
+/* line 365, ../scss/core/_common.scss */
 .button:hover,
 .cart-table .product-cart-actions .button:hover,
 #co-shipping-method-form .buttons-set .button:hover,
@@ -1106,7 +1168,7 @@ body:not(.customer-account) .block:first-child .block-title {
   background: #2e8ab8;
   cursor: pointer;
 }
-/* line 359, ../scss/core/_common.scss */
+/* line 369, ../scss/core/_common.scss */
 .button:active,
 .cart-table .product-cart-actions .button:active,
 #co-shipping-method-form .buttons-set .button:active,
@@ -1114,7 +1176,7 @@ body:not(.customer-account) .block:first-child .block-title {
   background: #297aa3;
   color: #FFFFFF;
 }
-/* line 363, ../scss/core/_common.scss */
+/* line 373, ../scss/core/_common.scss */
 .button:focus,
 .cart-table .product-cart-actions .button:focus,
 #co-shipping-method-form .buttons-set .button:focus,
@@ -1124,18 +1186,18 @@ body:not(.customer-account) .block:first-child .block-title {
   color: #FFFFFF;
 }
 
-/* line 370, ../scss/core/_common.scss */
+/* line 380, ../scss/core/_common.scss */
 a.button {
   text-decoration: none;
 }
 
-/* line 374, ../scss/core/_common.scss */
+/* line 384, ../scss/core/_common.scss */
 a.button:hover {
   color: #FFFFFF;
 }
 
 /* Disabled - class for anchor, state for form elements */
-/* line 379, ../scss/core/_common.scss */
+/* line 389, ../scss/core/_common.scss */
 .button.disabled,
 .button:disabled {
   background: #C8C8C8;
@@ -1144,12 +1206,12 @@ a.button:hover {
 }
 
 /* Adjacent buttons */
-/* line 387, ../scss/core/_common.scss */
+/* line 397, ../scss/core/_common.scss */
 .button + .button {
   margin-left: 5px;
 }
 
-/* line 401, ../scss/core/_common.scss */
+/* line 411, ../scss/core/_common.scss */
 .button2 {
   border: 0;
   padding: 0 5px;
@@ -1159,12 +1221,12 @@ a.button:hover {
   vertical-align: middle;
 }
 
-/* line 410, ../scss/core/_common.scss */
+/* line 420, ../scss/core/_common.scss */
 .button2:focus {
   outline: none;
 }
 
-/* line 414, ../scss/core/_common.scss */
+/* line 424, ../scss/core/_common.scss */
 .button2 span,
 .button2 span span {
   line-height: 30px;
@@ -1175,7 +1237,7 @@ a.button:hover {
   color: #712c6b;
   font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
 }
-/* line 424, ../scss/core/_common.scss */
+/* line 434, ../scss/core/_common.scss */
 .button2 span:hover,
 .button2 span span:hover {
   text-decoration: none;
@@ -1183,7 +1245,7 @@ a.button:hover {
 }
 
 @media only screen and (max-width: 770px) {
-  /* line 432, ../scss/core/_common.scss */
+  /* line 442, ../scss/core/_common.scss */
   .col2-set .buttons-set .button,
   .col2-set .buttons-set .button2 {
     float: none;
@@ -1191,17 +1253,17 @@ a.button:hover {
     margin-left: 0;
     margin-right: 0;
   }
-  /* line 439, ../scss/core/_common.scss */
+  /* line 449, ../scss/core/_common.scss */
   .col2-set .buttons-set .back-link {
     display: none;
   }
-  /* line 442, ../scss/core/_common.scss */
+  /* line 452, ../scss/core/_common.scss */
   .col2-set .buttons-set .required {
     display: none;
   }
 }
 @media only screen and (max-width: 479px) {
-  /* line 450, ../scss/core/_common.scss */
+  /* line 460, ../scss/core/_common.scss */
   .buttons-set .button {
     float: none;
     width: 100%;
@@ -1209,11 +1271,11 @@ a.button:hover {
     margin-right: 0;
     margin-bottom: 7px;
   }
-  /* line 457, ../scss/core/_common.scss */
+  /* line 467, ../scss/core/_common.scss */
   .buttons-set .back-link {
     display: none;
   }
-  /* line 460, ../scss/core/_common.scss */
+  /* line 470, ../scss/core/_common.scss */
   .buttons-set .required {
     display: none;
   }
@@ -1221,44 +1283,44 @@ a.button:hover {
 /* -------------------------------------------- *
  * Paypal Button
  */
-/* line 470, ../scss/core/_common.scss */
+/* line 480, ../scss/core/_common.scss */
 .paypal-logo.paypal-after {
   float: left;
 }
 
-/* line 474, ../scss/core/_common.scss */
+/* line 484, ../scss/core/_common.scss */
 .paypal-after .paypal-or {
   float: left;
 }
 
-/* line 478, ../scss/core/_common.scss */
+/* line 488, ../scss/core/_common.scss */
 .paypal-or {
   line-height: 34px;
   margin: 0px 10px 5px;
 }
 
-/* line 483, ../scss/core/_common.scss */
+/* line 493, ../scss/core/_common.scss */
 .paypal-after .paypal-button {
   float: left;
 }
 
-/* line 487, ../scss/core/_common.scss */
+/* line 497, ../scss/core/_common.scss */
 .paypal-button {
   line-height: 0px;
 }
 
-/* line 491, ../scss/core/_common.scss */
+/* line 501, ../scss/core/_common.scss */
 .paypal-button img {
   display: inline;
 }
 
 @media only screen and (max-width: 740px) {
-  /* line 496, ../scss/core/_common.scss */
+  /* line 506, ../scss/core/_common.scss */
   .paypal-or {
     line-height: 20px;
   }
 
-  /* line 500, ../scss/core/_common.scss */
+  /* line 510, ../scss/core/_common.scss */
   .paypal-logo,
   .paypal-or,
   .paypal-button {
@@ -1273,7 +1335,7 @@ a.button:hover {
 /* -------------------------------------------- *
  * Button Sets
  */
-/* line 516, ../scss/core/_common.scss */
+/* line 526, ../scss/core/_common.scss */
 .buttons-set {
   clear: both;
   margin: 10px 0 0;
@@ -1281,32 +1343,32 @@ a.button:hover {
   border-top: 1px solid #EDEDED;
   text-align: right;
 }
-/* line 523, ../scss/core/_common.scss */
+/* line 533, ../scss/core/_common.scss */
 .buttons-set p.required {
   margin: 0;
   margin-left: 20px;
   line-height: 33px;
   float: right;
 }
-/* line 529, ../scss/core/_common.scss */
+/* line 539, ../scss/core/_common.scss */
 .buttons-set .back-link {
   float: left;
   margin: 0;
   line-height: 33px;
 }
-/* line 534, ../scss/core/_common.scss */
+/* line 544, ../scss/core/_common.scss */
 .buttons-set a:not(.button) {
   line-height: 20px;
   display: inline-block;
   padding: 5px;
 }
-/* line 539, ../scss/core/_common.scss */
+/* line 549, ../scss/core/_common.scss */
 .buttons-set button.button {
   float: right;
   margin-left: 5px;
   min-width: 140px;
 }
-/* line 545, ../scss/core/_common.scss */
+/* line 555, ../scss/core/_common.scss */
 .buttons-set:after {
   content: '';
   display: table;
@@ -1316,7 +1378,7 @@ a.button:hover {
 /* -------------------------------------------- *
  * Icons
  */
-/* line 554, ../scss/core/_common.scss */
+/* line 564, ../scss/core/_common.scss */
 .icon-sprite, .btn-remove2, .ratings .rating-box, .ratings .rating-box .rating, .sorter > .sort-by .sort-by-switcher, .sorter > .view-mode .grid,
 .sorter > .view-mode .list, .skip-nav .icon, .skip-search .icon, .skip-account .icon, .skip-cart .icon, .product-view .sharing-links a, .review-summary-table .rating-box .rating-number:after, .ratings-table .rating-box, .ratings-table .rating-box .rating {
   background-image: url(../images/icon_sprite.png);
@@ -1325,7 +1387,7 @@ a.button:hover {
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 4 / 2), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  /* line 561, ../scss/core/_common.scss */
+  /* line 571, ../scss/core/_common.scss */
   .icon-sprite, .btn-remove2, .ratings .rating-box, .ratings .rating-box .rating, .sorter > .sort-by .sort-by-switcher, .sorter > .view-mode .grid,
   .sorter > .view-mode .list, .skip-nav .icon, .skip-search .icon, .skip-account .icon, .skip-cart .icon, .product-view .sharing-links a, .review-summary-table .rating-box .rating-number:after, .ratings-table .rating-box, .ratings-table .rating-box .rating {
     background-image: url(../images/icon_sprite@2x.png);
@@ -1335,13 +1397,13 @@ a.button:hover {
 /* -------------------------------------------- *
  * Breadcrumbs
  */
-/* line 571, ../scss/core/_common.scss */
+/* line 581, ../scss/core/_common.scss */
 .breadcrumbs {
   overflow: hidden;
   margin: -15px 0 15px;
 }
 
-/* line 576, ../scss/core/_common.scss */
+/* line 586, ../scss/core/_common.scss */
 .breadcrumbs li {
   float: left;
   font-size: 12px;
@@ -1349,31 +1411,31 @@ a.button:hover {
   text-transform: uppercase;
 }
 
-/* line 583, ../scss/core/_common.scss */
+/* line 593, ../scss/core/_common.scss */
 .breadcrumbs a {
   float: left;
   color: #636363;
 }
 
-/* line 588, ../scss/core/_common.scss */
+/* line 598, ../scss/core/_common.scss */
 .breadcrumbs a:hover {
   color: #712c6b;
 }
 
-/* line 592, ../scss/core/_common.scss */
+/* line 602, ../scss/core/_common.scss */
 .breadcrumbs strong {
   color: #636363;
   font-weight: normal;
 }
 
-/* line 597, ../scss/core/_common.scss */
+/* line 607, ../scss/core/_common.scss */
 .breadcrumbs span {
   float: left;
   padding: 0 7px;
 }
 
 @media only screen and (max-width: 770px) {
-  /* line 604, ../scss/core/_common.scss */
+  /* line 614, ../scss/core/_common.scss */
   .breadcrumbs {
     display: none;
   }
@@ -1381,7 +1443,7 @@ a.button:hover {
 /* -------------------------------------------- *
  * Button - Remove / Previous
  */
-/* line 614, ../scss/core/_common.scss */
+/* line 624, ../scss/core/_common.scss */
 .btn-remove,
 .btn-previous {
   display: inline-block;
@@ -1395,14 +1457,14 @@ a.button:hover {
   color: transparent;
   position: relative;
 }
-/* line 627, ../scss/core/_common.scss */
+/* line 637, ../scss/core/_common.scss */
 .btn-remove:hover,
 .btn-previous:hover {
   background-color: #712c6b;
   border-color: #712c6b;
 }
 
-/* line 634, ../scss/core/_common.scss */
+/* line 644, ../scss/core/_common.scss */
 .btn-remove:after {
   content: 'X';
   color: #712c6b;
@@ -1413,30 +1475,30 @@ a.button:hover {
   font-family: Arial, "OpenGost Type B", Arial, sans-serif;
   font-weight: bold;
 }
-/* line 644, ../scss/core/_common.scss */
+/* line 654, ../scss/core/_common.scss */
 .btn-remove:hover:after {
   color: #FFFFFF;
   text-decoration: none;
 }
 
-/* line 650, ../scss/core/_common.scss */
+/* line 660, ../scss/core/_common.scss */
 .btn-remove2 {
   background-position: 4px -648px;
   border: none;
   vertical-align: top;
 }
-/* line 657, ../scss/core/_common.scss */
+/* line 667, ../scss/core/_common.scss */
 .btn-remove2:after {
   display: none;
 }
-/* line 660, ../scss/core/_common.scss */
+/* line 670, ../scss/core/_common.scss */
 .btn-remove2:hover {
   background-color: transparent;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
 }
 
-/* line 667, ../scss/core/_common.scss */
+/* line 677, ../scss/core/_common.scss */
 .btn-previous:after {
   content: '';
   position: absolute;
@@ -1453,7 +1515,7 @@ a.button:hover {
   margin-left: -2px;
   margin-top: -4px;
 }
-/* line 675, ../scss/core/_common.scss */
+/* line 685, ../scss/core/_common.scss */
 .btn-previous:hover:after {
   content: '';
   position: absolute;
@@ -1466,7 +1528,7 @@ a.button:hover {
   border-left: none;
 }
 
-/* line 684, ../scss/core/_common.scss */
+/* line 694, ../scss/core/_common.scss */
 .block-layered-nav .currently .btn-remove,
 .block-layered-nav .currently .btn-previous,
 .mini-products-list .btn-remove,
@@ -1480,12 +1542,12 @@ a.button:hover {
 /* -------------------------------------------- *
  * Checkout Agreements
  */
-/* line 695, ../scss/core/_common.scss */
+/* line 705, ../scss/core/_common.scss */
 .checkout-agreements li {
   margin-bottom: 20px;
 }
 
-/* line 699, ../scss/core/_common.scss */
+/* line 709, ../scss/core/_common.scss */
 .checkout-agreements .agreement-content {
   overflow-y: auto;
   max-width: 670px;
@@ -1499,7 +1561,7 @@ a.button:hover {
 /* -------------------------------------------- *
  * CVV Security Code
  */
-/* line 713, ../scss/core/_common.scss */
+/* line 723, ../scss/core/_common.scss */
 .cvv-what-is-this {
   margin-left: 10px;
   font-size: 13px;
@@ -1509,7 +1571,7 @@ a.button:hover {
 /* -------------------------------------------- *
  * Container
  */
-/* line 723, ../scss/core/_common.scss */
+/* line 733, ../scss/core/_common.scss */
 .main-container,
 .footer-container {
   position: relative;
@@ -1517,7 +1579,7 @@ a.button:hover {
   margin: 0 auto;
   padding: 15px;
 }
-/* line 730, ../scss/core/_common.scss */
+/* line 740, ../scss/core/_common.scss */
 .main-container:after,
 .footer-container:after {
   content: '';
@@ -1526,13 +1588,13 @@ a.button:hover {
 }
 
 @media only screen and (min-width: 480px) {
-  /* line 737, ../scss/core/_common.scss */
+  /* line 747, ../scss/core/_common.scss */
   .main-container,
   .footer-container {
     padding: 30px;
   }
 }
-/* line 743, ../scss/core/_common.scss */
+/* line 753, ../scss/core/_common.scss */
 .footer-container {
   padding-top: 0px;
 }
@@ -1540,7 +1602,7 @@ a.button:hover {
 /* -------------------------------------------- *
  * Column Layouts
  */
-/* line 751, ../scss/core/_common.scss */
+/* line 761, ../scss/core/_common.scss */
 .main:after,
 .col-wrapper:after {
   content: '';
@@ -1548,14 +1610,14 @@ a.button:hover {
   clear: both;
 }
 
-/* line 756, ../scss/core/_common.scss */
+/* line 766, ../scss/core/_common.scss */
 .col-left,
 .col-right,
 .col-main {
   padding: 0 10px;
 }
 
-/* line 762, ../scss/core/_common.scss */
+/* line 772, ../scss/core/_common.scss */
 .col-left {
   float: left;
   width: 25%;
@@ -1563,30 +1625,30 @@ a.button:hover {
   /* Remove the 15px padding */
   clear: left;
 }
-/* line 768, ../scss/core/_common.scss */
+/* line 778, ../scss/core/_common.scss */
 .col-left img {
   max-width: 100%;
 }
 
-/* line 773, ../scss/core/_common.scss */
+/* line 783, ../scss/core/_common.scss */
 .col-right {
   float: right;
   width: 25%;
   padding-right: 0;
   /* Remove the 15px padding */
 }
-/* line 778, ../scss/core/_common.scss */
+/* line 788, ../scss/core/_common.scss */
 .col-right img {
   max-width: 100%;
 }
 
-/* line 783, ../scss/core/_common.scss */
+/* line 793, ../scss/core/_common.scss */
 .col-main {
   float: left;
   width: 75%;
 }
 
-/* line 789, ../scss/core/_common.scss */
+/* line 799, ../scss/core/_common.scss */
 .col1-layout .col-main {
   float: none;
   width: auto;
@@ -1594,40 +1656,40 @@ a.button:hover {
   /* Remove the 15px padding */
 }
 
-/* line 797, ../scss/core/_common.scss */
+/* line 807, ../scss/core/_common.scss */
 .col2-left-layout .col-main {
   float: right;
   padding-right: 0;
   /* Remove the 15px padding */
 }
 
-/* line 804, ../scss/core/_common.scss */
+/* line 814, ../scss/core/_common.scss */
 .col2-right-layout .col-main {
   padding-left: 0;
   /* Remove the 15px padding */
 }
 
-/* line 810, ../scss/core/_common.scss */
+/* line 820, ../scss/core/_common.scss */
 .col3-layout .col-right {
   width: 20.83333%;
 }
-/* line 814, ../scss/core/_common.scss */
+/* line 824, ../scss/core/_common.scss */
 .col3-layout .col-wrapper {
   float: left;
   width: 79.16667%;
 }
-/* line 818, ../scss/core/_common.scss */
+/* line 828, ../scss/core/_common.scss */
 .col3-layout .col-wrapper .col-main {
   float: right;
   width: 73.68421%;
 }
-/* line 823, ../scss/core/_common.scss */
+/* line 833, ../scss/core/_common.scss */
 .col3-layout .col-wrapper .col-left {
   width: 26.31579%;
 }
 
 @media only screen and (max-width: 1000px) {
-  /* line 831, ../scss/core/_common.scss */
+  /* line 841, ../scss/core/_common.scss */
   .col3-layout .col-right {
     float: left;
     clear: left;
@@ -1635,23 +1697,23 @@ a.button:hover {
     padding-right: 10px;
     width: 25%;
   }
-  /* line 839, ../scss/core/_common.scss */
+  /* line 849, ../scss/core/_common.scss */
   .col3-layout .col-wrapper {
     float: right;
     width: 100%;
   }
-  /* line 843, ../scss/core/_common.scss */
+  /* line 853, ../scss/core/_common.scss */
   .col3-layout .col-wrapper .col-main {
     float: right;
     width: 75%;
   }
-  /* line 848, ../scss/core/_common.scss */
+  /* line 858, ../scss/core/_common.scss */
   .col3-layout .col-wrapper .col-left {
     width: 25%;
   }
 }
 @media only screen and (max-width: 770px) {
-  /* line 856, ../scss/core/_common.scss */
+  /* line 866, ../scss/core/_common.scss */
   .col-left,
   .col-right,
   .col-main,
@@ -1673,54 +1735,54 @@ a.button:hover {
     width: auto;
   }
 
-  /* line 877, ../scss/core/_common.scss */
+  /* line 887, ../scss/core/_common.scss */
   .col3-layout .col-wrapper {
     float: none;
     width: auto;
   }
 
-  /* line 882, ../scss/core/_common.scss */
+  /* line 892, ../scss/core/_common.scss */
   .col-main {
     float: none;
     width: auto;
   }
 
-  /* line 887, ../scss/core/_common.scss */
+  /* line 897, ../scss/core/_common.scss */
   .col-main .col-left {
     padding: 0;
     /* On product listing pages, the left column gets moved inside col-main on small viewports */
   }
 }
 /* Content Columns */
-/* line 894, ../scss/core/_common.scss */
+/* line 904, ../scss/core/_common.scss */
 .col2-set {
   width: 100%;
 }
-/* line 897, ../scss/core/_common.scss */
+/* line 907, ../scss/core/_common.scss */
 .col2-set .col-1,
 .col2-set .col-2 {
   width: 50%;
   padding: 20px;
 }
 @media only screen and (max-width: 770px) {
-  /* line 897, ../scss/core/_common.scss */
+  /* line 907, ../scss/core/_common.scss */
   .col2-set .col-1,
   .col2-set .col-2 {
     padding: 10px;
   }
 }
-/* line 907, ../scss/core/_common.scss */
+/* line 917, ../scss/core/_common.scss */
 .col2-set .col-1 {
   float: left;
   padding-left: 0;
 }
-/* line 912, ../scss/core/_common.scss */
+/* line 922, ../scss/core/_common.scss */
 .col2-set .col-2 {
   float: right;
   padding-right: 0;
 }
 @media only screen and (max-width: 479px) {
-  /* line 918, ../scss/core/_common.scss */
+  /* line 928, ../scss/core/_common.scss */
   .col2-set .col-1,
   .col2-set .col-2 {
     float: none;
@@ -1730,15 +1792,15 @@ a.button:hover {
     padding-left: 0;
   }
 }
-/* line 928, ../scss/core/_common.scss */
+/* line 938, ../scss/core/_common.scss */
 .col2-set .narrow {
   width: 33%;
 }
-/* line 932, ../scss/core/_common.scss */
+/* line 942, ../scss/core/_common.scss */
 .col2-set .wide {
   width: 65%;
 }
-/* line 936, ../scss/core/_common.scss */
+/* line 946, ../scss/core/_common.scss */
 .col2-set:after {
   content: '';
   display: table;
@@ -1749,7 +1811,7 @@ a.button:hover {
  * Top Container
  */
 @media only screen and (min-width: 771px) {
-  /* line 945, ../scss/core/_common.scss */
+  /* line 955, ../scss/core/_common.scss */
   .top-container {
     max-width: 1260px;
     margin: 0 auto;
@@ -1759,13 +1821,13 @@ a.button:hover {
 /* -------------------------------------------- *
  * Global Site Notice
  */
-/* line 956, ../scss/core/_common.scss */
+/* line 966, ../scss/core/_common.scss */
 .global-site-notice {
   background: #676157;
   color: #E6E6E6;
   font-size: 11px;
 }
-/* line 961, ../scss/core/_common.scss */
+/* line 971, ../scss/core/_common.scss */
 .global-site-notice .notice-inner {
   padding-left: 120px;
   width: 100%;
@@ -1780,7 +1842,7 @@ a.button:hover {
   background-position: left;
   background-repeat: no-repeat;
 }
-/* line 976, ../scss/core/_common.scss */
+/* line 986, ../scss/core/_common.scss */
 .global-site-notice p {
   margin-bottom: 0;
 }
@@ -1788,7 +1850,7 @@ a.button:hover {
 /* -------------------------------------------- *
  * Promotional Message Banner
  */
-/* line 985, ../scss/core/_common.scss */
+/* line 995, ../scss/core/_common.scss */
 .promo-msg {
   color: #3399CC;
   text-align: center;
@@ -1800,7 +1862,7 @@ a.button:hover {
 /* -------------------------------------------- *
  * Grid
  */
-/* line 997, ../scss/core/_common.scss */
+/* line 1007, ../scss/core/_common.scss */
 .grid:after {
   content: '';
   display: table;
@@ -1810,18 +1872,18 @@ a.button:hover {
 /* -------------------------------------------- *
  * Messages
  */
-/* line 1004, ../scss/core/_common.scss */
+/* line 1014, ../scss/core/_common.scss */
 .success {
   color: #11B400;
 }
 
-/* line 1008, ../scss/core/_common.scss */
+/* line 1018, ../scss/core/_common.scss */
 .error {
   color: #DF280A;
   font-weight: bold;
 }
 
-/* line 1013, ../scss/core/_common.scss */
+/* line 1023, ../scss/core/_common.scss */
 .notice {
   color: #E26703;
   font-weight: bold;
@@ -1830,12 +1892,12 @@ a.button:hover {
 /* -------------------------------------------- *
  * Messages
  */
-/* line 1022, ../scss/core/_common.scss */
+/* line 1032, ../scss/core/_common.scss */
 .messages {
   margin-bottom: 20px;
 }
 
-/* line 1026, ../scss/core/_common.scss */
+/* line 1036, ../scss/core/_common.scss */
 .messages li li {
   position: relative;
   margin-bottom: 5px;
@@ -1844,21 +1906,21 @@ a.button:hover {
   font-size: 15px;
 }
 
-/* line 1034, ../scss/core/_common.scss */
+/* line 1044, ../scss/core/_common.scss */
 .messages li li:before {
   top: 50%;
   left: 0;
   margin-top: -6px;
 }
 
-/* line 1040, ../scss/core/_common.scss */
+/* line 1050, ../scss/core/_common.scss */
 .messages .error-msg li {
   color: #000000;
   border-left: 5px solid #DF280A;
   background-color: #FAEBE7;
 }
 
-/* line 1046, ../scss/core/_common.scss */
+/* line 1056, ../scss/core/_common.scss */
 .messages .error-msg li:before {
   content: '';
   position: absolute;
@@ -1871,14 +1933,14 @@ a.button:hover {
   border-right: none;
 }
 
-/* line 1050, ../scss/core/_common.scss */
+/* line 1060, ../scss/core/_common.scss */
 .messages .notice-msg li {
   color: #000000;
   border-left: 5px solid #E26703;
   background-color: #F9EBE6;
 }
 
-/* line 1056, ../scss/core/_common.scss */
+/* line 1066, ../scss/core/_common.scss */
 .messages .notice-msg li:before {
   content: '';
   position: absolute;
@@ -1891,14 +1953,14 @@ a.button:hover {
   border-right: none;
 }
 
-/* line 1060, ../scss/core/_common.scss */
+/* line 1070, ../scss/core/_common.scss */
 .messages .success-msg li {
   color: #000000;
   border-left: 5px solid #11B400;
   background-color: #EFF5EA;
 }
 
-/* line 1066, ../scss/core/_common.scss */
+/* line 1076, ../scss/core/_common.scss */
 .messages .success-msg li:before {
   content: '';
   position: absolute;
@@ -1912,18 +1974,18 @@ a.button:hover {
 }
 
 @media only screen and (min-width: 915px) {
-  /* line 1074, ../scss/core/_common.scss */
+  /* line 1084, ../scss/core/_common.scss */
   .order-list-grid .col-1 {
     width: 30%;
   }
 
-  /* line 1078, ../scss/core/_common.scss */
+  /* line 1088, ../scss/core/_common.scss */
   .order-list-grid .col-2 {
     width: 50%;
     padding-right: 20px;
   }
 
-  /* line 1083, ../scss/core/_common.scss */
+  /* line 1093, ../scss/core/_common.scss */
   .order-list-grid .col-3 {
     clear: none;
     width: 20%;
@@ -1933,14 +1995,14 @@ a.button:hover {
 /* -------------------------------------------- *
  * Page Popup
  */
-/* line 1095, ../scss/core/_common.scss */
+/* line 1105, ../scss/core/_common.scss */
 .page-popup {
   padding: 20px;
   background: #FFFFFF;
   height: auto;
 }
 
-/* line 1101, ../scss/core/_common.scss */
+/* line 1111, ../scss/core/_common.scss */
 .page-popup h1 {
   margin: 0 0 0.5em;
   font-size: 36px;
@@ -1949,22 +2011,22 @@ a.button:hover {
 /* -------------------------------------------- *
  * Payment Methods
  */
-/* line 1110, ../scss/core/_common.scss */
+/* line 1120, ../scss/core/_common.scss */
 .payment-methods {
   margin-bottom: 20px;
 }
 
-/* line 1114, ../scss/core/_common.scss */
+/* line 1124, ../scss/core/_common.scss */
 .payment-methods dt {
   padding: 5px 0;
 }
 
-/* line 1118, ../scss/core/_common.scss */
+/* line 1128, ../scss/core/_common.scss */
 .payment-methods dd {
   padding-top: 10px;
 }
 
-/* line 1122, ../scss/core/_common.scss */
+/* line 1132, ../scss/core/_common.scss */
 .payment-methods .form-list {
   position: relative;
   display: inline-block;
@@ -1975,7 +2037,7 @@ a.button:hover {
   background: #F4F4F4;
 }
 
-/* line 1132, ../scss/core/_common.scss */
+/* line 1142, ../scss/core/_common.scss */
 .payment-methods .form-list:before {
   content: '';
   position: absolute;
@@ -1990,7 +2052,7 @@ a.button:hover {
   left: 30px;
 }
 
-/* line 1138, ../scss/core/_common.scss */
+/* line 1148, ../scss/core/_common.scss */
 .payment-methods .form-list:after {
   content: '';
   position: absolute;
@@ -2005,7 +2067,7 @@ a.button:hover {
   left: 30px;
 }
 
-/* line 1144, ../scss/core/_common.scss */
+/* line 1154, ../scss/core/_common.scss */
 .payment-methods .form-list li:last-child {
   margin-bottom: 0;
 }
@@ -2013,7 +2075,7 @@ a.button:hover {
 /* -------------------------------------------- *
  * Please Wait (Loading Indicator)
  */
-/* line 1152, ../scss/core/_common.scss */
+/* line 1162, ../scss/core/_common.scss */
 .please-wait {
   display: inline-block;
   margin-left: 10px;
@@ -2023,7 +2085,7 @@ a.button:hover {
   white-space: nowrap;
   /* Prevent the linebreak in the HTML from causing layout issues */
 }
-/* line 1160, ../scss/core/_common.scss */
+/* line 1170, ../scss/core/_common.scss */
 .please-wait img {
   float: left;
   margin-right: 5px;
@@ -2033,49 +2095,49 @@ a.button:hover {
 /* -------------------------------------------- *
  * Price Box - Standard
  */
-/* line 1171, ../scss/core/_common.scss */
+/* line 1181, ../scss/core/_common.scss */
 .price-box {
   margin: 7px 0;
   font-family: "OpenGost Type B", Arial, sans-serif;
 }
 
-/* line 1176, ../scss/core/_common.scss */
+/* line 1186, ../scss/core/_common.scss */
 .price-box p {
   margin-bottom: 0;
 }
 
-/* line 1180, ../scss/core/_common.scss */
+/* line 1190, ../scss/core/_common.scss */
 .price-notice {
   color: #A0A0A0;
 }
 
-/* line 1184, ../scss/core/_common.scss */
+/* line 1194, ../scss/core/_common.scss */
 .price-box .price {
   color: #3399CC;
   font-size: 16px;
 }
 
-/* line 1189, ../scss/core/_common.scss */
+/* line 1199, ../scss/core/_common.scss */
 .price-box .price,
 .price {
   font-family: "OpenGost Type B", Arial, sans-serif;
 }
 
-/* line 1194, ../scss/core/_common.scss */
+/* line 1204, ../scss/core/_common.scss */
 .price-box .price-label {
   color: #A0A0A0;
   white-space: nowrap;
   font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
 }
 
-/* line 1200, ../scss/core/_common.scss */
+/* line 1210, ../scss/core/_common.scss */
 .price-box .minimal-price-link {
   padding-left: 1em;
   color: #3399CC;
   display: block;
   /* We want this to show on its own line, otherwise the layout looks funky */
 }
-/* line 1205, ../scss/core/_common.scss */
+/* line 1215, ../scss/core/_common.scss */
 .price-box .minimal-price-link .label {
   color: #A0A0A0;
 }
@@ -2083,34 +2145,34 @@ a.button:hover {
 /* -------------------------------------------- *
  * Price Box - Special
  */
-/* line 1214, ../scss/core/_common.scss */
+/* line 1224, ../scss/core/_common.scss */
 .price-box .old-price,
 .price-box .special-price {
   display: inline-block;
 }
-/* line 1218, ../scss/core/_common.scss */
+/* line 1228, ../scss/core/_common.scss */
 .price-box .old-price .price-label,
 .price-box .special-price .price-label {
   display: none;
 }
-/* line 1222, ../scss/core/_common.scss */
+/* line 1232, ../scss/core/_common.scss */
 .price-box .old-price .price,
 .price-box .special-price .price {
   display: inline-block;
 }
 
-/* line 1228, ../scss/core/_common.scss */
+/* line 1238, ../scss/core/_common.scss */
 .price-box .old-price .price {
   color: #A0A0A0;
   text-decoration: line-through;
 }
 
-/* line 1234, ../scss/core/_common.scss */
+/* line 1244, ../scss/core/_common.scss */
 .price-box .special-price {
   color: #3399CC;
   padding-left: 1em;
 }
-/* line 1238, ../scss/core/_common.scss */
+/* line 1248, ../scss/core/_common.scss */
 .price-box .special-price .price-label {
   color: #D84D3C;
 }
@@ -2118,13 +2180,13 @@ a.button:hover {
 /* -------------------------------------------- *
  * Price Box - Taxes
  */
-/* line 1247, ../scss/core/_common.scss */
+/* line 1257, ../scss/core/_common.scss */
 .price-box .price-excluding-tax,
 .price-box .price-including-tax {
   display: block;
 }
 
-/* line 1252, ../scss/core/_common.scss */
+/* line 1262, ../scss/core/_common.scss */
 span.weee {
   display: block;
 }
@@ -2132,7 +2194,7 @@ span.weee {
 /* -------------------------------------------- *
  * Tier Prices
  */
-/* line 1260, ../scss/core/_common.scss */
+/* line 1270, ../scss/core/_common.scss */
 .product-pricing,
 .tier-prices,
 .tier-prices-grouped {
@@ -2142,19 +2204,19 @@ span.weee {
   border: 1px solid #E2D4C7;
   margin-top: 7px;
 }
-/* line 1269, ../scss/core/_common.scss */
+/* line 1279, ../scss/core/_common.scss */
 .product-pricing li,
 .tier-prices li,
 .tier-prices-grouped li {
   font-size: 12px;
 }
-/* line 1272, ../scss/core/_common.scss */
+/* line 1282, ../scss/core/_common.scss */
 .product-pricing .benefit,
 .tier-prices .benefit,
 .tier-prices-grouped .benefit {
   font-style: italic;
 }
-/* line 1275, ../scss/core/_common.scss */
+/* line 1285, ../scss/core/_common.scss */
 .product-pricing .price,
 .tier-prices .price,
 .tier-prices-grouped .price {
@@ -2164,18 +2226,18 @@ span.weee {
 /* ============================================ *
  * Item Options
  * ============================================ */
-/* line 1284, ../scss/core/_common.scss */
+/* line 1294, ../scss/core/_common.scss */
 .item-options {
   font-size: 14px;
   font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
 }
-/* line 1288, ../scss/core/_common.scss */
+/* line 1298, ../scss/core/_common.scss */
 .item-options:after {
   content: '';
   display: table;
   clear: both;
 }
-/* line 1292, ../scss/core/_common.scss */
+/* line 1302, ../scss/core/_common.scss */
 .item-options dt {
   float: left;
   clear: left;
@@ -2183,41 +2245,41 @@ span.weee {
   padding-right: 5px;
   font-style: italic;
 }
-/* line 1299, ../scss/core/_common.scss */
+/* line 1309, ../scss/core/_common.scss */
 .item-options dt:after {
   content: ': ';
 }
-/* line 1304, ../scss/core/_common.scss */
+/* line 1314, ../scss/core/_common.scss */
 .item-options dd {
   float: left;
   padding-left: 10px;
   margin: 0 0 6px;
 }
 
-/* line 1311, ../scss/core/_common.scss */
+/* line 1321, ../scss/core/_common.scss */
 .truncated,
 .truncated a.dots {
   cursor: help;
 }
 
-/* line 1316, ../scss/core/_common.scss */
+/* line 1326, ../scss/core/_common.scss */
 .truncated a.details {
   cursor: help;
   height: 16px;
   line-height: 16px;
 }
-/* line 1321, ../scss/core/_common.scss */
+/* line 1331, ../scss/core/_common.scss */
 .truncated a.details:hover {
   text-decoration: none;
 }
 
-/* line 1326, ../scss/core/_common.scss */
+/* line 1336, ../scss/core/_common.scss */
 .truncated .truncated_full_value {
   position: relative;
   z-index: 300;
 }
 
-/* line 1331, ../scss/core/_common.scss */
+/* line 1341, ../scss/core/_common.scss */
 .truncated .truncated_full_value .item-options {
   display: none;
   position: absolute;
@@ -2229,7 +2291,7 @@ span.weee {
   top: 21px;
   left: -100px;
 }
-/* line 1342, ../scss/core/_common.scss */
+/* line 1352, ../scss/core/_common.scss */
 .truncated .truncated_full_value .item-options:after {
   content: '';
   position: absolute;
@@ -2244,28 +2306,28 @@ span.weee {
   top: -7px;
 }
 
-/* line 1349, ../scss/core/_common.scss */
+/* line 1359, ../scss/core/_common.scss */
 .truncated .truncated_full_value .item-options > p {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 8px;
 }
 
-/* line 1355, ../scss/core/_common.scss */
+/* line 1365, ../scss/core/_common.scss */
 .truncated .show .item-options {
   display: block;
 }
 
 @media only screen and (max-width: 479px) {
-  /* line 1361, ../scss/core/_common.scss */
+  /* line 1371, ../scss/core/_common.scss */
   .truncated {
     cursor: inherit;
   }
-  /* line 1364, ../scss/core/_common.scss */
+  /* line 1374, ../scss/core/_common.scss */
   .truncated a.details {
     display: none;
   }
-  /* line 1369, ../scss/core/_common.scss */
+  /* line 1379, ../scss/core/_common.scss */
   .truncated .truncated_full_value .item-options {
     display: block;
     position: static;
@@ -2274,11 +2336,11 @@ span.weee {
     border: none;
     background-color: transparent;
   }
-  /* line 1377, ../scss/core/_common.scss */
+  /* line 1387, ../scss/core/_common.scss */
   .truncated .truncated_full_value .item-options p {
     float: none;
   }
-  /* line 1381, ../scss/core/_common.scss */
+  /* line 1391, ../scss/core/_common.scss */
   .truncated .truncated_full_value .item-options:after {
     display: none;
   }
@@ -2286,7 +2348,7 @@ span.weee {
 /* -------------------------------------------- *
  * Printer Friendly Page
  */
-/* line 1394, ../scss/core/_common.scss */
+/* line 1404, ../scss/core/_common.scss */
 .page-print {
   width: 6.5in;
   margin: 20px;
@@ -2296,17 +2358,17 @@ span.weee {
 /* -------------------------------------------- *
  * Add to links
  */
-/* line 1404, ../scss/core/_common.scss */
+/* line 1414, ../scss/core/_common.scss */
 .add-to-links {
   margin: 7px 0;
 }
-/* line 1407, ../scss/core/_common.scss */
+/* line 1417, ../scss/core/_common.scss */
 .add-to-links a {
   display: inline-block;
   padding: 0px 3px 3px;
 }
 
-/* line 1413, ../scss/core/_common.scss */
+/* line 1423, ../scss/core/_common.scss */
 .add-to-links .separator {
   display: none;
 }
@@ -2314,7 +2376,7 @@ span.weee {
 /* -------------------------------------------- *
  * Product Image
  */
-/* line 1421, ../scss/core/_common.scss */
+/* line 1431, ../scss/core/_common.scss */
 .product-image,
 .no-touch .product-img-box .product-image:not(.zoom-available):hover {
   position: relative;
@@ -2323,12 +2385,12 @@ span.weee {
 }
 
 @media only screen and (max-width: 770px) {
-  /* line 1429, ../scss/core/_common.scss */
+  /* line 1439, ../scss/core/_common.scss */
   body .product-img-box .product-image:hover {
     border-color: #EDEDED;
   }
 }
-/* line 1434, ../scss/core/_common.scss */
+/* line 1444, ../scss/core/_common.scss */
 .no-touch .product-image:hover {
   border-color: #3399CC;
 }
@@ -2336,16 +2398,16 @@ span.weee {
 /* -------------------------------------------- *
  * Ratings
  */
-/* line 1442, ../scss/core/_common.scss */
+/* line 1452, ../scss/core/_common.scss */
 .ratings {
   margin: 7px 0;
 }
-/* line 1445, ../scss/core/_common.scss */
+/* line 1455, ../scss/core/_common.scss */
 .ratings .rating-box,
 .ratings .rating-links {
   margin: 5px 0;
 }
-/* line 1450, ../scss/core/_common.scss */
+/* line 1460, ../scss/core/_common.scss */
 .ratings .rating-box {
   width: 65px;
   height: 13px;
@@ -2353,19 +2415,19 @@ span.weee {
   background-position: 0 -615px;
   overflow: hidden;
 }
-/* line 1458, ../scss/core/_common.scss */
+/* line 1468, ../scss/core/_common.scss */
 .ratings .rating-box .rating {
   float: left;
   height: 13px;
   background-repeat: repeat-x;
   background-position: 0 -600px;
 }
-/* line 1465, ../scss/core/_common.scss */
+/* line 1475, ../scss/core/_common.scss */
 .ratings .amount {
   display: block;
   margin: 5px auto;
 }
-/* line 1471, ../scss/core/_common.scss */
+/* line 1481, ../scss/core/_common.scss */
 .ratings .rating-links .separator {
   margin: 0 3px;
 }
@@ -2373,34 +2435,34 @@ span.weee {
 /* -------------------------------------------- *
  * Standard Formatted Text Block
  */
-/* line 1481, ../scss/core/_common.scss */
+/* line 1491, ../scss/core/_common.scss */
 .std p {
   margin: 0 0 1.5em;
 }
 
-/* line 1485, ../scss/core/_common.scss */
+/* line 1495, ../scss/core/_common.scss */
 .std ol {
   list-style: decimal outside;
   margin-bottom: 1.5em;
 }
 
-/* line 1490, ../scss/core/_common.scss */
+/* line 1500, ../scss/core/_common.scss */
 .std ol li {
   margin-left: 2em;
 }
 
-/* line 1494, ../scss/core/_common.scss */
+/* line 1504, ../scss/core/_common.scss */
 .std ul {
   list-style: disc outside;
   margin-bottom: 1.5em;
 }
 
-/* line 1499, ../scss/core/_common.scss */
+/* line 1509, ../scss/core/_common.scss */
 .std ul li {
   margin-left: 2em;
 }
 
-/* line 1503, ../scss/core/_common.scss */
+/* line 1513, ../scss/core/_common.scss */
 .std .note {
   color: #A0A0A0;
   font-size: 13px;
@@ -2409,7 +2471,7 @@ span.weee {
 /* -------------------------------------------- *
  * Tabs
  */
-/* line 1512, ../scss/core/_common.scss */
+/* line 1522, ../scss/core/_common.scss */
 .tabs {
   margin-bottom: 20px;
   background: #FFFFFF;
@@ -2418,7 +2480,7 @@ span.weee {
 /* -------------------------------------------- *
  * Toolbar
  */
-/* line 1521, ../scss/core/_common.scss */
+/* line 1531, ../scss/core/_common.scss */
 .toolbar {
   margin-top: 10px;
   margin-bottom: 15px;
@@ -2427,24 +2489,24 @@ span.weee {
   background: #F4F4F4;
   padding: 5px 10px 0px 10px;
 }
-/* line 1529, ../scss/core/_common.scss */
+/* line 1539, ../scss/core/_common.scss */
 .toolbar:after {
   content: '';
   display: table;
   clear: both;
 }
 
-/* line 1534, ../scss/core/_common.scss */
+/* line 1544, ../scss/core/_common.scss */
 .pager-no-toolbar {
   margin-bottom: 10px;
 }
 
-/* line 1539, ../scss/core/_common.scss */
+/* line 1549, ../scss/core/_common.scss */
 .pager-no-toolbar ~ .pager-no-toolbar {
   margin-top: 10px;
 }
 
-/* line 1543, ../scss/core/_common.scss */
+/* line 1553, ../scss/core/_common.scss */
 .toolbar,
 .pager {
   font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
@@ -2453,142 +2515,142 @@ span.weee {
   font-size: 12px;
 }
 
-/* line 1551, ../scss/core/_common.scss */
+/* line 1561, ../scss/core/_common.scss */
 .toolbar label,
 .pager-no-toolbar label {
   font-weight: normal;
   text-transform: uppercase;
 }
 
-/* line 1559, ../scss/core/_common.scss */
+/* line 1569, ../scss/core/_common.scss */
 .sorter {
   float: left;
   margin-bottom: 5px;
 }
-/* line 1563, ../scss/core/_common.scss */
+/* line 1573, ../scss/core/_common.scss */
 .sorter label {
   float: left;
   margin-right: 5px;
 }
-/* line 1567, ../scss/core/_common.scss */
+/* line 1577, ../scss/core/_common.scss */
 .sorter label:after {
   content: ':';
 }
 
-/* line 1573, ../scss/core/_common.scss */
+/* line 1583, ../scss/core/_common.scss */
 .sorter > .sort-by {
   float: left;
   margin-right: 5px;
   height: 30px;
 }
-/* line 1578, ../scss/core/_common.scss */
+/* line 1588, ../scss/core/_common.scss */
 .sorter > .sort-by .sort-by-switcher {
   width: 30px;
   height: 30px;
   display: inline-block;
 }
-/* line 1584, ../scss/core/_common.scss */
+/* line 1594, ../scss/core/_common.scss */
 .sorter > .sort-by .sort-by-switcher--asc {
   background-position: 4px -542px;
 }
-/* line 1586, ../scss/core/_common.scss */
+/* line 1596, ../scss/core/_common.scss */
 .sorter > .sort-by .sort-by-switcher--asc:hover {
   background-position: -46px -542px;
 }
-/* line 1590, ../scss/core/_common.scss */
+/* line 1600, ../scss/core/_common.scss */
 .sorter > .sort-by .sort-by-switcher--desc {
   background-position: 4px -567px;
 }
-/* line 1592, ../scss/core/_common.scss */
+/* line 1602, ../scss/core/_common.scss */
 .sorter > .sort-by .sort-by-switcher--desc:hover {
   background-position: -46px -567px;
 }
 
-/* line 1598, ../scss/core/_common.scss */
+/* line 1608, ../scss/core/_common.scss */
 .sorter > .view-mode {
   float: right;
 }
-/* line 1601, ../scss/core/_common.scss */
+/* line 1611, ../scss/core/_common.scss */
 .sorter > .view-mode .grid,
 .sorter > .view-mode .list {
   float: left;
   width: 30px;
   height: 30px;
 }
-/* line 1608, ../scss/core/_common.scss */
+/* line 1618, ../scss/core/_common.scss */
 .sorter > .view-mode .grid {
   margin-right: 5px;
   background-position: 8px -492px;
 }
-/* line 1612, ../scss/core/_common.scss */
+/* line 1622, ../scss/core/_common.scss */
 .sorter > .view-mode strong.grid,
 .sorter > .view-mode a.grid:hover {
   background-position: -42px -492px;
 }
-/* line 1616, ../scss/core/_common.scss */
+/* line 1626, ../scss/core/_common.scss */
 .sorter > .view-mode .list {
   background-position: 11px -517px;
 }
-/* line 1620, ../scss/core/_common.scss */
+/* line 1630, ../scss/core/_common.scss */
 .sorter > .view-mode strong.list,
 .sorter > .view-mode a.list:hover {
   background-position: -39px -517px;
 }
 
-/* line 1626, ../scss/core/_common.scss */
+/* line 1636, ../scss/core/_common.scss */
 .pager {
   float: right;
   overflow: hidden;
 }
-/* line 1630, ../scss/core/_common.scss */
+/* line 1640, ../scss/core/_common.scss */
 .pager > .count-container {
   float: left;
 }
-/* line 1634, ../scss/core/_common.scss */
+/* line 1644, ../scss/core/_common.scss */
 .pager .amount {
   float: left;
   font-family: "OpenGost Type B", Arial, sans-serif;
   white-space: nowrap;
   margin: 0 15px 0 0;
 }
-/* line 1641, ../scss/core/_common.scss */
+/* line 1651, ../scss/core/_common.scss */
 .pager .limiter {
   float: left;
   height: 30px;
   line-height: 30px;
 }
-/* line 1646, ../scss/core/_common.scss */
+/* line 1656, ../scss/core/_common.scss */
 .pager .limiter > label {
   padding-right: 5px;
 }
-/* line 1649, ../scss/core/_common.scss */
+/* line 1659, ../scss/core/_common.scss */
 .pager .limiter > label:after {
   content: ':';
 }
-/* line 1655, ../scss/core/_common.scss */
+/* line 1665, ../scss/core/_common.scss */
 .pager .amount,
 .pager .limiter,
 .pager .pages {
   margin-bottom: 5px;
 }
 
-/* line 1663, ../scss/core/_common.scss */
+/* line 1673, ../scss/core/_common.scss */
 .pages {
   float: right;
   overflow: hidden;
   margin-left: 15px;
 }
-/* line 1668, ../scss/core/_common.scss */
+/* line 1678, ../scss/core/_common.scss */
 .pages strong {
   display: none;
 }
 
-/* line 1673, ../scss/core/_common.scss */
+/* line 1683, ../scss/core/_common.scss */
 .pages li {
   float: left;
 }
 
-/* line 1677, ../scss/core/_common.scss */
+/* line 1687, ../scss/core/_common.scss */
 .pages a,
 .pages .current {
   display: inline-block;
@@ -2606,7 +2668,7 @@ span.weee {
   font-family: "OpenGost Type B", Arial, sans-serif;
 }
 
-/* line 1694, ../scss/core/_common.scss */
+/* line 1704, ../scss/core/_common.scss */
 .pages .current,
 .pages .current:hover {
   color: #636363;
@@ -2616,7 +2678,7 @@ span.weee {
   cursor: default;
 }
 
-/* line 1703, ../scss/core/_common.scss */
+/* line 1713, ../scss/core/_common.scss */
 .pages .next,
 .pages .previous {
   font: 0/0 a;
@@ -2625,13 +2687,13 @@ span.weee {
   background-color: transparent;
   position: relative;
 }
-/* line 1712, ../scss/core/_common.scss */
+/* line 1722, ../scss/core/_common.scss */
 .pages .next:hover,
 .pages .previous:hover {
   border: 1px solid #712c6b;
 }
 
-/* line 1718, ../scss/core/_common.scss */
+/* line 1728, ../scss/core/_common.scss */
 .pages .next:before {
   content: '';
   position: absolute;
@@ -2647,7 +2709,7 @@ span.weee {
   left: 50%;
   margin-left: -2px;
 }
-/* line 1725, ../scss/core/_common.scss */
+/* line 1735, ../scss/core/_common.scss */
 .pages .next:hover:before {
   content: '';
   position: absolute;
@@ -2660,7 +2722,7 @@ span.weee {
   border-right: none;
 }
 
-/* line 1731, ../scss/core/_common.scss */
+/* line 1741, ../scss/core/_common.scss */
 .pages .previous:before {
   content: '';
   position: absolute;
@@ -2676,7 +2738,7 @@ span.weee {
   left: 50%;
   margin-left: -2px;
 }
-/* line 1738, ../scss/core/_common.scss */
+/* line 1748, ../scss/core/_common.scss */
 .pages .previous:hover:before {
   content: '';
   position: absolute;
@@ -2690,44 +2752,44 @@ span.weee {
 }
 
 @media only screen and (max-width: 479px) {
-  /* line 1746, ../scss/core/_common.scss */
+  /* line 1756, ../scss/core/_common.scss */
   .pager .amount--has-pages {
     display: none;
   }
 
-  /* line 1750, ../scss/core/_common.scss */
+  /* line 1760, ../scss/core/_common.scss */
   .pages {
     float: left;
   }
 
-  /* line 1755, ../scss/core/_common.scss */
+  /* line 1765, ../scss/core/_common.scss */
   .limiter label {
     display: none;
   }
 }
 @media only screen and (max-width: 770px) {
-  /* line 1763, ../scss/core/_common.scss */
+  /* line 1773, ../scss/core/_common.scss */
   .col1-layout .sorter,
   .col1-layout .pager {
     width: 100%;
   }
-  /* line 1768, ../scss/core/_common.scss */
+  /* line 1778, ../scss/core/_common.scss */
   .col1-layout .pager {
     float: left;
     clear: both;
   }
-  /* line 1772, ../scss/core/_common.scss */
+  /* line 1782, ../scss/core/_common.scss */
   .col1-layout .pager .pages {
     float: left;
     margin-left: 0;
   }
-  /* line 1777, ../scss/core/_common.scss */
+  /* line 1787, ../scss/core/_common.scss */
   .col1-layout .pager .count-container {
     float: right;
   }
 }
 @media only screen and (max-width: 979px) {
-  /* line 1789, ../scss/core/_common.scss */
+  /* line 1799, ../scss/core/_common.scss */
   .col2-left-layout .sorter,
   .col2-left-layout .pager,
   .col2-right-layout .sorter,
@@ -2736,21 +2798,21 @@ span.weee {
   .col3-layout .pager {
     width: 100%;
   }
-  /* line 1794, ../scss/core/_common.scss */
+  /* line 1804, ../scss/core/_common.scss */
   .col2-left-layout .pager,
   .col2-right-layout .pager,
   .col3-layout .pager {
     float: left;
     clear: both;
   }
-  /* line 1798, ../scss/core/_common.scss */
+  /* line 1808, ../scss/core/_common.scss */
   .col2-left-layout .pager .pages,
   .col2-right-layout .pager .pages,
   .col3-layout .pager .pages {
     float: left;
     margin-left: 0;
   }
-  /* line 1803, ../scss/core/_common.scss */
+  /* line 1813, ../scss/core/_common.scss */
   .col2-left-layout .pager .count-container,
   .col2-right-layout .pager .count-container,
   .col3-layout .pager .count-container {
@@ -2758,7 +2820,7 @@ span.weee {
   }
 }
 @media only screen and (max-width: 1279px) {
-  /* line 1812, ../scss/core/_common.scss */
+  /* line 1822, ../scss/core/_common.scss */
   .toolbar .view-mode > label {
     display: none;
   }
@@ -2766,14 +2828,14 @@ span.weee {
 /* ============================================ *
  * Tax - Full Tax Summary
  * ============================================ */
-/* line 1824, ../scss/core/_common.scss */
+/* line 1834, ../scss/core/_common.scss */
 #checkout-review-table .summary-collapse,
 #shopping-cart-totals-table .summary-collapse,
 body.customer-account .data-table .summary-collapse {
   position: relative;
   cursor: pointer;
 }
-/* line 1828, ../scss/core/_common.scss */
+/* line 1838, ../scss/core/_common.scss */
 #checkout-review-table .summary-collapse:before,
 #shopping-cart-totals-table .summary-collapse:before,
 body.customer-account .data-table .summary-collapse:before {
@@ -2790,7 +2852,7 @@ body.customer-account .data-table .summary-collapse:before {
   display: inline-block;
   margin-right: 5px;
 }
-/* line 1834, ../scss/core/_common.scss */
+/* line 1844, ../scss/core/_common.scss */
 #checkout-review-table .summary-collapse:hover:before,
 #shopping-cart-totals-table .summary-collapse:hover:before,
 body.customer-account .data-table .summary-collapse:hover:before {
@@ -2807,7 +2869,7 @@ body.customer-account .data-table .summary-collapse:hover:before {
   display: inline-block;
   margin-right: 5px;
 }
-/* line 1844, ../scss/core/_common.scss */
+/* line 1854, ../scss/core/_common.scss */
 #checkout-review-table .show-details .summary-collapse:before,
 #shopping-cart-totals-table .show-details .summary-collapse:before,
 body.customer-account .data-table .show-details .summary-collapse:before {
@@ -2824,7 +2886,7 @@ body.customer-account .data-table .show-details .summary-collapse:before {
   display: inline-block;
   margin-right: 5px;
 }
-/* line 1850, ../scss/core/_common.scss */
+/* line 1860, ../scss/core/_common.scss */
 #checkout-review-table .show-details .summary-collapse:hover:before,
 #shopping-cart-totals-table .show-details .summary-collapse:hover:before,
 body.customer-account .data-table .show-details .summary-collapse:hover:before {
@@ -2842,7 +2904,7 @@ body.customer-account .data-table .show-details .summary-collapse:hover:before {
   margin-right: 5px;
 }
 
-/* line 1862, ../scss/core/_common.scss */
+/* line 1872, ../scss/core/_common.scss */
 #shopping-cart-totals-table tfoot td .summary-collapse:before, #shopping-cart-totals-table tfoot td .summary-collapse:hover:before {
   margin-bottom: 5px;
 }
@@ -2850,29 +2912,29 @@ body.customer-account .data-table .show-details .summary-collapse:hover:before {
 /* ============================================ *
  * Magento Helpers
  * ============================================ */
-/* line 1872, ../scss/core/_common.scss */
+/* line 1882, ../scss/core/_common.scss */
 .a-center {
   text-align: center;
 }
 
-/* line 1876, ../scss/core/_common.scss */
+/* line 1886, ../scss/core/_common.scss */
 .a-right,
 .align-right {
   text-align: right;
 }
 
-/* line 1881, ../scss/core/_common.scss */
+/* line 1891, ../scss/core/_common.scss */
 .no-display {
   display: none !important;
 }
 
-/* line 1885, ../scss/core/_common.scss */
+/* line 1895, ../scss/core/_common.scss */
 .nobr,
 .nowrap {
   white-space: nowrap;
 }
 
-/* line 1890, ../scss/core/_common.scss */
+/* line 1900, ../scss/core/_common.scss */
 .width-full {
   width: 100%;
 }
@@ -2880,7 +2942,7 @@ body.customer-account .data-table .show-details .summary-collapse:hover:before {
 /* ============================================ *
  * Custom Helpers
  * ============================================ */
-/* line 1898, ../scss/core/_common.scss */
+/* line 1908, ../scss/core/_common.scss */
 .hidden {
   display: none;
 }
@@ -2888,12 +2950,12 @@ body.customer-account .data-table .show-details .summary-collapse:hover:before {
 /* ============================================ *
  * Print Styles
  * ============================================ */
-/* line 1906, ../scss/core/_common.scss */
+/* line 1916, ../scss/core/_common.scss */
 .page-print .print-head {
   margin: 0 0 15px;
 }
 
-/* line 1910, ../scss/core/_common.scss */
+/* line 1920, ../scss/core/_common.scss */
 .page-print .print-head .logo {
   float: none;
   max-height: 50px;
@@ -3728,12 +3790,12 @@ body {
 
 /* line 83, ../scss/layout/_header.scss */
 .header-link--return {
-  background-position: 0 -269px;
+  background-position: 0 -376px;
 }
 
 /* line 87, ../scss/layout/_header.scss */
 .header-link--support {
-  background-position: 0 -298px;
+  background-position: 0 -651px;
 }
 
 /* line 93, ../scss/layout/_header.scss */
@@ -3777,7 +3839,7 @@ body {
   z-index: 10;
   top: 14px;
   right: 3px;
-  background-position: 0 -89px;
+  background-position: 0 -116px;
 }
 
 /* line 133, ../scss/layout/_header.scss */
@@ -3790,17 +3852,17 @@ body {
 
 /* line 140, ../scss/layout/_header.scss */
 .lang-icon--default {
-  background-position: 0 -106px;
+  background-position: 0 -133px;
 }
 
 /* line 144, ../scss/layout/_header.scss */
 .lang-icon--german {
-  background-position: 0 -57px;
+  background-position: 0 -84px;
 }
 
 /* line 148, ../scss/layout/_header.scss */
 .lang-icon--french {
-  background-position: 0 -138px;
+  background-position: 0 -165px;
 }
 
 /* line 152, ../scss/layout/_header.scss */
@@ -4498,7 +4560,7 @@ a.skip-link {
   height: 18px;
   margin-top: -9px;
   margin-left: -9px;
-  background-position: 0 -202px;
+  background-position: 0 -229px;
 }
 
 /* line 125, ../scss/layout/_header-search.scss */
@@ -4607,7 +4669,7 @@ a.skip-link {
   left: 4px;
   width: 44px;
   height: 29px;
-  background-position: 0 -230px;
+  background-position: 0 -297px;
   display: none;
 }
 /* line 57, ../scss/layout/_header-cart.scss */
@@ -5011,27 +5073,18 @@ a.skip-link {
 .footer .currency-switcher {
   display: none;
 }
-/* line 191, ../scss/layout/_footer.scss */
-.footer address {
-  border-top: 1px solid #CCCCCC;
-  text-align: center;
-  width: 100%;
-  font-size: 11px;
-  margin-top: 30px;
-  padding: 30px 0;
-}
 @media only screen and (max-width: 1199px) {
-  /* line 204, ../scss/layout/_footer.scss */
+  /* line 195, ../scss/layout/_footer.scss */
   .footer .links {
     width: 22.65625%;
     padding-right: 0;
     margin-right: 3.125%;
   }
-  /* line 210, ../scss/layout/_footer.scss */
+  /* line 201, ../scss/layout/_footer.scss */
   .footer .links:nth-child(4) {
     margin-right: 0;
   }
-  /* line 214, ../scss/layout/_footer.scss */
+  /* line 205, ../scss/layout/_footer.scss */
   .footer .block-subscribe {
     clear: both;
     float: none;
@@ -5039,28 +5092,221 @@ a.skip-link {
   }
 }
 @media only screen and (max-width: 770px) {
-  /* line 222, ../scss/layout/_footer.scss */
+  /* line 213, ../scss/layout/_footer.scss */
   .footer .form-language,
   .footer .currency-switcher {
     display: block;
   }
 }
 @media only screen and (max-width: 599px) {
-  /* line 232, ../scss/layout/_footer.scss */
+  /* line 223, ../scss/layout/_footer.scss */
   .footer .links {
     width: 48.4375%;
     margin-right: 0;
   }
-  /* line 237, ../scss/layout/_footer.scss */
+  /* line 228, ../scss/layout/_footer.scss */
   .footer .links:nth-child(odd) {
     margin-right: 3.125%;
     clear: both;
   }
-  /* line 242, ../scss/layout/_footer.scss */
+  /* line 233, ../scss/layout/_footer.scss */
   .footer .block-subscribe {
     clear: both;
     float: left;
     width: 100%;
+  }
+}
+
+/* line 242, ../scss/layout/_footer.scss */
+.footer-smallContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 750px;
+}
+@media only screen and (max-width: 770px) {
+  /* line 242, ../scss/layout/_footer.scss */
+  .footer-smallContainer {
+    padding: 0 20px;
+  }
+}
+
+/* line 256, ../scss/layout/_footer.scss */
+.footer-copyright {
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 0;
+  background: #712c6b;
+  color: #b896b5;
+}
+/* line 262, ../scss/layout/_footer.scss */
+.footer-copyright a {
+  color: #b896b5;
+}
+
+/* line 269, ../scss/layout/_footer.scss */
+.footer-extra {
+  background: #deddde;
+  color: #000000;
+  padding: 6px 0;
+  font-size: 16px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+/* line 279, ../scss/layout/_footer.scss */
+.footer-extra-block {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+/* line 283, ../scss/layout/_footer.scss */
+.footer-extra-block label {
+  margin-right: 5px;
+}
+@media only screen and (max-width: 770px) {
+  /* line 279, ../scss/layout/_footer.scss */
+  .footer-extra-block {
+    display: none;
+  }
+}
+
+/* line 291, ../scss/layout/_footer.scss */
+.footer-payment {
+  width: 43px;
+  height: 30px;
+  float: left;
+  margin-right: 5px;
+}
+/* line 297, ../scss/layout/_footer.scss */
+.footer-payment.payment--visa {
+  background-position: 0 -677px;
+}
+/* line 301, ../scss/layout/_footer.scss */
+.footer-payment.payment--mastercard {
+  background-position: 0 -257px;
+}
+/* line 305, ../scss/layout/_footer.scss */
+.footer-payment.payment--paypal {
+  background-position: 0 -336px;
+}
+
+/* line 311, ../scss/layout/_footer.scss */
+.footer-dhl {
+  float: left;
+  width: 112px;
+  height: 17px;
+  background-position: 0 -25px;
+}
+
+/* line 320, ../scss/layout/_footer.scss */
+#newsletter {
+  border: none;
+  font-style: italic;
+  width: auto;
+}
+
+/* line 326, ../scss/layout/_footer.scss */
+.footer-extra .block-content {
+  margin: 0;
+  display: flex;
+  max-width: 300px;
+}
+/* line 330, ../scss/layout/_footer.scss */
+.footer-extra .block-content .input-box {
+  padding: 0;
+}
+/* line 333, ../scss/layout/_footer.scss */
+.footer-extra .block-content .actions {
+  margin: 0 0 0 5px;
+}
+/* line 336, ../scss/layout/_footer.scss */
+.footer-extra .block-content .actions .button {
+  padding: 6px 15px;
+  background: #712c6b;
+  font-family: "OpenGost Type B", Arial, sans-serif;
+}
+
+/* line 343, ../scss/layout/_footer.scss */
+.footer-extra .block-subscribe {
+  margin: 0;
+}
+
+/* line 349, ../scss/layout/_footer.scss */
+.footer-nav {
+  padding: 20px 0;
+  max-width: 1200px;
+  border-top: 2px solid #deddde;
+  border-bottom: 2px solid #deddde;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 770px) {
+  /* line 349, ../scss/layout/_footer.scss */
+  .footer-nav {
+    display: none;
+  }
+}
+
+/* line 360, ../scss/layout/_footer.scss */
+.footer-nav-title {
+  text-transform: uppercase;
+  color: #712c6b;
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* line 368, ../scss/layout/_footer.scss */
+.footer-nav-item {
+  display: block;
+  font-size: 18px;
+  line-height: 1.25;
+  color: #636363;
+}
+
+/* line 377, ../scss/layout/_footer.scss */
+.footer-social-link {
+  display: block;
+  width: 33px;
+  height: 32px;
+}
+/* line 381, ../scss/layout/_footer.scss */
+.footer-social-link.social--fb {
+  background-position: 0 -405px;
+}
+/* line 384, ../scss/layout/_footer.scss */
+.footer-social-link.social--vk {
+  background-position: 0 -610px;
+}
+/* line 387, ../scss/layout/_footer.scss */
+.footer-social-link.social--th {
+  background-position: 0 -528px;
+}
+/* line 390, ../scss/layout/_footer.scss */
+.footer-social-link.social--in {
+  background-position: 0 -487px;
+}
+/* line 393, ../scss/layout/_footer.scss */
+.footer-social-link.social--tw {
+  background-position: 0 -569px;
+}
+/* line 396, ../scss/layout/_footer.scss */
+.footer-social-link.social--gp {
+  background-position: 0 -446px;
+}
+
+/* line 402, ../scss/layout/_footer.scss */
+.footer-social {
+  padding: 10px 0;
+  justify-content: space-around !important;
+}
+@media only screen and (max-width: 770px) {
+  /* line 402, ../scss/layout/_footer.scss */
+  .footer-social {
+    border-top: 2px solid #deddde;
   }
 }
 

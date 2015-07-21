@@ -24,9 +24,70 @@
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
 ?>
-<div class="footer-container">
-    <div class="footer">
-        <?php echo $this->getChildHtml() ?>
-        <address class="copyright"><?php echo $this->getCopyright() ?></address>
-    </div>
+
+<footer id="footer">
+	<div class="footer-nav">
+	<div class="footer-smallContainer">
+		<div class="footer-nav-col">
+			<div class="footer-nav-title">Menu col title</div>
+			<div class="footer-nav-list">
+      	<a class="footer-nav-item" href="#">Footer menu item</a>
+				<a class="footer-nav-item" href="#">Footer menu item</a>
+				<a class="footer-nav-item" href="#">Footer menu item</a>
+				<a class="footer-nav-item" href="#">Footer menu item</a>
+			</div>
+		</div>
+		<div class="footer-nav-col">
+			<div class="footer-nav-title">Menu col title</div>
+			<div class="footer-nav-list">
+      	<a class="footer-nav-item" href="#">Footer menu item</a>
+				<a class="footer-nav-item" href="#">Footer menu item</a>
+				<a class="footer-nav-item" href="#">Footer menu item</a>
+				<a class="footer-nav-item" href="#">Footer menu item</a>
+			</div>
+		</div>
+		<div class="footer-nav-col">
+			<div class="footer-nav-title">Menu col title</div>
+			<div class="footer-nav-list">
+      	<a class="footer-nav-item" href="#">Footer menu item</a>
+				<a class="footer-nav-item" href="#">Footer menu item</a>
+				<a class="footer-nav-item" href="#">Footer menu item</a>
+				<a class="footer-nav-item" href="#">Footer menu item</a>
+			</div>
+		</div>
+		<div class="footer-nav-col">
+			<div class="footer-nav-title">Menu col title</div>
+			<div class="footer-nav-list">
+      	<a class="footer-nav-item" href="#">Footer menu item</a>
+				<a class="footer-nav-item" href="#">Footer menu item</a>
+				<a class="footer-nav-item" href="#">Footer menu item</a>
+				<a class="footer-nav-item" href="#">Footer menu item</a>
+			</div>
+		</div>
+		</div>
+	</div>
+<div class="footer-social footer-smallContainer">
+ 	<a href="#" class="footer-social-link social--fb"></a>
+  <a href="#" class="footer-social-link social--tw"></a>
+	<a href="#" class="footer-social-link social--in"></a>
+	<a href="#" class="footer-social-link social--vk"></a>
+	<a href="#" class="footer-social-link social--gp"></a>
+	<a href="#" class="footer-social-link social--th"></a>
 </div>
+<div class="footer-extra">
+<div class="footer-smallContainer">
+	<div class="footer-extra-block">
+		<label><?php echo $this->__('Payment systems:')?></label>
+		<div class="footer-payment payment--paypal"></div>
+		<div class="footer-payment payment--visa"></div>
+		<div class="footer-payment payment--mastercard"></div>
+	</div>
+	<div class="footer-extra-block">
+		<label><?php echo $this->__('Delivery:')?></label>
+		<div class="footer-dhl"></div>
+	</div>
+	<?php echo $this->getChildHtml('newsletter') ?>
+</div>
+</div>
+<address class="footer-copyright"><?php echo $this->getCopyright() ?></address>
+</footer>

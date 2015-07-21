@@ -41,6 +41,16 @@
     width: device-width;
 }
 
+::-moz-selection {
+    color: $c-white;
+    background: $c-action;
+}
+
+::selection {
+    color: $c-white;
+    background: $c-action;
+}
+
 // Prevent 300ms delay in IE on touch devices
 a, button {
     -ms-touch-action: manipulation;
