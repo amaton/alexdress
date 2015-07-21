@@ -37,8 +37,6 @@ $j(document).ready(function () {
             speed: 600,
             pauseOnHover: true,
             swipe: true,
-            prev: '.slideshow-prev',
-            next: '.slideshow-next',
             fx: 'scrollHorz'
         });
 });

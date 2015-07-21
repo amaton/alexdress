@@ -27,12 +27,23 @@
  * Slideshow
  * ============================================ */
 
+
+#home-top{
+  margin: 0 0 $gap;
+  display:flex;
+	flex-flow:row nowrap;
+}
+
+.home-special{
+	display:block;
+	width:25%;
+}
+
 .slideshow-container {
     position: relative;
     display: block;
     width: 75%;
-    margin: $gap 0;
-
+    padding-right:20px;
     .slideshow {
         width: 100%;
         padding: 0;
