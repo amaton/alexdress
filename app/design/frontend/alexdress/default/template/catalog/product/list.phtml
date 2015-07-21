@@ -131,18 +131,6 @@
                 </a>
                 <div class="product-info">
                     <h2 class="product-name"><a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($_product->getName(), null, true) ?>"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></a></h2>
-                    <?php
-                    // Provides extra blocks on which to hang some features for products in the list
-                    // Features providing UI elements targeting this block will display directly below the product name
-                    if ($this->getChild('name.after')) {
-                        $_nameAfterChildren = $this->getChild('name.after')->getSortedChildren();
-                        foreach ($_nameAfterChildren as $_nameAfterChildName) {
-                            $_nameAfterChild = $this->getChild('name.after')->getChild($_nameAfterChildName);
-                            $_nameAfterChild->setProduct($_product);
-                            echo $_nameAfterChild->toHtml();
-                        }
-                    }
-                    ?>
                     <?php echo $this->getPriceHtml($_product, true) ?>
                 </div>
             </li>
