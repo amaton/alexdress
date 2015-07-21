@@ -335,7 +335,7 @@ body .promos > li {
 .cms-index-index h2.subtitle {
   padding: 6px 0;
   text-align: center;
-  color: #3399CC;
+  color: #712c6b;
   font-weight: 600;
   border-bottom: 1px solid #CCCCCC;
   border-top: 1px solid #CCCCCC;
@@ -409,7 +409,7 @@ body .promos > li {
 
 /* line 55, ../scss/content/_category.scss */
 .catblocks li:hover {
-  border-color: #3399CC;
+  border-color: #712c6b;
 }
 
 @media only screen and (max-width: 770px) {
