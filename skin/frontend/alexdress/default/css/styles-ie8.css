@@ -8576,20 +8576,20 @@ div.paypal-logo span > img {
   margin: 0 0 20px;
   display: flex;
   flex-flow: row nowrap;
+  justify-content: space-between;
 }
 
-/* line 37, ../scss/module/_slideshow.scss */
+/* line 38, ../scss/module/_slideshow.scss */
 .home-special {
   display: block;
-  width: 25%;
+  width: 23.5%;
 }
 
-/* line 42, ../scss/module/_slideshow.scss */
+/* line 43, ../scss/module/_slideshow.scss */
 .slideshow-container {
   position: relative;
   display: block;
-  width: 75%;
-  padding-right: 20px;
+  width: 74.5%;
 }
 /* line 47, ../scss/module/_slideshow.scss */
 .slideshow-container .slideshow {
@@ -9132,7 +9132,7 @@ div.paypal-logo span > img {
 .header-minicart .subtotal {
   background-color: #deddde;
   text-align: right;
-  font-size: 16px;
+  font-size: 18px;
   padding: 8px 10px;
 }
 /* line 150, ../scss/module/_checkout-cart-minicart.scss */

@@ -206,3 +206,19 @@ body .promos > li {
 .cms-index-noroute h2.subtitle {
     display: none;
 }
+
+.home-widgets-top {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+		margin:$gap 0;		
+}
+
+.home-widget-top {
+    display: block;
+    width: 23.5%;
+		border:1px solid $c-lightgray;
+		img{
+      width:100%;
+		}
+}
