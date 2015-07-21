@@ -1189,16 +1189,6 @@ a.button:hover {
     color: $c-text-gray;
 }
 
-.price-box .price {
-    color: $c-text-primary;
-    font-size: $f-size-xl;
-}
-
-.price-box .price,
-.price {
-    font-family: $f-stack-sans;
-}
-
 .price-box .price-label {
     color: $c-text-gray;
     white-space: nowrap;
