@@ -69,11 +69,6 @@ a:hover {
     text-decoration: underline;
 }
 
-a:focus {
-    outline-color: $c-link-active;
-    color: darken($c-action, 30%);
-}
-
 ol,
 ul {
     list-style: none;

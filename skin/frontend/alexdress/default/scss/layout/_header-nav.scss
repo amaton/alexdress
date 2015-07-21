@@ -127,7 +127,11 @@ $nav-primary-height: 30px;
     }
 
     li.level1 a {
-        border-bottom: 1px solid $c-module-border;
+        color:$c-text;
+				font-size:18px;
+				line-height:1.5;
+				white-space:nowrap;
+				padding-right:20px;
     }
 }
 
@@ -217,10 +221,6 @@ $nav-primary-height: 30px;
             border-bottom: none;
         }
 
-        a:hover,
-        li:hover > a {
-            color: $c-action;
-        }
 
         .menu-active {
             z-index: 200;
@@ -228,14 +228,14 @@ $nav-primary-height: 30px;
 
         /* Default styles for 1+ drop-down menus */
         li.level0 ul {
-            @include menu;
+            border:1px solid $c-action;
+						border-top:none;
+						background:$c-white;
             position: absolute;
             left: 0;
-            top: $nav-primary-height; /* Height of ".nav-primary a.level0" */
+            top: 100%;
             z-index: 10;
-            width: 250px;
-            padding-left: $box-spacing;
-            padding-right: $box-spacing;
+            padding:10px;
             display: none; /* Hide until displayed. */
         }
 
@@ -262,6 +262,18 @@ $nav-primary-height: 30px;
                 top: 20px;
             }
         }
+				li.level0.parent.menu-active:after{
+          content:"";
+					position:absolute;
+					width:0;
+					height:0;
+					top:100%;
+					left:50%;
+					margin-left:-18px;
+					border:10px solid transparent;
+          border-top-color:$c-action;
+					z-index:10;
+				}
 
         /* Level 1+ */
         li.level0 li.parent > a {
