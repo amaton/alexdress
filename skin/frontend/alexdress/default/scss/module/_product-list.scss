@@ -506,6 +506,80 @@ $productsGridActionHeight: 85px;
             display: none;
         }
     }
+
+
+// Rewrite mixin rules accordind to custom design on desktop
+
+.block-layered-nav{
+ .block-content{
+ margin:0;
+ 	&>dl{
+	 	&>dt{
+  		border:none;
+			background:$c-highlight;
+			padding:5px 10px;
+			color:$c-action;
+			font-weight:bold;
+			line-height:1;
+		}
+	 	&>dd{
+  		border:none;
+			padding: 10px 0;
+		}
+	}
+ }
+}
+
+.block-layered-nav dl dd ol > li > span, .block-layered-nav dl dd ol > li > a{
+  padding: 2px 20px;
+	color:$c-text;
+	font-size: 18px;
+	&:hover{
+    background:$c-lightgray;
+		text-decoration:none;
+	}
+	&.has-image{
+
+	}
+}
+
+.block-content .configurable-swatch-list{
+  margin:0;
+}
+
+.block-content #narrow-by-list dd .configurable-swatch-list li{
+	margin:0;
+  width:auto;
+}
+
+.block-content #narrow-by-list dd .swatch-link.has-image{
+  float:left;
+	padding:3px;
+	margin:0;
+  border-radius:0;
+	&:hover{
+		background:$c-highlight;
+	}
+}
+
+.block-content #narrow-by-list dd .swatch-label{
+  margin:0;
+	border:none;
+	border-radius:0;
+	line-height:1;
+}
+
+.block-content #narrow-by-list dd .swatch-link{
+  margin:0;
+}
+
+.block-content #narrow-by-list dd .swatch-label img{
+  border-radius:0;
+	border:none;
+	width:100%;
+	height:100%;
+}
+
 }
 
 @include bp(max-width, $bp-medium) {
@@ -573,6 +647,7 @@ $productsGridActionHeight: 85px;
             background: $c-module-background-hover;
         }
     }
+
 }
 
 .block-layered-nav .currently {

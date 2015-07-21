@@ -769,7 +769,7 @@ a.button:hover {
 
 .col-left {
     float: left;
-    width: percentage(240px/960px);
+    width: 20%;
     padding-left: 0; /* Remove the 15px padding */
     clear: left;
 
@@ -790,7 +790,7 @@ a.button:hover {
 
 .col-main {
     float: left;
-    width: percentage(720px/960px);
+    width: 80%;
 }
 
 .col1-layout {

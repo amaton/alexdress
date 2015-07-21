@@ -1393,7 +1393,7 @@ a.button:hover {
 .main-container,
 .footer-container {
   position: relative;
-  max-width: 1260px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 15px;
 }
@@ -1437,7 +1437,7 @@ a.button:hover {
 /* line 770, ../scss/core/_common.scss */
 .col-left {
   float: left;
-  width: 25%;
+  width: 20%;
   padding-left: 0;
   /* Remove the 15px padding */
   clear: left;
@@ -1462,7 +1462,7 @@ a.button:hover {
 /* line 791, ../scss/core/_common.scss */
 .col-main {
   float: left;
-  width: 75%;
+  width: 80%;
 }
 
 /* line 797, ../scss/core/_common.scss */
@@ -1546,7 +1546,7 @@ a.button:hover {
  */
 /* line 953, ../scss/core/_common.scss */
 .top-container {
-  max-width: 1260px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 30px;
 }
@@ -1564,7 +1564,7 @@ a.button:hover {
 .global-site-notice .notice-inner {
   padding-left: 120px;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1040px;
   margin-left: auto;
   margin-right: auto;
   line-height: 11px;
@@ -3158,7 +3158,7 @@ body {
  * ============================================ */
 /* line 32, ../scss/layout/_header.scss */
 .page-header {
-  max-width: 1260px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 30px;
 }
@@ -3174,7 +3174,7 @@ body {
  * ============================================ */
 /* line 53, ../scss/layout/_header.scss */
 .header-language-background {
-  max-width: 1260px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 30px;
   font-size: 16px;
@@ -3545,7 +3545,7 @@ a.skip-link {
   position: absolute;
   bottom: -38px;
   left: 100%;
-  margin-left: -220px;
+  margin-left: -240px;
 }
 
 /* ============================================ *
@@ -3603,7 +3603,7 @@ a.skip-link {
   display: block;
   margin-top: 15px;
   line-height: 1;
-  max-width: 1260px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 30px;
 }
@@ -4454,7 +4454,7 @@ a.skip-link {
 /* line 349, ../scss/layout/_footer.scss */
 .footer-nav {
   padding: 20px 0;
-  max-width: 1200px;
+  max-width: 1040px;
   border-top: 2px solid #deddde;
   border-bottom: 2px solid #deddde;
   margin: 0 auto;
@@ -5206,7 +5206,82 @@ p.product-name a:hover {
   display: none;
 }
 
-/* line 579, ../scss/module/_product-list.scss */
+/* line 514, ../scss/module/_product-list.scss */
+.block-layered-nav .block-content {
+  margin: 0;
+}
+/* line 517, ../scss/module/_product-list.scss */
+.block-layered-nav .block-content > dl > dt {
+  border: none;
+  background: #b896b5;
+  padding: 5px 10px;
+  color: #712c6b;
+  font-weight: bold;
+  line-height: 1;
+}
+/* line 525, ../scss/module/_product-list.scss */
+.block-layered-nav .block-content > dl > dd {
+  border: none;
+  padding: 10px 0;
+}
+
+/* line 533, ../scss/module/_product-list.scss */
+.block-layered-nav dl dd ol > li > span, .block-layered-nav dl dd ol > li > a {
+  padding: 2px 20px;
+  color: #636363;
+  font-size: 18px;
+}
+/* line 537, ../scss/module/_product-list.scss */
+.block-layered-nav dl dd ol > li > span:hover, .block-layered-nav dl dd ol > li > a:hover {
+  background: #deddde;
+  text-decoration: none;
+}
+
+/* line 546, ../scss/module/_product-list.scss */
+.block-content .configurable-swatch-list {
+  margin: 0;
+}
+
+/* line 550, ../scss/module/_product-list.scss */
+.block-content #narrow-by-list dd .configurable-swatch-list li {
+  margin: 0;
+  width: auto;
+}
+
+/* line 555, ../scss/module/_product-list.scss */
+.block-content #narrow-by-list dd .swatch-link.has-image {
+  float: left;
+  padding: 3px;
+  margin: 0;
+  border-radius: 0;
+}
+/* line 560, ../scss/module/_product-list.scss */
+.block-content #narrow-by-list dd .swatch-link.has-image:hover {
+  background: #b896b5;
+}
+
+/* line 565, ../scss/module/_product-list.scss */
+.block-content #narrow-by-list dd .swatch-label {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  line-height: 1;
+}
+
+/* line 572, ../scss/module/_product-list.scss */
+.block-content #narrow-by-list dd .swatch-link {
+  margin: 0;
+}
+
+/* line 576, ../scss/module/_product-list.scss */
+.block-content #narrow-by-list dd .swatch-label img {
+  border-radius: 0;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 654, ../scss/module/_product-list.scss */
 .block-layered-nav .currently .block-subtitle {
   display: block;
   margin: 0;
@@ -5220,27 +5295,27 @@ p.product-name a:hover {
   text-rendering: optimizeSpeed;
   text-transform: uppercase;
 }
-/* line 584, ../scss/module/_product-list.scss */
+/* line 659, ../scss/module/_product-list.scss */
 .block-layered-nav .currently ol {
   padding-left: 10px;
   margin-bottom: 10px;
 }
-/* line 588, ../scss/module/_product-list.scss */
+/* line 663, ../scss/module/_product-list.scss */
 .block-layered-nav .currently ol li {
   margin-bottom: 5px;
 }
-/* line 591, ../scss/module/_product-list.scss */
+/* line 666, ../scss/module/_product-list.scss */
 .block-layered-nav .currently ol li .label {
   font-weight: bold;
 }
-/* line 595, ../scss/module/_product-list.scss */
+/* line 670, ../scss/module/_product-list.scss */
 .block-layered-nav .currently ol li:after {
   content: '';
   display: table;
   clear: both;
 }
 
-/* line 601, ../scss/module/_product-list.scss */
+/* line 676, ../scss/module/_product-list.scss */
 .block-layered-nav .actions {
   text-align: right;
   margin-bottom: 7px;
