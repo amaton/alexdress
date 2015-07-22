@@ -1276,7 +1276,7 @@ var ProductMediaManager = {
 $j(document).ready(function() {
     ProductMediaManager.init();
 		// Magnet header
-		var navTop=124;
+		var navTop=171;
     document.on('scroll',function(){
 	     if(window.pageYOffset>navTop){
   	      document.body.addClassName('magnetHeader');

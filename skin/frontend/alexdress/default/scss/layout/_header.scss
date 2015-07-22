@@ -314,8 +314,10 @@
 		}
 
 		.magnetHeader{
-			.page{
-        padding-top:124px;
+        padding-top:171px;
+			.global-site-notice{
+        position:fixed;
+				top:-47px;
 			}
 			#header{
         position: fixed;
