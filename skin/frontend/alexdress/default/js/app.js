@@ -1275,4 +1275,14 @@ var ProductMediaManager = {
 
 $j(document).ready(function() {
     ProductMediaManager.init();
+		// Magnet header
+		var navTop=124;
+    document.on('scroll',function(){
+	     if(window.pageYOffset>navTop){
+  	      document.body.addClassName('magnetHeader');
+				}
+				else{
+        	document.body.removeClassName('magnetHeader');
+				}
+			})
 });

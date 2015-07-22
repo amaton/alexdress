@@ -4020,11 +4020,46 @@ body {
   .skip-link.skip-account {
     display: none;
   }
+
+  /* line 317, ../scss/layout/_header.scss */
+  .magnetHeader .page {
+    padding-top: 124px;
+  }
+  /* line 320, ../scss/layout/_header.scss */
+  .magnetHeader #header {
+    position: fixed;
+    top: -124px;
+    left: 0;
+    right: 0;
+    z-index: 550;
+  }
+  /* line 327, ../scss/layout/_header.scss */
+  .magnetHeader #header-nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-top: 0;
+    z-index: 500;
+  }
+  /* line 335, ../scss/layout/_header.scss */
+  .magnetHeader .account-cart-wrapper {
+    bottom: -92px;
+    z-index: 550;
+  }
+  /* line 338, ../scss/layout/_header.scss */
+  .magnetHeader .account-cart-wrapper .skip-cart {
+    transform: scale(0.5);
+  }
+  /* line 341, ../scss/layout/_header.scss */
+  .magnetHeader .account-cart-wrapper #header-cart.skip-active {
+    margin-top: -14px;
+  }
 }
 /* ============================================ *
  * Skip Links
  * ============================================ */
-/* line 322, ../scss/layout/_header.scss */
+/* line 353, ../scss/layout/_header.scss */
 .skip-links {
   clear: both;
   overflow: hidden;
@@ -4033,7 +4068,7 @@ body {
 }
 
 @media only screen and (min-width: 771px) {
-  /* line 333, ../scss/layout/_header.scss */
+  /* line 364, ../scss/layout/_header.scss */
   .skip-links {
     border: 0;
   }
@@ -4041,7 +4076,7 @@ body {
 /* -------------------------------------------- *
  * Skip - Link
  */
-/* line 343, ../scss/layout/_header.scss */
+/* line 374, ../scss/layout/_header.scss */
 .skip-link {
   position: relative;
   float: left;
@@ -4052,24 +4087,24 @@ body {
   text-align: center;
 }
 
-/* line 353, ../scss/layout/_header.scss */
+/* line 384, ../scss/layout/_header.scss */
 a.skip-link {
   text-decoration: none;
 }
 
 @media only screen and (max-width: 770px) {
-  /* line 362, ../scss/layout/_header.scss */
+  /* line 393, ../scss/layout/_header.scss */
   .skip-link {
     border-right: 1px solid #EDEDED;
   }
 
-  /* line 366, ../scss/layout/_header.scss */
+  /* line 397, ../scss/layout/_header.scss */
   .skip-link:last-child {
     border-right: 0;
   }
 }
 @media only screen and (min-width: 500px) {
-  /* line 376, ../scss/layout/_header.scss */
+  /* line 407, ../scss/layout/_header.scss */
   .skip-link {
     width: 25%;
   }
@@ -4078,13 +4113,13 @@ a.skip-link {
  * Skip Link - Active
  */
 @media only screen and (max-width: 770px) {
-  /* line 387, ../scss/layout/_header.scss */
+  /* line 418, ../scss/layout/_header.scss */
   .skip-link.skip-active {
     background: #EDEDED;
     color: inherit;
   }
 
-  /* line 392, ../scss/layout/_header.scss */
+  /* line 423, ../scss/layout/_header.scss */
   .skip-link.skip-active span {
     color: inherit;
   }
@@ -4092,7 +4127,7 @@ a.skip-link {
 /* -------------------------------------------- *
  * Skip Link - Icon
  */
-/* line 402, ../scss/layout/_header.scss */
+/* line 433, ../scss/layout/_header.scss */
 .skip-link .icon {
   display: inline-block;
   width: 30px;
@@ -4100,14 +4135,14 @@ a.skip-link {
   vertical-align: middle;
 }
 
-/* line 409, ../scss/layout/_header.scss */
+/* line 440, ../scss/layout/_header.scss */
 .skip-link.skip-nav .icon,
 .skip-link.skip-cart:not(.no-count) .icon {
   margin-right: 3px;
 }
 
 @media only screen and (min-width: 500px) {
-  /* line 416, ../scss/layout/_header.scss */
+  /* line 447, ../scss/layout/_header.scss */
   .skip-link .icon {
     margin-right: 3px;
   }
@@ -4115,13 +4150,13 @@ a.skip-link {
 /* -------------------------------------------- *
  * Skip Link - Label
  */
-/* line 426, ../scss/layout/_header.scss */
+/* line 457, ../scss/layout/_header.scss */
 .skip-link .label {
   display: none;
 }
 
 @media only screen and (min-width: 500px) {
-  /* line 434, ../scss/layout/_header.scss */
+  /* line 465, ../scss/layout/_header.scss */
   .skip-link .label {
     display: inline;
   }
@@ -4129,12 +4164,12 @@ a.skip-link {
 /* ============================================ *
  * Skip Content
  * ============================================ */
-/* line 444, ../scss/layout/_header.scss */
+/* line 475, ../scss/layout/_header.scss */
 .skip-content {
   display: none;
 }
 
-/* line 448, ../scss/layout/_header.scss */
+/* line 479, ../scss/layout/_header.scss */
 .skip-content.skip-active {
   display: block;
   background: #EDEDED;
@@ -4144,7 +4179,7 @@ a.skip-link {
  * Global Header Navigation
  * ============================================ */
 @media only screen and (max-width: 770px) {
-  /* line 461, ../scss/layout/_header.scss */
+  /* line 492, ../scss/layout/_header.scss */
   #header-account li a,
   .nav-primary a.level0 {
     padding: 0 15px 0 25px;
@@ -4155,31 +4190,31 @@ a.skip-link {
     line-height: 30px;
   }
 
-  /* line 471, ../scss/layout/_header.scss */
+  /* line 502, ../scss/layout/_header.scss */
   #header-account li:last-child a,
   .nav-primary li.level0:last-child a.level0 {
     border-bottom: 0;
   }
 
-  /* line 476, ../scss/layout/_header.scss */
+  /* line 507, ../scss/layout/_header.scss */
   .no-touch #header-account a:hover,
   .no-touch .nav-primary a:hover {
     background-color: #F4F4F4;
     text-decoration: none;
   }
 }
-/* line 484, ../scss/layout/_header.scss */
+/* line 515, ../scss/layout/_header.scss */
 .account-cart-wrapper {
   position: absolute;
 }
 @media only screen and (max-width: 770px) {
-  /* line 484, ../scss/layout/_header.scss */
+  /* line 515, ../scss/layout/_header.scss */
   .account-cart-wrapper {
     position: static;
   }
 }
 @media only screen and (min-width: 771px) {
-  /* line 484, ../scss/layout/_header.scss */
+  /* line 515, ../scss/layout/_header.scss */
   .account-cart-wrapper {
     bottom: -38px;
     left: 100%;

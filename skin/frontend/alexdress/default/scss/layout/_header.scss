@@ -313,6 +313,37 @@
       display:none;
 		}
 
+		.magnetHeader{
+			.page{
+        padding-top:124px;
+			}
+			#header{
+        position: fixed;
+				top:-124px;
+				left:0;
+				right:0;
+				z-index:550;
+			}
+      #header-nav{
+		    position: fixed;
+		    left: 0;
+		    right: 0;
+		    top: 0;
+		    margin-top: 0;
+		    z-index: 500;
+			}
+			.account-cart-wrapper {
+		    bottom: -92px;
+		    z-index: 550;
+				.skip-cart{
+          transform:scale(0.5);
+				}
+				#header-cart.skip-active{
+          margin-top:-14px;
+				}
+			}
+		}
+
 }
 
 /* ============================================ *
