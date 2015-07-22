@@ -1573,7 +1573,7 @@ a.button:hover {
 .main-container,
 .footer-container {
   position: relative;
-  max-width: 1100px;
+  max-width: 1260px;
   margin: 0 auto;
   padding: 15px;
 }
@@ -1810,7 +1810,7 @@ a.button:hover {
 @media only screen and (min-width: 771px) {
   /* line 953, ../scss/core/_common.scss */
   .top-container {
-    max-width: 1100px;
+    max-width: 1260px;
     margin: 0 auto;
     padding: 0 30px;
   }
@@ -1828,7 +1828,7 @@ a.button:hover {
 .global-site-notice .notice-inner {
   padding-left: 120px;
   width: 100%;
-  max-width: 1040px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   line-height: 11px;
@@ -3722,7 +3722,7 @@ body {
 @media only screen and (min-width: 771px) {
   /* line 32, ../scss/layout/_header.scss */
   .page-header {
-    max-width: 1100px;
+    max-width: 1260px;
     margin: 0 auto;
     padding: 0 30px;
   }
@@ -3738,7 +3738,7 @@ body {
  * ============================================ */
 /* line 53, ../scss/layout/_header.scss */
 .header-language-background {
-  max-width: 1100px;
+  max-width: 1260px;
   margin: 0 auto;
   padding: 0 30px;
   font-size: 16px;
@@ -4287,7 +4287,7 @@ a.skip-link {
     display: block;
     margin-top: 15px;
     line-height: 1;
-    max-width: 1100px;
+    max-width: 1260px;
     margin: 0 auto;
     padding: 0 30px;
   }
@@ -5256,7 +5256,7 @@ a.skip-link {
 /* line 349, ../scss/layout/_footer.scss */
 .footer-nav {
   padding: 20px 0;
-  max-width: 1040px;
+  max-width: 1200px;
   border-top: 2px solid #deddde;
   border-bottom: 2px solid #deddde;
   margin: 0 auto;
