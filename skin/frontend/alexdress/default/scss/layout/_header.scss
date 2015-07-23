@@ -338,7 +338,13 @@
 		    bottom: -92px;
 		    z-index: 550;
 				.skip-cart{
-          transform:scale(0.5);
+					.icon{
+	          transform:scale(0.5);
+					}
+          .count{
+            left:50px;
+						top:18px;
+					}
 				}
 				#header-cart.skip-active{
           margin-top:-14px;

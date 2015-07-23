@@ -3456,11 +3456,16 @@ body {
   bottom: -92px;
   z-index: 550;
 }
-/* line 340, ../scss/layout/_header.scss */
-.magnetHeader .account-cart-wrapper .skip-cart {
+/* line 341, ../scss/layout/_header.scss */
+.magnetHeader .account-cart-wrapper .skip-cart .icon {
   transform: scale(0.5);
 }
-/* line 343, ../scss/layout/_header.scss */
+/* line 344, ../scss/layout/_header.scss */
+.magnetHeader .account-cart-wrapper .skip-cart .count {
+  left: 50px;
+  top: 18px;
+}
+/* line 349, ../scss/layout/_header.scss */
 .magnetHeader .account-cart-wrapper #header-cart.skip-active {
   margin-top: -14px;
 }
@@ -3468,7 +3473,7 @@ body {
 /* ============================================ *
  * Skip Links
  * ============================================ */
-/* line 355, ../scss/layout/_header.scss */
+/* line 361, ../scss/layout/_header.scss */
 .skip-links {
   clear: both;
   overflow: hidden;
@@ -3476,7 +3481,7 @@ body {
   border-bottom: 1px solid #EDEDED;
 }
 
-/* line 366, ../scss/layout/_header.scss */
+/* line 372, ../scss/layout/_header.scss */
 .skip-links {
   border: 0;
 }
@@ -3484,7 +3489,7 @@ body {
 /* -------------------------------------------- *
  * Skip - Link
  */
-/* line 376, ../scss/layout/_header.scss */
+/* line 382, ../scss/layout/_header.scss */
 .skip-link {
   position: relative;
   float: left;
@@ -3495,12 +3500,12 @@ body {
   text-align: center;
 }
 
-/* line 386, ../scss/layout/_header.scss */
+/* line 392, ../scss/layout/_header.scss */
 a.skip-link {
   text-decoration: none;
 }
 
-/* line 409, ../scss/layout/_header.scss */
+/* line 415, ../scss/layout/_header.scss */
 .skip-link {
   width: 25%;
 }
@@ -3511,7 +3516,7 @@ a.skip-link {
 /* -------------------------------------------- *
  * Skip Link - Icon
  */
-/* line 435, ../scss/layout/_header.scss */
+/* line 441, ../scss/layout/_header.scss */
 .skip-link .icon {
   display: inline-block;
   width: 30px;
@@ -3519,13 +3524,13 @@ a.skip-link {
   vertical-align: middle;
 }
 
-/* line 442, ../scss/layout/_header.scss */
+/* line 448, ../scss/layout/_header.scss */
 .skip-link.skip-nav .icon,
 .skip-link.skip-cart:not(.no-count) .icon {
   margin-right: 3px;
 }
 
-/* line 449, ../scss/layout/_header.scss */
+/* line 455, ../scss/layout/_header.scss */
 .skip-link .icon {
   margin-right: 3px;
 }
@@ -3533,12 +3538,12 @@ a.skip-link {
 /* -------------------------------------------- *
  * Skip Link - Label
  */
-/* line 459, ../scss/layout/_header.scss */
+/* line 465, ../scss/layout/_header.scss */
 .skip-link .label {
   display: none;
 }
 
-/* line 467, ../scss/layout/_header.scss */
+/* line 473, ../scss/layout/_header.scss */
 .skip-link .label {
   display: inline;
 }
@@ -3546,12 +3551,12 @@ a.skip-link {
 /* ============================================ *
  * Skip Content
  * ============================================ */
-/* line 477, ../scss/layout/_header.scss */
+/* line 483, ../scss/layout/_header.scss */
 .skip-content {
   display: none;
 }
 
-/* line 481, ../scss/layout/_header.scss */
+/* line 487, ../scss/layout/_header.scss */
 .skip-content.skip-active {
   display: block;
   background: #EDEDED;
@@ -3560,7 +3565,7 @@ a.skip-link {
 /* ============================================ *
  * Global Header Navigation
  * ============================================ */
-/* line 517, ../scss/layout/_header.scss */
+/* line 523, ../scss/layout/_header.scss */
 .account-cart-wrapper {
   position: absolute;
   bottom: -38px;
