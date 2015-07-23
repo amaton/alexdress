@@ -4375,7 +4375,7 @@ a.skip-link {
 }
 
 /* line 242, ../scss/layout/_footer.scss */
-.footer-smallContainer {
+.smallContainer {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
