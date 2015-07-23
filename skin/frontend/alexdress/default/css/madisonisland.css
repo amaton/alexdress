@@ -348,24 +348,27 @@ body .promos > li {
 
 /* line 210, ../scss/content/_home.scss */
 .home-widgets-top {
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
   margin: 20px 0;
 }
 
-/* line 217, ../scss/content/_home.scss */
+/* line 220, ../scss/content/_home.scss */
 .home-widget-top {
   display: block;
   width: 23.5%;
   border: 1px solid #deddde;
 }
-/* line 221, ../scss/content/_home.scss */
+/* line 224, ../scss/content/_home.scss */
 .home-widget-top img {
   width: 100%;
 }
 
-/* line 226, ../scss/content/_home.scss */
+/* line 229, ../scss/content/_home.scss */
 .home-content {
   max-width: 750px;
   margin: 20px auto;
