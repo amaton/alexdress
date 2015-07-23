@@ -912,6 +912,7 @@ $j(document).ready(function () {
                 groups[i].removeClass('current');
                 groups[i].eq(index).addClass('current');
             }
+						clickedItem.toggleClass('clicked');
         }
 
         //Toggle on tab (dt) click.

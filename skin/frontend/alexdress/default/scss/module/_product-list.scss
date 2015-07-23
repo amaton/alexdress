@@ -391,13 +391,21 @@ p.product-name {
   		border:none;
 			background:$c-highlight;
 			padding:5px 10px;
+			margin-bottom:10px;
 			color:$c-action;
 			font-weight:bold;
 			line-height:1;
+			&:hover{
+        background:$c-action;
+				color:$c-highlight;
+			}
+			&.clicked+dd{
+        display:none;
+			}
 		}
 	 	&>dd{
   		border:none;
-			padding: 10px 0;
+			padding: 0 0 10px 0;
 		}
 	}
  }
