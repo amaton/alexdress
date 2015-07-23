@@ -370,7 +370,6 @@ body .promos > li {
 
 /* line 229, ../scss/content/_home.scss */
 .home-content {
-  max-width: 750px;
   margin: 20px auto;
   font-size: 18px;
   line-height: 1;

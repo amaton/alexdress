@@ -154,13 +154,13 @@
 	.form-language:hover &{
     display:flex;
 		background: $c-lightgray;
-    padding: 10px 10px 32px 10px;
+    padding: 5px 17px;
     position: absolute;
     right: 0;
     z-index: 200;
 	}
 	.lang-icon{
-    margin:8px 0;
+    margin:10px 0;
 		cursor:pointer;
 	}
   .lang-icon:hover:after,:checked+.lang-icon:after{
