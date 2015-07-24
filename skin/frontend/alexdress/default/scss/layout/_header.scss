@@ -137,16 +137,20 @@
 	height:22px;
 }
 
-.lang-icon--default{
+.lang-icon--default, .lang-icon--en{
 	@include icons-sprite(lang_en);
 }
 
-.lang-icon--german{
+.lang-icon--german, .lang-icon--de{
 	@include icons-sprite(lang_de);
 }
 
-.lang-icon--french{
+.lang-icon--french, .lang-icon--fr{
 	@include icons-sprite(lang_fr);
+}
+
+.lang-icon--russian, .lang-icon--ru{
+	@include icons-sprite(lang_ru);
 }
 
 .lang-dropdown{
