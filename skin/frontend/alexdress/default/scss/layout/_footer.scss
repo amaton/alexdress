@@ -240,15 +240,23 @@
 
 
 .smallContainer{
+		display: -webkit-flex;
     display: flex;
+		-webkit-flex-flow: row nowrap;
     flex-flow: row nowrap;
+		-webkit-justify-content: space-between;
     justify-content: space-between;
     margin: 0 auto;
 		width:100%;
     max-width: $max-smallcontainer-width;
-@include bp(max-width, $bp-medium){
-  padding:0 $gap;
-}
+		padding:0 $trim;
+		@include bp(max-width, $bp-xsmall){
+  		padding:0 $trim/2;
+		}
+		.main-container &{
+	    max-width: $max-smallcontainer-width - 2 * $trim;
+			padding:0;
+		}
 }
 
 // Copyright bar
@@ -271,13 +279,18 @@
 	color:$c-black;
 	padding:6px 0;
   font-size: 16px;
+	display:-webkit-flex;
 	display:flex;
+	-webkit-flex-flow:row nowrap;
 	flex-flow:row nowrap;
+	-webkit-justify-content:space-between;
 	justify-content:space-between;
 }
 
 .footer-extra-block{
+display: -webkit-flex;
 display: flex;
+-webkit-align-items: center;
 align-items: center;
   margin-right: 20px;
 	label{
@@ -325,6 +338,7 @@ align-items: center;
 
 .footer-extra .block-content{
   margin:0;
+	display:-webkit-flex;
 	display:flex;
 	max-width: 300px;
 	.input-box{
@@ -400,9 +414,13 @@ align-items: center;
 }
 
 .footer-social{
-  padding:10px 0;
+  padding-top:10px;
+	padding-bottom:10px;
+	-webkit-justify-content:space-around !important;
 	justify-content:space-around !important;
 	@include bp(max-width, $bp-medium){
-	border-top:2px solid $c-lightgray;
-}
+		border-top:2px solid $c-lightgray;
+		-webkit-justify-content:space-between !important;
+		justify-content:space-between !important;
+	}
 }

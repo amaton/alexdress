@@ -4376,15 +4376,24 @@ a.skip-link {
 
 /* line 242, ../scss/layout/_footer.scss */
 .smallContainer {
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-flow: row nowrap;
   flex-flow: row nowrap;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
   margin: 0 auto;
   width: 100%;
+  max-width: 1080px;
+  padding: 0 30px;
+}
+/* line 256, ../scss/layout/_footer.scss */
+.main-container .smallContainer {
   max-width: 1020px;
+  padding: 0;
 }
 
-/* line 256, ../scss/layout/_footer.scss */
+/* line 264, ../scss/layout/_footer.scss */
 .footer-copyright {
   text-align: center;
   font-size: 16px;
@@ -4392,54 +4401,59 @@ a.skip-link {
   background: #712c6b;
   color: #b896b5;
 }
-/* line 262, ../scss/layout/_footer.scss */
+/* line 270, ../scss/layout/_footer.scss */
 .footer-copyright a {
   color: #b896b5;
 }
 
-/* line 269, ../scss/layout/_footer.scss */
+/* line 277, ../scss/layout/_footer.scss */
 .footer-extra {
   background: #deddde;
   color: #000000;
   padding: 6px 0;
   font-size: 16px;
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-flow: row nowrap;
   flex-flow: row nowrap;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
 }
 
-/* line 279, ../scss/layout/_footer.scss */
+/* line 290, ../scss/layout/_footer.scss */
 .footer-extra-block {
+  display: -webkit-flex;
   display: flex;
+  -webkit-align-items: center;
   align-items: center;
   margin-right: 20px;
 }
-/* line 283, ../scss/layout/_footer.scss */
+/* line 296, ../scss/layout/_footer.scss */
 .footer-extra-block label {
   margin-right: 5px;
 }
 
-/* line 291, ../scss/layout/_footer.scss */
+/* line 304, ../scss/layout/_footer.scss */
 .footer-payment {
   width: 43px;
   height: 30px;
   float: left;
   margin-right: 5px;
 }
-/* line 297, ../scss/layout/_footer.scss */
+/* line 310, ../scss/layout/_footer.scss */
 .footer-payment.payment--visa {
   background-position: 0 -677px;
 }
-/* line 301, ../scss/layout/_footer.scss */
+/* line 314, ../scss/layout/_footer.scss */
 .footer-payment.payment--mastercard {
   background-position: 0 -257px;
 }
-/* line 305, ../scss/layout/_footer.scss */
+/* line 318, ../scss/layout/_footer.scss */
 .footer-payment.payment--paypal {
   background-position: 0 -336px;
 }
 
-/* line 311, ../scss/layout/_footer.scss */
+/* line 324, ../scss/layout/_footer.scss */
 .footer-dhl {
   float: left;
   width: 112px;
@@ -4447,40 +4461,41 @@ a.skip-link {
   background-position: 0 -25px;
 }
 
-/* line 320, ../scss/layout/_footer.scss */
+/* line 333, ../scss/layout/_footer.scss */
 #newsletter {
   border: none;
   font-style: italic;
   width: auto;
 }
 
-/* line 326, ../scss/layout/_footer.scss */
+/* line 339, ../scss/layout/_footer.scss */
 .footer-extra .block-content {
   margin: 0;
+  display: -webkit-flex;
   display: flex;
   max-width: 300px;
 }
-/* line 330, ../scss/layout/_footer.scss */
+/* line 344, ../scss/layout/_footer.scss */
 .footer-extra .block-content .input-box {
   padding: 0;
 }
-/* line 333, ../scss/layout/_footer.scss */
+/* line 347, ../scss/layout/_footer.scss */
 .footer-extra .block-content .actions {
   margin: 0 0 0 5px;
 }
-/* line 336, ../scss/layout/_footer.scss */
+/* line 350, ../scss/layout/_footer.scss */
 .footer-extra .block-content .actions .button {
   padding: 6px 15px;
   background: #712c6b;
   font-family: "OpenGost Type B", Arial, sans-serif;
 }
 
-/* line 343, ../scss/layout/_footer.scss */
+/* line 357, ../scss/layout/_footer.scss */
 .footer-extra .block-subscribe {
   margin: 0;
 }
 
-/* line 349, ../scss/layout/_footer.scss */
+/* line 363, ../scss/layout/_footer.scss */
 .footer-nav {
   padding: 20px 0;
   max-width: 1200px;
@@ -4489,7 +4504,7 @@ a.skip-link {
   margin: 0 auto;
 }
 
-/* line 360, ../scss/layout/_footer.scss */
+/* line 374, ../scss/layout/_footer.scss */
 .footer-nav-title {
   text-transform: uppercase;
   color: #712c6b;
@@ -4498,7 +4513,7 @@ a.skip-link {
   font-weight: bold;
 }
 
-/* line 368, ../scss/layout/_footer.scss */
+/* line 382, ../scss/layout/_footer.scss */
 .footer-nav-item {
   display: block;
   font-size: 18px;
@@ -4506,40 +4521,42 @@ a.skip-link {
   color: #636363;
 }
 
-/* line 377, ../scss/layout/_footer.scss */
+/* line 391, ../scss/layout/_footer.scss */
 .footer-social-link {
   display: block;
   width: 33px;
   height: 32px;
 }
-/* line 381, ../scss/layout/_footer.scss */
+/* line 395, ../scss/layout/_footer.scss */
 .footer-social-link.social--fb {
   background-position: 0 -405px;
 }
-/* line 384, ../scss/layout/_footer.scss */
+/* line 398, ../scss/layout/_footer.scss */
 .footer-social-link.social--vk {
   background-position: 0 -610px;
 }
-/* line 387, ../scss/layout/_footer.scss */
+/* line 401, ../scss/layout/_footer.scss */
 .footer-social-link.social--th {
   background-position: 0 -528px;
 }
-/* line 390, ../scss/layout/_footer.scss */
+/* line 404, ../scss/layout/_footer.scss */
 .footer-social-link.social--in {
   background-position: 0 -487px;
 }
-/* line 393, ../scss/layout/_footer.scss */
+/* line 407, ../scss/layout/_footer.scss */
 .footer-social-link.social--tw {
   background-position: 0 -569px;
 }
-/* line 396, ../scss/layout/_footer.scss */
+/* line 410, ../scss/layout/_footer.scss */
 .footer-social-link.social--gp {
   background-position: 0 -446px;
 }
 
-/* line 402, ../scss/layout/_footer.scss */
+/* line 416, ../scss/layout/_footer.scss */
 .footer-social {
-  padding: 10px 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -webkit-justify-content: space-around !important;
   justify-content: space-around !important;
 }
 
