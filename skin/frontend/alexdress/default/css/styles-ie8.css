@@ -3654,16 +3654,20 @@ a.skip-link {
   font-size: 18px;
   line-height: 1.5;
   white-space: nowrap;
-  padding-right: 20px;
+  padding: 0 5px;
+}
+/* line 135, ../scss/layout/_header-nav.scss */
+.nav-primary li.level1 a:hover {
+  background: #deddde;
 }
 
-/* line 139, ../scss/layout/_header-nav.scss */
+/* line 142, ../scss/layout/_header-nav.scss */
 .nav-primary .menu-active > ul.level0,
 .nav-primary li.level0 li.sub-menu-active > ul {
   display: block;
 }
 
-/* line 144, ../scss/layout/_header-nav.scss */
+/* line 147, ../scss/layout/_header-nav.scss */
 .nav-primary li.level0 > a {
   text-transform: uppercase;
 }
@@ -3674,7 +3678,7 @@ a.skip-link {
 /* ============================================ *
  * Large Viewports - Dropdown Menu
  * ============================================ */
-/* line 207, ../scss/layout/_header-nav.scss */
+/* line 210, ../scss/layout/_header-nav.scss */
 .nav-primary {
   /* Default styles for 1+ drop-down menus */
   /* Level 2+ */
@@ -3682,26 +3686,26 @@ a.skip-link {
   /* Correct menus that will hang off the page (class added by js) */
   /* Level 1+ */
 }
-/* line 209, ../scss/layout/_header-nav.scss */
+/* line 212, ../scss/layout/_header-nav.scss */
 .nav-primary a.level0 {
   font-size: 24px;
   margin-right: 15px;
   padding: 5px 0;
 }
-/* line 215, ../scss/layout/_header-nav.scss */
+/* line 218, ../scss/layout/_header-nav.scss */
 .nav-primary li.level0,
 .nav-primary a.level0 {
   display: inline-block;
 }
-/* line 220, ../scss/layout/_header-nav.scss */
+/* line 223, ../scss/layout/_header-nav.scss */
 .nav-primary li:last-child > a {
   border-bottom: none;
 }
-/* line 225, ../scss/layout/_header-nav.scss */
+/* line 228, ../scss/layout/_header-nav.scss */
 .nav-primary .menu-active {
   z-index: 200;
 }
-/* line 230, ../scss/layout/_header-nav.scss */
+/* line 233, ../scss/layout/_header-nav.scss */
 .nav-primary li.level0 ul {
   border: 1px solid #712c6b;
   border-top: none;
@@ -3714,27 +3718,27 @@ a.skip-link {
   display: none;
   /* Hide until displayed. */
 }
-/* line 243, ../scss/layout/_header-nav.scss */
+/* line 246, ../scss/layout/_header-nav.scss */
 .nav-primary li.level1 ul {
   left: 60px;
   top: 15px;
 }
-/* line 249, ../scss/layout/_header-nav.scss */
+/* line 252, ../scss/layout/_header-nav.scss */
 .nav-primary li.level0 ul.level0.position-test {
   display: block;
 }
-/* line 254, ../scss/layout/_header-nav.scss */
+/* line 257, ../scss/layout/_header-nav.scss */
 .nav-primary li.level0 ul.level0.spill {
   right: 0;
   left: auto;
 }
-/* line 259, ../scss/layout/_header-nav.scss */
+/* line 262, ../scss/layout/_header-nav.scss */
 .nav-primary li.level0 ul.level0.spill li.level1 ul {
   left: auto;
   right: 50px;
   top: 20px;
 }
-/* line 265, ../scss/layout/_header-nav.scss */
+/* line 268, ../scss/layout/_header-nav.scss */
 .nav-primary li.level0.parent.menu-active:after {
   content: "";
   position: absolute;
@@ -3747,11 +3751,11 @@ a.skip-link {
   border-top-color: #712c6b;
   z-index: 10;
 }
-/* line 279, ../scss/layout/_header-nav.scss */
+/* line 282, ../scss/layout/_header-nav.scss */
 .nav-primary li.level0 li.parent > a {
   position: relative;
 }
-/* line 282, ../scss/layout/_header-nav.scss */
+/* line 285, ../scss/layout/_header-nav.scss */
 .nav-primary li.level0 li.parent > a:after {
   content: '';
   position: absolute;
@@ -3767,7 +3771,7 @@ a.skip-link {
   margin-top: -3px;
 }
 
-/* line 293, ../scss/layout/_header-nav.scss */
+/* line 296, ../scss/layout/_header-nav.scss */
 .nav-primary li.menu-active > ul {
   display: block;
 }

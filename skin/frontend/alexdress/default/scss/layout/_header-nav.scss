@@ -131,7 +131,10 @@ $nav-primary-height: 30px;
 				font-size:18px;
 				line-height:1.5;
 				white-space:nowrap;
-				padding-right:20px;
+				padding:0 5px;
+				&:hover{
+          background:$c-lightgray;
+				}
     }
 }
 
