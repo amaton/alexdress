@@ -210,11 +210,6 @@
     }
 }
 
-.header-minicart.skip-active .block-cart,
-.block-cart.skip-active {
-    display: block;
-}
-
 @include bp(min-width, $bp-medium + 1) {
     .checkout-types.minicart {
         float: none;

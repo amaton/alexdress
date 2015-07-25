@@ -700,7 +700,10 @@ $j(document).ready(function () {
     var skipLinks = $j('.skip-link');
 
     skipLinks.on('click', function (e) {
-        e.preventDefault();
+
+        if(!$j(this).hasClass('skip-cart')){
+	        e.preventDefault();
+				}
 
         var self = $j(this);
         // Use the data-target-element attribute, if it exists. Fall back to href.
@@ -725,7 +728,7 @@ $j(document).ready(function () {
         }
     });
 
-    $j('#header-cart').on('click', '.skip-link-close', function(e) {
+    /*$j('#header-cart').on('click', '.skip-link-close', function(e) {
         var parent = $j(this).parents('.skip-content');
         var link = parent.siblings('.skip-link');
 
@@ -733,7 +736,7 @@ $j(document).ready(function () {
         link.removeClass('skip-active');
 
         e.preventDefault();
-    });
+    });*/
 
 
     // ==============================================

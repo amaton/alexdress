@@ -74,34 +74,38 @@
 					height:56px;
           border:2px solid $c-action;
 					border-radius:28px;
-					background:rgba(255,255,255,.75);
+					background:$c-white;
 					position:relative;
 					vertical-align:top;
 					z-index:250;
+					.magnetHeader &{
+            border:none;
+						margin-top:1px;
+					}
 					&:after{
             display:block;
 					}
 				}
-				&:hover,&.skip-active{
-          .icon{
-            background:rgba(255,255,255,1);
-					}
-				}
     }
 
-    .skip-cart:hover {
-    }
-
-    #header-cart.skip-active {
+    #header-cart {
         border:2px solid $c-action;
-        display: block;
+				border-top:none;
         position: absolute;
-        z-index: 200;
+        z-index: 260;
         top: 100%;
-				margin-top:-8px;
-        left: 0;
-        width: 240px;
+				margin-top:-10px;
+        left: 10px;
+        width: 230px;
         background: $c-white;
+				.magnetHeader &{
+					left: 18px;
+			    margin-top: -18px;
+					width: 222px;
+				}
+				.header-minicart:hover &{
+	        display: block;
+				}
     }
 
 }
