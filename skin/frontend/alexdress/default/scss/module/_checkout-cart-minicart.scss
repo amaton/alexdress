@@ -71,17 +71,17 @@
 
     }
     .mini-products-list {
-        padding: 10px;
+        padding:$gap/2;
         display:flex;
 				flex-flow:row wrap;
 
         li {
           width:50%;
 					&.odd{
-            padding-right:10px;
+            padding-right:$gap/4;
 					}
 					&.even{
-            padding-left:10px;
+            padding-left:$gap/4;
 					}
 
         }

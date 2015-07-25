@@ -4850,7 +4850,7 @@ p.product-name a:hover {
 }
 /* line 286, ../scss/module/_product-list.scss */
 .mini-products-list li {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   clear: both;
 }
 /* line 290, ../scss/module/_product-list.scss */
@@ -9244,11 +9244,11 @@ div.paypal-logo span > img {
 }
 /* line 80, ../scss/module/_checkout-cart-minicart.scss */
 .header-minicart .mini-products-list li.odd {
-  padding-right: 10px;
+  padding-right: 5px;
 }
 /* line 83, ../scss/module/_checkout-cart-minicart.scss */
 .header-minicart .mini-products-list li.even {
-  padding-left: 10px;
+  padding-left: 5px;
 }
 /* line 91, ../scss/module/_checkout-cart-minicart.scss */
 .header-minicart .product-details .product-name {
