@@ -1278,9 +1278,10 @@ var ProductMediaManager = {
 };
 
 function activateClPalette(){
-    var clDefault='#712c6b',clCustom=window.localStorage['clDefault'];
+    var clDefault='#712c6b',clCustom=window.localStorage['clCustom'];
     var colorInput=document.getElementById('palette-color');
     if(clCustom){
+        colorInput.value=clCustom;
         applyCustomCl(clCustom);  
     }
     else{
@@ -1292,7 +1293,8 @@ function activateClPalette(){
        this.classList.toggle('fa-times');       
     });
     colorInput.on('input',function(){
-       applyCustomCl(localStorage['clDefault']=this.value);
+       console.log('oninput');
+       applyCustomCl(localStorage['clCustom']=this.value);
     });
     function hexToRgb(hex){
         var _hex=hex.substr(1),x='0123456789abcdef',rgb=[];
@@ -1302,7 +1304,6 @@ function activateClPalette(){
         return rgb;
     }
     function applyCustomCl(cl){
-        colorInput.value=cl;
         var rgbCustom=hexToRgb(cl),rgbDefault=hexToRgb(clDefault);
         var props=['backgroundColor','borderColor','color'];
         rgbCustom=rgbCustom[0]+', '+rgbCustom[1]+', '+rgbCustom[2];
