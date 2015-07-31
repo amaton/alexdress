@@ -1291,7 +1291,7 @@ function activateClPalette(){
        this.classList.toggle('fa-paint-brush');
        this.classList.toggle('fa-times');       
     });
-    colorInput.on('change',function(){
+    colorInput.on('input',function(){
        applyCustomCl(localStorage['clDefault']=this.value);
     });
     function hexToRgb(hex){
@@ -1307,11 +1307,13 @@ function activateClPalette(){
         var props=['backgroundColor','borderColor','color'];
         rgbCustom=rgbCustom[0]+', '+rgbCustom[1]+', '+rgbCustom[2];
         rgbDefault=rgbDefault[0]+', '+rgbDefault[1]+', '+rgbDefault[2];
-        function switchCl(node,prop){
-            if(node&&node[prop]&&((node.wasChanged)&&(node.wasChanged[prop])||node[prop].indexOf(rgbDefault)!=-1)){
-                node[prop]='rgb('+rgbCustom+')';
-                node.wasChanged={};
-                node.wasChanged[prop]='true';
+        function switchCl(style,prop){
+            if(style&&style[prop]&&((style.wasChanged)&&(style.wasChanged[prop])||style[prop].indexOf(rgbDefault)!=-1)){
+                style[prop]='rgb('+rgbCustom+')';
+                if(!style.wasChanged){
+                    style.wasChanged={};
+                }
+                style.wasChanged[prop]='true';
             }
         }
         function setStyles(style){
