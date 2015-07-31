@@ -1277,10 +1277,66 @@ var ProductMediaManager = {
     }
 };
 
+function activateClPalette(){
+    var clDefault='#712c6b',clCustom=window.localStorage['clDefault'];
+    var colorInput=document.getElementById('palette-color');
+    if(clCustom){
+        applyCustomCl(clCustom);  
+    }
+    else{
+        colorInput.value=clDefault;
+    }
+    document.getElementById('palette-control').on('click',function(){
+       document.getElementById('colorPalette').classList.toggle('palette-active');
+       this.classList.toggle('fa-paint-brush');
+       this.classList.toggle('fa-times');       
+    });
+    colorInput.on('change',function(){
+       applyCustomCl(localStorage['clDefault']=this.value);
+    });
+    function hexToRgb(hex){
+        var _hex=hex.substr(1),x='0123456789abcdef',rgb=[];
+        for (var i=0;i<6; i+=2){
+            rgb[i/2]=16*x.indexOf(_hex.charAt(i)) + x.indexOf(_hex.charAt(i+1));
+        }
+        return rgb;
+    }
+    function applyCustomCl(cl){
+        colorInput.value=cl;
+        var rgbCustom=hexToRgb(cl),rgbDefault=hexToRgb(clDefault);
+        var props=['backgroundColor','borderColor','color'];
+        rgbCustom=rgbCustom[0]+', '+rgbCustom[1]+', '+rgbCustom[2];
+        rgbDefault=rgbDefault[0]+', '+rgbDefault[1]+', '+rgbDefault[2];
+        function switchCl(node,prop){
+            if(node&&node[prop]&&((node.wasChanged)&&(node.wasChanged[prop])||node[prop].indexOf(rgbDefault)!=-1)){
+                node[prop]='rgb('+rgbCustom+')';
+                node.wasChanged={};
+                node.wasChanged[prop]='true';
+            }
+        }
+        function setStyles(style){
+            for(var i=0;i<props.length;i++){
+                switchCl(style,props[i]);
+            }        
+        }
+        for(var i=1;i<document.styleSheets.length;i++){
+            for(var j=0;j<document.styleSheets[i].cssRules.length;j++){
+                var rules=document.styleSheets[i].cssRules[j];
+                if(rules.media&&rules.cssRules){
+                    for(var k=0;k<rules.cssRules.length;k++){
+                        setStyles(rules.cssRules[k].style);
+                    }
+                }
+                setStyles(rules.style);
+            }
+        }
+    }
+}
+
 $j(document).ready(function() {
     ProductMediaManager.init();
-		// Magnet header
-		var navTop=171;
+	// Magnet header
+	var navTop=171;
     document.on('scroll',function(){
 	     if(window.pageYOffset>navTop){
   	      document.body.addClassName('magnetHeader');
@@ -1289,4 +1345,7 @@ $j(document).ready(function() {
         	document.body.removeClassName('magnetHeader');
 				}
 			})
+    if(document.getElementById('colorPalette')){
+       activateClPalette();
+    }
 });

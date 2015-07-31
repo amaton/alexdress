@@ -31,7 +31,8 @@ $mq-fixed-value: 1024;
 
 // ----------------------------------------------
 */
-@import "http://webfonts.ru/import/opengost.css";
+@import "//webfonts.ru/import/opengost.css";
+@import "//netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css";
 /* line 208, icons/*.png */
 .icons-sprite, .icons-delivery, .icons-dhl, .icons-lang_cs, .icons-lang_de, .icons-lang_dropdown, .icons-lang_en, .icons-lang_fr, .icons-lang_ru, .icons-lens, .icons-mastercard, .icons-minicart, .icons-paypal, .icons-return, .icons-social_fb, .icons-social_gp, .icons-social_in, .icons-social_th, .icons-social_tw, .icons-social_vk, .icons-support, .icons-visa, .header-link--delivery, .header-link--return, .header-link--support, .lang-current:after, .lang-icon--default, .lang-icon--en, .lang-icon--german, .lang-icon--de, .lang-icon--french, .lang-icon--fr, .lang-icon--russian, .lang-icon--ru, #search_mini_form .search-button:before, .skip-cart .icon:after, .footer-payment.payment--visa, .footer-payment.payment--mastercard, .footer-payment.payment--paypal, .footer-dhl, .footer-social-link.social--fb, .footer-social-link.social--vk, .footer-social-link.social--th, .footer-social-link.social--in, .footer-social-link.social--tw, .footer-social-link.social--gp {
   background-image: url('/skin/frontend/alexdress/default/images/icons-s6eb5be3f05.png');
@@ -3694,13 +3695,13 @@ form .form-instructions {
 /* ============================================ *
  * Global
  * ============================================ */
-/* line 32, ../scss/layout/_global.scss */
+/* line 33, ../scss/layout/_global.scss */
 html,
 body {
   height: 100%;
 }
 
-/* line 37, ../scss/layout/_global.scss */
+/* line 38, ../scss/layout/_global.scss */
 .wrapper {
   min-width: 320px;
   min-height: 100%;
@@ -3708,7 +3709,7 @@ body {
   background: #FFFFFF;
 }
 
-/* line 44, ../scss/layout/_global.scss */
+/* line 45, ../scss/layout/_global.scss */
 .wrapper:after {
   content: '';
   display: table;
@@ -12827,6 +12828,78 @@ body[class*="checkout-multishipping-"] #review-buttons-container {
     display: block;
   }
 }
+/* line 1, ../scss/module/_palette.scss */
+#colorPalette {
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  z-index: 300;
+  background: #b896b5;
+  padding: 20px;
+  border-radius: 0 10px 10px 0;
+  transform: translateX(-100%);
+  margin-left: 40px;
+  transition: all .2s linear;
+}
+/* line 12, ../scss/module/_palette.scss */
+#colorPalette.palette-active {
+  transform: translateX(0);
+  margin-left: 0;
+}
+
+/* line 18, ../scss/module/_palette.scss */
+#palette-control {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  color: #deddde;
+  font-size: 20px;
+  width: 40px;
+  padding-top: 30px;
+  text-align: center;
+}
+/* line 30, ../scss/module/_palette.scss */
+#palette-control:hover {
+  color: #fff;
+}
+/* line 33, ../scss/module/_palette.scss */
+.palette-active #palette-control {
+  bottom: auto;
+  right: 7px;
+  top: 3px;
+  padding-top: 0;
+  width: auto;
+  font-size: 16px;
+}
+
+/* line 43, ../scss/module/_palette.scss */
+#palette-body {
+  opacity: 0;
+  transition: all .2s linear;
+}
+/* line 46, ../scss/module/_palette.scss */
+.palette-active #palette-body {
+  opacity: 1;
+}
+
+/* line 51, ../scss/module/_palette.scss */
+.palette-label {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* line 57, ../scss/module/_palette.scss */
+#palette-color {
+  display: block;
+  width: 100%;
+  height: 25px;
+  border: none;
+}
+
 /* ============================================ *
  * Calendar styles (restore styles from /js/calendar)
  * ============================================ */

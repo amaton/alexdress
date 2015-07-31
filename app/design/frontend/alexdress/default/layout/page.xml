@@ -156,6 +156,10 @@
         </block>
 
         <block type="core/profiler" output="toHtml" name="core_profiler"/>
+        
+        <reference name="before_body_end">
+            <block type="core/template" template="page/html/palette.phtml"/>
+        </reference>
     </default>
 
     <print translate="label" module="page">
