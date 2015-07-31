@@ -1321,7 +1321,10 @@ function activateClPalette(){
                 switchCl(style,props[i]);
             }        
         }
-        for(var i=1;i<document.styleSheets.length;i++){
+        for(var i=0;i<document.styleSheets.length;i++){
+            if(!document.styleSheets[i].cssRules){
+                continue;
+            }
             for(var j=0;j<document.styleSheets[i].cssRules.length;j++){
                 var rules=document.styleSheets[i].cssRules[j];
                 if(rules.media&&rules.cssRules){
