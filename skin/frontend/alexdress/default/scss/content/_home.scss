@@ -251,27 +251,24 @@ body .promos > li {
 .home-widget-top,.home-widget-btm{
     .home-widget-overlay{
 	    transition:all .2s linear;
+		font-size:44px;
 	}
 }
 
 .home-widget-overlay{
 	.home-widget-top &{
-        display:-webkit-flex;
 		display:flex;
-		top:100%;
+		height:0;
 		bottom:0;
-		font-size:44px;
   		opacity:0;
-		-webkit-align-items:center;
 		align-items:center;
-        -webkit-justify-content: center;
         justify-content: center;
 	}
 	.home-widget-btm:hover &{
 		opacity:1;
 	}
 	.home-widget-top:hover &{
-		top:0;
+		height:100%;
 		opacity:.75;
 	}
 }

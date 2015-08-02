@@ -393,50 +393,47 @@ body .promos > li {
   /* line 252, ../scss/content/_home.scss */
   .home-widget-top .home-widget-overlay, .home-widget-btm .home-widget-overlay {
     transition: all .2s linear;
+    font-size: 44px;
   }
 
-  /* line 258, ../scss/content/_home.scss */
+  /* line 259, ../scss/content/_home.scss */
   .home-widget-top .home-widget-overlay {
-    display: -webkit-flex;
     display: flex;
-    top: 100%;
+    height: 0;
     bottom: 0;
-    font-size: 44px;
     opacity: 0;
-    -webkit-align-items: center;
     align-items: center;
-    -webkit-justify-content: center;
     justify-content: center;
   }
-  /* line 270, ../scss/content/_home.scss */
+  /* line 267, ../scss/content/_home.scss */
   .home-widget-btm:hover .home-widget-overlay {
     opacity: 1;
   }
-  /* line 273, ../scss/content/_home.scss */
+  /* line 270, ../scss/content/_home.scss */
   .home-widget-top:hover .home-widget-overlay {
-    top: 0;
+    height: 100%;
     opacity: .75;
   }
 }
 @media only screen and (max-width: 770px) {
-  /* line 284, ../scss/content/_home.scss */
+  /* line 281, ../scss/content/_home.scss */
   .home-widget-btm .home-widget-overlay {
     font-size: 32px;
   }
 
-  /* line 289, ../scss/content/_home.scss */
+  /* line 286, ../scss/content/_home.scss */
   .home-widget-top .home-widget-overlay {
     display: none;
   }
 }
 @media only screen and (max-width: 479px) {
-  /* line 298, ../scss/content/_home.scss */
+  /* line 295, ../scss/content/_home.scss */
   .home-widget-btm .home-widget-overlay {
     font-size: 18px;
     padding: 5px;
   }
 }
-/* line 307, ../scss/content/_home.scss */
+/* line 304, ../scss/content/_home.scss */
 .home-content {
   margin: 20px auto;
   font-size: 18px;
