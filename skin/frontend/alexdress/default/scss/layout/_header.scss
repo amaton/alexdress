@@ -156,7 +156,7 @@
 .lang-dropdown{
   display:none;
 	.form-language:hover &{
-    display:flex;
+    display:block;
 		background: $c-lightgray;
     padding: 5px 17px;
     position: absolute;

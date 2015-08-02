@@ -562,7 +562,9 @@ p.product-name {
 // Product list
 
 .products-grid{
-  display:flex;
+    display:-webkit-flex;
+	display:flex;
+    -webkit-flex-flow:row wrap;
 	flex-flow:row wrap;
 	li{
 		position:relative;
