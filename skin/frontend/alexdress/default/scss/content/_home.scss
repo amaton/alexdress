@@ -207,7 +207,9 @@ body .promos > li {
     display: none;
 }
 
-.home-widgets-top {
+/* Home widgets */
+
+.home-widgets-top, .home-widgets-btm{
 		display: -webkit-flex;
     display: flex;
 		-webkit-flex-flow: row wrap;
@@ -217,14 +219,63 @@ body .promos > li {
 		margin:$gap 0;
 }
 
-.home-widget-top {
+.home-widget-top, .home-widget-btm {
     display: block;
     width: 23.5%;
+	position:relative;
 		border:1px solid $c-lightgray;
 		img{
       width:100%;
 		}
 }
+
+.home-widget-overlay{
+	position:absolute;
+	text-transform:uppercase;
+	color:$c-white;
+	left:0;
+	right:0;
+    background:#712c6b;
+	text-align:center;
+	.home-widget-btm &{
+		transform:translateY(-50%);
+		top:50%;
+		font-size:44px;
+		opacity:.5;
+		padding:$gap/2;
+	}
+}
+
+@include bp(min-width, $bp-medium+1){
+
+.home-widget-top,.home-widget-btm:hover .home-widget-overlay{
+    transition:all .2s linear;
+	opacity:1 !important;
+}
+
+}
+
+@include bp(max-width, $bp-medium){
+
+.home-widget-overlay{
+	.home-widget-btm &{
+		font-size:32px;
+	}
+}
+
+}
+
+@include bp(max-width, $bp-xsmall){
+
+.home-widget-overlay{
+	.home-widget-btm &{
+		font-size:18px;
+		padding:$gap/4;
+	}
+}
+
+}
+
 
 .home-content{
 	margin:$gap auto;
