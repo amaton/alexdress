@@ -219,10 +219,11 @@ body .promos > li {
 		margin:$gap 0;
 }
 
-.home-widget-top, .home-widget-btm {
+.home-widget-top, .home-widget-btm, .home-widget-banner {
     display: block;
     width: 23.5%;
 	position:relative;
+	overflow:hidden;
 		border:1px solid $c-lightgray;
 		img{
       width:100%;
@@ -243,6 +244,17 @@ body .promos > li {
 		font-size:44px;
 		opacity:.75;
 		padding:$gap/2;
+	}
+    .home-widget-banner &{
+ 		bottom: 6%;
+    	font-size: 52px;
+	    margin-left: -32%;
+    	opacity: 1;
+	    padding: $gap/4 0 $gap/4+3px;
+    	text-transform: none;
+	    transform: rotate(-45deg);
+    	width: 200%;
+		line-height:.9;
 	}
 }
 
@@ -287,6 +299,14 @@ body .promos > li {
 	display:none;
 }
 
+.home-widget-banner .home-widget-overlay{
+	bottom: 0;
+   	font-size: 36px;
+    margin-left: 0;
+    transform: none;
+   	width: 100%;
+}
+
 }
 
 @include bp(max-width, $bp-xsmall){
@@ -296,6 +316,10 @@ body .promos > li {
 		font-size:18px;
 		padding:$gap/4;
 	}
+}
+
+.home-widget-banner .home-widget-overlay{
+   	font-size: 18px;
 }
 
 }

@@ -8765,25 +8765,19 @@ div.paypal-logo span > img {
 }
 
 /* line 41, ../scss/module/_slideshow.scss */
-.home-special {
-  display: block;
-  width: 23.5%;
-}
-
-/* line 46, ../scss/module/_slideshow.scss */
 .slideshow-container {
   position: relative;
   display: block;
   width: 74.5%;
 }
-/* line 50, ../scss/module/_slideshow.scss */
+/* line 45, ../scss/module/_slideshow.scss */
 .slideshow-container .slideshow {
   width: 100%;
   padding: 0;
   position: relative;
   margin: 0;
 }
-/* line 55, ../scss/module/_slideshow.scss */
+/* line 50, ../scss/module/_slideshow.scss */
 .slideshow-container .slideshow > li {
   position: absolute;
   top: 0;
@@ -8793,18 +8787,18 @@ div.paypal-logo span > img {
   display: block;
   margin: 0;
 }
-/* line 65, ../scss/module/_slideshow.scss */
+/* line 60, ../scss/module/_slideshow.scss */
 .slideshow-container .slideshow > li:first-child {
   position: static;
   z-index: 100;
 }
-/* line 70, ../scss/module/_slideshow.scss */
+/* line 65, ../scss/module/_slideshow.scss */
 .slideshow-container .slideshow > li img {
   max-width: 100%;
   width: 100%;
 }
 
-/* line 78, ../scss/module/_slideshow.scss */
+/* line 73, ../scss/module/_slideshow.scss */
 .slideshow-pager {
   text-align: center;
   width: 100%;
@@ -8819,7 +8813,7 @@ div.paypal-logo span > img {
   -o-user-select: none;
   user-select: none;
 }
-/* line 88, ../scss/module/_slideshow.scss */
+/* line 83, ../scss/module/_slideshow.scss */
 .slideshow-pager span {
   font-family: arial;
   width: 44px;
@@ -8828,7 +8822,7 @@ div.paypal-logo span > img {
   color: #DDDDDD;
   cursor: pointer;
 }
-/* line 97, ../scss/module/_slideshow.scss */
+/* line 92, ../scss/module/_slideshow.scss */
 .slideshow-pager span:before {
   content: '';
   display: block;
@@ -8844,20 +8838,20 @@ div.paypal-logo span > img {
   position: relative;
   border-radius: 8px;
 }
-/* line 113, ../scss/module/_slideshow.scss */
+/* line 108, ../scss/module/_slideshow.scss */
 .slideshow-pager span:hover:before {
   background-color: #deddde;
 }
-/* line 117, ../scss/module/_slideshow.scss */
+/* line 112, ../scss/module/_slideshow.scss */
 .slideshow-pager span.cycle-pager-active:before {
   background-color: #deddde;
 }
-/* line 122, ../scss/module/_slideshow.scss */
+/* line 117, ../scss/module/_slideshow.scss */
 .slideshow-pager > * {
   cursor: pointer;
 }
 
-/* line 127, ../scss/module/_slideshow.scss */
+/* line 122, ../scss/module/_slideshow.scss */
 .slideshow-prev,
 .slideshow-next {
   position: absolute;
@@ -8874,7 +8868,7 @@ div.paypal-logo span > img {
   -o-user-select: none;
   user-select: none;
 }
-/* line 139, ../scss/module/_slideshow.scss */
+/* line 134, ../scss/module/_slideshow.scss */
 .slideshow-prev:before,
 .slideshow-next:before {
   content: '';
@@ -8887,12 +8881,12 @@ div.paypal-logo span > img {
   top: 50%;
   margin-top: -15px;
 }
-/* line 151, ../scss/module/_slideshow.scss */
+/* line 146, ../scss/module/_slideshow.scss */
 .slideshow-prev:hover,
 .slideshow-next:hover {
   opacity: 1;
 }
-/* line 155, ../scss/module/_slideshow.scss */
+/* line 150, ../scss/module/_slideshow.scss */
 .slideshow-prev.disabled,
 .slideshow-next.disabled {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
@@ -8900,39 +8894,39 @@ div.paypal-logo span > img {
   cursor: default;
 }
 
-/* line 161, ../scss/module/_slideshow.scss */
+/* line 156, ../scss/module/_slideshow.scss */
 .slideshow-prev {
   left: 8px;
 }
-/* line 164, ../scss/module/_slideshow.scss */
+/* line 159, ../scss/module/_slideshow.scss */
 .slideshow-prev:before {
   border-width: 15px 15px 15px 0;
   border-color: transparent #FFFFFF transparent transparent;
   top: 50%;
   left: 10px;
 }
-/* line 171, ../scss/module/_slideshow.scss */
+/* line 166, ../scss/module/_slideshow.scss */
 .slideshow-prev:hover:before {
   border-color: transparent #deddde transparent transparent;
 }
 
-/* line 176, ../scss/module/_slideshow.scss */
+/* line 171, ../scss/module/_slideshow.scss */
 .slideshow-next {
   right: 8px;
 }
-/* line 179, ../scss/module/_slideshow.scss */
+/* line 174, ../scss/module/_slideshow.scss */
 .slideshow-next:before {
   border-width: 15px 0 15px 15px;
   border-color: transparent transparent transparent #FFFFFF;
   top: 50%;
   right: 10px;
 }
-/* line 186, ../scss/module/_slideshow.scss */
+/* line 181, ../scss/module/_slideshow.scss */
 .slideshow-next:hover:before {
   border-color: transparent transparent transparent #deddde;
 }
 
-/* line 191, ../scss/module/_slideshow.scss */
+/* line 186, ../scss/module/_slideshow.scss */
 .cycle-caption {
   position: absolute;
   color: white;
@@ -8941,7 +8935,7 @@ div.paypal-logo span > img {
   z-index: 110;
 }
 
-/* line 199, ../scss/module/_slideshow.scss */
+/* line 194, ../scss/module/_slideshow.scss */
 .cycle-overlay {
   font-family: tahoma, arial;
   position: absolute;

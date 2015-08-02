@@ -330,18 +330,19 @@ body .promos > li {
 }
 
 /* line 222, ../scss/content/_home.scss */
-.home-widget-top, .home-widget-btm {
+.home-widget-top, .home-widget-btm, .home-widget-banner {
   display: block;
   width: 23.5%;
   position: relative;
+  overflow: hidden;
   border: 1px solid #deddde;
 }
-/* line 227, ../scss/content/_home.scss */
-.home-widget-top img, .home-widget-btm img {
+/* line 228, ../scss/content/_home.scss */
+.home-widget-top img, .home-widget-btm img, .home-widget-banner img {
   width: 100%;
 }
 
-/* line 232, ../scss/content/_home.scss */
+/* line 233, ../scss/content/_home.scss */
 .home-widget-overlay {
   position: absolute;
   text-transform: uppercase;
@@ -351,7 +352,7 @@ body .promos > li {
   background: #712c6b;
   text-align: center;
 }
-/* line 240, ../scss/content/_home.scss */
+/* line 241, ../scss/content/_home.scss */
 .home-widget-btm .home-widget-overlay {
   transform: translateY(-50%);
   top: 50%;
@@ -359,14 +360,26 @@ body .promos > li {
   opacity: .75;
   padding: 10px;
 }
+/* line 248, ../scss/content/_home.scss */
+.home-widget-banner .home-widget-overlay {
+  bottom: 6%;
+  font-size: 52px;
+  margin-left: -32%;
+  opacity: 1;
+  padding: 5px 0 8px;
+  text-transform: none;
+  transform: rotate(-45deg);
+  width: 200%;
+  line-height: .9;
+}
 
-/* line 252, ../scss/content/_home.scss */
+/* line 264, ../scss/content/_home.scss */
 .home-widget-top .home-widget-overlay, .home-widget-btm .home-widget-overlay {
   transition: all .2s linear;
   font-size: 44px;
 }
 
-/* line 259, ../scss/content/_home.scss */
+/* line 271, ../scss/content/_home.scss */
 .home-widget-top .home-widget-overlay {
   display: flex;
   height: 0;
@@ -375,17 +388,17 @@ body .promos > li {
   align-items: center;
   justify-content: center;
 }
-/* line 267, ../scss/content/_home.scss */
+/* line 279, ../scss/content/_home.scss */
 .home-widget-btm:hover .home-widget-overlay {
   opacity: 1;
 }
-/* line 270, ../scss/content/_home.scss */
+/* line 282, ../scss/content/_home.scss */
 .home-widget-top:hover .home-widget-overlay {
   height: 100%;
   opacity: .75;
 }
 
-/* line 304, ../scss/content/_home.scss */
+/* line 328, ../scss/content/_home.scss */
 .home-content {
   margin: 20px auto;
   font-size: 18px;
