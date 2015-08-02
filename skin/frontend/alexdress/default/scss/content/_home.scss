@@ -247,7 +247,7 @@ body .promos > li {
 	}
     .home-widget-banner &{
  		bottom: 6%;
-    	font-size: 52px;
+    	font-size: 48px;
 	    margin-left: -32%;
     	opacity: 1;
 	    padding: $gap/4 0 $gap/4+3px;
@@ -301,10 +301,11 @@ body .promos > li {
 
 .home-widget-banner .home-widget-overlay{
 	bottom: 0;
-   	font-size: 36px;
+   	font-size: 32px;
     margin-left: 0;
     transform: none;
    	width: 100%;
+	padding:$gap/4 0;
 }
 
 }

@@ -363,7 +363,7 @@ body .promos > li {
 /* line 248, ../scss/content/_home.scss */
 .home-widget-banner .home-widget-overlay {
   bottom: 6%;
-  font-size: 52px;
+  font-size: 48px;
   margin-left: -32%;
   opacity: 1;
   padding: 5px 0 8px;
@@ -398,7 +398,7 @@ body .promos > li {
   opacity: .75;
 }
 
-/* line 328, ../scss/content/_home.scss */
+/* line 329, ../scss/content/_home.scss */
 .home-content {
   margin: 20px auto;
   font-size: 18px;

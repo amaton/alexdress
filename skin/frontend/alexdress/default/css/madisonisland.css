@@ -392,7 +392,7 @@ body .promos > li {
 /* line 248, ../scss/content/_home.scss */
 .home-widget-banner .home-widget-overlay {
   bottom: 6%;
-  font-size: 52px;
+  font-size: 48px;
   margin-left: -32%;
   opacity: 1;
   padding: 5px 0 8px;
@@ -442,25 +442,26 @@ body .promos > li {
   /* line 302, ../scss/content/_home.scss */
   .home-widget-banner .home-widget-overlay {
     bottom: 0;
-    font-size: 36px;
+    font-size: 32px;
     margin-left: 0;
     transform: none;
     width: 100%;
+    padding: 5px 0;
   }
 }
 @media only screen and (max-width: 479px) {
-  /* line 315, ../scss/content/_home.scss */
+  /* line 316, ../scss/content/_home.scss */
   .home-widget-btm .home-widget-overlay {
     font-size: 18px;
     padding: 5px;
   }
 
-  /* line 321, ../scss/content/_home.scss */
+  /* line 322, ../scss/content/_home.scss */
   .home-widget-banner .home-widget-overlay {
     font-size: 18px;
   }
 }
-/* line 328, ../scss/content/_home.scss */
+/* line 329, ../scss/content/_home.scss */
 .home-content {
   margin: 20px auto;
   font-size: 18px;
