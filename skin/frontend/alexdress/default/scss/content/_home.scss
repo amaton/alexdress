@@ -248,9 +248,32 @@ body .promos > li {
 
 @include bp(min-width, $bp-medium+1){
 
-.home-widget-top,.home-widget-btm:hover .home-widget-overlay{
-    transition:all .2s linear;
-	opacity:1 !important;
+.home-widget-top,.home-widget-btm{
+    .home-widget-overlay{
+	    transition:all .2s linear;
+	}
+}
+
+.home-widget-overlay{
+	.home-widget-top &{
+        display:-webkit-flex;
+		display:flex;
+		top:100%;
+		bottom:0;
+		font-size:44px;
+  		opacity:0;
+		-webkit-align-items:center;
+		align-items:center;
+        -webkit-justify-content: center;
+        justify-content: center;
+	}
+	.home-widget-btm:hover &{
+		opacity:1;
+	}
+	.home-widget-top:hover &{
+		top:0;
+		opacity:.75;
+	}
 }
 
 }
@@ -261,6 +284,10 @@ body .promos > li {
 	.home-widget-btm &{
 		font-size:32px;
 	}
+}
+
+.home-widget-top .home-widget-overlay{
+	display:none;
 }
 
 }

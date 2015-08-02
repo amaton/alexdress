@@ -390,26 +390,53 @@ body .promos > li {
 }
 
 @media only screen and (min-width: 771px) {
-  /* line 251, ../scss/content/_home.scss */
-  .home-widget-top, .home-widget-btm:hover .home-widget-overlay {
+  /* line 252, ../scss/content/_home.scss */
+  .home-widget-top .home-widget-overlay, .home-widget-btm .home-widget-overlay {
     transition: all .2s linear;
-    opacity: 1 !important;
+  }
+
+  /* line 258, ../scss/content/_home.scss */
+  .home-widget-top .home-widget-overlay {
+    display: -webkit-flex;
+    display: flex;
+    top: 100%;
+    bottom: 0;
+    font-size: 44px;
+    opacity: 0;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  /* line 270, ../scss/content/_home.scss */
+  .home-widget-btm:hover .home-widget-overlay {
+    opacity: 1;
+  }
+  /* line 273, ../scss/content/_home.scss */
+  .home-widget-top:hover .home-widget-overlay {
+    top: 0;
+    opacity: .75;
   }
 }
 @media only screen and (max-width: 770px) {
-  /* line 261, ../scss/content/_home.scss */
+  /* line 284, ../scss/content/_home.scss */
   .home-widget-btm .home-widget-overlay {
     font-size: 32px;
   }
+
+  /* line 289, ../scss/content/_home.scss */
+  .home-widget-top .home-widget-overlay {
+    display: none;
+  }
 }
 @media only screen and (max-width: 479px) {
-  /* line 271, ../scss/content/_home.scss */
+  /* line 298, ../scss/content/_home.scss */
   .home-widget-btm .home-widget-overlay {
     font-size: 18px;
     padding: 5px;
   }
 }
-/* line 280, ../scss/content/_home.scss */
+/* line 307, ../scss/content/_home.scss */
 .home-content {
   margin: 20px auto;
   font-size: 18px;
