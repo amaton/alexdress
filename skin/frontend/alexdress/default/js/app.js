@@ -1308,7 +1308,7 @@ function cmpRgbToHex(clRgb,clHex){
 	return rgbToHex(clRgb)==clHex;
 }
 
-function activateColorPalette(colorPalette,colorInput,colorControl,cssProps){
+function activateColorPalette(colorPalette,colorInput,colorControl,colorReset,cssProps){
     var clCustom=window.localStorage['clCustom'],clDefault=colorInput.value;
 	if(clCustom){
         applyCl(colorInput.value=clCustom);
@@ -1323,6 +1323,10 @@ function activateColorPalette(colorPalette,colorInput,colorControl,cssProps){
     });
     colorInput.on('input',function(){
        applyCl(localStorage['clCustom']=this.value);
+    });
+    colorReset.on('click',function(){
+       applyCl(colorInput.value=clDefault);
+       window.localStorage['clCustom']='';
     });
     function applyCl(cl){
         for(var i=0;i<document.styleSheets.length;i++){
@@ -1370,6 +1374,6 @@ $j(document).ready(function() {
 	// Color palette
 	var colorPalette=document.getElementById('colorPalette');
     if(colorPalette){
-       activateColorPalette(colorPalette,document.getElementById('palette-color'),document.getElementById('palette-control'),['backgroundColor','borderColor','color']);
+       activateColorPalette(colorPalette,document.getElementById('palette-color'),document.getElementById('palette-control'),document.getElementById('palette-reset'),['backgroundColor','borderColor','color']);
     }
 });

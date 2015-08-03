@@ -12833,7 +12833,7 @@ body[class*="checkout-multishipping-"] #review-buttons-container {
   left: 0;
   z-index: 300;
   background: #b896b5;
-  padding: 20px;
+  padding: 20px 20px 15px;
   border-radius: 0 10px 10px 0;
   transform: translateX(-100%);
   margin-left: 40px;
@@ -12856,7 +12856,7 @@ body[class*="checkout-multishipping-"] #review-buttons-container {
   color: #deddde;
   font-size: 20px;
   width: 40px;
-  padding-top: 30px;
+  padding-top: 42px;
   text-align: center;
 }
 /* line 30, ../scss/module/_palette.scss */
@@ -12884,18 +12884,28 @@ body[class*="checkout-multishipping-"] #review-buttons-container {
 }
 
 /* line 51, ../scss/module/_palette.scss */
-.palette-label {
+.palette-label, #palette-reset {
   color: #fff;
   font-size: 16px;
-  margin-bottom: 10px;
 }
 
-/* line 57, ../scss/module/_palette.scss */
+/* line 56, ../scss/module/_palette.scss */
 #palette-color {
   display: block;
   width: 100%;
   height: 25px;
   border: none;
+  margin: 10px 0;
+}
+
+/* line 64, ../scss/module/_palette.scss */
+#palette-reset {
+  cursor: pointer;
+  text-align: center;
+}
+/* line 67, ../scss/module/_palette.scss */
+#palette-reset:hover {
+  text-decoration: underline;
 }
 
 /* ============================================ *
