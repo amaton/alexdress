@@ -1277,51 +1277,54 @@ var ProductMediaManager = {
     }
 };
 
-function activateClPalette(){
-    var clDefault='#712c6b',clCustom=window.localStorage['clCustom'];
-    var colorInput=document.getElementById('palette-color');
-    if(clCustom){
-        colorInput.value=clCustom;
-        applyCustomCl(clCustom);  
-    }
-    else{
-        colorInput.value=clDefault;
-    }
-    document.getElementById('palette-control').on('click',function(){
-       document.getElementById('colorPalette').classList.toggle('palette-active');
+function rgbToHex(rgb){
+	var hex=['','',''],nums='0123456789',numOpen=false,cnt=3,i=0,res='#';
+	function decToHex(dec){
+		var hex=Number(dec).toString(16);
+		if(dec<16){
+			hex='0'+hex;
+		}
+		return hex;
+	}
+	for(var pos=0;(i<rgb.length)&&(pos<cnt);i++){
+		if(nums.indexOf(rgb[i])!=-1){
+			numOpen=true;
+			hex[pos]+=rgb[i];
+		}
+		else{
+			if(numOpen){
+				pos++;
+				numOpen=false;
+			}
+		}
+	}
+	for(i=0;i<cnt;i++){
+		res+=decToHex(hex[i]);
+	}
+	return res;
+}
+
+function cmpRgbToHex(clRgb,clHex){
+	return rgbToHex(clRgb)==clHex;
+}
+
+function activateColorPalette(colorPalette,colorInput,colorControl,cssProps){
+    var clCustom=window.localStorage['clCustom'],clDefault=colorInput.value;
+	if(clCustom){
+        applyCl(colorInput.value=clCustom);
+	}
+	else{
+        clCustom=clDefault;
+	}
+    colorControl.on('click',function(){
+       colorPalette.classList.toggle('palette-active');
        this.classList.toggle('fa-paint-brush');
-       this.classList.toggle('fa-times');       
+       this.classList.toggle('fa-times');
     });
     colorInput.on('input',function(){
-       console.log('oninput');
-       applyCustomCl(localStorage['clCustom']=this.value);
+       applyCl(localStorage['clCustom']=this.value);
     });
-    function hexToRgb(hex){
-        var _hex=hex.substr(1),x='0123456789abcdef',rgb=[];
-        for (var i=0;i<6; i+=2){
-            rgb[i/2]=16*x.indexOf(_hex.charAt(i)) + x.indexOf(_hex.charAt(i+1));
-        }
-        return rgb;
-    }
-    function applyCustomCl(cl){
-        var rgbCustom=hexToRgb(cl),rgbDefault=hexToRgb(clDefault);
-        var props=['backgroundColor','borderColor','color'];
-        rgbCustom=rgbCustom[0]+', '+rgbCustom[1]+', '+rgbCustom[2];
-        rgbDefault=rgbDefault[0]+', '+rgbDefault[1]+', '+rgbDefault[2];
-        function switchCl(style,prop){
-            if(style&&style[prop]&&((style.wasChanged)&&(style.wasChanged[prop])||style[prop].indexOf(rgbDefault)!=-1)){
-                style[prop]='rgb('+rgbCustom+')';
-                if(!style.wasChanged){
-                    style.wasChanged={};
-                }
-                style.wasChanged[prop]='true';
-            }
-        }
-        function setStyles(style){
-            for(var i=0;i<props.length;i++){
-                switchCl(style,props[i]);
-            }        
-        }
+    function applyCl(cl){
         for(var i=0;i<document.styleSheets.length;i++){
             if(!document.styleSheets[i].cssRules){
                 continue;
@@ -1330,10 +1333,23 @@ function activateClPalette(){
                 var rules=document.styleSheets[i].cssRules[j];
                 if(rules.media&&rules.cssRules){
                     for(var k=0;k<rules.cssRules.length;k++){
-                        setStyles(rules.cssRules[k].style);
+                        setProps(rules.cssRules[k].style);
                     }
                 }
-                setStyles(rules.style);
+				else{
+                	setProps(rules.style);
+				}
+            }
+        }
+		clCustom=cl;
+        function setProps(style){
+            for(var i=0;i<cssProps.length;i++){
+                setCl(style,cssProps[i]);
+            }
+        }
+        function setCl(style,prop){
+            if(style&&style[prop]&&(cmpRgbToHex(style[prop],clCustom)||cmpRgbToHex(style[prop],clDefault))){
+                style[prop]=cl;
             }
         }
     }
@@ -1351,7 +1367,9 @@ $j(document).ready(function() {
         	document.body.removeClassName('magnetHeader');
 				}
 			})
-    if(document.getElementById('colorPalette')){
-       activateClPalette();
+	// Color palette
+	var colorPalette=document.getElementById('colorPalette');
+    if(colorPalette){
+       activateColorPalette(colorPalette,document.getElementById('palette-color'),document.getElementById('palette-control'),['backgroundColor','borderColor','color']);
     }
 });
