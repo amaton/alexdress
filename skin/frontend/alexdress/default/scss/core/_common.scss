@@ -346,15 +346,13 @@ body:not(.customer-account) .block:first-child .block-title {
 .cart-table .product-cart-actions .button,
 #co-shipping-method-form .buttons-set .button,
 .footer .button {
-    background: $c-button;
-    display: inline-block;
+	display:block;
+    background: $c-action;
     padding: 7px 15px;
     border: 0;
-    color: #FFFFFF;
-    font-size: $f-size-s;
+    color: $c-white;
+	line-height:1;
     font-weight: normal;
-    font-family: $f-stack-special;
-    line-height: 19px;
     text-align: center;
     text-transform: uppercase;
     vertical-align: middle;

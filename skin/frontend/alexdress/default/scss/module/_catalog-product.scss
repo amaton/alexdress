@@ -340,14 +340,6 @@
         @include clearfix;
     }
 
-    .add-to-cart {
-        padding-bottom: 3px;
-        margin-bottom: 10px;
-        border-bottom: 1px solid $c-module-border;
-    }
-
-
-
     .add-to-cart .qty-wrapper,
     .add-to-cart .qty-wrapper label {
         margin-right: 7px;
@@ -360,13 +352,28 @@
 
     .add-to-cart .qty-wrapper .qty {
         float: left;
+		width:40px;
         height: 40px;
+		font-size:28px;
+		color:$c-black;
+		padding:0;
+		border:0;
+		background:$c-lightgray;
+		outline:none;
+		margin:0 10px;
     }
 
+	.qty-ctrl{
+		float:left;
+		width:40px;
+		height:40px;
+		font-family: Arial,sans-serif;
+		font-size:28px;
+		padding:5px 0 0;
+	}
+
     .add-to-cart-buttons {
-        float: left;
-        margin-right: 10px;
-        max-width: 100%; // Constrain width in Firefox
+        float: right;
 
         .paypal-logo {
             clear: left;
@@ -401,10 +408,8 @@
 
     .add-to-cart-buttons .button {
         min-height: 40px;
-        line-height: 40px;
-        font-size: $f-size-xl;
+        font-size: 28px;
         padding: 0px 30px;
-        float: left;
         min-width: 160px;
         width: 100%;
         white-space: normal;
@@ -417,7 +422,18 @@
 }
 
 @include bp(max-width, $bp-xsmall) {
+
+	.product-view .add-to-cart .qty-wrapper{
+		float:none;
+        overflow: hidden;
+	}
+
     .product-view .add-to-cart-buttons {
+		float:none;
+		.button{
+			width:100%;
+			margin-top:$gap;
+		}
         .paypal-or {
             line-height: 20px;
         }
@@ -773,11 +789,7 @@
 }
 
 .product-options-bottom {
-    background-color: $c-module-background;
-    padding: 15px 20px;
-    border: 1px solid $c-fieldset-border;
-    border-top: 0;
-    margin-bottom: $box-spacing;
+	margin-top:$gap*3/4;
 }
 
 .product-options-bottom:after {
