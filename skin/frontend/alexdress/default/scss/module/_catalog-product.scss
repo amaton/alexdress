@@ -453,6 +453,7 @@
 			color:$c-text;
 		}
         .item-name,.item-price{
+			display:block;
 			padding:0 10px;
             text-overflow:ellipsis;
 			white-space:nowrap;
