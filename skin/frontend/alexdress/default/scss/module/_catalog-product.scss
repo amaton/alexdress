@@ -113,7 +113,7 @@
             .special-price .price,
             .full-product-price .price {
                 color: $c-action;
-                font-size: 32px;
+                font-size: 38px;
             }
 
             .special-price {
@@ -450,6 +450,11 @@
             float: none;
         }
     }
+
+	.product-view .product-shop .price-box .regular-price .price{
+		font-size:30px;
+	}
+
 }
 
 /* This is the "or" that separates the "Add to Cart" and "Add to X" links */
