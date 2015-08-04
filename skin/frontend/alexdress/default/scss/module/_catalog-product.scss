@@ -54,10 +54,14 @@
     }
 
     .product-shop .product-name .h1,
-    .product-img-box .product-name h1 {
+    .product-img-box .product-name .h1 {
+		display:block;
         color: $c-action;
         margin-bottom: 10px;
         border: 0;
+		line-height:1;
+		font-size:32px;
+		text-transform:uppercase;
     }
 
     .product-shop {
@@ -81,20 +85,16 @@
         }
 
         .price-info {
-            float: right;
-            padding-left: $trim/2;
-            text-align: right;
+			position:absolute;
+			right:$gap/2;
+			top:$gap/2;
         }
 
-        .extra-info,
-        .price-info {
-            max-width: 70%;
-            margin-bottom: $box-spacing;
-        }
 
         .short-description {
             margin-bottom: $box-spacing;
             clear: both;
+			font-size:18px;
         }
 
         .ratings {
@@ -108,18 +108,12 @@
         .price-box {
             margin-top: 0;
 
-            .old-price,
-            .special-price,
-            .regular-price {
-                padding-right: 0;
-                line-height: 1.2;
-            }
 
             .regular-price .price,
             .special-price .price,
             .full-product-price .price {
                 color: $c-action;
-                font-size: 24px;
+                font-size: 32px;
             }
 
             .special-price {
@@ -242,7 +236,7 @@
     float: left;
 
     .product-name {
-        h1 {
+        .h1 {
             border: 0;
         }
     }
@@ -279,7 +273,6 @@
 .product-image-thumbs {
 	overflow:hidden;
     li {
-        display: block;
 		float:left;
 		width:23.5%;
 		margin-right:2%;
@@ -353,19 +346,7 @@
         border-bottom: 1px solid $c-module-border;
     }
 
-    /* Set a min-height so that the floated elements break appropriately */
-    .add-to-cart .qty-wrapper,
-    .product-options-bottom .price-box,
-    .add-to-cart-buttons {
-        min-height: 40px;
-    }
 
-    .product-options-bottom .price-box,
-    .add-to-cart .qty-wrapper,
-    .add-to-cart-buttons .button,
-    .add-to-cart-buttons .paypal-logo {
-        margin-bottom: 10px;
-    }
 
     .add-to-cart .qty-wrapper,
     .add-to-cart .qty-wrapper label {
@@ -673,10 +654,9 @@
  */
 
 .product-options {
-    width: 100%;
     margin: 10px 0 0;
-    padding: 10px 15px 15px;
-    border: 1px solid $c-fieldset-border;
+    padding:$gap/2;
+    border: 1px solid $c-lightgray;
     clear: both;
     position: relative;
 }
@@ -723,9 +703,7 @@
 }
 
 .product-options dd {
-    padding: 0 0 10px 0;
-    margin: 0 0 5px;
-    border-bottom: 1px solid $c-fieldset-border-light;
+    margin-bottom:$gap/2;
 }
 
 .product-options dl.last dd.last {
@@ -840,7 +818,6 @@
 .product-options-bottom .price-box {
     display: none;
     float: right;
-    margin: 0 0 $gap;
     padding: 0;
 }
 

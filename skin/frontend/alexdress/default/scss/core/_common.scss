@@ -91,7 +91,7 @@ ul {
  * Typography
  * ============================================ */
 
-h1, .h1 { @include h1; }
+h1 { @include h1; }
 
 h2, .h2 { @include h2; }
 
@@ -140,9 +140,7 @@ h6, .h6 { @include h6; }
  */
 
 .page-title h1,
-.page-title h2,
-.product-name h1,
-.product-name .h1 {
+.page-title h2 {
     @include pageTitle;
 }
 
@@ -1171,84 +1169,6 @@ a.button:hover {
     }
 }
 
-/* -------------------------------------------- *
- * Price Box - Standard
- */
-
-.price-box {
-    margin: $element-spacing 0;
-    font-family: $f-stack-sans;
-}
-
-.price-box p {
-    margin-bottom: 0;
-}
-
-.price-notice {
-    color: $c-text-gray;
-}
-
-.price-box .price-label {
-    color: $c-text-gray;
-    white-space: nowrap;
-    font-family: $f-stack-special;
-}
-
-.price-box .minimal-price-link {
-    padding-left: 1em;
-    color: $c-text-primary;
-    display: block; /* We want this to show on its own line, otherwise the layout looks funky */
-
-    .label {
-        color: $c-text-gray;
-    }
-}
-
-/* -------------------------------------------- *
- * Price Box - Special
- */
-
-.price-box .old-price,
-.price-box .special-price {
-    display: inline-block;
-
-    .price-label {
-        display: none;
-    }
-
-    .price {
-        display: inline-block;
-    }
-}
-
-.price-box .old-price {
-    .price {
-        color: $c-text-gray;
-        text-decoration: line-through;
-    }
-}
-
-.price-box .special-price {
-    color: $c-text-primary;
-    padding-left: 1em;
-
-    .price-label {
-        color: #D84D3C;
-    }
-}
-
-/* -------------------------------------------- *
- * Price Box - Taxes
- */
-
-.price-box .price-excluding-tax,
-.price-box .price-including-tax {
-    display: block;
-}
-
-span.weee {
-    display: block;
-}
 
 /* -------------------------------------------- *
  * Tier Prices
