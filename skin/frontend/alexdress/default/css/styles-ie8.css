@@ -4847,7 +4847,7 @@ p.product-name a:hover {
   padding: 7px 10px 7px 24px;
   border-width: 1px;
   border-style: solid;
-  border-color: #CCCCCC;
+  border-color: #deddde;
   position: relative;
   background-color: #F4F4F4;
   cursor: pointer;
@@ -4898,7 +4898,7 @@ p.product-name a:hover {
   padding: 7px 10px 7px 24px;
   border-width: 1px;
   border-style: solid;
-  border-color: #CCCCCC;
+  border-color: #deddde;
   position: relative;
   background-color: #F4F4F4;
   display: block;
@@ -5583,8 +5583,8 @@ p.product-name a:hover {
   display: block;
   width: 100%;
   position: relative;
-  border: 1px solid #CCCCCC;
-  background-color: #F4F4F4;
+  border: 1px solid #deddde;
+  background-color: #fff;
 }
 /* line 34, ../scss/mixin/_toggle-content.scss */
 .product-collateral .toggle-tabs li {
@@ -5604,51 +5604,51 @@ p.product-name a:hover {
   height: 40px;
   line-height: 40px;
   cursor: pointer;
-  text-transform: uppercase;
-  font-size: 12px;
+  font-size: 18px;
   position: relative;
   bottom: -1px;
 }
-/* line 53, ../scss/mixin/_toggle-content.scss */
+/* line 52, ../scss/mixin/_toggle-content.scss */
 .product-collateral .toggle-tabs li.current {
-  border-right: 1px solid #CCCCCC;
-  border-left: 1px solid #CCCCCC;
+  border-right: 1px solid #deddde;
+  border-left: 1px solid #deddde;
 }
-/* line 57, ../scss/mixin/_toggle-content.scss */
+/* line 56, ../scss/mixin/_toggle-content.scss */
 .product-collateral .toggle-tabs li.current > span {
-  background-color: #FFFFFF;
+  background-color: #fff;
   z-index: 5;
 }
-/* line 63, ../scss/mixin/_toggle-content.scss */
+/* line 62, ../scss/mixin/_toggle-content.scss */
 .product-collateral .toggle-tabs li.current span,
 .product-collateral .toggle-tabs li:hover span {
   color: #712c6b;
 }
-/* line 68, ../scss/mixin/_toggle-content.scss */
+/* line 67, ../scss/mixin/_toggle-content.scss */
 .product-collateral .toggle-tabs li:first-child {
   border-left: none;
 }
-/* line 72, ../scss/mixin/_toggle-content.scss */
+/* line 71, ../scss/mixin/_toggle-content.scss */
 .product-collateral .toggle-tabs:after {
   content: '';
   display: table;
   clear: both;
 }
-/* line 77, ../scss/mixin/_toggle-content.scss */
+/* line 76, ../scss/mixin/_toggle-content.scss */
 .product-collateral > dl {
   width: 100%;
 }
-/* line 80, ../scss/mixin/_toggle-content.scss */
+/* line 79, ../scss/mixin/_toggle-content.scss */
 .product-collateral > dl > dt {
   display: none;
 }
-/* line 84, ../scss/mixin/_toggle-content.scss */
+/* line 83, ../scss/mixin/_toggle-content.scss */
 .product-collateral > dl > dd {
   width: 100%;
   display: none;
   padding: 15px;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #deddde;
   border-top: 0;
+  font-size: 18px;
 }
 /* line 92, ../scss/mixin/_toggle-content.scss */
 .product-collateral > dl > dd.current {
@@ -5923,19 +5923,25 @@ p.product-name a:hover {
   float: left;
 }
 
+/* Product description */
+/* line 853, ../scss/module/_catalog-product.scss */
+.product-shop .product-collateral {
+  margin-top: 15px;
+}
+
 /* -------------------------------------------- *
  * Related Products
  */
 /* Block: Related */
-/* line 858, ../scss/module/_catalog-product.scss */
+/* line 865, ../scss/module/_catalog-product.scss */
 .block-related li {
   margin-bottom: 7px;
 }
-/* line 862, ../scss/module/_catalog-product.scss */
+/* line 869, ../scss/module/_catalog-product.scss */
 .block-related .block-title {
   border-bottom: none;
 }
-/* line 865, ../scss/module/_catalog-product.scss */
+/* line 872, ../scss/module/_catalog-product.scss */
 .block-related .block-title h2 {
   margin: 0;
   margin-bottom: 0.5em;
@@ -5949,40 +5955,40 @@ p.product-name a:hover {
   text-transform: uppercase;
   margin-bottom: 0;
 }
-/* line 871, ../scss/module/_catalog-product.scss */
+/* line 878, ../scss/module/_catalog-product.scss */
 .block-related .block-subtitle {
   margin-bottom: 7px;
 }
-/* line 875, ../scss/module/_catalog-product.scss */
+/* line 882, ../scss/module/_catalog-product.scss */
 .block-related .product {
   margin-left: 20px;
   position: relative;
 }
-/* line 879, ../scss/module/_catalog-product.scss */
+/* line 886, ../scss/module/_catalog-product.scss */
 .block-related .checkbox {
   float: left;
   margin-top: 36px;
 }
-/* line 884, ../scss/module/_catalog-product.scss */
+/* line 891, ../scss/module/_catalog-product.scss */
 .block-related .product-details {
   margin-left: 90px;
 }
-/* line 888, ../scss/module/_catalog-product.scss */
+/* line 895, ../scss/module/_catalog-product.scss */
 .block-related .product-name {
   margin-bottom: 3px;
 }
-/* line 892, ../scss/module/_catalog-product.scss */
+/* line 899, ../scss/module/_catalog-product.scss */
 .block-related .product-details .price-box {
   margin: 2px 0 3px;
 }
-/* line 895, ../scss/module/_catalog-product.scss */
+/* line 902, ../scss/module/_catalog-product.scss */
 .block-related .product-details .price-box a,
 .block-related .product-details .price-box p,
 .block-related .product-details .price-box span {
   float: left;
   margin-left: 3px;
 }
-/* line 901, ../scss/module/_catalog-product.scss */
+/* line 908, ../scss/module/_catalog-product.scss */
 .block-related .product-details .price-box a:first-child,
 .block-related .product-details .price-box p:first-child,
 .block-related .product-details .price-box span:first-child {
@@ -5991,13 +5997,13 @@ p.product-name a:hover {
   padding-right: 5px;
   padding-left: 5px;
 }
-/* line 908, ../scss/module/_catalog-product.scss */
+/* line 915, ../scss/module/_catalog-product.scss */
 .block-related .product-details .price-box:after {
   content: '';
   display: table;
   clear: both;
 }
-/* line 912, ../scss/module/_catalog-product.scss */
+/* line 919, ../scss/module/_catalog-product.scss */
 .block-related .link-wishlist {
   display: none;
 }
@@ -6005,11 +6011,11 @@ p.product-name a:hover {
 /* -------------------------------------------- *
  * Upsell Products
  */
-/* line 921, ../scss/module/_catalog-product.scss */
+/* line 928, ../scss/module/_catalog-product.scss */
 .box-up-sell {
   margin-top: 20px;
 }
-/* line 924, ../scss/module/_catalog-product.scss */
+/* line 931, ../scss/module/_catalog-product.scss */
 .box-up-sell .ratings {
   display: none;
 }
@@ -7509,23 +7515,24 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
 #narrow-by-list dd .configurable-swatch-list li {
   margin: 0 0 0 3px;
   width: 47%;
+  float: left;
 }
-/* line 122, ../scss/module/_configurableswatches.scss */
+/* line 123, ../scss/module/_configurableswatches.scss */
 #narrow-by-list dd .swatch-link {
   border: none;
   line-height: 25px;
   margin-right: 2px;
   text-align: left;
 }
-/* line 128, ../scss/module/_configurableswatches.scss */
+/* line 129, ../scss/module/_configurableswatches.scss */
 #narrow-by-list dd .swatch-link.has-image {
   line-height: inherit;
 }
-/* line 132, ../scss/module/_configurableswatches.scss */
+/* line 133, ../scss/module/_configurableswatches.scss */
 #narrow-by-list dd .swatch-link:hover .swatch-label {
   border-color: #712c6b;
 }
-/* line 137, ../scss/module/_configurableswatches.scss */
+/* line 138, ../scss/module/_configurableswatches.scss */
 #narrow-by-list dd .swatch-label {
   background: #F4F4F4;
   border: 1px solid #CCCCCC;
@@ -7537,53 +7544,53 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
   padding: 1px 5px;
   white-space: nowrap;
 }
-/* line 148, ../scss/module/_configurableswatches.scss */
+/* line 149, ../scss/module/_configurableswatches.scss */
 #narrow-by-list dd .swatch-label img {
   border: 1px solid #fff;
   border-radius: 3px;
   box-sizing: content-box;
 }
-/* line 155, ../scss/module/_configurableswatches.scss */
+/* line 156, ../scss/module/_configurableswatches.scss */
 #narrow-by-list dd .has-image .swatch-label {
   padding: 0;
 }
 
-/* line 168, ../scss/module/_configurableswatches.scss */
+/* line 169, ../scss/module/_configurableswatches.scss */
 .currently .swatch-current {
   position: relative;
 }
-/* line 171, ../scss/module/_configurableswatches.scss */
+/* line 172, ../scss/module/_configurableswatches.scss */
 .currently .swatch-current .btn-remove {
   margin-top: -10px;
   position: absolute;
   right: 0;
   top: 50%;
 }
-/* line 178, ../scss/module/_configurableswatches.scss */
+/* line 179, ../scss/module/_configurableswatches.scss */
 .currently .swatch-current span {
   display: block;
   float: left;
 }
-/* line 184, ../scss/module/_configurableswatches.scss */
+/* line 185, ../scss/module/_configurableswatches.scss */
 .currently .swatch-link {
   display: inline-block;
 }
-/* line 186, ../scss/module/_configurableswatches.scss */
+/* line 187, ../scss/module/_configurableswatches.scss */
 .currently .swatch-link:hover {
   border-color: #CCCCCC;
   cursor: default;
 }
 
 /* Other Swatch States */
-/* line 195, ../scss/module/_configurableswatches.scss */
+/* line 196, ../scss/module/_configurableswatches.scss */
 .configurable-swatch-box {
   background: none !important;
 }
-/* line 198, ../scss/module/_configurableswatches.scss */
+/* line 199, ../scss/module/_configurableswatches.scss */
 .configurable-swatch-box select.swatch-select {
   display: none;
 }
-/* line 202, ../scss/module/_configurableswatches.scss */
+/* line 203, ../scss/module/_configurableswatches.scss */
 .configurable-swatch-box .validation-advice {
   margin: 0 0 5px;
   background: #DF280A;
@@ -7596,82 +7603,82 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
 }
 
 /* CUSTOM */
-/* line 215, ../scss/module/_configurableswatches.scss */
+/* line 216, ../scss/module/_configurableswatches.scss */
 .availability.out-of-stock span {
   color: #A0A0A0;
 }
 
-/* line 221, ../scss/module/_configurableswatches.scss */
+/* line 222, ../scss/module/_configurableswatches.scss */
 .product-view .product-options .swatch-attr {
   float: none;
   display: block;
   clear: both;
   border: 0;
 }
-/* line 227, ../scss/module/_configurableswatches.scss */
+/* line 228, ../scss/module/_configurableswatches.scss */
 .product-view .product-options .swatch-attr label,
 .product-view .product-options .swatch-attr .select-label {
   font-size: 12px;
 }
-/* line 232, ../scss/module/_configurableswatches.scss */
+/* line 233, ../scss/module/_configurableswatches.scss */
 .product-view .product-options .swatch-attr label {
   display: block;
   line-height: 1.3;
 }
-/* line 237, ../scss/module/_configurableswatches.scss */
+/* line 238, ../scss/module/_configurableswatches.scss */
 .product-view .product-options .swatch-attr .select-label {
   display: inline;
   font-weight: normal;
   color: #712c6b;
   padding-left: 5px;
 }
-/* line 244, ../scss/module/_configurableswatches.scss */
+/* line 245, ../scss/module/_configurableswatches.scss */
 .product-view .product-options dt.swatch-attr {
   display: none;
 }
-/* line 249, ../scss/module/_configurableswatches.scss */
+/* line 250, ../scss/module/_configurableswatches.scss */
 .product-view .product-options dd .input-box {
   width: auto;
   height: auto;
 }
-/* line 254, ../scss/module/_configurableswatches.scss */
+/* line 255, ../scss/module/_configurableswatches.scss */
 .product-view .product-options .select-label {
   display: none;
 }
-/* line 259, ../scss/module/_configurableswatches.scss */
+/* line 260, ../scss/module/_configurableswatches.scss */
 .product-view .add-to-cart button.out-of-stock {
   background-position: -80px -362px;
   cursor: default;
 }
 
-/* line 268, ../scss/module/_configurableswatches.scss */
+/* line 269, ../scss/module/_configurableswatches.scss */
 #product-options-wrapper .configurable-swatch-list li {
   float: left;
   margin-right: 10px;
   position: relative;
 }
 
-/* line 276, ../scss/module/_configurableswatches.scss */
+/* line 277, ../scss/module/_configurableswatches.scss */
 #configurable_swatch_color li {
   width: 26px;
   height: 26px;
 }
 
-/* line 281, ../scss/module/_configurableswatches.scss */
+/* line 282, ../scss/module/_configurableswatches.scss */
 #configurable_swatch_size li {
   font-size: 32px;
 }
-/* line 283, ../scss/module/_configurableswatches.scss */
+/* line 284, ../scss/module/_configurableswatches.scss */
 #configurable_swatch_size li .swatch-link {
   text-decoration: none;
   padding: 5px;
 }
-/* line 287, ../scss/module/_configurableswatches.scss */
+/* line 288, ../scss/module/_configurableswatches.scss */
 #configurable_swatch_size li.selected .swatch-link {
   color: #712c6b;
 }
 
-/* line 295, ../scss/module/_configurableswatches.scss */
+/* line 296, ../scss/module/_configurableswatches.scss */
 #configurable_swatch_color li:hover .swatch-link.has-image:after, #configurable_swatch_color li.selected .swatch-link.has-image:after {
   content: "";
   position: absolute;
@@ -9550,7 +9557,7 @@ div.paypal-logo span > img {
   padding: 7px 10px 7px 24px;
   border-width: 1px;
   border-style: solid;
-  border-color: #CCCCCC;
+  border-color: #deddde;
   position: relative;
   background-color: #F4F4F4;
   display: block;
