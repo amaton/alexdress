@@ -1374,6 +1374,6 @@ $j(document).ready(function() {
 	// Color palette
 	var colorPalette=document.getElementById('colorPalette');
     if(colorPalette){
-       activateColorPalette(colorPalette,document.getElementById('palette-color'),document.getElementById('palette-control'),document.getElementById('palette-reset'),['backgroundColor','borderColor','color']);
+       activateColorPalette(colorPalette,document.getElementById('palette-color'),document.getElementById('palette-control'),document.getElementById('palette-reset'),['backgroundColor','borderBottomColor','borderTopColor','borderLeftColor','borderRightColor','color']);
     }
 });
