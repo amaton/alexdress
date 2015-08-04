@@ -453,8 +453,8 @@
 		.related-checkbox{
 			margin-right:5px;
             vertical-align:middle;
-			width:10px;
-			height:10px;
+			width:12px;
+			height:12px;
 		}
 		img{
             border:1px solid $c-lightgray;
@@ -541,8 +541,14 @@
 }
 
 #block-related{
-    .related-item label{
-		font-size:14px;
+	.related-item{
+		 .related-checkbox{
+			width:10px;
+			height:10px;
+		}
+		label{
+			font-size:14px;
+		}
 	}
 }
 
