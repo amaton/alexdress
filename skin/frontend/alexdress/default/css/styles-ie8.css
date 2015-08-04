@@ -6108,6 +6108,11 @@ p.product-name a:hover {
   font-size: 18px;
 }
 
+/* line 1041, ../scss/module/_catalog-product.scss */
+.zoomContainer {
+  z-index: 10;
+}
+
 /* ============================================ *
  * Catalog - MSRP MAP Popup
  * ============================================ */
