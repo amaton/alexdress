@@ -42,7 +42,7 @@ $j(document).ready(function () {
 
     $j('#block-related')
         .cycle({
-            slides: '> .product-lnk',
+            slides: '> .related-item',
             fx:'carousel',
 			timeout:3000,
 			carouselVisible:3,

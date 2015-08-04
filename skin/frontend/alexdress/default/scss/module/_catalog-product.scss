@@ -419,12 +419,12 @@
 
 .block-related {
 	clear:both;
-	padding:0 $trim;
+	padding:0 $trim $gap/2;
 	position:relative;
 	.fa{
 		position:absolute;
 		top:50%;
-		transform:translateY(-50%);
+		transform:translateY(-100%);
 		color:$c-lightgray;
 		cursor:pointer;
 		font-size:32px;
@@ -441,8 +441,21 @@
 }
 
 #block-related{
-    .product-lnk{
+    .related-item{
+		position:relative !important;
 		padding:0 5px;
+		label{
+			display:block;
+			margin-top:$gap/2;
+			font-size:18px;
+			text-align:center;
+		}
+		.related-checkbox{
+			margin-right:5px;
+            vertical-align:middle;
+			width:10px;
+			height:10px;
+		}
 		img{
             border:1px solid $c-lightgray;
 			width:100%;
@@ -460,13 +473,19 @@
 }
 
 #block-related{
+    .related-item label{
+		&:hover{
+			color:$c-action;
+		}
+	}
     .product-lnk{
-        position:relative !important;
-			&:hover:after{
+		display:block;
+        position:relative;
+		&:hover:after{
 			content:"";
 			position:absolute;
-			left:5px;
-			right:5px;
+			left:0;
+			right:0;
 			bottom:0;
 			height:10px;
 			background:$c-action;
@@ -519,6 +538,12 @@
 	.fa{
 		font-size:22px;
 	 }
+}
+
+#block-related{
+    .related-item label{
+		font-size:14px;
+	}
 }
 
 }
@@ -947,17 +972,6 @@
 
     .block-subtitle {
         margin-bottom: $element-spacing;
-    }
-
-    .product {
-        position: relative;
-    }
-    .checkbox {
-        float: left;
-        margin-top: 36px;
-    }
-
-    .product-details {
     }
 
     .product-name {

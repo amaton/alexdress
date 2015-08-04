@@ -29,12 +29,54 @@
 <div class="block block-related">
         <div class="mini-products-list slideshow" id="block-related">
         <?php foreach($this->getItems() as $_item): ?>
-	        <a href="<?php echo $_item->getProductUrl() ?>" title="<?php echo $this->escapeHtml($_item->getName()) ?>" class="product-lnk">
-				<img src="<?php echo $this->helper('catalog/image')->init($_item, 'thumbnail')->resize(195) ?>" alt="<?php echo $this->escapeHtml($_item->getName()) ?>" />
-			</a>
+			<div class="related-item">
+		        <a href="<?php echo $_item->getProductUrl() ?>" title="<?php echo $this->escapeHtml($_item->getName()) ?>" class="product-lnk">
+					<img src="<?php echo $this->helper('catalog/image')->init($_item, 'thumbnail')->resize(195) ?>" alt="<?php echo $this->escapeHtml($_item->getName()) ?>" />
+				</a>
+                <?php if(!$_item->isComposite() && $_item->isSaleable() && !$_item->getRequiredOptions()): ?>
+	                <label><input type="checkbox" class="checkbox related-checkbox" id="related-checkbox<?php echo $_item->getId() ?>" name="related_products[]" value="<?php echo $_item->getId() ?>"  title="<?php echo $this->__('Add to cart') ?>"/><?php echo $this->__('Add to cart') ?></label>
+                <?php endif; ?>
+			</div>
         <?php endforeach ?>
         </div>
 	<div id="related-prev" class="fa fa-chevron-left"></div>
 	<div id="related-next" class="fa fa-chevron-right"></div>
 </div>
 <?php endif ?>
+
+    <script type="text/javascript">
+    //<![CDATA[
+    $$('.related-checkbox').each(function(elem){
+        Event.observe(elem, 'click', addRelatedToProduct)
+    });
+
+    var relatedProductsCheckFlag = false;
+    function selectAllRelated(txt){
+        if (relatedProductsCheckFlag == false) {
+            $$('.related-checkbox').each(function(elem){
+                elem.checked = true;
+            });
+            relatedProductsCheckFlag = true;
+            txt.innerHTML="<?php echo $this->__('unselect all') ?>";
+        } else {
+            $$('.related-checkbox').each(function(elem){
+                elem.checked = false;
+            });
+            relatedProductsCheckFlag = false;
+            txt.innerHTML="<?php echo $this->__('select all') ?>";
+        }
+        addRelatedToProduct();
+    }
+
+    function addRelatedToProduct(){
+        var checkboxes = $$('.related-checkbox');
+        var values = [];
+        for(var i=0;i<checkboxes.length;i++){
+            if(checkboxes[i].checked) values.push(checkboxes[i].value);
+        }
+        if($('related-products-field')){
+            $('related-products-field').value = values.join(',');
+        }
+    }
+    //]]>
+    </script>
