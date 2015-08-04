@@ -34,7 +34,7 @@ $mq-fixed-value: 1024;
 @import "//webfonts.ru/import/opengost.css";
 @import "//netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css";
 /* line 208, icons/*.png */
-.icons-sprite, .icons-delivery, .icons-dhl, .icons-lang_cs, .icons-lang_de, .icons-lang_dropdown, .icons-lang_en, .icons-lang_fr, .icons-lang_ru, .icons-lens, .icons-mastercard, .icons-minicart, .icons-paypal, .icons-return, .icons-social_fb, .icons-social_gp, .icons-social_in, .icons-social_th, .icons-social_tw, .icons-social_vk, .icons-support, .icons-visa, .header-link--delivery, .header-link--return, .header-link--support, .lang-current:after, .lang-icon--default, .lang-icon--en, .lang-icon--german, .lang-icon--de, .lang-icon--french, .lang-icon--fr, .lang-icon--russian, .lang-icon--ru, #search_mini_form .search-button:before, .skip-cart .icon:after, .footer-payment.payment--visa, .footer-payment.payment--mastercard, .footer-payment.payment--paypal, .footer-dhl, .footer-social-link.social--fb, .footer-social-link.social--vk, .footer-social-link.social--th, .footer-social-link.social--in, .footer-social-link.social--tw, .footer-social-link.social--gp {
+.icons-sprite, .icons-delivery, .icons-dhl, .icons-lang_cs, .icons-lang_de, .icons-lang_dropdown, .icons-lang_en, .icons-lang_fr, .icons-lang_ru, .icons-lens, .icons-mastercard, .icons-minicart, .icons-paypal, .icons-return, .icons-social_fb, .icons-social_gp, .icons-social_in, .icons-social_th, .icons-social_tw, .icons-social_vk, .icons-support, .icons-visa, .header-link--delivery, .header-link--return, .header-link--support, .lang-current:after, .lang-icon--default, .lang-icon--en, .lang-icon--german, .lang-icon--de, .lang-icon--french, .lang-icon--fr, .lang-icon--russian, .lang-icon--ru, #search_mini_form .search-button:before, .skip-cart .icon:after, .footer-payment.payment--visa, .footer-payment.payment--mastercard, .footer-payment.payment--paypal, .footer-dhl, .footer-social-link.social--fb, .footer-social-link.social--vk, .footer-social-link.social--th, .footer-social-link.social--in, .footer-social-link.social--tw, .footer-social-link.social--gp, .sharingLink.sharing--fb, .sharingLink.sharing--vk, .sharingLink.sharing--th, .sharingLink.sharing--in, .sharingLink.sharing--tw, .sharingLink.sharing--gp {
   background-image: url('/skin/frontend/alexdress/default/images/icons-s6eb5be3f05.png');
   background-repeat: no-repeat;
 }
@@ -6018,6 +6018,47 @@ p.product-name a:hover {
 /* line 931, ../scss/module/_catalog-product.scss */
 .box-up-sell .ratings {
   display: none;
+}
+
+/* Sharing links */
+/* line 939, ../scss/module/_catalog-product.scss */
+.product-sharingLinks {
+  border: 1px solid #deddde;
+  margin-top: 15px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+/* line 946, ../scss/module/_catalog-product.scss */
+.sharingLink {
+  float: left;
+  margin-right: 10px;
+  width: 33px;
+  height: 32px;
+}
+/* line 951, ../scss/module/_catalog-product.scss */
+.sharingLink.sharing--fb {
+  background-position: 0 -405px;
+}
+/* line 954, ../scss/module/_catalog-product.scss */
+.sharingLink.sharing--vk {
+  background-position: 0 -610px;
+}
+/* line 957, ../scss/module/_catalog-product.scss */
+.sharingLink.sharing--th {
+  background-position: 0 -528px;
+}
+/* line 960, ../scss/module/_catalog-product.scss */
+.sharingLink.sharing--in {
+  background-position: 0 -487px;
+}
+/* line 963, ../scss/module/_catalog-product.scss */
+.sharingLink.sharing--tw {
+  background-position: 0 -569px;
+}
+/* line 966, ../scss/module/_catalog-product.scss */
+.sharingLink.sharing--gp {
+  background-position: 0 -446px;
 }
 
 /* ============================================ *

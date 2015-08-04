@@ -932,3 +932,39 @@
         display: none;
     }
 }
+
+
+/* Sharing links */
+
+.product-sharingLinks{
+	border:1px solid $c-lightgray;
+	margin-top:$gap*3/4;
+	padding:$gap/2;
+	overflow:hidden;
+}
+
+.sharingLink{
+	float:left;
+	margin-right:$gap/2;
+	width:33px;
+	height:32px;
+	&.sharing--fb{
+    @include icons-sprite(social_fb);
+	}
+	&.sharing--vk{
+    @include icons-sprite(social_vk);
+	}
+	&.sharing--th{
+    @include icons-sprite(social_th);
+	}
+	&.sharing--in{
+    @include icons-sprite(social_in);
+	}
+	&.sharing--tw{
+    @include icons-sprite(social_tw);
+	}
+	&.sharing--gp{
+    @include icons-sprite(social_gp);
+	}
+
+}
