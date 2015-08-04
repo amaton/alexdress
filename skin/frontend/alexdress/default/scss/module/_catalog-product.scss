@@ -421,6 +421,10 @@
     }
 }
 
+.add-to-box.noOptions{
+  margin-top:55px;
+}
+
 @include bp(max-width, $bp-xsmall) {
 
 	.product-view .add-to-cart .qty-wrapper{
@@ -454,6 +458,10 @@
 	.product-view .product-shop .price-box .regular-price .price{
 		font-size:30px;
 	}
+
+.add-to-box.noOptions{
+  margin-top:0;
+}
 
 }
 

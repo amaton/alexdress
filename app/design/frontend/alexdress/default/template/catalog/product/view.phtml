@@ -64,7 +64,6 @@
 
                 <?php echo $this->getChildHtml('other');?>
 
-                <?php if ($_product->isSaleable() && $this->hasOptions()):?>
                     <div class="product-options" id="product-options-wrapper">
                     <form action="<?php echo $this->getSubmitUrl($_product) ?>" method="post" id="product_addtocart_form"<?php if($_product->getOptions()): ?> enctype="multipart/form-data"<?php endif; ?>>
             <?php echo $this->getBlockHtml('formkey') ?>
@@ -72,15 +71,33 @@
                 <input type="hidden" name="product" value="<?php echo $_product->getId() ?>" />
                 <input type="hidden" name="related_product" id="related-products-field" value="" />
             </div>
+
 		                <div class="price-info">
         		            <?php echo $this->getPriceHtml($_product); ?>
             		        <?php echo $this->getChildHtml('bundle_prices') ?>
                 		    <?php echo $this->getTierPriceHtml() ?>
 		                </div>
+                <?php if ($_product->isSaleable() && $this->hasOptions()):?>
                     	<?php echo $this->getChildChildHtml('container1', '', true, true) ?>
+                <?php endif;?>
+                <?php if (!$this->hasOptions()):?>
+                    <div class="add-to-box noOptions">
+                        <?php if($_product->isSaleable()): ?>
+                            <?php echo $this->getChildHtml('addtocart') ?>
+                            <?php if( $this->helper('wishlist')->isAllow() || $_compareUrl=$this->helper('catalog/product_compare')->getAddUrl($_product)): ?>
+                                <span class="or"><?php echo $this->__('OR') ?></span>
+                            <?php endif; ?>
+                        <?php endif; ?>
+                    </div>
+                    <?php echo $this->getChildHtml('extra_buttons') ?>
+                <?php elseif (!$_product->isSaleable()): ?>
+                    <div class="add-to-box">
+                    </div>
+                <?php endif; ?>
+
+
 					</form>
 					</div>
-                <?php endif;?>
 
     <div class="product-collateral toggle-content tabs">
         <?php if ($detailedInfoGroup = $this->getChildGroup('detailed_info', 'getChildHtml')):?>
@@ -116,20 +133,7 @@
                 <?php echo $this->getChildHtml('product_type_data') ?>
                 <?php echo $this->getChildHtml('extrahint') ?>
 
-                <?php if (!$this->hasOptions()):?>
-                    <div class="add-to-box">
-                        <?php if($_product->isSaleable()): ?>
-                            <?php echo $this->getChildHtml('addtocart') ?>
-                            <?php if( $this->helper('wishlist')->isAllow() || $_compareUrl=$this->helper('catalog/product_compare')->getAddUrl($_product)): ?>
-                                <span class="or"><?php echo $this->__('OR') ?></span>
-                            <?php endif; ?>
-                        <?php endif; ?>
-                    </div>
-                    <?php echo $this->getChildHtml('extra_buttons') ?>
-                <?php elseif (!$_product->isSaleable()): ?>
-                    <div class="add-to-box">
-                    </div>
-                <?php endif; ?>
+
             </div>
 
 
