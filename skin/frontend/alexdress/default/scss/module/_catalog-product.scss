@@ -444,11 +444,44 @@
     .related-item{
 		position:relative !important;
 		padding:0 5px;
+		font-size:18px;
+		text-align:center;
+		.product-lnk{
+        	display:block;
+            border:1px solid $c-lightgray;
+			text-decoration:none;
+			color:$c-text;
+		}
+        .item-name,.item-price{
+			padding:0 10px;
+            text-overflow:ellipsis;
+			white-space:nowrap;
+			overflow:hidden;
+			.old-price{
+    			display:inline;
+				text-decoration:line-through;
+				margin-right:5px;
+			}
+			.special-price{
+				display:inline;
+			}
+			.price-label{
+				display:none;
+			}
+		}
+		.item-name{
+			margin:10px 0 0;
+		}
+		.item-price{
+            margin:5px 0 15px;
+			.price{
+
+			}
+		}
 		label{
 			display:block;
 			margin-top:$gap/2;
 			font-size:18px;
-			text-align:center;
 		}
 		.related-checkbox{
 			margin-right:5px;
@@ -457,14 +490,30 @@
 			height:12px;
 		}
 		img{
-            border:1px solid $c-lightgray;
 			width:100%;
 			height:auto;
 		}
 	}
 }
 
+.product-view .product-shop #block-related .price-box {
+	.regular-price,.special-price,.old-price{
+		 .price{
+			font-size:18px;
+			color:$c-text;
+		}
+	}
+}
+
 @include bp(min-width, $bp-medium+1){
+
+.product-view .product-shop #block-related .product-lnk:hover .price-box {
+	.regular-price,.special-price,.old-price{
+		 .price{
+			color:$c-action;
+		}
+	}
+}
 
 .block-related {
 	.fa:hover{
@@ -473,22 +522,29 @@
 }
 
 #block-related{
-    .related-item label{
-		&:hover{
-			color:$c-action;
+    .related-item{
+		label{
+			&:hover{
+				color:$c-action;
+			}
 		}
 	}
     .product-lnk{
-		display:block;
         position:relative;
-		&:hover:after{
-			content:"";
-			position:absolute;
-			left:0;
-			right:0;
-			bottom:0;
-			height:10px;
-			background:$c-action;
+		&:hover{
+			color:$c-action;
+            .price-box .regular-price .price{
+                color:$c-action;
+			}
+			&:after{
+				content:"";
+				position:absolute;
+				left:0;
+				right:0;
+				bottom:0;
+				height:10px;
+				background:$c-action;
+			}
 		}
 	}
 }
@@ -542,13 +598,34 @@
 
 #block-related{
 	.related-item{
+		font-size:14px;
 		 .related-checkbox{
 			width:10px;
 			height:10px;
 		}
+        .item-name,.item-price{
+			padding:0 5px;
+		 }
+		.item-name{
+			margin:5px 0 0;
+		}
+		.item-price{
+            margin:5px 0;
+		}
 		label{
 			font-size:14px;
 		}
+	}
+}
+
+.product-view .product-shop #block-related .price-box {
+	.regular-price,.special-price{
+		 .price{
+			font-size:14px;
+		}
+	}
+	.old-price{
+		display:none;
 	}
 }
 
@@ -959,55 +1036,6 @@
  * Related Products
  */
 
-/* Block: Related */
-
-.block-related {
-
-    li {
-        margin-bottom: $element-spacing;
-    }
-
-    .block-title {
-        border-bottom: none;
-
-        h2 {
-            @include h2();
-            margin-bottom: 0;
-        }
-    }
-
-    .block-subtitle {
-        margin-bottom: $element-spacing;
-    }
-
-    .product-name {
-        margin-bottom: 3px;
-    }
-
-    .product-details .price-box {
-        margin: 2px 0 3px;
-
-        a,
-        p,
-        span {
-            float: left;
-            margin-left: 3px;
-
-            &:first-child {
-                margin-left: 0;
-                font-size: $f-size-xl;
-                padding-right: 5px;
-                padding-left: 5px;
-            }
-        }
-        &:after {
-            @include clearfix;
-        }
-    }
-    .link-wishlist {
-        display: none;
-    }
-}
 
 /* -------------------------------------------- *
  * Upsell Products
