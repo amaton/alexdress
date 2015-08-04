@@ -266,33 +266,6 @@ p.product-name {
  * Mini Product List
  * ============================================ */
 
-.mini-products-list {
-
-    .product-image {
-			display:block;
-			border:none;
-			img{
-        display:block;
-				width:100%;
-				height:auto;
-			}
-    }
-
-    // Vertically center product name
-    .product-details .product-name {
-        padding-top: 10px;
-    }
-
-    li {
-        margin-bottom: $gap/2;
-        clear: both;
-
-        &:after {
-            @include clearfix();
-        }
-    }
-}
-
 .mini-products-images-list {
 
     &:after {

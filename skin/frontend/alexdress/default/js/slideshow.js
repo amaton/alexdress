@@ -39,4 +39,19 @@ $j(document).ready(function () {
             swipe: true,
             fx: 'scrollHorz'
         });
+
+    $j('#block-related')
+        .cycle({
+            slides: '> .product-lnk',
+            fx:'carousel',
+			timeout:3000,
+			carouselVisible:3,
+			carouselFluid:true,
+            speed: 600,
+            pauseOnHover: true,
+            swipe: true,
+			prev:$j('#related-prev'),
+            next:$j('#related-next')
+        });
+
 });

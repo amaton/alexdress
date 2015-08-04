@@ -161,13 +161,6 @@
         }
     }
 
-    .add-to-cart-wrapper,
-    .block-related {
-        width: 50%;
-        float: right;
-        clear: right;
-    }
-
 }
 
 @include bp(max-width, 850px) {
@@ -308,8 +301,7 @@
 
 
 .product-view .product-shop,
-.product-view .add-to-cart-wrapper,
-.product-view .block-related {
+.product-view .add-to-cart-wrapper {
     padding-left: $trim/2;
 }
 
@@ -425,6 +417,65 @@
   margin-top:55px;
 }
 
+.block-related {
+	clear:both;
+	padding:0 $trim;
+	position:relative;
+	.fa{
+		position:absolute;
+		top:50%;
+		transform:translateY(-50%);
+		color:$c-lightgray;
+		cursor:pointer;
+		font-size:32px;
+		&:hover{
+			color:$c-highlight;
+		}
+	}
+	.fa-chevron-left{
+		left:0;
+	}
+	.fa-chevron-right{
+		right:0;
+	}
+}
+
+#block-related{
+    .product-lnk{
+		padding:0 5px;
+		img{
+            border:1px solid $c-lightgray;
+			width:100%;
+			height:auto;
+		}
+	}
+}
+
+@include bp(min-width, $bp-medium+1){
+
+.block-related {
+	.fa:hover{
+		color:$c-highlight;
+	}
+}
+
+#block-related{
+    .product-lnk{
+        position:relative !important;
+			&:hover:after{
+			content:"";
+			position:absolute;
+			left:5px;
+			right:5px;
+			bottom:0;
+			height:10px;
+			background:$c-action;
+		}
+	}
+}
+
+}
+
 @include bp(max-width, $bp-xsmall) {
 
 	.product-view .add-to-cart .qty-wrapper{
@@ -461,6 +512,13 @@
 
 .add-to-box.noOptions{
   margin-top:0;
+}
+
+.block-related {
+	padding:0 $gap;
+	.fa{
+		font-size:22px;
+	 }
 }
 
 }
@@ -583,7 +641,6 @@
 
     .product-view .product-shop,
     .product-view .add-to-cart-wrapper,
-    .product-view .block-related,
     .product-img-box,
     .product-collateral {
         width: 100%;
@@ -893,7 +950,6 @@
     }
 
     .product {
-        margin-left: 20px;
         position: relative;
     }
     .checkbox {
@@ -902,7 +958,6 @@
     }
 
     .product-details {
-        margin-left: 90px;
     }
 
     .product-name {
@@ -986,7 +1041,7 @@
 
 .product-shop-title{
 	border-bottom:1px solid $c-action;
-	margin:$gap*3/4 0 $gap/2;
+	margin:$gap 0 $gap/2;
     padding-bottom: $gap/4;
 	font-size:16px;
 	text-transform:uppercase;
