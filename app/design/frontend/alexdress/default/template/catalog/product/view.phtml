@@ -39,13 +39,6 @@
 <div id="messages_product_view"><?php echo $this->getMessagesBlock()->toHtml() ?></div>
 <div class="product-view">
     <div class="product-essential">
-        <form action="<?php echo $this->getSubmitUrl($_product) ?>" method="post" id="product_addtocart_form"<?php if($_product->getOptions()): ?> enctype="multipart/form-data"<?php endif; ?>>
-            <?php echo $this->getBlockHtml('formkey') ?>
-            <div class="no-display">
-                <input type="hidden" name="product" value="<?php echo $_product->getId() ?>" />
-                <input type="hidden" name="related_product" id="related-products-field" value="" />
-            </div>
-
             <div class="product-img-box">
                 <div class="product-name">
                     <span class="h1"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></span>
@@ -73,12 +66,19 @@
 
                 <?php if ($_product->isSaleable() && $this->hasOptions()):?>
                     <div class="product-options" id="product-options-wrapper">
+                    <form action="<?php echo $this->getSubmitUrl($_product) ?>" method="post" id="product_addtocart_form"<?php if($_product->getOptions()): ?> enctype="multipart/form-data"<?php endif; ?>>
+            <?php echo $this->getBlockHtml('formkey') ?>
+            <div class="no-display">
+                <input type="hidden" name="product" value="<?php echo $_product->getId() ?>" />
+                <input type="hidden" name="related_product" id="related-products-field" value="" />
+            </div>
 		                <div class="price-info">
         		            <?php echo $this->getPriceHtml($_product); ?>
             		        <?php echo $this->getChildHtml('bundle_prices') ?>
                 		    <?php echo $this->getTierPriceHtml() ?>
 		                </div>
                     	<?php echo $this->getChildChildHtml('container1', '', true, true) ?>
+					</form>
 					</div>
                 <?php endif;?>
 
@@ -100,6 +100,15 @@
         <a href="#" class="sharingLink sharing--tw"></a>
         <a href="#" class="sharingLink sharing--vk"></a>
 	</div>
+
+    <?php echo $this->getChildHtml('related_products') ?>
+
+	<div class="product-shop-title"><?php echo $this->__('Consultation')?></div>
+	<form class="contactForm" method="post" action="#">
+		<textarea class="contactForm-text" placeholder="<?php echo $this->__('Your question...')?>"></textarea>
+		<button class="contactForm-submit button"><?php echo $this->__('Send')?></button>
+		<input type="email" class="contactForm-email" placeholder="<?php echo $this->__('E-mail')?>"/>
+	</form>
 
             </div>
 
@@ -123,13 +132,12 @@
                 <?php endif; ?>
             </div>
 
-            <?php echo $this->getChildHtml('related_products') ?>
+
 
             <div class="clearer"></div>
             <?php if ($_product->isSaleable() && $this->hasOptions()):?>
                 <?php echo $this->getChildChildHtml('container2', '', true, true) ?>
             <?php endif;?>
-        </form>
         <script type="text/javascript">
         //<![CDATA[
             var productAddToCartForm = new VarienForm('product_addtocart_form');

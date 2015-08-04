@@ -2662,20 +2662,9 @@ input[type=text] {
   padding: 0 8px;
 }
 
-/* line 186, ../scss/core/_form.scss */
-input[type=email],
-input[type=search],
-input[type=number],
-input[type=password],
-input[type=tel],
-input[type=text] {
-  width: 365px;
-  max-width: 100%;
-}
-
 /* Only show on iPhones (not iPads or any other device) */
 @media only screen and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 0) {
-  /* line 198, ../scss/core/_form.scss */
+  /* line 189, ../scss/core/_form.scss */
   input[type=email],
   input[type=search],
   input[type=number],
@@ -2687,7 +2676,7 @@ input[type=text] {
     /* Prevent from zooming on focus */
   }
 }
-/* line 209, ../scss/core/_form.scss */
+/* line 200, ../scss/core/_form.scss */
 .ie8 .input-text {
   max-width: none;
 }
@@ -2695,7 +2684,7 @@ input[type=text] {
 /* -------------------------------------------- *
  * Inputs - Quantity
  */
-/* line 217, ../scss/core/_form.scss */
+/* line 208, ../scss/core/_form.scss */
 input[type=number].qty,
 input[type=text].qty {
   width: 3em;
@@ -2706,12 +2695,12 @@ input[type=text].qty {
 /* -------------------------------------------- *
  * Placeholder
  */
-/* line 228, ../scss/core/_form.scss */
+/* line 219, ../scss/core/_form.scss */
 ::-webkit-input-placeholder {
   color: #A0A0A0;
 }
 
-/* line 232, ../scss/core/_form.scss */
+/* line 223, ../scss/core/_form.scss */
 input:-moz-placeholder {
   color: #A0A0A0;
 }
@@ -2719,7 +2708,7 @@ input:-moz-placeholder {
 /* -------------------------------------------- *
  * Checkbox And Radio
  */
-/* line 240, ../scss/core/_form.scss */
+/* line 231, ../scss/core/_form.scss */
 .checkbox,
 .radio {
   position: relative;
@@ -2727,7 +2716,7 @@ input:-moz-placeholder {
   display: inline-block;
 }
 
-/* line 247, ../scss/core/_form.scss */
+/* line 238, ../scss/core/_form.scss */
 .checkbox + label,
 .radio + label {
   width: auto;
@@ -2741,7 +2730,7 @@ input:-moz-placeholder {
 /* -------------------------------------------- *
  * Validation
  */
-/* line 261, ../scss/core/_form.scss */
+/* line 252, ../scss/core/_form.scss */
 p.required,
 .validation-advice {
   margin: 5px 0 0;
@@ -2752,21 +2741,21 @@ p.required,
 /* ============================================ *
  * Form List
  * ============================================ */
-/* line 274, ../scss/core/_form.scss */
+/* line 265, ../scss/core/_form.scss */
 .form-list > li {
   margin-bottom: 10px;
 }
-/* line 277, ../scss/core/_form.scss */
+/* line 268, ../scss/core/_form.scss */
 .form-list select {
   margin-top: 4px;
   width: 365px;
   max-width: 100%;
 }
-/* line 283, ../scss/core/_form.scss */
+/* line 274, ../scss/core/_form.scss */
 .form-list .input-range .input-text {
   width: 74px;
 }
-/* line 287, ../scss/core/_form.scss */
+/* line 278, ../scss/core/_form.scss */
 .form-list .field,
 .form-list .wide,
 .form-list .control {
@@ -2774,7 +2763,7 @@ p.required,
 }
 
 /* Turn the label of controls (radio/checkbox) into a button style that wraps the input */
-/* line 295, ../scss/core/_form.scss */
+/* line 286, ../scss/core/_form.scss */
 .form-list .control,
 .sp-methods dt,
 #checkout-shipping-method-load .sp-methods dd,
@@ -2782,7 +2771,7 @@ p.required,
 .product-options ul.options-list {
   /* When a label is next to an input that is set to not display, we should style the label in a non-clickable state */
 }
-/* line 301, ../scss/core/_form.scss */
+/* line 292, ../scss/core/_form.scss */
 .form-list .control div.input-box,
 .sp-methods dt div.input-box,
 #checkout-shipping-method-load .sp-methods dd div.input-box,
@@ -2791,7 +2780,7 @@ p.required,
   display: inline;
   float: left;
 }
-/* line 305, ../scss/core/_form.scss */
+/* line 296, ../scss/core/_form.scss */
 .form-list .control div.input-box:after,
 .sp-methods dt div.input-box:after,
 #checkout-shipping-method-load .sp-methods dd div.input-box:after,
@@ -2799,7 +2788,7 @@ p.required,
 .product-options ul.options-list div.input-box:after {
   display: none;
 }
-/* line 310, ../scss/core/_form.scss */
+/* line 301, ../scss/core/_form.scss */
 .form-list .control input.radio,
 .form-list .control input.checkbox,
 .sp-methods dt input.radio,
@@ -2815,7 +2804,7 @@ p.required,
   margin-top: 10px;
   margin-left: 15px;
 }
-/* line 318, ../scss/core/_form.scss */
+/* line 309, ../scss/core/_form.scss */
 .form-list .control label,
 .sp-methods dt label,
 #checkout-shipping-method-load .sp-methods dd label,
@@ -2831,7 +2820,7 @@ p.required,
   float: none;
   padding: 6px 10px 6px 40px;
 }
-/* line 327, ../scss/core/_form.scss */
+/* line 318, ../scss/core/_form.scss */
 .form-list .control label:hover,
 .sp-methods dt label:hover,
 #checkout-shipping-method-load .sp-methods dd label:hover,
@@ -2839,7 +2828,7 @@ p.required,
 .product-options ul.options-list label:hover {
   background-color: #ececec;
 }
-/* line 333, ../scss/core/_form.scss */
+/* line 324, ../scss/core/_form.scss */
 .form-list .control .no-display + label,
 .sp-methods dt .no-display + label,
 #checkout-shipping-method-load .sp-methods dd .no-display + label,
@@ -2848,7 +2837,7 @@ p.required,
   padding-left: 10px;
   background-color: transparent;
 }
-/* line 337, ../scss/core/_form.scss */
+/* line 328, ../scss/core/_form.scss */
 .form-list .control .no-display + label:hover,
 .sp-methods dt .no-display + label:hover,
 #checkout-shipping-method-load .sp-methods dd .no-display + label:hover,
@@ -2857,7 +2846,7 @@ p.required,
   background-color: transparent;
 }
 
-/* line 344, ../scss/core/_form.scss */
+/* line 335, ../scss/core/_form.scss */
 .product-options ul.options-list label,
 .col2-set .form-list .control label {
   min-width: inherit;
@@ -2865,27 +2854,27 @@ p.required,
   max-width: 100%;
 }
 
-/* line 352, ../scss/core/_form.scss */
+/* line 343, ../scss/core/_form.scss */
 .form-list .control.remember-me-box label {
   width: auto;
   max-width: none;
   min-width: inherit;
 }
 
-/* line 359, ../scss/core/_form.scss */
+/* line 350, ../scss/core/_form.scss */
 .form-list .control {
   margin-top: 10px;
 }
-/* line 362, ../scss/core/_form.scss */
+/* line 353, ../scss/core/_form.scss */
 .form-list .control label {
   float: none;
 }
-/* line 365, ../scss/core/_form.scss */
+/* line 356, ../scss/core/_form.scss */
 .form-list .control .radio,
 .form-list .control .checkbox {
   margin-right: 6px;
 }
-/* line 369, ../scss/core/_form.scss */
+/* line 360, ../scss/core/_form.scss */
 .form-list .control .input-box {
   clear: none;
   display: inline-block;
@@ -2893,7 +2882,7 @@ p.required,
   padding: 0;
 }
 
-/* line 378, ../scss/core/_form.scss */
+/* line 369, ../scss/core/_form.scss */
 form .form-instructions {
   font-style: italic;
   font-family: Georgia, Times, "Times New Roman", serif;
@@ -5467,7 +5456,7 @@ p.product-name a:hover {
 .product-view .add-to-cart-buttons .button {
   min-height: 40px;
   font-size: 28px;
-  padding: 0px 30px;
+  padding: 5px 30px 6px;
   min-width: 160px;
   width: 100%;
   white-space: normal;
@@ -6059,6 +6048,59 @@ p.product-name a:hover {
 /* line 966, ../scss/module/_catalog-product.scss */
 .sharingLink.sharing--gp {
   background-position: 0 -446px;
+}
+
+/* Contact form */
+/* line 974, ../scss/module/_catalog-product.scss */
+.product-shop-title {
+  border-bottom: 1px solid #712c6b;
+  margin: 15px 0 10px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #712c6b;
+}
+
+/* line 983, ../scss/module/_catalog-product.scss */
+.contactForm {
+  width: 75%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 989, ../scss/module/_catalog-product.scss */
+.contactForm-text, .contactForm-email {
+  border: none;
+  background: #deddde;
+  color: #000000;
+  font-size: 18px;
+  outline: none;
+  font-style: italic;
+}
+
+/* line 998, ../scss/module/_catalog-product.scss */
+.contactForm-text {
+  resize: none;
+  width: 100%;
+  margin-bottom: 5px;
+  min-width: 100%;
+  display: block;
+  height: 80px;
+}
+
+/* line 1007, ../scss/module/_catalog-product.scss */
+.contactForm-email {
+  float: left;
+  width: 73.5%;
+}
+
+/* line 1012, ../scss/module/_catalog-product.scss */
+.contactForm-submit {
+  width: 25%;
+  float: right;
+  height: 30px;
+  padding: 5px;
+  font-size: 18px;
 }
 
 /* ============================================ *
