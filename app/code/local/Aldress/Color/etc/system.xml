@@ -3,7 +3,7 @@
     <tabs>
         <aldress translate="label" module="aldress_color">
             <label><![CDATA[Alex Customization]]></label>
-            <sort_order>0</sort_order>
+            <sort_order>101</sort_order>
         </aldress>
     </tabs>
     <sections>
