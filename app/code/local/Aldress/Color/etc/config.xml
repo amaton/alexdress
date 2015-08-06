@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Aldress_Color>
+            <version>0.1.0</version>
+        </Aldress_Color>
+    </modules>
+    <global>
+        <helpers>
+            <aldress_color>
+                <class>Aldress_Color_Helper</class>
+            </aldress_color>
+        </helpers>
+    </global>
+    <default>
+        <color>
+            <color_picker>
+                <enable>1</enable>
+                <default><![CDATA[#712c6b]]></default>
+            </color_picker>
+        </color>
+    </default>
+</config>
