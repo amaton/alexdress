@@ -55,7 +55,9 @@ $j(document).ready(function () {
         });
 	}
 	else{
-		document.getElementById('related-container').classList.add('noCarousel');
+		if(document.getElementById('related-container')){
+			document.getElementById('related-container').classList.add('noCarousel');
+		}
 	}
 
 });
