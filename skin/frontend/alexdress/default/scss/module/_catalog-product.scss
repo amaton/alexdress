@@ -88,11 +88,19 @@
 			position:absolute;
 			right:$gap/2;
 			top:$gap/2;
+			font-size:38px;
+			color:$c-action;
+			.old-price{
+				color:$c-text-gray;
+				font-size:22px;
+				margin-right:5px;
+				text-decoration:line-through;
+			}
         }
 
 
         .short-description {
-            margin-bottom: $box-spacing;
+            margin-bottom: $gap*3/4;
             clear: both;
 			font-size:18px;
         }
@@ -111,12 +119,14 @@
 
 @include bp(max-width, $bp-medium) {
     .product-view {
+
         .add-to-cart-wrapper {
             float: none;
             width: 100%;
             clear: both;
         }
     }
+
 }
 
 .product-img-box {
@@ -477,9 +487,13 @@
         }
     }
 
-	.product-view .product-shop .price-box .regular-price .price{
-		font-size:30px;
-	}
+
+	.product-view .product-shop .price-info {
+			position:static;
+			font-size:36px;
+			text-align:right;
+			margin-bottom:$gap*3/4;
+        }
 
 .add-to-box.noOptions{
   margin-top:0;
@@ -751,19 +765,6 @@
     position: relative;
 }
 
-.product-options p.required {
-    position: absolute;
-    top: 6px;
-    right: 15px;
-    text-align: right;
-}
-
-@include bp(max-width, $bp-large) {
-    .product-view .product-options .required {
-        position: static;
-    }
-}
-
 .product-options dt {
     margin: $gap 0 3px;
     font-weight: normal;
@@ -863,7 +864,7 @@
 }
 
 .product-options-bottom {
-	margin-top:$gap*3/4;
+	margin-top:$gap;
 }
 
 .product-options-bottom:after {
