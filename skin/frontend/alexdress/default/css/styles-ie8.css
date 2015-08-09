@@ -4951,12 +4951,19 @@ body.catalogsearch-result-index .page-title h1 {
 .products-item .products-item-img {
   width: 100%;
 }
+/* line 447, ../scss/module/_product-list.scss */
+.products-item .old-price {
+  text-decoration: line-through;
+  color: #A0A0A0;
+  margin-right: 5px;
+  font-size: 16px;
+}
 
-/* line 452, ../scss/module/_product-list.scss */
+/* line 458, ../scss/module/_product-list.scss */
 .products-item:first-child, .products-item:nth-child(5n) {
   border-left: 1px solid #deddde;
 }
-/* line 455, ../scss/module/_product-list.scss */
+/* line 461, ../scss/module/_product-list.scss */
 .products-item:first-child, .products-item:nth-child(2), .products-item:nth-child(3), .products-item:nth-child(4) {
   border-top: 1px solid #deddde;
 }
@@ -9576,29 +9583,21 @@ div.paypal-logo span > img {
 /* ============================================ *
  * Pricing Conditions
  * ============================================ */
-/* line 32, ../scss/module/_pricing_conditions.scss */
-.price-box .minimal-price-link .label {
-  color: #CF5050;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
-  font-size: 12px;
-  text-transform: uppercase;
-}
-
-/* line 41, ../scss/module/_pricing_conditions.scss */
+/* line 30, ../scss/module/_pricing_conditions.scss */
 .map-info {
   white-space: nowrap;
 }
 
-/* line 46, ../scss/module/_pricing_conditions.scss */
+/* line 35, ../scss/module/_pricing_conditions.scss */
 .catalog-product-view .map-info {
   white-space: normal;
 }
-/* line 48, ../scss/module/_pricing_conditions.scss */
+/* line 37, ../scss/module/_pricing_conditions.scss */
 .catalog-product-view .map-info > span {
   float: right;
   margin-bottom: 5px;
 }
-/* line 52, ../scss/module/_pricing_conditions.scss */
+/* line 41, ../scss/module/_pricing_conditions.scss */
 .catalog-product-view .map-info .price-box.map-info > a {
   float: right;
   width: 100%;
