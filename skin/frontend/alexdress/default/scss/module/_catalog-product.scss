@@ -343,6 +343,11 @@
 	.fa-chevron-right{
 		right:0;
 	}
+	&.noCarousel{
+		.fa{
+			display:none;
+		}
+	}
 }
 
 #block-related{
@@ -360,9 +365,7 @@
         .item-name,.item-price{
 			display:block;
 			padding:0 10px;
-            text-overflow:ellipsis;
-			white-space:nowrap;
-			overflow:hidden;
+			@include str-trim;
 			.old-price{
     			display:inline;
 				text-decoration:line-through;
@@ -398,6 +401,17 @@
 		img{
 			width:100%;
 			height:auto;
+		}
+	}
+	.noCarousel &{
+        overflow: hidden;
+        .related-item{
+			float:left;
+			width:32%;
+			margin-right:2%;
+			&:last-child{
+				margin-right:0;
+			}
 		}
 	}
 }

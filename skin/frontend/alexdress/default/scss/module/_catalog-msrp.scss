@@ -79,12 +79,9 @@
         h3 {
             font-size: $f-size;
             margin: 0;
-            overflow: hidden;
-            white-space: nowrap;
             word-wrap: break-word;
             text-align: left;
-            text-overflow: ellipsis;
-
+			@include str-trim;
             @include bp(max-width, $bp-xsmall) {
                 text-align: center;
             }

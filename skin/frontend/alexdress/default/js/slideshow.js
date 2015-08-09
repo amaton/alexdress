@@ -40,8 +40,8 @@ $j(document).ready(function () {
             fx: 'scrollHorz'
         });
 
-    $j('#block-related')
-        .cycle({
+	if(document.querySelectorAll('#block-related .related-item').length>3){
+        $j('#block-related').cycle({
             slides: '> .related-item',
             fx:'carousel',
 			timeout:3000,
@@ -53,5 +53,9 @@ $j(document).ready(function () {
 			prev:$j('#related-prev'),
             next:$j('#related-next')
         });
+	}
+	else{
+		document.getElementById('related-container').classList.add('noCarousel');
+	}
 
 });

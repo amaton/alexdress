@@ -26,7 +26,7 @@
 ?>
 <?php if($this->getItems()->getSize()): ?>
 <div class="product-shop-title"><?php echo $this->__('Related products')?></div>
-<div class="block block-related">
+<div class="block block-related" id="related-container">
         <div class="mini-products-list slideshow" id="block-related">
         <?php foreach($this->getItems() as $_item): ?>
 			<div class="related-item">
