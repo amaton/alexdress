@@ -105,81 +105,8 @@
             font-size: $f-size-xl;
         }
 
-        .price-box {
-            margin-top: 0;
-
-
-            .regular-price .price,
-            .special-price .price,
-            .full-product-price .price {
-                color: $c-action;
-                font-size: 38px;
-            }
-
-            .special-price {
-
-                .price-label {
-                    font-size: $f-size-xl;
-                    text-transform: uppercase;
-                }
-
-                span.weee {
-                    color: $c-text;
-
-                    span.price {
-                        font-size: $f-size-xl;
-                    }
-                }
-            }
-
-            .price-excluding-tax,
-            .price-including-tax {
-                display: block;
-                line-height: 1.2;
-                color: $c-text;
-
-                .label {
-                    font-size: $f-size-xl;
-                    font-weight: 300;
-                }
-
-                .price {
-                    font-size: 20px;
-                }
-            }
-
-        }
     }
 
-    .price-box.map-info a {
-        display: inherit;
-    }
-
-    .old-price {
-        .price-label {
-            display: none;
-        }
-    }
-
-}
-
-@include bp(max-width, 850px) {
-    .product-view {
-        .product-shop {
-            .price-box {
-                .price-excluding-tax,
-                .price-including-tax {
-                    .label {
-                        font-size: $f-size-l;
-                    }
-
-                    .price {
-                        font-size: $f-size-xxl;
-                    }
-                }
-            }
-        }
-    }
 }
 
 @include bp(max-width, $bp-medium) {
@@ -188,38 +115,6 @@
             float: none;
             width: 100%;
             clear: both;
-        }
-
-        .product-shop {
-            .price-box {
-                .price-excluding-tax,
-                .price-including-tax {
-                    .label {
-                        font-size: $f-size-xl;
-                    }
-
-                    .price {
-                        font-size: 20px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@include bp(max-width, 420px) {
-    .product-view {
-        .product-shop {
-            .price-box {
-                .price-excluding-tax,
-                .price-including-tax {
-                    margin-bottom: 5px;
-
-                    span {
-                        display: block;
-                    }
-                }
-            }
         }
     }
 }
