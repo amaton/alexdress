@@ -29,46 +29,22 @@
 	<div class="footer-nav">
 	<div class="smallContainer">
 		<div class="footer-nav-col">
-			<div class="footer-nav-title">Menu col title</div>
-			<div class="footer-nav-list">
-      	<a class="footer-nav-item" href="#">Footer menu item</a>
-				<a class="footer-nav-item" href="#">Footer menu item</a>
-				<a class="footer-nav-item" href="#">Footer menu item</a>
-				<a class="footer-nav-item" href="#">Footer menu item</a>
-			</div>
+			<?php echo Mage::getSingleton('core/layout')->createBlock('cms/block')->setBlockId('footer_links_news')->toHtml() ?>
 		</div>
 		<div class="footer-nav-col">
-			<div class="footer-nav-title">Menu col title</div>
-			<div class="footer-nav-list">
-      	<a class="footer-nav-item" href="#">Footer menu item</a>
-				<a class="footer-nav-item" href="#">Footer menu item</a>
-				<a class="footer-nav-item" href="#">Footer menu item</a>
-				<a class="footer-nav-item" href="#">Footer menu item</a>
-			</div>
+			<?php echo Mage::getSingleton('core/layout')->createBlock('cms/block')->setBlockId('footer_links_company')->toHtml() ?>
 		</div>
 		<div class="footer-nav-col">
-			<div class="footer-nav-title">Menu col title</div>
-			<div class="footer-nav-list">
-      	<a class="footer-nav-item" href="#">Footer menu item</a>
-				<a class="footer-nav-item" href="#">Footer menu item</a>
-				<a class="footer-nav-item" href="#">Footer menu item</a>
-				<a class="footer-nav-item" href="#">Footer menu item</a>
-			</div>
+			<?php echo $this->getChildHtml('footer_links') ?>
 		</div>
 		<div class="footer-nav-col">
-			<div class="footer-nav-title">Menu col title</div>
-			<div class="footer-nav-list">
-      	<a class="footer-nav-item" href="#">Footer menu item</a>
-				<a class="footer-nav-item" href="#">Footer menu item</a>
-				<a class="footer-nav-item" href="#">Footer menu item</a>
-				<a class="footer-nav-item" href="#">Footer menu item</a>
-			</div>
+            <?php echo $this->getChildHtml('footer_links2') ?>
 		</div>
 		</div>
 	</div>
 <div class="footer-social smallContainer">
  	<a href="#" class="footer-social-link social--fb"></a>
-  <a href="#" class="footer-social-link social--tw"></a>
+	<a href="#" class="footer-social-link social--tw"></a>
 	<a href="#" class="footer-social-link social--in"></a>
 	<a href="#" class="footer-social-link social--vk"></a>
 	<a href="#" class="footer-social-link social--gp"></a>
