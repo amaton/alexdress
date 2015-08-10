@@ -1,41 +1,22 @@
-function rgbToHex(rgb){
-	var hex=['','',''],nums='0123456789',numOpen=false,cnt=3,i=0,res='#';
-	function decToHex(dec){
-		var hex=Number(dec).toString(16);
-		if(dec<16){
-			hex='0'+hex;
-		}
-		return hex;
+$j(document).ready(function(){
+	if(document.getElementById('colorPalette')){
+		var propSelectors={
+			'color':'a:hover, .footer-nav-title, .block-layered-nav .block-content > dl > dt, .product-view .product-shop .price-info, #configurable_swatch_size li.selected .swatch-link, #block-related .product-lnk:hover, .product-shop-title, .product-view .product-shop .product-name .h1, .product-view .product-img-box .product-name .h1, .breadcrumbs a:hover, .product-collateral .toggle-tabs li.current span, .product-collateral .toggle-tabs li:hover span, .product-view .product-shop #block-related .product-lnk:hover .price-box .regular-price .price, .product-view .product-shop #block-related .product-lnk:hover .price-box .special-price .price, .product-view .product-shop #block-related .product-lnk:hover .price-box .old-price .price, .header-minicart .subtotal .price, .skip-cart',
+			'background-color':'#header-nav, #search_mini_form .search-button, .lang-current::before, .home-widget-overlay, .footer-copyright, .footer-extra .block-content .actions .button, .products-item:hover::after, .button, .cart-table .product-cart-actions .button, #co-shipping-method-form .buttons-set .button, .footer .button, #block-related .product-lnk:hover::after',
+			'border-color':'.skip-cart .icon, #header-cart',
+	        'border-top-color':'.nav-primary li.level0.parent.menu-active::after',
+/*        'border-right-color':'',*/
+        	'border-bottom-color':'.product-shop-title'
+        /*'border-left-color':''*/
+		};
+		activatePalette(document.getElementById('palette-color'),document.getElementById('palette-control'),document.getElementById('palette-reset'),propSelectors);
 	}
-	for(var pos=0;(i<rgb.length)&&(pos<cnt);i++){
-		if(nums.indexOf(rgb[i])!=-1){
-			numOpen=true;
-			hex[pos]+=rgb[i];
-		}
-		else{
-			if(numOpen){
-				pos++;
-				numOpen=false;
-			}
-		}
-	}
-	for(i=0;i<cnt;i++){
-		res+=decToHex(hex[i]);
-	}
-	return res;
-}
+});
 
-function cmpRgbToHex(clRgb,clHex){
-	return rgbToHex(clRgb)==clHex;
-}
-
-function activateColorPalette(colorPalette,colorInput,colorControl,colorReset,cssProps){
+function activatePalette(colorInput,colorControl,colorReset,propSelectors){
     var clCustom=window.localStorage['clCustom'],clDefault=colorInput.value;
 	if(clCustom){
-        applyCl(colorInput.value=clCustom);
-	}
-	else{
-        clCustom=clDefault;
+        applyCl(colorInput.value=clCustom,propSelectors);
 	}
     colorControl.on('click',function(){
        colorPalette.classList.toggle('palette-active');
@@ -43,46 +24,21 @@ function activateColorPalette(colorPalette,colorInput,colorControl,colorReset,cs
        this.classList.toggle('fa-times');
     });
     colorInput.on('input',function(){
-       applyCl(localStorage['clCustom']=this.value);
+       applyCl(window.localStorage['clCustom']=this.value,propSelectors);
     });
     colorReset.on('click',function(){
-       applyCl(colorInput.value=clDefault);
+       applyCl(colorInput.value=clDefault,propSelectors);
        window.localStorage['clCustom']='';
     });
-    function applyCl(cl){
-        for(var i=0;i<document.styleSheets.length;i++){
-            if(!document.styleSheets[i].cssRules){
-                continue;
-            }
-            for(var j=0;j<document.styleSheets[i].cssRules.length;j++){
-                var rules=document.styleSheets[i].cssRules[j];
-                if(rules.media&&rules.cssRules){
-                    for(var k=0;k<rules.cssRules.length;k++){
-                        setProps(rules.cssRules[k].style);
-                    }
-                }
-				else{
-                	setProps(rules.style);
-				}
-            }
-        }
-		clCustom=cl;
-        function setProps(style){
-            for(var i=0;i<cssProps.length;i++){
-                setCl(style,cssProps[i]);
-            }
-        }
-        function setCl(style,prop){
-            if(style&&style[prop]&&(cmpRgbToHex(style[prop],clCustom)||cmpRgbToHex(style[prop],clDefault))){
-                style[prop]=cl;
-            }
-        }
-    }
+	function applyCl(cl,propSelectors){
+		var customStylesheet=document.getElementById('customClRules');
+		if(customStylesheet){
+            customStylesheet.remove();
+		}
+		var styleStr='<style id="customClRules">';
+		for(var prop in propSelectors){
+			styleStr+=propSelectors[prop]+'{'+prop+':'+cl+'}';
+		}
+		document.head.insert(styleStr+'</style>');
+	}
 }
-
-$j(document).ready(function() {
-	var colorPalette=document.getElementById('colorPalette');
-    if(colorPalette){
-       activateColorPalette(colorPalette,document.getElementById('palette-color'),document.getElementById('palette-control'),document.getElementById('palette-reset'),['backgroundColor','borderBottomColor','borderTopColor','borderLeftColor','borderRightColor','color']);
-    }
-});
