@@ -755,3 +755,16 @@ function sortNumeric(val1, val2)
 {
     return val1 - val2;
 }
+
+
+/* Color picker reset in System -> Configuration -> Manage Store Colors */
+
+
+document.observe('dom:loaded',function(){
+var resetBtn=$('palette-reset_admin');
+	if(resetBtn){
+	    resetBtn.observe('click',function(){
+			$('color_color_picker_default').value='#712c6b';
+		});
+	}
+});
