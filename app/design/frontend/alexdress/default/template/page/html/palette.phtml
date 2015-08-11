@@ -3,7 +3,7 @@
     <div id="palette-control" class="fa fa-paint-brush"></div>
     <div id="palette-body">
         <div class="palette-label"><?php echo $this->__('Like own color? Select it!') ?></div>
-        <input id="palette-color" type="color" value="#712c6b" />
+        <input id="palette-color" type="color" value="<?php echo Mage::getStoreConfig("color/color_picker/default") ?>" data-clprimary="#712c6b"  />
 		<div id="palette-reset"><?php echo $this->__('Reset default') ?></div>
     </div>
 </div>

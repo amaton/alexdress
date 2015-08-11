@@ -15,9 +15,14 @@ $j(document).ready(function(){
 });
 
 function activatePalette(colorPalette,colorInput,colorControl,colorReset,propSelectors){
-    var clCustom=window.localStorage['clCustom'],clDefault=colorInput.value;
+    var clCustom=window.localStorage['clCustom'],clDefault=colorInput.value,clPrimary=colorInput.getAttribute('data-clprimary');
 	if(clCustom){
         applyCl(colorInput.value=clCustom,propSelectors);
+	}
+	else{
+		if(clDefault!=clPrimary){
+    	    applyCl(clDefault,propSelectors);
+		}
 	}
     colorControl.on('click',function(){
        colorPalette.classList.toggle('palette-active');
