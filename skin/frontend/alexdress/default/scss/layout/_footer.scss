@@ -331,9 +331,10 @@ align-items: center;
 // Newsletter subscribe
 
 #newsletter{
-  border:none;
 	font-style:italic;
 	width:auto;
+	height:30px;
+	background:$c-white;
 }
 
 .footer-extra .block-content{

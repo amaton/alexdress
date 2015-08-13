@@ -40,9 +40,13 @@
     </div>
   </div>
 	<div class="header-account">
-  	<a href="<?php echo $this->getUrl('customer/account/login') ?>" class="header-link"><?php echo $this->__('Sign in') ?></a>
-		<span>|</span>
+	<?php if($this->helper('customer')->isLoggedIn()): ?>
+    	<a href="<?php echo $this->getUrl('customer/account/logout') ?>" class="header-link"><?php echo $this->__('Sign out') ?></a>
+	<?php else: ?>
+	  	<a href="<?php echo $this->getUrl('customer/account/login') ?>" class="header-link"><?php echo $this->__('Sign in') ?></a>
+			<span>|</span>
 		<a href="<?php echo $this->getUrl('customer/account/login') ?>" class="header-link"><?php echo $this->__('Sign up') ?></a>
+	<?php endif ?>
 	</div>
 </div>
 

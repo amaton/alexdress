@@ -168,39 +168,6 @@ textarea {
     border-color: $c-danger;
 }
 
-// Color the outline for focused fields in Chrome, or else the default blue drowns out the 1px red border
-.input-text.validation-failed:focus {
-    outline-color: tint($c-danger, 50%);
-}
-
-input[type=email],
-input[type=search],
-input[type=number],
-input[type=password],
-input[type=tel],
-input[type=text] {
-    height: 30px;
-    padding: 0 8px;
-}
-
-
-/* Only show on iPhones (not iPads or any other device) */
-@media only screen and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 0) {
-    input[type=email],
-    input[type=search],
-    input[type=number],
-    input[type=password],
-    input[type=tel],
-    input[type=text],
-    select {
-        font-size: 16px; /* Prevent from zooming on focus */
-    }
-}
-
-.ie8 .input-text {
-    max-width: none;
-}
-
 /* -------------------------------------------- *
  * Inputs - Quantity
  */
@@ -362,14 +329,5 @@ p.required,
         display: inline-block;
         width: auto;
         padding: 0;
-    }
-}
-
-form {
-    .form-instructions {
-        font-style: italic;
-        font-family: $f-stack-serif;
-        font-size: $f-size-s;
-        color: $c-text-gray;
     }
 }

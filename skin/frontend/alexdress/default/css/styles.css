@@ -2854,6 +2854,66 @@ body.customer-account .data-table .show-details .summary-collapse:hover:before {
   width: auto;
 }
 
+/**** CUSTOM DESIGN ****/
+/**** Form elements ****/
+/* line 1835, ../scss/core/_common.scss */
+.std-input {
+  display: block;
+  width: 100%;
+  height: 35px;
+  background: #deddde;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  font-size: 18px;
+  color: #000000;
+}
+
+/* line 1847, ../scss/core/_common.scss */
+.std-btn {
+  color: #fff;
+  background: #712c6b;
+  height: 35px;
+  border: 0;
+  font-size: 24px;
+  padding: 0 20px;
+  text-transform: uppercase;
+}
+/* line 1855, ../scss/core/_common.scss */
+.std-btn:hover {
+  opacity: .75;
+}
+
+/* line 1861, ../scss/core/_common.scss */
+.checkbox-field label {
+  font-size: 18px;
+}
+/* line 1864, ../scss/core/_common.scss */
+.checkbox-field input {
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+  vertical-align: text-bottom;
+}
+
+/**** Social icons ****/
+/* line 1875, ../scss/core/_common.scss */
+.socialIcon {
+  background: #deddde;
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  font-size: 24px;
+  padding-top: 4px;
+}
+/* line 1883, ../scss/core/_common.scss */
+.socialIcon:hover {
+  color: #fff;
+  background: #712c6b;
+  text-decoration: none;
+}
+
 /* ============================================ *
  * FORMS - COMMON
  * ============================================ */
@@ -3013,45 +3073,10 @@ textarea {
   border-color: #DF280A;
 }
 
-/* line 172, ../scss/core/_form.scss */
-.input-text.validation-failed:focus {
-  outline-color: #ef9384;
-}
-
-/* line 176, ../scss/core/_form.scss */
-input[type=email],
-input[type=search],
-input[type=number],
-input[type=password],
-input[type=tel],
-input[type=text] {
-  height: 30px;
-  padding: 0 8px;
-}
-
-/* Only show on iPhones (not iPads or any other device) */
-@media only screen and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 0) {
-  /* line 189, ../scss/core/_form.scss */
-  input[type=email],
-  input[type=search],
-  input[type=number],
-  input[type=password],
-  input[type=tel],
-  input[type=text],
-  select {
-    font-size: 16px;
-    /* Prevent from zooming on focus */
-  }
-}
-/* line 200, ../scss/core/_form.scss */
-.ie8 .input-text {
-  max-width: none;
-}
-
 /* -------------------------------------------- *
  * Inputs - Quantity
  */
-/* line 208, ../scss/core/_form.scss */
+/* line 175, ../scss/core/_form.scss */
 input[type=number].qty,
 input[type=text].qty {
   width: 3em;
@@ -3062,12 +3087,12 @@ input[type=text].qty {
 /* -------------------------------------------- *
  * Placeholder
  */
-/* line 219, ../scss/core/_form.scss */
+/* line 186, ../scss/core/_form.scss */
 ::-webkit-input-placeholder {
   color: #A0A0A0;
 }
 
-/* line 223, ../scss/core/_form.scss */
+/* line 190, ../scss/core/_form.scss */
 input:-moz-placeholder {
   color: #A0A0A0;
 }
@@ -3075,7 +3100,7 @@ input:-moz-placeholder {
 /* -------------------------------------------- *
  * Checkbox And Radio
  */
-/* line 231, ../scss/core/_form.scss */
+/* line 198, ../scss/core/_form.scss */
 .checkbox,
 .radio {
   position: relative;
@@ -3083,7 +3108,7 @@ input:-moz-placeholder {
   display: inline-block;
 }
 
-/* line 238, ../scss/core/_form.scss */
+/* line 205, ../scss/core/_form.scss */
 .checkbox + label,
 .radio + label {
   width: auto;
@@ -3097,7 +3122,7 @@ input:-moz-placeholder {
 /* -------------------------------------------- *
  * Validation
  */
-/* line 252, ../scss/core/_form.scss */
+/* line 219, ../scss/core/_form.scss */
 p.required,
 .validation-advice {
   margin: 5px 0 0;
@@ -3108,21 +3133,21 @@ p.required,
 /* ============================================ *
  * Form List
  * ============================================ */
-/* line 265, ../scss/core/_form.scss */
+/* line 232, ../scss/core/_form.scss */
 .form-list > li {
   margin-bottom: 10px;
 }
-/* line 268, ../scss/core/_form.scss */
+/* line 235, ../scss/core/_form.scss */
 .form-list select {
   margin-top: 4px;
   width: 365px;
   max-width: 100%;
 }
-/* line 274, ../scss/core/_form.scss */
+/* line 241, ../scss/core/_form.scss */
 .form-list .input-range .input-text {
   width: 74px;
 }
-/* line 278, ../scss/core/_form.scss */
+/* line 245, ../scss/core/_form.scss */
 .form-list .field,
 .form-list .wide,
 .form-list .control {
@@ -3130,7 +3155,7 @@ p.required,
 }
 
 /* Turn the label of controls (radio/checkbox) into a button style that wraps the input */
-/* line 286, ../scss/core/_form.scss */
+/* line 253, ../scss/core/_form.scss */
 .form-list .control,
 .sp-methods dt,
 #checkout-shipping-method-load .sp-methods dd,
@@ -3138,7 +3163,7 @@ p.required,
 .product-options ul.options-list {
   /* When a label is next to an input that is set to not display, we should style the label in a non-clickable state */
 }
-/* line 292, ../scss/core/_form.scss */
+/* line 259, ../scss/core/_form.scss */
 .form-list .control div.input-box,
 .sp-methods dt div.input-box,
 #checkout-shipping-method-load .sp-methods dd div.input-box,
@@ -3147,7 +3172,7 @@ p.required,
   display: inline;
   float: left;
 }
-/* line 296, ../scss/core/_form.scss */
+/* line 263, ../scss/core/_form.scss */
 .form-list .control div.input-box:after,
 .sp-methods dt div.input-box:after,
 #checkout-shipping-method-load .sp-methods dd div.input-box:after,
@@ -3155,7 +3180,7 @@ p.required,
 .product-options ul.options-list div.input-box:after {
   display: none;
 }
-/* line 301, ../scss/core/_form.scss */
+/* line 268, ../scss/core/_form.scss */
 .form-list .control input.radio,
 .form-list .control input.checkbox,
 .sp-methods dt input.radio,
@@ -3171,7 +3196,7 @@ p.required,
   margin-top: 10px;
   margin-left: 15px;
 }
-/* line 309, ../scss/core/_form.scss */
+/* line 276, ../scss/core/_form.scss */
 .form-list .control label,
 .sp-methods dt label,
 #checkout-shipping-method-load .sp-methods dd label,
@@ -3187,7 +3212,7 @@ p.required,
   float: none;
   padding: 6px 10px 6px 40px;
 }
-/* line 318, ../scss/core/_form.scss */
+/* line 285, ../scss/core/_form.scss */
 .form-list .control label:hover,
 .sp-methods dt label:hover,
 #checkout-shipping-method-load .sp-methods dd label:hover,
@@ -3195,7 +3220,7 @@ p.required,
 .product-options ul.options-list label:hover {
   background-color: #ececec;
 }
-/* line 324, ../scss/core/_form.scss */
+/* line 291, ../scss/core/_form.scss */
 .form-list .control .no-display + label,
 .sp-methods dt .no-display + label,
 #checkout-shipping-method-load .sp-methods dd .no-display + label,
@@ -3204,7 +3229,7 @@ p.required,
   padding-left: 10px;
   background-color: transparent;
 }
-/* line 328, ../scss/core/_form.scss */
+/* line 295, ../scss/core/_form.scss */
 .form-list .control .no-display + label:hover,
 .sp-methods dt .no-display + label:hover,
 #checkout-shipping-method-load .sp-methods dd .no-display + label:hover,
@@ -3213,7 +3238,7 @@ p.required,
   background-color: transparent;
 }
 
-/* line 335, ../scss/core/_form.scss */
+/* line 302, ../scss/core/_form.scss */
 .product-options ul.options-list label,
 .col2-set .form-list .control label {
   min-width: inherit;
@@ -3221,40 +3246,32 @@ p.required,
   max-width: 100%;
 }
 
-/* line 343, ../scss/core/_form.scss */
+/* line 310, ../scss/core/_form.scss */
 .form-list .control.remember-me-box label {
   width: auto;
   max-width: none;
   min-width: inherit;
 }
 
-/* line 350, ../scss/core/_form.scss */
+/* line 317, ../scss/core/_form.scss */
 .form-list .control {
   margin-top: 10px;
 }
-/* line 353, ../scss/core/_form.scss */
+/* line 320, ../scss/core/_form.scss */
 .form-list .control label {
   float: none;
 }
-/* line 356, ../scss/core/_form.scss */
+/* line 323, ../scss/core/_form.scss */
 .form-list .control .radio,
 .form-list .control .checkbox {
   margin-right: 6px;
 }
-/* line 360, ../scss/core/_form.scss */
+/* line 327, ../scss/core/_form.scss */
 .form-list .control .input-box {
   clear: none;
   display: inline-block;
   width: auto;
   padding: 0;
-}
-
-/* line 369, ../scss/core/_form.scss */
-form .form-instructions {
-  font-style: italic;
-  font-family: Georgia, Times, "Times New Roman", serif;
-  font-size: 13px;
-  color: #A0A0A0;
 }
 
 /* ============================================ *
@@ -4459,17 +4476,11 @@ a.skip-link {
 
 /* line 91, ../scss/layout/_header-search.scss */
 #search {
-  width: 100%;
-  height: 35px;
   padding-right: 35px;
-  border: none;
-  background: #deddde;
-  color: #000000;
-  font-size: 18px;
   font-style: italic;
 }
 
-/* line 102, ../scss/layout/_header-search.scss */
+/* line 96, ../scss/layout/_header-search.scss */
 #search_mini_form .search-button {
   text-indent: -9999px;
   position: absolute;
@@ -4481,7 +4492,7 @@ a.skip-link {
   background: #712c6b;
 }
 
-/* line 113, ../scss/layout/_header-search.scss */
+/* line 107, ../scss/layout/_header-search.scss */
 #search_mini_form .search-button:before {
   content: '';
   position: absolute;
@@ -4494,12 +4505,12 @@ a.skip-link {
   background-position: 0 -229px;
 }
 
-/* line 125, ../scss/layout/_header-search.scss */
+/* line 119, ../scss/layout/_header-search.scss */
 #search_mini_form .search-button:hover:before {
   opacity: 0.8;
 }
 
-/* line 129, ../scss/layout/_header-search.scss */
+/* line 123, ../scss/layout/_header-search.scss */
 #search_mini_form .search-button:active:before {
   margin-top: -13px;
   margin-left: -13px;
@@ -5169,27 +5180,28 @@ a.skip-link {
 
 /* line 333, ../scss/layout/_footer.scss */
 #newsletter {
-  border: none;
   font-style: italic;
   width: auto;
+  height: 30px;
+  background: #fff;
 }
 
-/* line 339, ../scss/layout/_footer.scss */
+/* line 340, ../scss/layout/_footer.scss */
 .footer-extra .block-content {
   margin: 0;
   display: -webkit-flex;
   display: flex;
   max-width: 300px;
 }
-/* line 344, ../scss/layout/_footer.scss */
+/* line 345, ../scss/layout/_footer.scss */
 .footer-extra .block-content .input-box {
   padding: 0;
 }
-/* line 347, ../scss/layout/_footer.scss */
+/* line 348, ../scss/layout/_footer.scss */
 .footer-extra .block-content .actions {
   margin: 0 0 0 5px;
 }
-/* line 350, ../scss/layout/_footer.scss */
+/* line 351, ../scss/layout/_footer.scss */
 .footer-extra .block-content .actions .button {
   padding: 6px 15px;
   background: #712c6b;
@@ -5197,12 +5209,12 @@ a.skip-link {
   height: 30px;
 }
 
-/* line 358, ../scss/layout/_footer.scss */
+/* line 359, ../scss/layout/_footer.scss */
 .footer-extra .block-subscribe {
   margin: 0;
 }
 
-/* line 364, ../scss/layout/_footer.scss */
+/* line 365, ../scss/layout/_footer.scss */
 .footer-nav {
   padding: 20px 0;
   max-width: 1200px;
@@ -5211,13 +5223,13 @@ a.skip-link {
   margin: 0 auto;
 }
 @media only screen and (max-width: 770px) {
-  /* line 364, ../scss/layout/_footer.scss */
+  /* line 365, ../scss/layout/_footer.scss */
   .footer-nav {
     display: none;
   }
 }
 
-/* line 375, ../scss/layout/_footer.scss */
+/* line 376, ../scss/layout/_footer.scss */
 .footer-nav-title {
   text-transform: uppercase;
   color: #712c6b;
@@ -5226,7 +5238,7 @@ a.skip-link {
   font-weight: bold;
 }
 
-/* line 383, ../scss/layout/_footer.scss */
+/* line 384, ../scss/layout/_footer.scss */
 .footer-nav-item {
   display: block;
   font-size: 18px;
@@ -5234,38 +5246,38 @@ a.skip-link {
   color: #636363;
 }
 
-/* line 392, ../scss/layout/_footer.scss */
+/* line 393, ../scss/layout/_footer.scss */
 .footer-social-link {
   display: block;
   width: 33px;
   height: 32px;
 }
-/* line 396, ../scss/layout/_footer.scss */
+/* line 397, ../scss/layout/_footer.scss */
 .footer-social-link.social--fb {
   background-position: 0 -405px;
 }
-/* line 399, ../scss/layout/_footer.scss */
+/* line 400, ../scss/layout/_footer.scss */
 .footer-social-link.social--vk {
   background-position: 0 -610px;
 }
-/* line 402, ../scss/layout/_footer.scss */
+/* line 403, ../scss/layout/_footer.scss */
 .footer-social-link.social--th {
   background-position: 0 -528px;
 }
-/* line 405, ../scss/layout/_footer.scss */
+/* line 406, ../scss/layout/_footer.scss */
 .footer-social-link.social--in {
   background-position: 0 -487px;
 }
-/* line 408, ../scss/layout/_footer.scss */
+/* line 409, ../scss/layout/_footer.scss */
 .footer-social-link.social--tw {
   background-position: 0 -569px;
 }
-/* line 411, ../scss/layout/_footer.scss */
+/* line 412, ../scss/layout/_footer.scss */
 .footer-social-link.social--gp {
   background-position: 0 -446px;
 }
 
-/* line 417, ../scss/layout/_footer.scss */
+/* line 418, ../scss/layout/_footer.scss */
 .footer-social {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -5273,7 +5285,7 @@ a.skip-link {
   justify-content: space-around !important;
 }
 @media only screen and (max-width: 770px) {
-  /* line 417, ../scss/layout/_footer.scss */
+  /* line 418, ../scss/layout/_footer.scss */
   .footer-social {
     border-top: 2px solid #deddde;
     -webkit-justify-content: space-between !important;
@@ -9365,834 +9377,111 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
   border: 3px solid #b896b5;
 }
 
-/* ============================================ *
- * Customer
- * ============================================ */
-/* line 32, ../scss/module/_customer.scss */
-.customer-account-login .scaffold-form label:first-child {
-  width: 115px;
-}
-/* line 38, ../scss/module/_customer.scss */
-.customer-account-login .col2-set .buttons-set {
-  text-align: left;
-  border-top: 0;
-}
-/* line 42, ../scss/module/_customer.scss */
-.customer-account-login .col2-set .buttons-set button,
-.customer-account-login .col2-set .buttons-set .button {
-  float: none;
-  min-width: 50%;
-  margin: 0;
-}
-/* line 51, ../scss/module/_customer.scss */
-.customer-account-login .col2-set .col-1 ul {
-  list-style: disc;
-  padding-left: 20px;
-  margin: 20px 0 40px 0;
-}
-@media only screen and (min-width: 480px) {
-  /* line 61, ../scss/module/_customer.scss */
-  .customer-account-login .col2-set .col-1,
-  .customer-account-login .col2-set .col-2 {
-    padding-top: 0;
-    margin-top: 20px;
-  }
-  /* line 67, ../scss/module/_customer.scss */
-  .customer-account-login .col2-set .col-1 {
-    padding-right: 20px;
-  }
-  /* line 71, ../scss/module/_customer.scss */
-  .customer-account-login .col2-set .col-2 {
-    padding-left: 20px;
-    border-left: 1px solid #EDEDED;
-  }
-}
-@media only screen and (min-width: 770px) {
-  /* line 80, ../scss/module/_customer.scss */
-  .customer-account-login .col2-set .col-1 {
-    padding-right: 0;
-  }
-  /* line 84, ../scss/module/_customer.scss */
-  .customer-account-login .col2-set .col-2 {
-    padding-left: 60px;
-    border-left: 1px solid #EDEDED;
-  }
-}
-@media only screen and (max-width: 479px) {
-  /* line 93, ../scss/module/_customer.scss */
-  .customer-account-login .col2-set .col-1 {
-    padding-bottom: 30px;
-  }
-  /* line 97, ../scss/module/_customer.scss */
-  .customer-account-login .col2-set .col-2 {
-    padding-top: 30px;
-    border-top: 1px solid #EDEDED;
-  }
-}
-@media only screen and (max-width: 770px) {
-  /* line 105, ../scss/module/_customer.scss */
-  .customer-account-login .col2-set p.required {
-    display: none;
-  }
+/* line 1, ../scss/module/_customer.scss */
+.customer-panel {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  flex-flow: row nowrap;
 }
 
-/* line 113, ../scss/module/_customer.scss */
-.customer-account-create .scaffold-form label:first-child {
-  width: 140px;
+/* line 8, ../scss/module/_customer.scss */
+.customer-social {
+  width: 15%;
+  text-align: center;
+}
+/* line 11, ../scss/module/_customer.scss */
+.customer-social .socialIcon {
+  margin: 5px;
+}
+/* line 14, ../scss/module/_customer.scss */
+.customer-social .customer-social-wrap {
+  border: 1px solid #deddde;
+  padding: 5px;
+}
+/* line 18, ../scss/module/_customer.scss */
+.customer-social .customer-social-title {
+  font-size: 22px;
+  margin-bottom: 10px;
 }
 
-/* line 119, ../scss/module/_customer.scss */
-.opc #opc-login p:not(.required) {
-  font-style: italic;
-  font-family: Georgia, Times, "Times New Roman", serif;
-  font-size: 13px;
-  color: #A0A0A0;
-}
-
-/* line 127, ../scss/module/_customer.scss */
-.remember-me-box a.hide {
-  display: none;
-}
-/* line 130, ../scss/module/_customer.scss */
-.remember-me-box .link-tip {
-  font-size: 13px;
-  padding-left: 20px;
-}
-
-/* line 136, ../scss/module/_customer.scss */
-.remember-me-popup {
-  display: none;
-  border: 1px solid #CCCCCC;
-  padding: 10px;
-  position: relative;
-}
-/* line 142, ../scss/module/_customer.scss */
-.remember-me-popup.show {
-  display: block;
-}
-/* line 146, ../scss/module/_customer.scss */
-.remember-me-popup p {
-  font-family: "OpenGost Type B", Arial, sans-serif;
-}
-/* line 150, ../scss/module/_customer.scss */
-.remember-me-popup .remember-me-popup-close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 10px;
-  font-size: 12px;
-}
-/* line 158, ../scss/module/_customer.scss */
-.remember-me-popup .remember-me-popup-close-button {
-  display: none;
-}
-
-/* line 164, ../scss/module/_customer.scss */
-.customer-account-create .buttons-set {
-  max-width: 455px;
-}
-/* line 168, ../scss/module/_customer.scss */
-.customer-account-create .fieldset,
-.customer-account-create .buttons-set {
-  margin-left: 30px;
-}
-@media only screen and (max-width: 479px) {
-  /* line 168, ../scss/module/_customer.scss */
-  .customer-account-create .fieldset,
-  .customer-account-create .buttons-set {
-    margin-left: 0;
-  }
-}
-/* line 177, ../scss/module/_customer.scss */
-.customer-account-create .fieldset .hidden {
-  display: none;
-}
-/* line 181, ../scss/module/_customer.scss */
-.customer-account-create #remember-me-popup {
-  max-width: 455px;
-}
-
-/* line 187, ../scss/module/_customer.scss */
-.customer-account-forgotpassword .fieldset,
-.customer-account-forgotpassword .buttons-set {
-  margin-left: 30px;
-  max-width: 400px;
-}
-@media only screen and (max-width: 479px) {
-  /* line 187, ../scss/module/_customer.scss */
-  .customer-account-forgotpassword .fieldset,
-  .customer-account-forgotpassword .buttons-set {
-    margin-left: 0;
-  }
-}
-/* line 197, ../scss/module/_customer.scss */
-.customer-account-forgotpassword .fieldset .input-box input.input-text {
-  width: 100%;
-}
-
-/* ============================================ *
- * My Account Global Styles
- * ============================================ */
-/* line 208, ../scss/module/_customer.scss */
-body.customer-account .my-account .page-title h1 {
-  border: 0;
-  text-align: left;
-}
-/* line 214, ../scss/module/_customer.scss */
-body.customer-account .my-account .title-buttons {
-  position: relative;
-  text-align: right;
-}
-/* line 218, ../scss/module/_customer.scss */
-body.customer-account .my-account .title-buttons h1 {
-  text-align: left;
-}
-/* line 222, ../scss/module/_customer.scss */
-body.customer-account .my-account .title-buttons .button {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-/* line 228, ../scss/module/_customer.scss */
-body.customer-account .my-account .title-buttons a,
-body.customer-account .my-account .title-buttons span.separator {
-  position: relative;
-  top: -42px;
-}
-/* line 235, ../scss/module/_customer.scss */
-body.customer-account .my-account .fieldset h2,
-body.customer-account .my-account .addresses-list h2,
-body.customer-account .my-account .order-details h2 {
-  width: 100%;
-  display: inline-block;
-}
-/* line 242, ../scss/module/_customer.scss */
-body.customer-account .my-account .addresses-list h3 {
-  font-size: 14px;
-  font-weight: 600;
-}
-/* line 247, ../scss/module/_customer.scss */
-body.customer-account .my-account .fieldset {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-/* line 253, ../scss/module/_customer.scss */
-body.customer-account .data-table {
-  margin-top: 5px;
-}
-/* line 257, ../scss/module/_customer.scss */
-body.customer-account .data-table td a {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
-  text-transform: uppercase;
-  font-style: normal;
-  font-size: 13px;
-}
-/* line 265, ../scss/module/_customer.scss */
-body.customer-account .data-table span.nobr {
-  white-space: normal;
-}
-/* line 268, ../scss/module/_customer.scss */
-body.customer-account .data-table span.nobr a {
-  white-space: nowrap;
-}
-/* line 274, ../scss/module/_customer.scss */
-body.customer-account .data-table td.view a {
-  display: block;
-}
-/* line 279, ../scss/module/_customer.scss */
-body.customer-account .data-table .separator {
-  display: none;
-}
-/* line 287, ../scss/module/_customer.scss */
-body.customer-account .sidebar .block ol#compare-items li {
-  margin: 10px 0;
-}
-/* line 293, ../scss/module/_customer.scss */
-body.customer-account .sidebar .block .block-content p.block-subtitle {
+/* line 25, ../scss/module/_customer.scss */
+.customer-form .std-input, .customer-form .checkbox-field {
   margin-bottom: 15px;
 }
-/* line 297, ../scss/module/_customer.scss */
-body.customer-account .sidebar .block .block-content .actions {
-  margin-top: 30px;
+/* line 28, ../scss/module/_customer.scss */
+.customer-form .login-lnk {
+  display: block;
+  margin: -5px 0 15px;
+  font-size: 18px;
 }
-/* line 304, ../scss/module/_customer.scss */
-body.customer-account .sidebar ol#cart-sidebar-reorder li {
-  margin-top: 10px;
-  margin-bottom: 0;
-}
-/* line 309, ../scss/module/_customer.scss */
-body.customer-account .sidebar ol#cart-sidebar-reorder p.product-name {
-  display: inline-block;
-  margin-bottom: 0;
-}
-/* line 316, ../scss/module/_customer.scss */
-body.customer-account .sidebar .block-cart .summary {
-  margin-bottom: 15px;
-}
-/* line 323, ../scss/module/_customer.scss */
-body.customer-account .sidebar .block-reorder ol#cart-sidebar-reorder li {
-  margin-top: 10px;
-  margin-bottom: 0;
-}
-/* line 327, ../scss/module/_customer.scss */
-body.customer-account .sidebar .block-reorder ol#cart-sidebar-reorder li input {
-  margin-right: 10px;
-}
-/* line 332, ../scss/module/_customer.scss */
-body.customer-account .sidebar .block-reorder ol#cart-sidebar-reorder p.product-name {
-  display: inline;
-  margin-bottom: 0;
-}
-
-/* line 343, ../scss/module/_customer.scss */
-.form-list .customer-dob .dob-month,
-.form-list .customer-dob .dob-day {
-  width: 40px;
-  float: left;
-  margin-right: 10px;
-}
-/* line 350, ../scss/module/_customer.scss */
-.form-list .customer-dob .dob-year {
-  width: 80px;
-  float: left;
-}
-
-/* ============================================ *
- * Dashboard
- * ============================================ */
-/* line 362, ../scss/module/_customer.scss */
-.dashboard .box-head {
-  margin-top: 30px;
-  border-bottom: 1px solid #CCCCCC;
-  padding-bottom: 7px;
-}
-/* line 367, ../scss/module/_customer.scss */
-.dashboard .box-head h2 {
-  font-size: 15px;
-  font-weight: 600;
-  display: inline-block;
-  margin-bottom: 0;
-}
-/* line 374, ../scss/module/_customer.scss */
-.dashboard .box-head a {
-  padding: 10px;
-}
-/* line 381, ../scss/module/_customer.scss */
-.dashboard .box-title a,
-.dashboard .box-head a {
+/* line 33, ../scss/module/_customer.scss */
+.customer-form .customer-form-title {
   text-transform: uppercase;
-  font-size: 12px;
-}
-/* line 387, ../scss/module/_customer.scss */
-.dashboard .box-account {
-  padding-bottom: 40px;
-  border-bottom: 1px solid #CCCCCC;
-  margin-bottom: 45px;
-}
-/* line 392, ../scss/module/_customer.scss */
-.dashboard .box-account p,
-.dashboard .box-account address {
-  font-family: Georgia, Times, "Times New Roman", serif;
-  font-style: italic;
-}
-/* line 400, ../scss/module/_customer.scss */
-.dashboard .col2-set .col-1,
-.dashboard .col2-set .col-2 {
-  padding-right: 12.09677%;
-  padding-bottom: 0;
-}
-/* line 405, ../scss/module/_customer.scss */
-.dashboard .col2-set .col-1 .box-title,
-.dashboard .col2-set .col-2 .box-title {
-  position: relative;
-  padding-bottom: 10px;
-}
-/* line 409, ../scss/module/_customer.scss */
-.dashboard .col2-set .col-1 .box-title h2,
-.dashboard .col2-set .col-1 .box-title h3,
-.dashboard .col2-set .col-2 .box-title h2,
-.dashboard .col2-set .col-2 .box-title h3 {
-  font-weight: 600;
-  font-size: 14px;
-  margin-bottom: 0;
-}
-/* line 416, ../scss/module/_customer.scss */
-.dashboard .col2-set .col-1 .box-title a,
-.dashboard .col2-set .col-2 .box-title a {
-  line-height: 19.6px;
-}
-/* line 424, ../scss/module/_customer.scss */
-.dashboard .box-reviews.box-account {
-  padding-bottom: 0;
-}
-/* line 428, ../scss/module/_customer.scss */
-.dashboard .box-reviews li {
-  padding: 10px 0;
-  border-top: 1px solid #EDEDED;
-}
-/* line 432, ../scss/module/_customer.scss */
-.dashboard .box-reviews li:first-child {
-  border-top: 0;
-}
-/* line 436, ../scss/module/_customer.scss */
-.dashboard .box-reviews li .number {
-  margin-right: -20px;
-  float: left;
-  line-height: 1.4;
-  font-size: 13px;
-}
-/* line 443, ../scss/module/_customer.scss */
-.dashboard .box-reviews li .details {
-  margin-left: 20px;
-}
-/* line 446, ../scss/module/_customer.scss */
-.dashboard .box-reviews li .details .ratings {
-  content: '';
-  display: table;
-  clear: both;
-  margin-bottom: 0;
-}
-/* line 450, ../scss/module/_customer.scss */
-.dashboard .box-reviews li .details .ratings strong {
-  float: left;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
-  font-size: 13px;
-  margin-right: 5px;
-}
-/* line 457, ../scss/module/_customer.scss */
-.dashboard .box-reviews li .details .ratings .rating-box {
-  float: left;
-  margin: 3px 0 0 0;
-}
-
-/* ============================================ *
- * Address Book
- * ============================================ */
-/* line 472, ../scss/module/_customer.scss */
-.my-account .addresses-list {
-  font-family: Georgia, Times, "Times New Roman", serif;
-}
-/* line 475, ../scss/module/_customer.scss */
-.my-account .addresses-list .col-1,
-.my-account .addresses-list .col-2 {
-  padding-bottom: 0;
-}
-/* line 480, ../scss/module/_customer.scss */
-.my-account .addresses-list .item {
-  margin: 0 0 30px 0;
-}
-/* line 483, ../scss/module/_customer.scss */
-.my-account .addresses-list .item p {
-  margin-top: 10px;
-}
-@media only screen and (max-width: 770px) {
-  /* line 489, ../scss/module/_customer.scss */
-  .my-account .addresses-list .col-1,
-  .my-account .addresses-list .col-2 {
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  /* line 495, ../scss/module/_customer.scss */
-  .my-account .addresses-list .col-1 li.empty,
-  .my-account .addresses-list .col-2 li.empty {
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 599px) {
-  /* line 504, ../scss/module/_customer.scss */
-  .my-account .addresses-list .addresses-additional p a {
-    white-space: nowrap;
-  }
-}
-
-/* ============================================ *
- * Order View
- * ============================================ */
-/* line 517, ../scss/module/_customer.scss */
-.order-info {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #EDEDED;
-  width: 100%;
-  margin-bottom: 30px;
-}
-/* line 523, ../scss/module/_customer.scss */
-.order-info dt,
-.order-info dd,
-.order-info ul,
-.order-info li {
-  display: inline;
-}
-/* line 530, ../scss/module/_customer.scss */
-.order-info dt {
-  margin-right: 20px;
-}
-/* line 534, ../scss/module/_customer.scss */
-.order-info li {
-  margin: 0 0 0 20px;
-}
-/* line 537, ../scss/module/_customer.scss */
-.order-info li.current {
-  font-weight: 600;
-}
-/* line 541, ../scss/module/_customer.scss */
-.order-info li:first-child {
-  margin-left: 0;
-}
-
-/* line 547, ../scss/module/_customer.scss */
-.order-date {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
-  text-transform: uppercase;
-}
-
-/* line 552, ../scss/module/_customer.scss */
-.order-info-box {
-  margin-bottom: 40px;
-  margin-top: 20px;
-}
-/* line 556, ../scss/module/_customer.scss */
-.order-info-box + .order-info-box {
-  padding-bottom: 40px;
-  border-bottom: 1px solid #EDEDED;
-}
-/* line 561, ../scss/module/_customer.scss */
-.order-info-box .col-1 {
-  padding-right: 0;
-  width: 48%;
-}
-/* line 566, ../scss/module/_customer.scss */
-.order-info-box .col-2 {
-  width: 52%;
-}
-/* line 570, ../scss/module/_customer.scss */
-.order-info-box .col-1,
-.order-info-box .col-2 {
-  overflow: hidden;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-/* line 577, ../scss/module/_customer.scss */
-.order-info-box .box-title {
-  width: 150px;
-  padding-right: 10px;
-  float: left;
-}
-/* line 582, ../scss/module/_customer.scss */
-.order-info-box .box-title h2 {
-  font-size: 14px;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
-  font-weight: bold;
-  line-height: 1.5;
-}
-/* line 588, ../scss/module/_customer.scss */
-.order-info-box .box-title h2:after {
-  content: ':';
-}
-/* line 594, ../scss/module/_customer.scss */
-.order-info-box .box-content {
-  float: left;
-  font-family: Georgia, Times, "Times New Roman", serif;
-}
-/* line 598, ../scss/module/_customer.scss */
-.order-info-box .box-content td,
-.order-info-box .box-content th {
-  font-family: Georgia, Times, "Times New Roman", serif;
-  line-height: 1.3;
-}
-/* line 604, ../scss/module/_customer.scss */
-.order-info-box .box-content th {
-  padding-top: 10px;
-}
-/* line 608, ../scss/module/_customer.scss */
-.order-info-box .box-content td {
-  padding-left: 15px;
-}
-/* line 612, ../scss/module/_customer.scss */
-.order-info-box .box-content strong {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
-  font-weight: normal;
-  text-transform: uppercase;
-}
-
-/* line 621, ../scss/module/_customer.scss */
-#my-orders-table .option-label {
-  margin-left: 10px;
-  font-weight: 600;
-  font-style: italic;
-}
-/* line 627, ../scss/module/_customer.scss */
-#my-orders-table .option-value {
-  margin-left: 20px;
-}
-/* line 631, ../scss/module/_customer.scss */
-#my-orders-table tr.bundle:not(:last-child) td {
-  border-bottom: none;
-  border-top: none;
-}
-
-/* line 638, ../scss/module/_customer.scss */
-ol#cart-sidebar-reorder li {
-  margin-top: 10px;
-  margin-bottom: 0;
-}
-/* line 642, ../scss/module/_customer.scss */
-ol#cart-sidebar-reorder li input {
-  margin-right: 10px;
-}
-/* line 647, ../scss/module/_customer.scss */
-ol#cart-sidebar-reorder p.product-name {
-  display: inline;
-}
-
-@media only screen and (max-width: 599px) {
-  /* line 654, ../scss/module/_customer.scss */
-  #my-orders-table .option-label {
-    margin-left: 20px;
-  }
-  /* line 658, ../scss/module/_customer.scss */
-  #my-orders-table .option-value {
-    margin-left: 35px;
-  }
-  /* line 663, ../scss/module/_customer.scss */
-  #my-orders-table td[data-rwd-label=Qty] .nobr br {
-    display: none;
-  }
-  /* line 667, ../scss/module/_customer.scss */
-  #my-orders-table td[data-rwd-label=Qty] .nobr strong {
-    margin-right: 10px;
-  }
-  /* line 672, ../scss/module/_customer.scss */
-  #my-orders-table tr.bundle {
-    border-color: #EDEDED;
-  }
-  /* line 677, ../scss/module/_customer.scss */
-  #my-orders-table tr.bundle.child td[data-rwd-label] {
-    padding-left: 60px;
-  }
-  /* line 683, ../scss/module/_customer.scss */
-  #my-orders-table tbody:last-child tr:last-child td {
-    padding-bottom: 10px;
-    border-bottom: 0;
-  }
-  /* line 687, ../scss/module/_customer.scss */
-  #my-orders-table tbody:last-child tr:last-child td:last-child {
-    padding-bottom: 15px;
-  }
-  /* line 693, ../scss/module/_customer.scss */
-  #my-orders-table tfoot tr.shipping {
-    margin-top: 0;
-  }
-}
-/* line 699, ../scss/module/_customer.scss */
-.order-additional {
-  margin: 40px 0;
-}
-
-/* line 704, ../scss/module/_customer.scss */
-.order-gift-message dd {
-  margin-top: 10px;
-}
-
-@media only screen and (max-width: 1199px) {
-  /* line 712, ../scss/module/_customer.scss */
-  .dashboard .col2-set .col-1,
-  .dashboard .col2-set .col-2 {
-    padding-right: 30px;
-    padding-bottom: 0;
-  }
-
-  /* line 722, ../scss/module/_customer.scss */
-  body.customer-account .data-table td.view a {
-    white-space: normal;
-  }
-}
-@media only screen and (max-width: 979px) {
-  /* line 732, ../scss/module/_customer.scss */
-  body.customer-account .my-account .title-buttons {
-    text-align: left;
-  }
-  /* line 735, ../scss/module/_customer.scss */
-  body.customer-account .my-account .title-buttons span.separator,
-  body.customer-account .my-account .title-buttons a {
-    top: -12px;
-  }
-}
-@media only screen and (max-width: 770px) {
-  /* line 748, ../scss/module/_customer.scss */
-  body.customer-account .data-table.orders th.ship,
-  body.customer-account .data-table.orders td.ship,
-  body.customer-account .data-table.orders td.status,
-  body.customer-account .data-table.orders th.status {
-    display: none;
-  }
-
-  /* line 759, ../scss/module/_customer.scss */
-  .order-info-box .box-content {
-    clear: left;
-  }
-
-  /* line 765, ../scss/module/_customer.scss */
-  .addresses-list .item {
-    float: left;
-    width: 50%;
-    padding-right: 30px;
-  }
-
-  /* line 773, ../scss/module/_customer.scss */
-  .order-info dt {
-    display: none;
-  }
-
-  /* line 779, ../scss/module/_customer.scss */
-  .dashboard .page-title {
-    margin-top: 20px;
-  }
-  /* line 782, ../scss/module/_customer.scss */
-  .dashboard .page-title h1 {
-    margin-top: 0;
-  }
-  /* line 787, ../scss/module/_customer.scss */
-  .dashboard .welcome-msg {
-    font-family: Georgia, Times, "Times New Roman", serif;
-  }
-  /* line 790, ../scss/module/_customer.scss */
-  .dashboard .welcome-msg .hello {
-    font-style: italic;
-  }
-  /* line 795, ../scss/module/_customer.scss */
-  .dashboard .box-account {
-    padding-bottom: 15px;
-    margin-bottom: 30px;
-  }
-  /* line 801, ../scss/module/_customer.scss */
-  .dashboard .col2-set .col-1,
-  .dashboard .col2-set .col-2 {
-    width: 48%;
-    padding-right: 0;
-    padding-left: 0;
-  }
-  /* line 808, ../scss/module/_customer.scss */
-  .dashboard .col2-set .col-1 {
-    float: left;
-    margin-right: 4%;
-  }
-  /* line 813, ../scss/module/_customer.scss */
-  .dashboard .col2-set .col-2 {
-    float: right;
-  }
-}
-@media only screen and (max-width: 599px) {
-  /* line 824, ../scss/module/_customer.scss */
-  body.customer-account .my-account .form-list .control {
-    padding-left: 0;
-  }
-}
-@media only screen and (max-width: 479px) {
-  /* line 836, ../scss/module/_customer.scss */
-  body.customer-account .my-account .page-title h1 {
-    text-align: center;
-  }
-  /* line 841, ../scss/module/_customer.scss */
-  body.customer-account .my-account .title-buttons {
-    text-align: center;
-  }
-  /* line 844, ../scss/module/_customer.scss */
-  body.customer-account .my-account .title-buttons .button {
-    width: 100%;
-    position: static;
-    margin-bottom: 15px;
-  }
-  /* line 849, ../scss/module/_customer.scss */
-  body.customer-account .my-account .title-buttons .button + .button {
-    margin-left: 0px;
-  }
-  /* line 856, ../scss/module/_customer.scss */
-  body.customer-account .my-account .fieldset h2 {
-    margin-bottom: 15px;
-  }
-  /* line 861, ../scss/module/_customer.scss */
-  body.customer-account .my-account .order-details h2 {
-    margin-bottom: 15px;
-  }
-  /* line 865, ../scss/module/_customer.scss */
-  body.customer-account .my-account .buttons-set {
-    border-top: 0;
-  }
-  /* line 870, ../scss/module/_customer.scss */
-  body.customer-account .my-account .addresses-list .item {
-    margin-bottom: 15px;
-    padding-right: 0;
-    float: none;
-    width: auto;
-  }
-  /* line 877, ../scss/module/_customer.scss */
-  body.customer-account .my-account .addresses-list h2 {
-    margin-bottom: 15px;
-  }
-
-  /* line 884, ../scss/module/_customer.scss */
-  .order-info {
-    margin-top: 15px;
-  }
-
-  /* line 890, ../scss/module/_customer.scss */
-  .data-table.orders .link-reorder,
-  .data-table.orders .date {
-    display: none;
-  }
-  /* line 895, ../scss/module/_customer.scss */
-  .data-table.orders td.view {
-    text-align: right;
-  }
-
-  /* line 903, ../scss/module/_customer.scss */
-  .dashboard .col2-set .col-1,
-  .dashboard .col2-set .col-2 {
-    width: 100%;
-    margin-top: 15px;
-  }
-
-  /* line 911, ../scss/module/_customer.scss */
-  .order-info-box {
-    margin: 0;
-  }
-  /* line 914, ../scss/module/_customer.scss */
-  .order-info-box .col-1,
-  .order-info-box .col-2 {
-    width: 100%;
-    border-bottom: 1px solid #EDEDED;
-    padding: 15px 0;
-  }
-  /* line 921, ../scss/module/_customer.scss */
-  .order-info-box + .order-info-box {
-    padding-bottom: 0;
-    border-bottom: 0;
-    margin-bottom: 30px;
-  }
-
-  /* line 929, ../scss/module/_customer.scss */
-  #my-reviews-table .nobr {
-    white-space: normal;
-  }
-}
-/* ============================================ *
- * Newsletter Subscriptions
- * ============================================ */
-/* line 940, ../scss/module/_customer.scss */
-body.newsletter-manage-index .my-account .fieldset {
+  font-size: 28px;
+  color: #712c6b;
   margin-bottom: 20px;
 }
-/* line 944, ../scss/module/_customer.scss */
-body.newsletter-manage-index .my-account .fieldset h2 {
-  display: none;
-}
-/* line 948, ../scss/module/_customer.scss */
-body.newsletter-manage-index .my-account .form-list {
-  border-top: 1px solid #EDEDED;
-  padding-top: 20px;
+
+/* line 41, ../scss/module/_customer.scss */
+.customer-content {
+  font-size: 18px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: justify;
 }
 
+@media only screen and (max-width: 479px) {
+  /* line 50, ../scss/module/_customer.scss */
+  .customer-panel {
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+  }
+
+  /* line 55, ../scss/module/_customer.scss */
+  .customer-social, .customer-form {
+    width: 100%;
+  }
+
+  /* line 60, ../scss/module/_customer.scss */
+  .customer-form.left, .customer-form.right {
+    padding: 0;
+    border: 0;
+    margin: 20px 0;
+  }
+  /* line 65, ../scss/module/_customer.scss */
+  .customer-form.left {
+    order: -1;
+  }
+}
+@media only screen and (min-width: 480px) {
+  /* line 74, ../scss/module/_customer.scss */
+  .customer-social {
+    padding-top: 48px;
+  }
+
+  /* line 78, ../scss/module/_customer.scss */
+  .customer-form {
+    width: 35%;
+  }
+  /* line 80, ../scss/module/_customer.scss */
+  .customer-form.left {
+    padding: 0 4% 0 2%;
+    border-right: 1px solid #712c6b;
+  }
+  /* line 83, ../scss/module/_customer.scss */
+  .customer-form.left .customer-form-title {
+    text-align: right;
+  }
+  /* line 87, ../scss/module/_customer.scss */
+  .customer-form.right {
+    padding: 0 2% 0 4%;
+  }
+  /* line 89, ../scss/module/_customer.scss */
+  .customer-form.right .customer-form-title {
+    text-align: left;
+  }
+}
 /* ============================================ *
  * Contacts
  * ============================================ */
