@@ -7691,7 +7691,7 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
 }
 /* line 18, ../scss/module/_customer.scss */
 .customer-social .customer-social-title {
-  font-size: 22px;
+  font-size: 18px;
   margin-bottom: 10px;
 }
 
