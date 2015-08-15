@@ -31,8 +31,8 @@ $mq-fixed-value: 1024;
 
 // ----------------------------------------------
 */
-@import "//webfonts.ru/import/opengost.css";
-@import "//netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css";
+@import url(opengost.css);
+@import url(font-awesome.css);
 /* line 208, icons/*.png */
 .icons-sprite, .icons-delivery, .icons-dhl, .icons-lang_cs, .icons-lang_de, .icons-lang_dropdown, .icons-lang_en, .icons-lang_fr, .icons-lang_ru, .icons-lens, .icons-mastercard, .icons-minicart, .icons-paypal, .icons-return, .icons-social_fb, .icons-social_gp, .icons-social_in, .icons-social_th, .icons-social_tw, .icons-social_vk, .icons-support, .icons-visa, .header-link--delivery, .header-link--return, .header-link--support, .lang-current:after, .lang-icon--default, .lang-icon--en, .lang-icon--german, .lang-icon--de, .lang-icon--french, .lang-icon--fr, .lang-icon--russian, .lang-icon--ru, #search_mini_form .search-button:before, .skip-cart .icon:after, .footer-payment.payment--visa, .footer-payment.payment--mastercard, .footer-payment.payment--paypal, .footer-dhl, .footer-social-link.social--fb, .footer-social-link.social--vk, .footer-social-link.social--th, .footer-social-link.social--in, .footer-social-link.social--tw, .footer-social-link.social--gp, .sharingLink.sharing--fb, .sharingLink.sharing--vk, .sharingLink.sharing--th, .sharingLink.sharing--in, .sharingLink.sharing--tw, .sharingLink.sharing--gp {
   background-image: url('/skin/frontend/alexdress/default/images/icons-s6eb5be3f05.png');
@@ -670,7 +670,7 @@ input,
 select,
 table,
 textarea {
-  font-family: "OpenGost Type B", Arial, sans-serif;
+  font-family: "opengost_type_b_ttregular", Arial, sans-serif;
   color: #636363;
   font-size: 14px;
   line-height: 1;
@@ -761,7 +761,7 @@ h5, .h5 {
   margin: 0;
   margin-bottom: 10px;
   color: #636363;
-  font-family: "OpenGost Type B", Arial, sans-serif;
+  font-family: "opengost_type_b_ttregular", Arial, sans-serif;
   font-size: 13px;
   font-weight: bold;
   font-style: normal;
@@ -775,7 +775,7 @@ h6, .h6 {
   margin: 0;
   margin-bottom: 5px;
   color: #636363;
-  font-family: "OpenGost Type B", Arial, sans-serif;
+  font-family: "opengost_type_b_ttregular", Arial, sans-serif;
   font-size: 12px;
   font-weight: bold;
   font-style: normal;
@@ -1466,7 +1466,7 @@ a.button:hover {
   line-height: 20px;
   width: 100%;
   font-size: 10px;
-  font-family: Arial, "OpenGost Type B", Arial, sans-serif;
+  font-family: Arial, "opengost_type_b_ttregular", Arial, sans-serif;
   font-weight: bold;
 }
 /* line 646, ../scss/core/_common.scss */
@@ -2501,7 +2501,7 @@ a.button:hover {
 /* line 1546, ../scss/core/_common.scss */
 .pager .amount {
   float: left;
-  font-family: "OpenGost Type B", Arial, sans-serif;
+  font-family: "opengost_type_b_ttregular", Arial, sans-serif;
   white-space: nowrap;
   margin: 0 15px 0 0;
 }
@@ -2557,7 +2557,7 @@ a.button:hover {
   height: 30px;
   padding: 0;
   color: #712c6b;
-  font-family: "OpenGost Type B", Arial, sans-serif;
+  font-family: "opengost_type_b_ttregular", Arial, sans-serif;
 }
 
 /* line 1606, ../scss/core/_common.scss */
@@ -2904,8 +2904,8 @@ body.customer-account .data-table .show-details .summary-collapse:hover:before {
   width: 32px;
   height: 32px;
   text-align: center;
-  font-size: 24px;
-  padding-top: 4px;
+  font-size: 22px;
+  padding-top: 6px;
 }
 /* line 1883, ../scss/core/_common.scss */
 .socialIcon:hover {
@@ -2999,7 +2999,7 @@ span.required:after {
   content: ' *';
   color: #DF280A;
   font-weight: normal;
-  font-family: "OpenGost Type B", Arial, sans-serif;
+  font-family: "opengost_type_b_ttregular", Arial, sans-serif;
   font-size: 12px;
 }
 
@@ -4696,7 +4696,7 @@ a.skip-link {
   font-size: 11px;
   line-height: 22px;
   text-align: center;
-  font-family: "OpenGost Type B", Arial, sans-serif;
+  font-family: "opengost_type_b_ttregular", Arial, sans-serif;
 }
 
 /* line 136, ../scss/layout/_header-cart.scss */
@@ -5205,7 +5205,7 @@ a.skip-link {
 .footer-extra .block-content .actions .button {
   padding: 6px 15px;
   background: #712c6b;
-  font-family: "OpenGost Type B", Arial, sans-serif;
+  font-family: "opengost_type_b_ttregular", Arial, sans-serif;
   height: 30px;
 }
 
@@ -8059,7 +8059,7 @@ body.catalogsearch-result-index .page-title h1 {
   .cart-table .product-cart-price:before {
     font-weight: 500;
     font-size: 15px;
-    font-family: "OpenGost Type B", Arial, sans-serif;
+    font-family: "opengost_type_b_ttregular", Arial, sans-serif;
   }
   /* line 582, ../scss/module/_checkout-cart.scss */
   .cart-table .cart-footer-actions {
@@ -8260,7 +8260,7 @@ body.catalogsearch-result-index .page-title h1 {
 /* line 786, ../scss/module/_checkout-cart.scss */
 .cart .cart-totals table tfoot strong span,
 .cart .cart-totals table tfoot span.price {
-  font-family: "OpenGost Type B", Arial, sans-serif;
+  font-family: "opengost_type_b_ttregular", Arial, sans-serif;
 }
 /* line 792, ../scss/module/_checkout-cart.scss */
 .cart .cart-totals table tfoot strong {
@@ -11157,7 +11157,7 @@ div.paypal-logo span > img {
   list-style: none;
   margin-left: 0;
   font-style: normal;
-  font-family: "OpenGost Type B", Arial, sans-serif;
+  font-family: "opengost_type_b_ttregular", Arial, sans-serif;
 }
 
 /* line 123, ../scss/mixin/_toggle-content.scss */
