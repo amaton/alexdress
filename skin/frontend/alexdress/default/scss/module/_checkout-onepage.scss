@@ -69,7 +69,6 @@
 
 .opc .section .step-title {
     width: 100%;
-    border-top: 1px solid $c-divider-border;
     position: relative;
     @include not-selectable;
 
@@ -87,10 +86,6 @@
     background-color: $c-module-background;
 }
 
-.opc .section.active .step-title {
-    border-bottom: 1px solid $c-divider-border;
-}
-
 .opc .section .step-title a {
     display: none;
 }
@@ -105,44 +100,6 @@
 
 .no-touch .opc .section .step-title a:hover {
     text-decoration: none;
-}
-
-.opc .section .step-title .number,
-.opc .section.allow.active .step-title .number,
-.no-touch .opc .section.allow:hover .step-title .number {
-    width: 26px;
-    height: 26px;
-    text-align: center;
-    color: #FFFFFF;
-    line-height: 26px;
-    background-color: $c-action;
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    margin-top: -13px;
-}
-
-.opc .section.allow .step-title .number {
-    background-color: tint($c-action, 50%);
-}
-
-.opc .section.allow .step-title h2 {
-    color: $c-text-gray;
-}
-
-.opc .section.allow .step-title:hover h2,
-.opc .section.active .step-title h2 {
-    color: $c-text-primary;
-}
-
-.opc .section .step-title h2 {
-    font-size: $f-size-xl;
-    font-weight: 400;
-    line-height: 40px;
-    height: 40px;
-    float: left;
-    margin: 0px 4px 0px 45px;
 }
 
 .opc .section .step {
@@ -234,14 +191,6 @@
     @include single-transition(opacity, 300ms);
 }
 
-.opc.opc-firststep-login .section#opc-login .step-title .number {
-    @include single-transition(width, 80ms);
-}
-
-.opc.opc-firststep-login .section#opc-login .step-title h2 {
-    @include single-transition(margin-left, 80ms);
-}
-
 /* When a user progresses from the "Checkout Method" to "Billing Information" for the first time, the              */
 /* "opc-has-progressed-from-login" class gets added to the body. Also, the .opc element will only have the         */
 /* "opc-firststep-login" class if the first step of the checkout is the "Checkout Method" (eg, not when logged in) */
@@ -250,14 +199,6 @@ body:not(.opc-has-progressed-from-login) .opc-block-progress-step-login {
     opacity: 0;
 }
 
-body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-login .step-title .number {
-    width: 0px;
-    overflow: hidden;
-}
-
-body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-login .step-title h2 {
-    margin-left: 0px;
-}
 
 /* -------------------------------------------- *
  * Shipping and Payment methods
@@ -344,21 +285,17 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
 
 /* One Page Checkout */
 .block-progress {
-    border: 0;
-    margin: 0;
-    border-left: 1px solid $c-module-border;
-    padding-left: 20px;
+    border-left: 1px solid $c-lightgray;
 
     .block-content {
         font-size: $f-size-s;
     }
     dt {
-        padding-top: 6px;
-        @include h4;
-        margin-bottom: 6px;
+		font-size:22px;
+        padding: $gap/4 0 $gap/4 $gap*2;
+        margin-bottom: $gap/2;
         text-transform: uppercase;
-        font-weight: normal;
-        color: $c-text-gray;
+        color: $c-gray;
     }
 
     dt.complete {
@@ -632,4 +569,46 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
             }
         }
     }
+}
+
+
+/**** Custom design ****/
+
+.page-title{
+	text-transform:uppercase;
+	font-size:26px;
+	margin-bottom:$gap;
+	color:$c-action;
+	@media (min-width:$bp-medium){
+		padding-left:2*$gap;
+	}
+}
+
+
+.step-title{
+	margin-bottom:8px;
+	.number{
+		background:$c-action;
+		width: 38px;
+		height: 38px;
+		color:$c-white;
+		font-size:26px;
+		padding-top:5px;
+		float:left;
+		text-align:center;
+	}
+	.label{
+		font-size:22px;
+		color:$c-action;
+		text-transform:uppercase;
+		position:relative;
+		padding:7px 12px 0;
+		background:$c-lightgray;
+		height:38px;
+		margin-left:42px;
+	}
+}
+
+.opc-progress-label{
+
 }

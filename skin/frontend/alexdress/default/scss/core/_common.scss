@@ -1869,6 +1869,14 @@ body.customer-account .data-table {
 	}
 }
 
+.validation-failed {
+	box-shadow: 0 0 5px $c-danger;
+}
+
+.validation-advice{
+	display:none;
+}
+
 
 /**** Social icons ****/
 

@@ -119,24 +119,6 @@ span.required em {
     font-size: $f-size-xs;
 }
 
-/* -------------------------------------------- *
- * Select
- */
-
-select {
-    font-size: 14px;
-}
-
-select + select {
-    margin-left: 5px;
-}
-
-select[multiple] {
-    width: 270px;
-    border: 1px solid $c-input-border;
-    font-size: $f-size-l;
-    padding: 5px;
-}
 
 /* -------------------------------------------- *
  * Textarea
@@ -162,10 +144,6 @@ textarea {
     &:focus {
         border: 1px solid $c-input-border-focus;
     }
-}
-
-.input-text.validation-failed {
-    border-color: $c-danger;
 }
 
 /* -------------------------------------------- *
@@ -231,11 +209,6 @@ p.required,
 
     & > li {
         margin-bottom: $box-spacing;
-    }
-    select {
-        margin-top: 4px;
-        width: (230px + 135px);
-        max-width: 100%;
     }
 
     .input-range .input-text {

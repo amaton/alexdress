@@ -25,10 +25,7 @@
  */
 ?>
 <div class="block block-progress opc-block-progress<?php if (!$this->isCustomerLoggedIn()/* && !$this->getCheckout()->getStepData('billing', 'is_show')*/): ?> opc-block-progress-step-login<?php endif; ?>">
-    <div class="block-title">
-        <strong><span><?php echo $this->__('Your Checkout Progress') ?></span></strong>
-    </div>
-    <div class="block-content">
+    <div class="page-title"><?php echo $this->__('Your Checkout Progress') ?></div>
         <dl>
             <?php if ($this->getCheckout()->getStepData('billing', 'is_show')): ?>
             <div id="billing-progress-opcheckout">
@@ -54,6 +51,5 @@
             </div>
             <?php endif; ?>
         </dl>
-    </div>
 </div>
 

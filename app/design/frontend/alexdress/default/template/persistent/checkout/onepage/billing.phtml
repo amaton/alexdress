@@ -27,7 +27,6 @@
 ?>
 <form id="co-billing-form" action="">
 <div class="fieldset">
-    <p class="required"><?php echo $this->__('* Required Fields') ?></p>
     <ul class="form-list">
     <?php if ($this->customerHasAddresses()): ?>
         <li class="wide">
@@ -179,9 +178,7 @@
                 <?php else:?>
                     <li class="no-display"><input type="hidden" name="billing[save_in_address_book]" value="1" /></li>
                 <?php endif; ?>
-                <?php echo $this->getChildHtml('form.additional.info'); ?>
             </ul>
-            <?php echo $this->getChildHtml('persistent.remember.me.tooltip'); ?>
         </div>
      </li>
     <?php if ($this->canShip()): ?>
