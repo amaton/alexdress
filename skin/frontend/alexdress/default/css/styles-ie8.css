@@ -2516,11 +2516,24 @@ body.customer-account .data-table .show-details .summary-collapse:hover:before {
   opacity: .75;
 }
 
-/* line 1861, ../scss/core/_common.scss */
+/* line 1860, ../scss/core/_common.scss */
+.std-select, .fieldset select {
+  display: block;
+  width: 100%;
+  height: 35px;
+  background: #deddde;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  font-size: 18px;
+  color: #000000;
+}
+
+/* line 1873, ../scss/core/_common.scss */
 .checkbox-field label {
   font-size: 18px;
 }
-/* line 1864, ../scss/core/_common.scss */
+/* line 1876, ../scss/core/_common.scss */
 .checkbox-field input {
   width: 18px;
   height: 18px;
@@ -2528,18 +2541,18 @@ body.customer-account .data-table .show-details .summary-collapse:hover:before {
   vertical-align: text-bottom;
 }
 
-/* line 1872, ../scss/core/_common.scss */
+/* line 1884, ../scss/core/_common.scss */
 .validation-failed {
   box-shadow: 0 0 5px #DF280A;
 }
 
-/* line 1876, ../scss/core/_common.scss */
+/* line 1888, ../scss/core/_common.scss */
 .validation-advice {
   display: none;
 }
 
 /**** Social icons ****/
-/* line 1883, ../scss/core/_common.scss */
+/* line 1895, ../scss/core/_common.scss */
 .socialIcon {
   background: #deddde;
   color: #fff;
@@ -2549,7 +2562,7 @@ body.customer-account .data-table .show-details .summary-collapse:hover:before {
   font-size: 22px;
   padding-top: 6px;
 }
-/* line 1891, ../scss/core/_common.scss */
+/* line 1903, ../scss/core/_common.scss */
 .socialIcon:hover {
   color: #fff;
   background: #712c6b;
@@ -2574,12 +2587,7 @@ body.customer-account .data-table .show-details .summary-collapse:hover:before {
   margin-top: 0px;
 }
 
-/* line 48, ../scss/core/_form.scss */
-.fieldset + .fieldset {
-  margin-top: 10px;
-}
-
-/* line 52, ../scss/core/_form.scss */
+/* line 49, ../scss/core/_form.scss */
 form .legend {
   margin: 0;
   margin-bottom: 10px;
@@ -2599,18 +2607,18 @@ form .legend {
 /* -------------------------------------------- *
  * Input Box
  */
-/* line 63, ../scss/core/_form.scss */
+/* line 60, ../scss/core/_form.scss */
 .input-box {
   padding-top: 2px;
 }
-/* line 66, ../scss/core/_form.scss */
+/* line 63, ../scss/core/_form.scss */
 .input-box:after {
   content: '';
   display: table;
   clear: both;
 }
 
-/* line 72, ../scss/core/_form.scss */
+/* line 69, ../scss/core/_form.scss */
 li.centinel-logos div.input-box img {
   display: inline;
   vertical-align: middle;
@@ -2618,7 +2626,7 @@ li.centinel-logos div.input-box img {
 
 /* For adjacent select inputs. */
 /* Example: credit card expiration month and year. */
-/* line 81, ../scss/core/_form.scss */
+/* line 78, ../scss/core/_form.scss */
 .input-box .v-fix {
   float: left;
   margin-right: 5px;
@@ -2635,7 +2643,7 @@ li.centinel-logos div.input-box img {
     font-weight: 600;
     @include not-selectable;
 } */
-/* line 99, ../scss/core/_form.scss */
+/* line 96, ../scss/core/_form.scss */
 label.required:after,
 span.required:after {
   content: ' *';
@@ -2645,7 +2653,7 @@ span.required:after {
   font-size: 12px;
 }
 
-/* line 108, ../scss/core/_form.scss */
+/* line 105, ../scss/core/_form.scss */
 label.required em,
 span.required em {
   display: none;
@@ -2654,7 +2662,7 @@ span.required em {
 /* -------------------------------------------- *
  * Hints
  */
-/* line 117, ../scss/core/_form.scss */
+/* line 114, ../scss/core/_form.scss */
 .input-hint {
   color: #A0A0A0;
   font-size: 12px;
@@ -2663,7 +2671,7 @@ span.required em {
 /* -------------------------------------------- *
  * Textarea
  */
-/* line 127, ../scss/core/_form.scss */
+/* line 124, ../scss/core/_form.scss */
 textarea {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -2676,7 +2684,7 @@ textarea {
 /* -------------------------------------------- *
  * Inputs
  */
-/* line 138, ../scss/core/_form.scss */
+/* line 135, ../scss/core/_form.scss */
 .input-text {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -2684,7 +2692,7 @@ textarea {
   background: #FFFFFF;
   font-size: 15px;
 }
-/* line 144, ../scss/core/_form.scss */
+/* line 141, ../scss/core/_form.scss */
 .input-text:focus {
   border: 1px solid #712c6b;
 }
@@ -2692,7 +2700,7 @@ textarea {
 /* -------------------------------------------- *
  * Inputs - Quantity
  */
-/* line 153, ../scss/core/_form.scss */
+/* line 150, ../scss/core/_form.scss */
 input[type=number].qty,
 input[type=text].qty {
   width: 3em;
@@ -2703,42 +2711,20 @@ input[type=text].qty {
 /* -------------------------------------------- *
  * Placeholder
  */
-/* line 164, ../scss/core/_form.scss */
+/* line 161, ../scss/core/_form.scss */
 ::-webkit-input-placeholder {
   color: #A0A0A0;
 }
 
-/* line 168, ../scss/core/_form.scss */
+/* line 165, ../scss/core/_form.scss */
 input:-moz-placeholder {
   color: #A0A0A0;
 }
 
 /* -------------------------------------------- *
- * Checkbox And Radio
- */
-/* line 176, ../scss/core/_form.scss */
-.checkbox,
-.radio {
-  position: relative;
-  top: -1px;
-  display: inline-block;
-}
-
-/* line 183, ../scss/core/_form.scss */
-.checkbox + label,
-.radio + label {
-  width: auto;
-  max-width: 85%;
-  padding: 0 0 0 8px;
-  font-size: 14px;
-  font-weight: normal;
-  vertical-align: top;
-}
-
-/* -------------------------------------------- *
  * Validation
  */
-/* line 197, ../scss/core/_form.scss */
+/* line 174, ../scss/core/_form.scss */
 p.required,
 .validation-advice {
   margin: 5px 0 0;
@@ -2749,15 +2735,15 @@ p.required,
 /* ============================================ *
  * Form List
  * ============================================ */
-/* line 210, ../scss/core/_form.scss */
+/* line 187, ../scss/core/_form.scss */
 .form-list > li {
   margin-bottom: 10px;
 }
-/* line 214, ../scss/core/_form.scss */
+/* line 191, ../scss/core/_form.scss */
 .form-list .input-range .input-text {
   width: 74px;
 }
-/* line 218, ../scss/core/_form.scss */
+/* line 195, ../scss/core/_form.scss */
 .form-list .field,
 .form-list .wide,
 .form-list .control {
@@ -2765,7 +2751,7 @@ p.required,
 }
 
 /* Turn the label of controls (radio/checkbox) into a button style that wraps the input */
-/* line 226, ../scss/core/_form.scss */
+/* line 203, ../scss/core/_form.scss */
 .form-list .control,
 .sp-methods dt,
 #checkout-shipping-method-load .sp-methods dd,
@@ -2773,7 +2759,7 @@ p.required,
 .product-options ul.options-list {
   /* When a label is next to an input that is set to not display, we should style the label in a non-clickable state */
 }
-/* line 232, ../scss/core/_form.scss */
+/* line 209, ../scss/core/_form.scss */
 .form-list .control div.input-box,
 .sp-methods dt div.input-box,
 #checkout-shipping-method-load .sp-methods dd div.input-box,
@@ -2782,7 +2768,7 @@ p.required,
   display: inline;
   float: left;
 }
-/* line 236, ../scss/core/_form.scss */
+/* line 213, ../scss/core/_form.scss */
 .form-list .control div.input-box:after,
 .sp-methods dt div.input-box:after,
 #checkout-shipping-method-load .sp-methods dd div.input-box:after,
@@ -2790,7 +2776,7 @@ p.required,
 .product-options ul.options-list div.input-box:after {
   display: none;
 }
-/* line 241, ../scss/core/_form.scss */
+/* line 218, ../scss/core/_form.scss */
 .form-list .control input.radio,
 .form-list .control input.checkbox,
 .sp-methods dt input.radio,
@@ -2806,7 +2792,7 @@ p.required,
   margin-top: 10px;
   margin-left: 15px;
 }
-/* line 249, ../scss/core/_form.scss */
+/* line 226, ../scss/core/_form.scss */
 .form-list .control label,
 .sp-methods dt label,
 #checkout-shipping-method-load .sp-methods dd label,
@@ -2822,7 +2808,7 @@ p.required,
   float: none;
   padding: 6px 10px 6px 40px;
 }
-/* line 258, ../scss/core/_form.scss */
+/* line 235, ../scss/core/_form.scss */
 .form-list .control label:hover,
 .sp-methods dt label:hover,
 #checkout-shipping-method-load .sp-methods dd label:hover,
@@ -2830,7 +2816,7 @@ p.required,
 .product-options ul.options-list label:hover {
   background-color: #ececec;
 }
-/* line 264, ../scss/core/_form.scss */
+/* line 241, ../scss/core/_form.scss */
 .form-list .control .no-display + label,
 .sp-methods dt .no-display + label,
 #checkout-shipping-method-load .sp-methods dd .no-display + label,
@@ -2839,7 +2825,7 @@ p.required,
   padding-left: 10px;
   background-color: transparent;
 }
-/* line 268, ../scss/core/_form.scss */
+/* line 245, ../scss/core/_form.scss */
 .form-list .control .no-display + label:hover,
 .sp-methods dt .no-display + label:hover,
 #checkout-shipping-method-load .sp-methods dd .no-display + label:hover,
@@ -2848,7 +2834,7 @@ p.required,
   background-color: transparent;
 }
 
-/* line 275, ../scss/core/_form.scss */
+/* line 252, ../scss/core/_form.scss */
 .product-options ul.options-list label,
 .col2-set .form-list .control label {
   min-width: inherit;
@@ -2856,27 +2842,27 @@ p.required,
   max-width: 100%;
 }
 
-/* line 283, ../scss/core/_form.scss */
+/* line 260, ../scss/core/_form.scss */
 .form-list .control.remember-me-box label {
   width: auto;
   max-width: none;
   min-width: inherit;
 }
 
-/* line 290, ../scss/core/_form.scss */
+/* line 267, ../scss/core/_form.scss */
 .form-list .control {
   margin-top: 10px;
 }
-/* line 293, ../scss/core/_form.scss */
+/* line 270, ../scss/core/_form.scss */
 .form-list .control label {
   float: none;
 }
-/* line 296, ../scss/core/_form.scss */
+/* line 273, ../scss/core/_form.scss */
 .form-list .control .radio,
 .form-list .control .checkbox {
   margin-right: 6px;
 }
-/* line 300, ../scss/core/_form.scss */
+/* line 277, ../scss/core/_form.scss */
 .form-list .control .input-box {
   clear: none;
   display: inline-block;
@@ -6804,15 +6790,10 @@ body.catalogsearch-result-index .page-title h1 {
   padding-left: 0;
 }
 
-/* line 61, ../scss/module/_checkout-onepage.scss */
-.opc select {
-  width: 365px;
-}
-
 /* -------------------------------------------- *
  * Section Styling - Default
  */
-/* line 70, ../scss/module/_checkout-onepage.scss */
+/* line 65, ../scss/module/_checkout-onepage.scss */
 .opc .section .step-title {
   width: 100%;
   position: relative;
@@ -6822,30 +6803,30 @@ body.catalogsearch-result-index .page-title h1 {
   -o-user-select: none;
   user-select: none;
 }
-/* line 75, ../scss/module/_checkout-onepage.scss */
+/* line 70, ../scss/module/_checkout-onepage.scss */
 .opc .section .step-title:after {
   content: '';
   display: table;
   clear: both;
 }
 
-/* line 80, ../scss/module/_checkout-onepage.scss */
+/* line 75, ../scss/module/_checkout-onepage.scss */
 .opc .section.allow:not(.active) .step-title {
   cursor: pointer;
 }
 
 /* Using .no-touch since touch devices emulate hover, thereby making steps look active that are not */
-/* line 85, ../scss/module/_checkout-onepage.scss */
+/* line 80, ../scss/module/_checkout-onepage.scss */
 .no-touch .opc .section.allow:not(.active) .step-title:hover {
   background-color: #F4F4F4;
 }
 
-/* line 89, ../scss/module/_checkout-onepage.scss */
+/* line 84, ../scss/module/_checkout-onepage.scss */
 .opc .section .step-title a {
   display: none;
 }
 
-/* line 93, ../scss/module/_checkout-onepage.scss */
+/* line 88, ../scss/module/_checkout-onepage.scss */
 .opc .section.allow:not(.active) .step-title a {
   display: block;
   float: right;
@@ -6854,73 +6835,56 @@ body.catalogsearch-result-index .page-title h1 {
   padding: 0px 10px;
 }
 
-/* line 101, ../scss/module/_checkout-onepage.scss */
+/* line 96, ../scss/module/_checkout-onepage.scss */
 .no-touch .opc .section .step-title a:hover {
   text-decoration: none;
 }
 
-/* line 105, ../scss/module/_checkout-onepage.scss */
-.opc .section .step {
-  padding: 20px;
-}
-/* line 108, ../scss/module/_checkout-onepage.scss */
-.opc .section .step:after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-/* line 117, ../scss/module/_checkout-onepage.scss */
-.opc select {
-  max-width: 365px;
-  width: 100%;
-}
-
-/* line 122, ../scss/module/_checkout-onepage.scss */
+/* line 100, ../scss/module/_checkout-onepage.scss */
 .opc h3 {
   font-weight: 500;
 }
 
-/* line 126, ../scss/module/_checkout-onepage.scss */
+/* line 104, ../scss/module/_checkout-onepage.scss */
 .opc .buttons-set {
   text-align: left;
 }
-/* line 129, ../scss/module/_checkout-onepage.scss */
+/* line 107, ../scss/module/_checkout-onepage.scss */
 .opc .buttons-set button.button {
   float: left;
   margin-left: 0;
   margin-right: 20px;
   margin-bottom: 0;
 }
-/* line 135, ../scss/module/_checkout-onepage.scss */
+/* line 113, ../scss/module/_checkout-onepage.scss */
 .opc .buttons-set p.required {
   float: right;
   margin-left: 5px;
   margin-bottom: 0;
 }
-/* line 140, ../scss/module/_checkout-onepage.scss */
+/* line 118, ../scss/module/_checkout-onepage.scss */
 .opc .buttons-set .back-link {
   float: right;
   margin: 0;
 }
-/* line 144, ../scss/module/_checkout-onepage.scss */
+/* line 122, ../scss/module/_checkout-onepage.scss */
 .opc .buttons-set a {
   line-height: 20px;
   display: inline-block;
   padding: 5px 5px 5px 0;
 }
 
-/* line 161, ../scss/module/_checkout-onepage.scss */
+/* line 139, ../scss/module/_checkout-onepage.scss */
 .opc #opc-login .step {
   padding: 0px;
 }
-/* line 165, ../scss/module/_checkout-onepage.scss */
+/* line 143, ../scss/module/_checkout-onepage.scss */
 .opc #opc-login .buttons-set {
   border-top: 0;
   padding-top: 5px;
 }
 
-/* line 178, ../scss/module/_checkout-onepage.scss */
+/* line 156, ../scss/module/_checkout-onepage.scss */
 #opc-payment .note {
   padding: 10px;
 }
@@ -6931,7 +6895,7 @@ body.catalogsearch-result-index .page-title h1 {
  * It is limited to larger viewports since smaller devices are inherently going to be focused solely on the
  * "Checkout Method" step.
  */
-/* line 189, ../scss/module/_checkout-onepage.scss */
+/* line 167, ../scss/module/_checkout-onepage.scss */
 .opc.opc-firststep-login .section:not(#opc-login) .step-title,
 .opc-block-progress-step-login {
   -moz-transition: opacity 300ms 0;
@@ -6943,7 +6907,7 @@ body.catalogsearch-result-index .page-title h1 {
 /* When a user progresses from the "Checkout Method" to "Billing Information" for the first time, the              */
 /* "opc-has-progressed-from-login" class gets added to the body. Also, the .opc element will only have the         */
 /* "opc-firststep-login" class if the first step of the checkout is the "Checkout Method" (eg, not when logged in) */
-/* line 197, ../scss/module/_checkout-onepage.scss */
+/* line 175, ../scss/module/_checkout-onepage.scss */
 body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section:not(#opc-login) .step-title,
 body:not(.opc-has-progressed-from-login) .opc-block-progress-step-login {
   opacity: 0;
@@ -6952,127 +6916,127 @@ body:not(.opc-has-progressed-from-login) .opc-block-progress-step-login {
 /* -------------------------------------------- *
  * Shipping and Payment methods
  */
-/* line 207, ../scss/module/_checkout-onepage.scss */
+/* line 184, ../scss/module/_checkout-onepage.scss */
 .sp-methods {
   margin: 0 0 8px;
 }
-/* line 210, ../scss/module/_checkout-onepage.scss */
+/* line 187, ../scss/module/_checkout-onepage.scss */
 .sp-methods dt {
   margin: 13px 0 5px;
   font-weight: bold;
 }
-/* line 214, ../scss/module/_checkout-onepage.scss */
+/* line 191, ../scss/module/_checkout-onepage.scss */
 .sp-methods dt:first-child {
   margin: 0 0 5px;
 }
-/* line 218, ../scss/module/_checkout-onepage.scss */
+/* line 195, ../scss/module/_checkout-onepage.scss */
 .sp-methods dd li {
   margin: 5px 0;
 }
-/* line 221, ../scss/module/_checkout-onepage.scss */
+/* line 198, ../scss/module/_checkout-onepage.scss */
 .sp-methods label img {
   float: left;
 }
-/* line 224, ../scss/module/_checkout-onepage.scss */
+/* line 202, ../scss/module/_checkout-onepage.scss */
 .sp-methods label a {
   margin-top: 6px;
   float: right;
   margin-left: 10px;
 }
-/* line 229, ../scss/module/_checkout-onepage.scss */
+/* line 208, ../scss/module/_checkout-onepage.scss */
 .sp-methods .price {
   font-weight: bold;
 }
-/* line 232, ../scss/module/_checkout-onepage.scss */
+/* line 211, ../scss/module/_checkout-onepage.scss */
 .sp-methods .form-list {
   padding-left: 20px;
 }
-/* line 235, ../scss/module/_checkout-onepage.scss */
+/* line 214, ../scss/module/_checkout-onepage.scss */
 .sp-methods .form-list li {
   margin: 0 0 8px;
 }
-/* line 239, ../scss/module/_checkout-onepage.scss */
+/* line 218, ../scss/module/_checkout-onepage.scss */
 .sp-methods select.month {
   width: 120px;
   margin-right: 10px;
 }
-/* line 243, ../scss/module/_checkout-onepage.scss */
+/* line 222, ../scss/module/_checkout-onepage.scss */
 .sp-methods select.year {
   width: 96px;
 }
-/* line 246, ../scss/module/_checkout-onepage.scss */
+/* line 225, ../scss/module/_checkout-onepage.scss */
 .sp-methods input.cvv {
   width: 4em !important;
 }
-/* line 249, ../scss/module/_checkout-onepage.scss */
+/* line 228, ../scss/module/_checkout-onepage.scss */
 .sp-methods #advice-validate-cc-exp-ccsave_expiration {
   max-width: 130px;
 }
-/* line 254, ../scss/module/_checkout-onepage.scss */
+/* line 233, ../scss/module/_checkout-onepage.scss */
 .sp-methods .checkmo-list li {
   margin: 0 0 5px;
   content: '';
   display: table;
   clear: both;
 }
-/* line 258, ../scss/module/_checkout-onepage.scss */
+/* line 237, ../scss/module/_checkout-onepage.scss */
 .sp-methods .checkmo-list label {
   width: 165px;
   padding-right: 15px;
   text-align: right;
   float: left;
 }
-/* line 264, ../scss/module/_checkout-onepage.scss */
+/* line 243, ../scss/module/_checkout-onepage.scss */
 .sp-methods .checkmo-list address {
   float: left;
 }
-/* line 277, ../scss/module/_checkout-onepage.scss */
+/* line 256, ../scss/module/_checkout-onepage.scss */
 .sp-methods .release-amounts {
   margin: 0.5em 0;
 }
-/* line 280, ../scss/module/_checkout-onepage.scss */
+/* line 259, ../scss/module/_checkout-onepage.scss */
 .sp-methods .release-amounts button {
   float: left;
   margin: 5px 10px 0 0;
 }
 
 /* One Page Checkout */
-/* line 287, ../scss/module/_checkout-onepage.scss */
+/* line 266, ../scss/module/_checkout-onepage.scss */
 .block-progress {
   border-left: 1px solid #deddde;
 }
-/* line 290, ../scss/module/_checkout-onepage.scss */
+/* line 269, ../scss/module/_checkout-onepage.scss */
 .block-progress .block-content {
   font-size: 13px;
 }
-/* line 293, ../scss/module/_checkout-onepage.scss */
+/* line 272, ../scss/module/_checkout-onepage.scss */
 .block-progress dt {
   font-size: 22px;
-  padding: 5px 0 5px 40px;
+  padding: 5px 0 5px 45px;
   margin-bottom: 10px;
   text-transform: uppercase;
   color: #333333;
 }
-/* line 301, ../scss/module/_checkout-onepage.scss */
+/* line 280, ../scss/module/_checkout-onepage.scss */
 .block-progress dt.complete {
   color: #636363;
 }
-/* line 304, ../scss/module/_checkout-onepage.scss */
+/* line 283, ../scss/module/_checkout-onepage.scss */
 .block-progress dd {
   padding-left: 15px;
   margin-bottom: 10px;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-style: italic;
 }
-/* line 310, ../scss/module/_checkout-onepage.scss */
+/* line 289, ../scss/module/_checkout-onepage.scss */
 .block-progress dd address {
   font-style: italic;
 }
-/* line 315, ../scss/module/_checkout-onepage.scss */
+/* line 294, ../scss/module/_checkout-onepage.scss */
 .block-progress #payment-progress-opcheckout .subtitle {
   margin-bottom: 3px;
 }
-/* line 321, ../scss/module/_checkout-onepage.scss */
+/* line 300, ../scss/module/_checkout-onepage.scss */
 .block-progress .payment-info dt {
   padding: 0;
   margin: 0 0 3px 0;
@@ -7084,17 +7048,17 @@ body:not(.opc-has-progressed-from-login) .opc-block-progress-step-login {
   clear: both;
   font-size: 13px;
 }
-/* line 332, ../scss/module/_checkout-onepage.scss */
+/* line 311, ../scss/module/_checkout-onepage.scss */
 .block-progress .payment-info dt:after {
   content: ': ';
 }
-/* line 337, ../scss/module/_checkout-onepage.scss */
+/* line 316, ../scss/module/_checkout-onepage.scss */
 .block-progress .payment-info dd {
   float: left;
   margin-bottom: 3px;
   font-size: 13px;
 }
-/* line 343, ../scss/module/_checkout-onepage.scss */
+/* line 322, ../scss/module/_checkout-onepage.scss */
 .block-progress .payment-info:after {
   content: '';
   display: table;
@@ -7102,109 +7066,109 @@ body:not(.opc-has-progressed-from-login) .opc-block-progress-step-login {
 }
 
 /* review step */
-/* line 353, ../scss/module/_checkout-onepage.scss */
+/* line 332, ../scss/module/_checkout-onepage.scss */
 #checkout-review-table .btn-remove img {
   display: none;
 }
 
-/* line 359, ../scss/module/_checkout-onepage.scss */
+/* line 338, ../scss/module/_checkout-onepage.scss */
 #checkout-review-table-wrapper {
   clear: both;
 }
 
-/* line 363, ../scss/module/_checkout-onepage.scss */
+/* line 342, ../scss/module/_checkout-onepage.scss */
 #review-buttons-container {
   width: 100%;
   margin-top: 15px;
   margin-bottom: 15px;
 }
-/* line 368, ../scss/module/_checkout-onepage.scss */
+/* line 347, ../scss/module/_checkout-onepage.scss */
 #review-buttons-container .btn-checkout {
   min-width: 220px;
 }
-/* line 371, ../scss/module/_checkout-onepage.scss */
+/* line 350, ../scss/module/_checkout-onepage.scss */
 #review-buttons-container .please-wait {
   float: left;
   margin-right: 10px;
 }
-/* line 375, ../scss/module/_checkout-onepage.scss */
+/* line 354, ../scss/module/_checkout-onepage.scss */
 #review-buttons-container .f-left {
   float: right;
 }
 
 /* show/hide "change" link for progress step depend on complete status
  * should be placed in .css file */
-/* line 396, ../scss/module/_checkout-onepage.scss */
+/* line 375, ../scss/module/_checkout-onepage.scss */
 .opc-block-progress dt.complete a,
 .opc-block-progress dt.complete .separator {
   display: inline;
 }
 
-/* line 401, ../scss/module/_checkout-onepage.scss */
+/* line 380, ../scss/module/_checkout-onepage.scss */
 .opc-block-progress dt a,
 .opc-block-progress dt .separator {
   display: none;
 }
 
 /* On small screens, the progress review content will be moved to the review step via JS. Styled via this CSS: */
-/* line 407, ../scss/module/_checkout-onepage.scss */
+/* line 386, ../scss/module/_checkout-onepage.scss */
 #checkout-step-review .opc-block-progress {
   border-left: none;
   padding-left: 0;
 }
-/* line 411, ../scss/module/_checkout-onepage.scss */
+/* line 390, ../scss/module/_checkout-onepage.scss */
 #checkout-step-review .opc-block-progress .block-title {
   display: none;
 }
-/* line 414, ../scss/module/_checkout-onepage.scss */
+/* line 393, ../scss/module/_checkout-onepage.scss */
 #checkout-step-review .opc-block-progress .block-content {
   display: block !important;
   padding: 0;
 }
-/* line 419, ../scss/module/_checkout-onepage.scss */
+/* line 398, ../scss/module/_checkout-onepage.scss */
 #checkout-step-review .opc-block-progress .block-content > dl > div {
   float: left;
   width: 50%;
 }
-/* line 431, ../scss/module/_checkout-onepage.scss */
+/* line 410, ../scss/module/_checkout-onepage.scss */
 #checkout-step-review .opc-block-progress .block-content .changelink {
   display: none;
 }
 
-/* line 451, ../scss/module/_checkout-onepage.scss */
+/* line 430, ../scss/module/_checkout-onepage.scss */
 #checkout-step-review .centinel > p {
   margin-bottom: 10px;
 }
-/* line 455, ../scss/module/_checkout-onepage.scss */
+/* line 434, ../scss/module/_checkout-onepage.scss */
 #checkout-step-review .centinel iframe {
   width: 100%;
   min-height: 400px;
 }
 
 /* Gift options */
-/* line 463, ../scss/module/_checkout-onepage.scss */
+/* line 442, ../scss/module/_checkout-onepage.scss */
 .gift-messages-form .item {
   content: '';
   display: table;
   clear: both;
   margin-top: 30px;
 }
-/* line 467, ../scss/module/_checkout-onepage.scss */
+/* line 446, ../scss/module/_checkout-onepage.scss */
 .gift-messages-form .item h5 {
   font-weight: bold;
 }
-/* line 471, ../scss/module/_checkout-onepage.scss */
+/* line 450, ../scss/module/_checkout-onepage.scss */
 .gift-messages-form .item .product-img-box {
   width: auto;
   float: left;
   padding-right: 15px;
 }
-/* line 477, ../scss/module/_checkout-onepage.scss */
+/* line 456, ../scss/module/_checkout-onepage.scss */
 .gift-messages-form .item .details {
   float: left;
 }
 
-/* line 485, ../scss/module/_checkout-onepage.scss */
+/* line 464, ../scss/module/_checkout-onepage.scss */
 .gift-message-form .inner-box > div {
   content: '';
   display: table;
@@ -7213,65 +7177,65 @@ body:not(.opc-has-progressed-from-login) .opc-block-progress-step-login {
   margin-top: 15px;
   display: block;
 }
-/* line 492, ../scss/module/_checkout-onepage.scss */
+/* line 471, ../scss/module/_checkout-onepage.scss */
 .gift-message-form .inner-box > div.extra-options-container p {
   margin-bottom: 15px;
 }
-/* line 500, ../scss/module/_checkout-onepage.scss */
+/* line 479, ../scss/module/_checkout-onepage.scss */
 .gift-message-form .gift-wrapping-form label {
   margin-right: 10px;
 }
-/* line 504, ../scss/module/_checkout-onepage.scss */
+/* line 483, ../scss/module/_checkout-onepage.scss */
 .gift-message-form .gift-wrapping-form img {
   float: left;
 }
-/* line 508, ../scss/module/_checkout-onepage.scss */
+/* line 487, ../scss/module/_checkout-onepage.scss */
 .gift-message-form .gift-wrapping-form .gift-wrapping-design {
   height: 75px;
 }
-/* line 511, ../scss/module/_checkout-onepage.scss */
+/* line 490, ../scss/module/_checkout-onepage.scss */
 .gift-message-form .gift-wrapping-form .gift-wrapping-design:after {
   content: '';
   display: table;
   clear: both;
 }
-/* line 515, ../scss/module/_checkout-onepage.scss */
+/* line 494, ../scss/module/_checkout-onepage.scss */
 .gift-message-form .gift-wrapping-form .gift-wrapping-design .image-box {
   margin-right: 5px;
 }
-/* line 521, ../scss/module/_checkout-onepage.scss */
+/* line 500, ../scss/module/_checkout-onepage.scss */
 .gift-message-form .gift-item {
   padding-bottom: 20px;
   margin-bottom: 20px;
   border-bottom: solid 1px #ECECEC;
 }
-/* line 526, ../scss/module/_checkout-onepage.scss */
+/* line 505, ../scss/module/_checkout-onepage.scss */
 .gift-message-form .gift-item:after {
   content: '';
   display: table;
   clear: both;
 }
-/* line 530, ../scss/module/_checkout-onepage.scss */
+/* line 509, ../scss/module/_checkout-onepage.scss */
 .gift-message-form .gift-item .product-img-box {
   width: 200px;
 }
-/* line 533, ../scss/module/_checkout-onepage.scss */
+/* line 512, ../scss/module/_checkout-onepage.scss */
 .gift-message-form .gift-item .product-img-box .product-image {
   width: 75px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 539, ../scss/module/_checkout-onepage.scss */
+/* line 518, ../scss/module/_checkout-onepage.scss */
 .gift-message-form .gift-item .product-img-box .product-name {
   display: block;
 }
-/* line 544, ../scss/module/_checkout-onepage.scss */
+/* line 523, ../scss/module/_checkout-onepage.scss */
 .gift-message-form .gift-item .fieldset {
   margin-left: 200px;
 }
 
 /**** Custom design ****/
-/* line 577, ../scss/module/_checkout-onepage.scss */
+/* line 555, ../scss/module/_checkout-onepage.scss */
 .page-title {
   text-transform: uppercase;
   font-size: 26px;
@@ -7279,37 +7243,69 @@ body:not(.opc-has-progressed-from-login) .opc-block-progress-step-login {
   color: #712c6b;
 }
 @media (min-width: 770px) {
-  /* line 577, ../scss/module/_checkout-onepage.scss */
+  /* line 555, ../scss/module/_checkout-onepage.scss */
   .page-title {
-    padding-left: 40px;
+    padding-left: 45px;
   }
 }
 
-/* line 588, ../scss/module/_checkout-onepage.scss */
+/* line 565, ../scss/module/_checkout-onepage.scss */
 .step-title {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
-/* line 590, ../scss/module/_checkout-onepage.scss */
+/* line 567, ../scss/module/_checkout-onepage.scss */
 .step-title .number {
   background: #712c6b;
-  width: 38px;
-  height: 38px;
+  width: 40px;
+  height: 40px;
   color: #fff;
   font-size: 26px;
-  padding-top: 5px;
+  padding-top: 7px;
   float: left;
   text-align: center;
 }
-/* line 600, ../scss/module/_checkout-onepage.scss */
+/* line 577, ../scss/module/_checkout-onepage.scss */
 .step-title .label {
   font-size: 22px;
   color: #712c6b;
   text-transform: uppercase;
   position: relative;
-  padding: 7px 12px 0;
+  padding: 8px 15px 0;
   background: #deddde;
-  height: 38px;
-  margin-left: 42px;
+  height: 40px;
+  margin-left: 45px;
+}
+
+/* line 593, ../scss/module/_checkout-onepage.scss */
+.opc-form {
+  margin: 20px 0;
+}
+/* line 595, ../scss/module/_checkout-onepage.scss */
+.opc-form .std-input, .opc-form .std-select, .opc-form .checkbox-field, .opc-form .fieldset select {
+  margin-bottom: 15px;
+}
+
+/* line 601, ../scss/module/_checkout-onepage.scss */
+.fieldset-container:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+@media (min-width: 770px) {
+  /* line 606, ../scss/module/_checkout-onepage.scss */
+  .fieldset {
+    width: 50%;
+    padding-left: 45px;
+    float: left;
+  }
+}
+
+@media (min-width: 770px) {
+  /* line 614, ../scss/module/_checkout-onepage.scss */
+  .controls {
+    padding: 5px 0 0 45px;
+  }
 }
 
 /* ============================================ *

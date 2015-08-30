@@ -1857,6 +1857,18 @@ body.customer-account .data-table {
 	}
 }
 
+.std-select, .fieldset select {
+    display:block;
+    width:100%;
+    height:35px;
+    background:$c-lightgray;
+    border:none;
+    outline:none;
+    padding:0 $gap/2;
+    font-size:18px;
+    color:$c-black;
+}
+
 .checkbox-field{
 	label{
 		font-size:18px;

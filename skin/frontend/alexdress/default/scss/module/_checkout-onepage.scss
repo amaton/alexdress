@@ -57,11 +57,6 @@
     }
 }
 
-.opc {
-    select {
-        width: (230px + 135px);
-    }
-}
 
 /* -------------------------------------------- *
  * Section Styling - Default
@@ -100,23 +95,6 @@
 
 .no-touch .opc .section .step-title a:hover {
     text-decoration: none;
-}
-
-.opc .section .step {
-    padding: $box-spacing-large;
-
-    &:after {
-        @include clearfix;
-    }
-
-    @include bp(max-width, $bp-large) {
-        padding: $box-spacing;
-    }
-}
-
-.opc select {
-    max-width: 365px;
-    width: 100%;
 }
 
 .opc h3 {
@@ -199,7 +177,6 @@ body:not(.opc-has-progressed-from-login) .opc-block-progress-step-login {
     opacity: 0;
 }
 
-
 /* -------------------------------------------- *
  * Shipping and Payment methods
  */
@@ -218,10 +195,12 @@ body:not(.opc-has-progressed-from-login) .opc-block-progress-step-login {
     dd li {
         margin: 5px 0;
     }
-    label img { // This applies to the Paypal Express label
+    label img {
+        // This applies to the Paypal Express label
         float: left;
     }
-    label a { // This applies to the Paypal Express label
+    label a {
+        // This applies to the Paypal Express label
         margin-top: 6px;
         float: right;
         margin-left: 10px;
@@ -291,8 +270,8 @@ body:not(.opc-has-progressed-from-login) .opc-block-progress-step-login {
         font-size: $f-size-s;
     }
     dt {
-		font-size:22px;
-        padding: $gap/4 0 $gap/4 $gap*2;
+        font-size: 22px;
+        padding: $gap/4 0 $gap/4 $gap*2.25;
         margin-bottom: $gap/2;
         text-transform: uppercase;
         color: $c-gray;
@@ -448,7 +427,7 @@ body:not(.opc-has-progressed-from-login) .opc-block-progress-step-login {
 }
 
 #checkout-step-review .centinel {
-    &> p {
+    & > p {
         margin-bottom: $box-spacing;
     }
 
@@ -550,7 +529,7 @@ body:not(.opc-has-progressed-from-login) .opc-block-progress-step-login {
 @include bp('max-width', $bp-medium) {
     .gift-message-form {
 
-        .giftmessage-area{
+        .giftmessage-area {
             max-width: 100%;
         }
 
@@ -571,44 +550,69 @@ body:not(.opc-has-progressed-from-login) .opc-block-progress-step-login {
     }
 }
 
-
 /**** Custom design ****/
 
-.page-title{
-	text-transform:uppercase;
-	font-size:26px;
-	margin-bottom:$gap;
-	color:$c-action;
-	@media (min-width:$bp-medium){
-		padding-left:2*$gap;
-	}
+.page-title {
+    text-transform: uppercase;
+    font-size: 26px;
+    margin-bottom: $gap;
+    color: $c-action;
+    @media (min-width: $bp-medium) {
+        padding-left: $gap*2.25;
+    }
 }
 
-
-.step-title{
-	margin-bottom:8px;
-	.number{
-		background:$c-action;
-		width: 38px;
-		height: 38px;
-		color:$c-white;
-		font-size:26px;
-		padding-top:5px;
-		float:left;
-		text-align:center;
-	}
-	.label{
-		font-size:22px;
-		color:$c-action;
-		text-transform:uppercase;
-		position:relative;
-		padding:7px 12px 0;
-		background:$c-lightgray;
-		height:38px;
-		margin-left:42px;
-	}
+.step-title {
+    margin-bottom: $gap/2;
+    .number {
+        background: $c-action;
+        width: 2*$gap;
+        height: 2*$gap;
+        color: $c-white;
+        font-size: 26px;
+        padding-top: 7px;
+        float: left;
+        text-align: center;
+    }
+    .label {
+        font-size: 22px;
+        color: $c-action;
+        text-transform: uppercase;
+        position: relative;
+        padding: 8px 15px 0;
+        background: $c-lightgray;
+        height: 2*$gap;
+        margin-left: $gap*2.25;
+    }
 }
 
-.opc-progress-label{
+.opc-progress-label {
 
+}
+
+.opc-form {
+    margin: $gap 0;
+    .std-input, .std-select, .checkbox-field, .fieldset select {
+        margin-bottom: $gap*3/4;
+    }
+}
+
+.fieldset-container {
+    &:after {
+        @include clearfix;
+    }
+}
+
+.fieldset {
+    @media (min-width: $bp-medium) {
+        width: 50%;
+        padding-left: $gap*2.25;
+        float: left;
+    }
+}
+
+.controls {
+    @media (min-width: $bp-medium) {
+        padding: $gap/4 0 0 $gap*2.25;
+    }
 }
