@@ -85,13 +85,13 @@
     display: none;
 }
 
-.opc .section.allow:not(.active) .step-title a {
+/*.opc .section.allow:not(.active) .step-title a {
     display: block;
     float: right;
     line-height: 40px;
     height: 40px;
     padding: 0px 10px;
-}
+}*/
 
 .no-touch .opc .section .step-title a:hover {
     text-decoration: none;
@@ -102,7 +102,7 @@
 }
 
 .opc .buttons-set {
-    text-align: left;
+    text-align: center;
 
     button.button {
         float: left;
@@ -278,17 +278,13 @@ body:not(.opc-has-progressed-from-login) .opc-block-progress-step-login {
     }
 
     dt.complete {
-        color: $c-h4;
+        background: $c-action;
+        color: $c-white;
     }
     dd {
-        padding-left: 15px;
+        font-size: 20px;
+        padding-left: 45px;
         margin-bottom: 10px;
-        font-family: $f-stack-serif;
-        font-style: italic;
-
-        address {
-            font-style: italic;
-        }
     }
 
     #payment-progress-opcheckout .subtitle {
@@ -323,6 +319,13 @@ body:not(.opc-has-progressed-from-login) .opc-block-progress-step-login {
             @include clearfix;
         }
 
+    }
+
+    .change-lnk {
+        font-size: 18px;
+        margin-left: 2*$box-spacing;
+        text-decoration: none;
+        color: $c-white;
     }
 }
 
@@ -583,6 +586,37 @@ body:not(.opc-has-progressed-from-login) .opc-block-progress-step-login {
         background: $c-lightgray;
         height: 2*$gap;
         margin-left: $gap*2.25;
+        .fa {
+            width: 30px;
+            height: 30px;
+            display: none;
+            position: absolute;
+            right: $box-spacing/2;
+            top:50%;
+            transform: translateY(-50%);
+            text-align: center;
+            border-radius: 15px;
+        }
+    }
+}
+
+
+.section {
+    &:not(.allow) {
+        .fa-times {
+            padding: 4px;
+            display: block;
+            background: $c-white;
+            color: $c-lightgray;
+        }
+    }
+    &.allow {
+        .fa-plus {
+            padding: 5px;
+            display: block;
+            background: $c-action;
+            color: $c-lightgray;
+        }
     }
 }
 

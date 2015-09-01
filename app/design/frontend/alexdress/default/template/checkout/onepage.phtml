@@ -34,7 +34,7 @@
     <li id="opc-<?php echo $_stepId ?>" class="section<?php echo !empty($_stepInfo['allow'])?' allow':'' ?><?php echo !empty($_stepInfo['complete'])?' saved':'' ?>">
         <div class="step-title">
             <div class="number"><?php echo $i ?></div>
-            <div class="label"><?php echo $_stepInfo['label'] ?></div>
+            <div class="label"><?php echo $_stepInfo['label'] ?><i class="fa fa-times"></i><i class="fa fa-plus"></i></div>
             <a href="#"><?php echo $this->__('Edit') ?></a>
         </div>
         <div id="checkout-step-<?php echo $_stepId ?>" class="step a-item" style="display:none;">
