@@ -614,6 +614,12 @@ body:not(.opc-has-progressed-from-login) .opc-block-progress-step-login {
             background: $c-action;
             color: $c-lightgray;
         }
+        &.active {
+            .fa-plus {
+                background: $c-lightgray;
+                color: $c-action;
+            }
+        }
     }
 }
 
