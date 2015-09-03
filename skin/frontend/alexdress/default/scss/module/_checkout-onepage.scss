@@ -163,14 +163,6 @@
     @include single-transition(opacity, 300ms);
 }
 
-/* When a user progresses from the "Checkout Method" to "Billing Information" for the first time, the              */
-/* "opc-has-progressed-from-login" class gets added to the body. Also, the .opc element will only have the         */
-/* "opc-firststep-login" class if the first step of the checkout is the "Checkout Method" (eg, not when logged in) */
-body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section:not(#opc-login) .step-title,
-body:not(.opc-has-progressed-from-login) .opc-block-progress-step-login {
-    opacity: 0;
-}
-
 /* -------------------------------------------- *
  * Shipping and Payment methods
  */
