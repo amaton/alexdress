@@ -882,7 +882,7 @@ a.button:hover {
     .col-1,
     .col-2 {
         width: 50%;
-        padding: $box-spacing-large;
+       // padding-right: $box-spacing-large;
 
         @include bp(max-width, $bp-medium) {
             padding: $box-spacing;

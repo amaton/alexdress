@@ -632,6 +632,9 @@ body:not(.opc-has-progressed-from-login) .opc-block-progress-step-login {
     .std-input, .std-select, .checkbox-field, .fieldset select {
         margin-bottom: $gap*3/4;
     }
+    .std-btn {
+        margin-top: 2*$box-spacing;
+    }
     .back-lnk {
         display: none;
     }
@@ -654,5 +657,21 @@ body:not(.opc-has-progressed-from-login) .opc-block-progress-step-login {
 .controls {
     @media (min-width: $bp-medium) {
         padding: $gap/4 0 0 $gap*2.25;
+    }
+}
+
+.form-title {
+    font-size: 20px;
+    margin-bottom: 2*$box-spacing;
+    text-transform: uppercase;
+}
+
+.opc-form {
+    &:after {
+        @include clearfix;
+    }
+    .description {
+        font-size: 18px;
+        margin-bottom: 2*$box-spacing;
     }
 }
