@@ -633,10 +633,15 @@ body:not(.opc-has-progressed-from-login) .opc-block-progress-step-login {
         margin-bottom: $gap*3/4;
     }
     .std-btn {
-        margin-top: 2*$box-spacing;
+        margin-top: $box-spacing/2;
     }
     .back-lnk {
         display: none;
+    }
+    &.form-2-col {
+        .std-btn {
+            min-width: 50%;
+        }
     }
 }
 
@@ -670,8 +675,20 @@ body:not(.opc-has-progressed-from-login) .opc-block-progress-step-login {
     &:after {
         @include clearfix;
     }
+    @media (max-width: $bp-medium - 1) {
+        &.form-2-col {
+            .fieldset + .fieldset {
+                margin-top: 3*$box-spacing;
+            }
+        }
+    }
     .description {
         font-size: 18px;
         margin-bottom: 2*$box-spacing;
+    }
+    .login-lnk {
+        display: block;
+        font-size: 18px;
+        margin: -5px 0 15px;
     }
 }
