@@ -38,33 +38,19 @@ $canApplyMsrp = Mage::helper('catalog')->canApplyMsrp($_item->getProduct(), Mage
         <?php if ($this->hasProductUrl()):?>
             </a>
         <?php endif;?>
-
-        <ul class="cart-links">
-            <?php if ($isVisibleProduct): ?>
-                <li>
-                    <a href="<?php echo $this->getConfigureUrl() ?>" title="<?php echo $this->__('Edit item parameters') ?>"><?php echo $this->__('Edit') ?></a>
-                </li>
-            <?php endif ?>
-
-            <?php if ($this->helper('wishlist')->isAllowInCart() && $isVisibleProduct) : ?>
-                <li>
-                    <a href="<?php echo $this->helper('wishlist')->getMoveFromCartUrl($_item->getId()); ?>" class="link-wishlist use-ajax"><?php echo $this->__('Move to wishlist'); ?></a>
-                </li>
-            <?php endif ?>
-        </ul>
     </td>
 
     <td class="product-cart-info">
 
-        <a href="<?php echo $this->getDeleteUrl() ?>" title="<?php echo $this->__('Remove Item') ?>" class="btn-remove btn-remove2"><?php echo $this->__('Remove Item') ?></a>
+        <a href="<?php echo $this->getDeleteUrl() ?>" title="<?php echo $this->__('Remove Item') ?>" class="fa fa-times"></a>
 
-        <h2 class="product-name">
+        <div class="product-name">
         <?php if ($this->hasProductUrl()):?>
             <a href="<?php echo $this->getProductUrl() ?>"><?php echo $this->escapeHtml($this->getProductName()) ?></a>
         <?php else: ?>
             <?php echo $this->escapeHtml($this->getProductName()) ?>
         <?php endif; ?>
-        </h2>
+        </div>
 
         <div class="product-cart-sku">
             <span class="label"><?php echo $this->__('SKU'); ?>:</span> <?php echo $this->escapeHtml($_item->getSku()); ?>
@@ -210,22 +196,6 @@ $canApplyMsrp = Mage::helper('catalog')->canApplyMsrp($_item->getProduct(), Mage
         <button type="submit" name="update_cart_action" value="update_qty" title="<?php echo $this->__('Update'); ?>" class="button btn-update"><span><span><?php echo $this->__('Update'); ?></span></span>
         </button>
 
-        <ul class="cart-links">
-            <?php if ($isVisibleProduct): ?>
-                <li>
-                    <a href="<?php echo $this->getConfigureUrl() ?>" title="<?php echo $this->__('Edit item parameters') ?>"><?php echo $this->__('Edit') ?></a>
-                </li>
-            <?php endif ?>
-
-            <?php if ($this->helper('wishlist')->isAllowInCart()) : ?>
-            <li>
-                <?php if ($isVisibleProduct): ?>
-                    <a href="<?php echo $this->helper('wishlist')->getMoveFromCartUrl($_item->getId()); ?>" class="link-wishlist use-ajax"><?php echo $this->__('Move to wishlist'); ?></a>
-                <?php endif ?>
-            </li>
-            <?php endif ?>
-        </ul>
-
     </td>
 
     <!--Sub total starts here -->
@@ -322,8 +292,8 @@ $canApplyMsrp = Mage::helper('catalog')->canApplyMsrp($_item->getProduct(), Mage
         <?php endif; ?>
     </td>
     <?php endif; ?>
-    <td class="a-center product-cart-remove">
-        <a href="<?php echo $this->getDeleteUrl() ?>" title="<?php echo $this->__('Remove Item') ?>" class="btn-remove btn-remove2"><?php echo $this->__('Remove Item') ?></a>
+    <td class="a-right product-cart-remove">
+        <a href="<?php echo $this->getDeleteUrl() ?>" title="<?php echo $this->__('Remove Item') ?>" class="fa fa-times"></a>
     </td>
 </tr>
 

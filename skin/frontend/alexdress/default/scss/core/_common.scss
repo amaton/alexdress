@@ -1178,7 +1178,6 @@ a.button:hover {
 
 .item-options {
     font-size: $f-size;
-    font-family: $f-stack-special;
 
     &:after {
         @include clearfix;
@@ -1189,7 +1188,6 @@ a.button:hover {
         clear: left;
         font-weight: 600;
         padding-right: 5px;
-        font-style: italic;
 
         &:after {
             content: ': ';
