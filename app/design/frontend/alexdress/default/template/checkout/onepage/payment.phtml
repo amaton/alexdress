@@ -46,18 +46,20 @@
         </div>
     </div>
     <?php echo $this->getChildChildHtml('additional') ?>
-    <div class="buttons-set" id="payment-buttons-container">
-        <?php // Moved to CC form ?>
-        <?php /* <p class="required"><?php echo $this->__('* Required Fields') ?></p> */ ?>
-        <button type="button" class="std-btn" onclick="payment.save()"><?php echo $this->__('Continue') ?></button>
+</form>
+
+<div class="buttons-set" id="payment-buttons-container">
+    <?php // Moved to CC form ?>
+    <?php /* <p class="required"><?php echo $this->__('* Required Fields') ?></p> */ ?>
+    <button type="button" class="std-btn" onclick="payment.save()"><?php echo $this->__('Continue') ?></button>
     <span class="please-wait" id="payment-please-wait" style="display:none;">
         <img src="<?php echo $this->getSkinUrl('images/opc-ajax-loader.gif') ?>"
              alt="<?php echo $this->__('Loading next step...') ?>"
              title="<?php echo $this->__('Loading next step...') ?>"
              class="v-middle"/> <?php echo $this->__('Loading next step...') ?>
     </span>
-    </div>
-</form>
+</div>
+
 
 <script type="text/javascript">
     //<![CDATA[

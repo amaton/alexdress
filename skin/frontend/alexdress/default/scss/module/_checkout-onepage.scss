@@ -120,6 +120,10 @@
     }
 }
 
+#checkout-step-payment .buttons-set {
+    margin: $box-spacing*2 0;
+}
+
 @include bp(max-width, $bp-xsmall) {
     .opc,
     .paypal-express-review {
