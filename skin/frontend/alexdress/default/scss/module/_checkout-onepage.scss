@@ -168,9 +168,12 @@
  */
 
 .sp-methods {
-    margin: 0 0 8px;
+    margin: 0 0 8px 45px;
+    @include bp('max-width', $bp-medium) {
+        margin-left: 0;
+    }
 
-    dt {
+        dt {
         margin: 13px 0 5px;
         font-weight: bold;
 
