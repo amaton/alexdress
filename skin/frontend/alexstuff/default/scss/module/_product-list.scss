@@ -1,0 +1,480 @@
+//
+// Magento
+//
+// NOTICE OF LICENSE
+//
+// This source file is subject to the Academic Free License (AFL 3.0)
+// that is bundled with this package in the file LICENSE_AFL.txt.
+// It is also available through the world-wide-web at this URL:
+// http://opensource.org/licenses/afl-3.0.php
+// If you did not receive a copy of the license and are unable to
+// obtain it through the world-wide-web, please send an email
+// to license@magento.com so we can send you a copy immediately.
+//
+// DISCLAIMER
+//
+// Do not edit or add to this file if you wish to upgrade Magento to newer
+// versions in the future. If you wish to customize Magento for your
+// needs please refer to http://www.magento.com for more information.
+//
+// @category    design
+// @package     rwd_default
+// @copyright   Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+// @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+//
+
+/* ================================================= *
+ * General Product List Styles (not module-specific)
+ * ================================================= */
+
+/* -------------------------------------------- *
+ * Product List General
+ */
+
+.category-title h1,
+body.catalogsearch-result-index .page-title h1 {
+    border-bottom: none;
+}
+
+.category-image {
+    margin-bottom: $b-margin-bottom;
+}
+
+// Prevent button overlapping when buttons have long text, such as non-English translations
+.products-list .action .button,
+.products-grid .actions .button {
+    white-space: normal;
+}
+
+/* ============================================ *
+ * Product Grid
+ * ============================================ */
+
+.widget-new-products {
+    .products-grid .product-image {
+        width: 75%;
+        margin-bottom: 15px;
+        margin-left: 10%;
+    }
+}
+
+.products-grid .product-info {
+    position: relative;
+		min-height:0 !important;
+		text-align:center;
+}
+
+.products-grid .actions {
+    padding-top: $box-spacing;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.products-grid .ratings .rating-box {
+    margin: 0 auto;
+}
+
+.products-grid .ratings .amount {
+    display: none;
+}
+
+.products-grid .add-to-links {
+    margin-bottom: 0;
+}
+
+
+/* ============================================ *
+ * Product List
+ * ============================================ */
+
+
+.products-list .product-shop {
+    float: right;
+    width: percentage(2/3);
+    padding-left: ($box-spacing * 2);
+
+    .product-name {
+        margin-bottom: 0;
+    }
+    .ratings {
+        margin: 0;
+
+        .rating-box,
+        .rating-links {
+            float: left;
+            margin-right: $element-spacing;
+        }
+        .rating-links {
+            margin-top: 4px;
+        }
+    }
+    .action {
+        margin: $element-spacing 0;
+    }
+    .desc {
+        margin-top: $element-spacing;
+    }
+
+    .product-primary,
+    .desc {
+        float: left;
+        width: 65%;
+        overflow: hidden;
+    }
+    .product-secondary {
+        float: right;
+        width: 35%;
+        text-align: right;
+        clear: right;
+    }
+}
+
+@include bp(min-width, $bp-xsmall + 1) {
+    .products-list .product-name a {
+        font-size: $f-size-xxl;
+    }
+}
+
+/* ============================================ *
+ * Mini Product List
+ * ============================================ */
+
+.mini-products-images-list {
+
+    &:after {
+        @include clearfix;
+    }
+
+    li.item {
+        float: left;
+        width: 50%;
+        margin: 0;
+        padding: 0 5px 10px 0;
+
+        &:nth-child(even) {
+            padding-right: 0;
+            padding-left: 5px;
+        }
+
+        .product-image {
+            display: block;
+
+            img {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+
+}
+
+
+
+/* ============================================ *
+ * Catalog - List
+ * ============================================ */
+
+.category-image {
+    border: 1px solid $c-module-border;
+    padding: 10px;
+
+    img {
+        width: 100%;
+        max-width: 100%;
+
+        &:hidden {
+            display: none;
+        }
+    }
+}
+
+/* ============================================ *
+ * Layered Navigation
+ * ============================================ */
+
+.block-layered-nav .block-subtitle--filter {
+    // Will be shown at smaller viewports
+    display: none;
+    @include accordionDtBase;
+    cursor: pointer;
+}
+
+.block-layered-nav .block-content {
+    // Accordions are fully expanded until a smaller resolution.
+    @include accordion;
+}
+
+.block-layered-nav dl dd {
+    margin-bottom: $box-spacing;
+    margin-top: $box-spacing;
+
+    ol > li > span, ol > li > a {
+        padding: 5px 15px;
+        display: block;
+    }
+    ol > li > a .count {
+        color: $c-text-gray;
+    }
+}
+
+@include bp(min-width, $bp-medium+1) {
+    .block-layered-nav .block-content > dl > dt {
+        padding-left: 10px;
+
+        &:after {
+            display: none;
+        }
+    }
+
+
+// Rewrite mixin rules accordind to custom design on desktop
+
+.block-layered-nav{
+ .block-content{
+ margin:0;
+ 	&>dl{
+	 	&>dt{
+  		border:none;
+			background:$c-highlight;
+			padding:5px 10px;
+			margin-bottom:10px;
+			color:$c-action;
+			font-weight:bold;
+			line-height:1;
+			&:hover{
+        background:$c-action;
+				color:$c-highlight;
+			}
+			&.clicked+dd{
+        display:none;
+			}
+		}
+	 	&>dd{
+  		border:none;
+			padding: 0 0 10px 0;
+		}
+	}
+ }
+}
+
+.block-layered-nav dl dd ol > li > span, .block-layered-nav dl dd ol > li > a{
+  padding: 2px 20px;
+	color:$c-text;
+	font-size: 18px;
+	&:hover{
+    background:$c-lightgray;
+		text-decoration:none;
+	}
+	&.has-image{
+
+	}
+}
+
+.block-content .configurable-swatch-list{
+  margin:0;
+}
+
+.block-content #narrow-by-list dd .configurable-swatch-list li{
+	margin:0;
+  width:auto;
+}
+
+.block-content #narrow-by-list dd .swatch-link.has-image{
+  float:left;
+	padding:3px;
+	margin:0;
+  border-radius:0;
+	&:hover{
+		background:$c-highlight;
+	}
+}
+
+.block-content #narrow-by-list dd .swatch-label{
+  margin:0;
+	border:none;
+	border-radius:0;
+	line-height:1;
+}
+
+.block-content #narrow-by-list dd .swatch-link{
+  margin:0;
+}
+
+.block-content #narrow-by-list dd .swatch-label img{
+  border-radius:0;
+	border:none;
+	width:100%;
+	height:100%;
+}
+
+}
+
+@include bp(max-width, $bp-medium) {
+    .sidebar .block.block-layered-nav {
+        border-bottom: none;
+    }
+
+    // We don't want "Shop By" to show when there are no filters applied, as the "Filter" link will suffice
+    .block-layered-nav--no-filters .block-title {
+        display: none;
+    }
+
+    // Remove the top padding and re-add it as margin-top so that the margin will collapse with elements above it
+    .block-layered-nav .block-content {
+        padding-top: 0;
+        margin-top: 15px;
+        @include accordionCollapse;
+    }
+
+    .block-layered-nav .block-subtitle--filter {
+        background-color: $c-action;
+        border: 0;
+        margin-bottom: 0;
+        display: block;
+        color: #FFFFFF;
+
+        &:after {
+            @include triangle(right, 4px, #FFFFFF);
+            right: 10px;
+            top: 50%;
+            margin-top: -5px;
+        }
+
+        &:hover {
+            background-color: $c-button-hover;
+            color: #FFFFFF;
+        }
+
+        &.active:after {
+            @include triangle(down, 4px, #FFFFFF);
+            right: 10px;
+            top: 50%;
+            margin-top: -3px;
+        }
+    }
+
+    #narrow-by-list,
+    #narrow-by-list2 {
+        padding: $box-spacing;
+        border: 1px solid $c-module-border;
+        border-top: 0;
+    }
+
+    .block-layered-nav dl ol > li > a,
+    .block-layered-nav dl ol > li > span {
+        padding: 7px;
+        margin: 5px;
+    }
+
+    .block-layered-nav dl ol > li > a {
+        @include touch-button;
+
+        &:hover {
+            text-decoration: none;
+            background: $c-module-background-hover;
+        }
+    }
+
+}
+
+.block-layered-nav .currently {
+    .block-subtitle {
+        display: block;
+        @include h4;
+    }
+
+    ol {
+        padding-left: $box-spacing;
+        margin-bottom: $box-spacing;
+    }
+    ol li {
+        margin-bottom: 5px;
+
+        .label {
+            font-weight: bold;
+        }
+
+        &:after {
+            @include clearfix;
+        }
+    }
+}
+
+.block-layered-nav .actions {
+    text-align: right;
+    margin-bottom: $element-spacing;
+}
+
+// Product list
+
+.products-grid{
+    display:-webkit-flex;
+	display:flex;
+    -webkit-flex-flow:row wrap;
+	flex-flow:row wrap;
+}
+
+.products-item{
+    position:relative;
+    width:25%;
+	border:1px solid $c-lightgray;
+	border-left:none;
+	border-top:none;
+	padding:15px 15px 25px;
+	font-size:18px;
+	color:$c-gray;
+	text-align:center;
+	&:hover{
+		text-decoration:none;
+		&:after{
+		    content:"";
+			position:absolute;
+			right:0;
+			left:0;
+			bottom:0;
+			height:10px;
+			background:$c-action;
+		}
+	}
+	.products-item-name{
+		margin:15px 0 5px;
+		@include str-trim;
+	}
+	.products-item-img{
+		width:100%;
+	}
+	.old-price{
+		text-decoration:line-through;
+		color:$c-text-gray;
+		margin-right:5px;
+		font-size:16px;
+	}
+}
+
+@include bp(min-width, $bp-small+1) {
+
+.products-item{
+	&:first-child,&:nth-child(5n){
+    	 border-left:1px solid $c-lightgray;
+	}
+	&:first-child,&:nth-child(2),&:nth-child(3),&:nth-child(4){
+   		border-top:1px solid $c-lightgray;
+	}
+}
+
+}
+
+@include bp(max-width, $bp-small) {
+
+.products-item{
+    width:50%;
+	&:nth-child(odd){
+	    border-left:1px solid $c-lightgray;
+	}
+	&:first-child,&:nth-child(2){
+    	border-top:1px solid $c-lightgray;
+	}
+}
+
+}

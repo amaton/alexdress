@@ -1,0 +1,408 @@
+/*
+// ----------------------------------------------
+// Usage example:
+// For IE set $mq-support to false.
+// Set the fixed value.
+// Then use mixins to test whether styles should be applied.
+// ----------------------------------------------
+
+$mq-support: false;
+$mq-fixed-value: 1024;
+
+// Renders at fixed value
+@include bp (min-width, 300px) { 
+    div { color:#000; }
+}
+
+// Doesn't render without MQ support
+@include bp (min-width, 1200px) { 
+    div { color:#FFF; }
+}
+
+// Doesn't render without MQ support
+@include bp (max-width, 300px) { 
+    div { color:#444; }
+}
+
+// Renders at fixed value
+@include bp (max-width, 1200px) { 
+    div { color:#888; }
+}
+
+// ----------------------------------------------
+*/
+/* line 208, icons/*.png */
+.icons-sprite, .icons-delivery, .icons-dhl, .icons-lang_cs, .icons-lang_de, .icons-lang_dropdown, .icons-lang_en, .icons-lang_fr, .icons-lang_ru, .icons-lens, .icons-mastercard, .icons-minicart, .icons-paypal, .icons-return, .icons-social_fb, .icons-social_gp, .icons-social_in, .icons-social_th, .icons-social_tw, .icons-social_vk, .icons-support, .icons-visa {
+  background-image: url('/skin/frontend/alexdress/default/images/icons-s6eb5be3f05.png');
+  background-repeat: no-repeat;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-delivery {
+  background-position: 0 0;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-dhl {
+  background-position: 0 -25px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lang_cs {
+  background-position: 0 -52px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lang_de {
+  background-position: 0 -84px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lang_dropdown {
+  background-position: 0 -116px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lang_en {
+  background-position: 0 -133px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lang_fr {
+  background-position: 0 -165px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lang_ru {
+  background-position: 0 -197px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lens {
+  background-position: 0 -229px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-mastercard {
+  background-position: 0 -257px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-minicart {
+  background-position: 0 -297px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-paypal {
+  background-position: 0 -336px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-return {
+  background-position: 0 -376px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-social_fb {
+  background-position: 0 -405px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-social_gp {
+  background-position: 0 -446px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-social_in {
+  background-position: 0 -487px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-social_th {
+  background-position: 0 -528px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-social_tw {
+  background-position: 0 -569px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-social_vk {
+  background-position: 0 -610px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-support {
+  background-position: 0 -651px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-visa {
+  background-position: 0 -677px;
+}
+
+/* ============================================ *
+ * Homepage
+ * ============================================ */
+/* -------------------------------------------- *
+ * Primary Banner
+ */
+/* line 36, ../scss/content/_home.scss */
+body.cms-home .main-container {
+  padding-top: 20px;
+}
+/* line 40, ../scss/content/_home.scss */
+body.cms-home .slideshow-container {
+  margin-top: 0;
+}
+
+/* line 45, ../scss/content/_home.scss */
+.slideshow .banner-msg {
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  top: 30%;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+/* line 54, ../scss/content/_home.scss */
+.slideshow .banner-msg h2 {
+  color: #FFFFFF;
+  font-size: 24px;
+  text-shadow: 1px 1px 3px #555555;
+}
+
+/* line 60, ../scss/content/_home.scss */
+.slideshow .banner-msg h2 strong {
+  font-weight: bold;
+  display: block;
+  font-size: 36px;
+}
+
+/* -------------------------------------------- *
+ * Promotion Banner Section
+ */
+/* line 96, ../scss/content/_home.scss */
+.promos {
+  margin: 0 0 20px 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* line 102, ../scss/content/_home.scss */
+.promos:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* Specifying the body only in order to override the .std ul li styling */
+/* line 108, ../scss/content/_home.scss */
+body .promos > li {
+  margin: 0 0 10px 0;
+  list-style: none;
+  text-align: center;
+  position: relative;
+  border: 1px solid #CCCCCC;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+/* line 117, ../scss/content/_home.scss */
+.promos > li:last-child {
+  margin-bottom: 0;
+}
+
+/* line 121, ../scss/content/_home.scss */
+.promos img {
+  max-width: 100%;
+  width: 100%;
+}
+
+/* line 126, ../scss/content/_home.scss */
+.promos a:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  display: block;
+}
+
+/* line 131, ../scss/content/_home.scss */
+.promos span {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 10%;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  text-shadow: 1px 1px 3px #555555;
+}
+
+/* line 144, ../scss/content/_home.scss */
+.promos strong {
+  font-weight: 600;
+  font-size: 26px;
+  display: block;
+}
+
+/* line 152, ../scss/content/_home.scss */
+.promos span {
+  font-size: 16px;
+}
+
+/* line 156, ../scss/content/_home.scss */
+.promos strong {
+  font-size: 17px;
+}
+
+/* Config: Three columns + flexible gutter */
+/* line 163, ../scss/content/_home.scss */
+body .promos > li {
+  float: left;
+  width: 31.74603%;
+  margin-right: 2.38095%;
+}
+
+/* line 169, ../scss/content/_home.scss */
+.promos > li:nth-child(3n) {
+  margin-right: 0;
+}
+
+/* line 175, ../scss/content/_home.scss */
+.promos span {
+  font-size: 18px;
+}
+
+/* line 179, ../scss/content/_home.scss */
+.promos strong {
+  font-size: 24px;
+}
+
+/* -------------------------------------------- *
+ * New Products Section
+ */
+/* Hiding the reviews content via CSS because we can't modify the template, */
+/* since it may be used in other places where those elements are needed */
+/* line 190, ../scss/content/_home.scss */
+.cms-index-index .products-grid .ratings,
+.cms-index-index .products-grid .actions,
+.cms-index-noroute .products-grid .ratings,
+.cms-index-noroute .products-grid .actions {
+  display: none;
+}
+
+/* line 197, ../scss/content/_home.scss */
+.cms-index-index h2.subtitle {
+  padding: 6px 0;
+  text-align: center;
+  color: #712c6b;
+  font-weight: 600;
+  border-bottom: 1px solid #CCCCCC;
+  border-top: 1px solid #CCCCCC;
+}
+
+/* line 206, ../scss/content/_home.scss */
+.cms-index-noroute h2.subtitle {
+  display: none;
+}
+
+/* Home widgets */
+/* line 212, ../scss/content/_home.scss */
+.home-widgets-top, .home-widgets-btm {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+/* line 222, ../scss/content/_home.scss */
+.home-widget-top, .home-widget-btm, .home-widget-banner {
+  display: block;
+  width: 23.5%;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #deddde;
+}
+/* line 228, ../scss/content/_home.scss */
+.home-widget-top img, .home-widget-btm img, .home-widget-banner img {
+  width: 100%;
+}
+
+/* line 233, ../scss/content/_home.scss */
+.home-widget-overlay {
+  position: absolute;
+  text-transform: uppercase;
+  color: #fff;
+  left: 0;
+  right: 0;
+  background: #712c6b;
+  text-align: center;
+}
+/* line 241, ../scss/content/_home.scss */
+.home-widget-btm .home-widget-overlay {
+  transform: translateY(-50%);
+  top: 50%;
+  font-size: 44px;
+  opacity: .75;
+  padding: 10px;
+}
+/* line 248, ../scss/content/_home.scss */
+.home-widget-banner .home-widget-overlay {
+  bottom: 6%;
+  font-size: 48px;
+  margin-left: -32%;
+  opacity: 1;
+  padding: 5px 0 8px;
+  text-transform: none;
+  transform: rotate(-45deg);
+  width: 200%;
+  line-height: .9;
+}
+
+/* line 264, ../scss/content/_home.scss */
+.home-widget-top .home-widget-overlay, .home-widget-btm .home-widget-overlay {
+  transition: all .2s linear;
+  font-size: 44px;
+}
+
+/* line 271, ../scss/content/_home.scss */
+.home-widget-top .home-widget-overlay {
+  display: flex;
+  height: 0;
+  bottom: 0;
+  opacity: 0;
+  align-items: center;
+  justify-content: center;
+}
+/* line 279, ../scss/content/_home.scss */
+.home-widget-btm:hover .home-widget-overlay {
+  opacity: 1;
+}
+/* line 282, ../scss/content/_home.scss */
+.home-widget-top:hover .home-widget-overlay {
+  height: 100%;
+  opacity: .75;
+}
+
+/* line 329, ../scss/content/_home.scss */
+.home-content {
+  margin: 20px auto;
+  font-size: 18px;
+  line-height: 1;
+  color: #636363;
+  text-align: justify;
+}

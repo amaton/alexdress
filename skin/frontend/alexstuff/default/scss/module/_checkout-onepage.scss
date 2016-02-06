@@ -1,0 +1,693 @@
+//
+// Magento
+//
+// NOTICE OF LICENSE
+//
+// This source file is subject to the Academic Free License (AFL 3.0)
+// that is bundled with this package in the file LICENSE_AFL.txt.
+// It is also available through the world-wide-web at this URL:
+// http://opensource.org/licenses/afl-3.0.php
+// If you did not receive a copy of the license and are unable to
+// obtain it through the world-wide-web, please send an email
+// to license@magento.com so we can send you a copy immediately.
+//
+// DISCLAIMER
+//
+// Do not edit or add to this file if you wish to upgrade Magento to newer
+// versions in the future. If you wish to customize Magento for your
+// needs please refer to http://www.magento.com for more information.
+//
+// @category    design
+// @package     rwd_default
+// @copyright   Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+// @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+//
+
+/* ============================================ *
+ * Checkout - One Page
+ * ============================================ */
+
+.checkout-onepage-index .col-right,
+.checkout-onepage-index .col-left {
+    display: none;
+}
+
+.checkout-onepage-index .col-main {
+    width: auto;
+    float: none;
+}
+
+@include bp(min-width, $bp-large+1) {
+    .checkout-onepage-index {
+        .col-main {
+            float: left;
+            width: percentage(660px/960px);
+            padding-right: 20px;
+        }
+
+        .col-right,
+        .col-left {
+            width: percentage(300px/960px);
+            display: block;
+        }
+
+        .col-right {
+            padding-left: 0;
+        }
+    }
+}
+
+/* -------------------------------------------- *
+ * Section Styling - Default
+ */
+
+.opc .section .step-title {
+    width: 100%;
+    position: relative;
+    @include not-selectable;
+
+    &:after {
+        @include clearfix;
+    }
+}
+
+.opc .section.allow:not(.active) .step-title {
+    cursor: pointer;
+}
+
+/* Using .no-touch since touch devices emulate hover, thereby making steps look active that are not */
+.no-touch .opc .section.allow:not(.active) .step-title:hover {
+    background-color: $c-module-background;
+}
+
+.opc .section .step-title a {
+    display: none;
+}
+
+/*.opc .section.allow:not(.active) .step-title a {
+    display: block;
+    float: right;
+    line-height: 40px;
+    height: 40px;
+    padding: 0px 10px;
+}*/
+
+.no-touch .opc .section .step-title a:hover {
+    text-decoration: none;
+}
+
+.opc h3 {
+    font-weight: 500;
+}
+
+.opc .buttons-set {
+    text-align: center;
+
+    button.button {
+        float: left;
+        margin-left: 0;
+        margin-right: $gap;
+        margin-bottom: 0;
+    }
+    p.required {
+        float: right;
+        margin-left: 5px;
+        margin-bottom: 0;
+    }
+    .back-link {
+        float: right;
+        margin: 0;
+    }
+}
+
+#checkout-step-payment .buttons-set {
+    margin: $box-spacing*2 0;
+}
+
+@include bp(max-width, $bp-xsmall) {
+    .opc,
+    .paypal-express-review {
+        .buttons-set .button + .buttons-set .button {
+            margin-left: 0;
+        }
+    }
+}
+
+.opc #opc-login {
+    .step {
+        padding: 0px;
+    }
+
+    .buttons-set {
+        border-top: 0;
+        padding-top: 5px;
+    }
+}
+
+@include bp(max-width, $bp-medium) {
+    .opc #opc-login .description,
+    .opc #opc-login p.required {
+        display: none;
+    }
+}
+
+#opc-payment .note {
+    padding: $box-spacing;
+}
+
+/* -------------------------------------------- *
+ * This section hides everything but the "Checkout Method" step of the checkout process and fades in the content
+ * once the customer progresses to the next step. The purpose of this is to simplify what the customer has to focus on.
+ * It is limited to larger viewports since smaller devices are inherently going to be focused solely on the
+ * "Checkout Method" step.
+ */
+
+.opc.opc-firststep-login .section:not(#opc-login) .step-title,
+.opc-block-progress-step-login {
+    @include single-transition(opacity, 300ms);
+}
+
+/* -------------------------------------------- *
+ * Shipping and Payment methods
+ */
+
+.sp-methods {
+    margin: 0 0 8px 45px;
+    @include bp('max-width', $bp-medium) {
+        margin-left: 0;
+    }
+
+        dt {
+        margin: 13px 0 5px;
+        font-weight: bold;
+
+        &:first-child {
+            margin: 0 0 5px;
+        }
+    }
+    dd li {
+        margin: 10px 0;
+    }
+    label img {
+        // This applies to the Paypal Express label
+        float: left;
+    }
+    label a {
+        // This applies to the Paypal Express label
+        margin-top: 6px;
+        float: right;
+        margin-left: 10px;
+    }
+    .price {
+        font-weight: bold;
+    }
+    .form-list {
+        padding-left: 20px;
+
+        li {
+            margin: 0 0 8px;
+        }
+    }
+    select.month {
+        width: 120px;
+        margin-right: 10px;
+    }
+    select.year {
+        width: 96px;
+    }
+    input.cvv {
+        width: 4em !important;
+    }
+    #advice-validate-cc-exp-ccsave_expiration {
+        max-width: 130px;
+    }
+
+    .checkmo-list {
+        li {
+            margin: 0 0 5px;
+            @include clearfix;
+        }
+        label {
+            width: 165px;
+            padding-right: 15px;
+            text-align: right;
+            float: left;
+        }
+        address {
+            float: left;
+        }
+
+        @include bp(max-width, $bp-xsmall) {
+            padding-left: 0;
+
+            label {
+                width: 135px;
+            }
+        }
+    }
+
+    .release-amounts {
+        margin: 0.5em 0;
+    }
+    .release-amounts button {
+        float: left;
+        margin: 5px 10px 0 0;
+    }
+}
+
+/* One Page Checkout */
+.block-progress {
+    border-left: 1px solid $c-lightgray;
+
+    .block-content {
+        font-size: $f-size-s;
+    }
+    dt {
+        font-size: 22px;
+        padding: $gap/4 0 $gap/4 $gap*2.25;
+        margin-bottom: $gap/2;
+        text-transform: uppercase;
+        color: $c-gray;
+    }
+
+    dt.complete {
+        background: $c-action;
+        color: $c-white;
+    }
+    dd {
+        font-size: 20px;
+        padding-left: 45px;
+        margin-bottom: 10px;
+    }
+
+    #payment-progress-opcheckout .subtitle {
+        margin-bottom: 3px;
+    }
+
+    .payment-info {
+
+        dt {
+            padding: 0;
+            margin: 0 0 3px 0;
+            color: $c-text;
+            font-family: $f-stack-serif;
+            text-transform: none;
+            font-style: italic;
+            float: left;
+            clear: both;
+            font-size: $f-size-s;
+
+            &:after {
+                content: ': ';
+            }
+        }
+
+        dd {
+            float: left;
+            margin-bottom: 3px;
+            font-size: $f-size-s;
+        }
+
+        &:after {
+            @include clearfix;
+        }
+
+    }
+
+    .change-lnk {
+        font-size: 18px;
+        padding: 2px 10px;
+        float: right;
+        text-decoration: none;
+        color: $c-white;
+        &:hover {
+            color: $c-lightgray;
+        }
+    }
+}
+
+/* review step */
+#checkout-review-table {
+    .btn-remove {
+        img {
+            display: none;
+        }
+    }
+}
+
+#checkout-review-table-wrapper {
+    clear: both; // Fix table clearing issue in Firefox
+}
+
+#review-buttons-container {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    .btn-checkout {
+        min-width: 220px;
+    }
+    .please-wait {
+        float: left;
+        margin-right: 10px;
+    }
+    .f-left {
+        float: right;
+    }
+}
+
+// Hide all but the first tr inside of thead
+@include bp(max-width, $bp-small) {
+    .linearize-table-large.checkout-review-table thead tr:nth-child(1n+2) {
+        display: none;
+    }
+}
+
+// Hide all but the first tr inside of thead
+@include bp(max-width, $bp-xsmall) {
+    .linearize-table.checkout-review-table thead tr:nth-child(1n+2) {
+        display: none;
+    }
+}
+
+/* show/hide "change" link for progress step depend on complete status
+ * should be placed in .css file */
+.opc-block-progress dt.complete a,
+.opc-block-progress dt.complete .separator {
+    display: inline;
+}
+
+.opc-block-progress dt a,
+.opc-block-progress dt .separator {
+    display: none;
+}
+
+/* On small screens, the progress review content will be moved to the review step via JS. Styled via this CSS: */
+#checkout-step-review .opc-block-progress {
+    border-left: none;
+    padding-left: 0;
+
+    .block-title {
+        display: none;
+    }
+    .block-content {
+        // Override the no-display
+        display: block !important;
+        padding: 0;
+
+        & > dl > div {
+            float: left;
+            width: 50%;
+        }
+
+        @include bp(max-width, $bp-xsmall) {
+            & > dl > div {
+                float: none;
+                width: auto;
+            }
+        }
+
+        .changelink {
+            display: none;
+        }
+    }
+}
+
+@include bp(max-width, $bp-xsmall) {
+    #checkout-review-table thead > tr > th {
+        display: none;
+
+        &:first-child {
+            display: block;
+        }
+    }
+    #checkout-review-table thead > tr > th:first-child {
+        display: block;
+    }
+}
+
+#checkout-step-review .centinel {
+    & > p {
+        margin-bottom: $box-spacing;
+    }
+
+    iframe {
+        width: 100%;
+        min-height: 400px;
+    }
+}
+
+/* Gift options */
+.gift-messages-form {
+    .item {
+        @include clearfix;
+        margin-top: $trim;
+
+        h5 {
+            font-weight: bold;
+        }
+
+        .product-img-box {
+            width: auto;
+            float: left;
+            padding-right: 15px;
+        }
+
+        .details {
+            float: left;
+        }
+    }
+}
+
+.gift-message-form {
+    .inner-box {
+        > div {
+            @include clearfix;
+            width: 100%;
+            margin-top: $trim-small;
+            display: block;
+
+            &.extra-options-container {
+                p {
+                    margin-bottom: $trim-small;
+                }
+            }
+        }
+    }
+
+    .gift-wrapping-form {
+        label {
+            margin-right: $box-spacing;
+        }
+
+        img {
+            float: left;
+        }
+
+        .gift-wrapping-design {
+            height: 75px;
+
+            &:after {
+                @include clearfix;
+            }
+
+            .image-box {
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .gift-item {
+        padding-bottom: $gap;
+        margin-bottom: $gap;
+        border-bottom: solid 1px $c-divider-border;
+
+        &:after {
+            @include clearfix;
+        }
+
+        .product-img-box {
+            width: 200px;
+
+            .product-image {
+                width: 75px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .product-name {
+                display: block;
+            }
+        }
+
+        .fieldset {
+            margin-left: 200px;
+        }
+    }
+}
+
+@include bp('max-width', $bp-medium) {
+    .gift-message-form {
+
+        .giftmessage-area {
+            max-width: 100%;
+        }
+
+        .gift-item {
+            .product-img-box {
+                width: 100%;
+                float: none;
+            }
+
+            .fieldset {
+                margin-left: 0px;
+
+                textarea {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+/**** Custom design ****/
+
+.page-title {
+    text-transform: uppercase;
+    font-size: 26px;
+    margin-bottom: $gap;
+    color: $c-action;
+    @media (min-width: $bp-medium) {
+        padding-left: $gap*2.25;
+    }
+}
+
+.step-title {
+    margin-bottom: $gap/2;
+    .number {
+        background: $c-action;
+        width: 2*$gap;
+        height: 2*$gap;
+        color: $c-white;
+        font-size: 26px;
+        padding-top: 7px;
+        float: left;
+        text-align: center;
+    }
+    .label {
+        font-size: 22px;
+        color: $c-action;
+        text-transform: uppercase;
+        position: relative;
+        padding: 8px 15px 0;
+        background: $c-lightgray;
+        height: 2*$gap;
+        margin-left: $gap*2.25;
+        .fa {
+            width: 30px;
+            height: 30px;
+            display: none;
+            position: absolute;
+            right: $box-spacing/2;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            border-radius: 15px;
+        }
+    }
+}
+
+.section {
+    &:not(.allow) {
+        .fa-times {
+            padding: 4px;
+            display: block;
+            background: $c-white;
+            color: $c-lightgray;
+        }
+    }
+    &.allow {
+        .fa-plus {
+            padding: 5px;
+            display: block;
+            background: $c-action;
+            color: $c-lightgray;
+        }
+        &.active {
+            .fa-plus {
+                background: $c-lightgray;
+                color: $c-action;
+            }
+        }
+    }
+}
+
+.opc-progress-label {
+
+}
+
+.opc-form {
+    margin: $gap 0;
+    .std-input, .std-select, .checkbox-field, .fieldset select {
+        margin-bottom: $gap*3/4;
+    }
+    .std-btn {
+        margin-top: $box-spacing/2;
+    }
+    .back-lnk {
+        display: none;
+    }
+    &.form-2-col {
+        .std-btn {
+            min-width: 50%;
+        }
+    }
+}
+
+.fieldset-container {
+    &:after {
+        @include clearfix;
+    }
+}
+
+.fieldset {
+    @media (min-width: $bp-medium) {
+        width: 50%;
+        padding-left: $gap*2.25;
+        float: left;
+    }
+}
+
+.controls {
+    @media (min-width: $bp-medium) {
+        padding: $gap/4 0 0 $gap*2.25;
+    }
+}
+
+.form-title {
+    font-size: 20px;
+    margin-bottom: 2*$box-spacing;
+    text-transform: uppercase;
+}
+
+.opc-form {
+    &:after {
+        @include clearfix;
+    }
+    @media (max-width: $bp-medium - 1) {
+        &.form-2-col {
+            .fieldset + .fieldset {
+                margin-top: 3*$box-spacing;
+            }
+        }
+    }
+    .description {
+        font-size: 18px;
+        margin-bottom: 2*$box-spacing;
+    }
+    .login-lnk {
+        display: block;
+        font-size: 18px;
+        margin: -5px 0 15px;
+    }
+}

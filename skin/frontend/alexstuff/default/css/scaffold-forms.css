@@ -1,0 +1,237 @@
+/*
+// ----------------------------------------------
+// Usage example:
+// For IE set $mq-support to false.
+// Set the fixed value.
+// Then use mixins to test whether styles should be applied.
+// ----------------------------------------------
+
+$mq-support: false;
+$mq-fixed-value: 1024;
+
+// Renders at fixed value
+@include bp (min-width, 300px) { 
+    div { color:#000; }
+}
+
+// Doesn't render without MQ support
+@include bp (min-width, 1200px) { 
+    div { color:#FFF; }
+}
+
+// Doesn't render without MQ support
+@include bp (max-width, 300px) { 
+    div { color:#444; }
+}
+
+// Renders at fixed value
+@include bp (max-width, 1200px) { 
+    div { color:#888; }
+}
+
+// ----------------------------------------------
+*/
+/* line 208, icons/*.png */
+.icons-sprite, .icons-delivery, .icons-dhl, .icons-lang_cs, .icons-lang_de, .icons-lang_dropdown, .icons-lang_en, .icons-lang_fr, .icons-lang_ru, .icons-lens, .icons-mastercard, .icons-minicart, .icons-paypal, .icons-return, .icons-social_fb, .icons-social_gp, .icons-social_in, .icons-social_th, .icons-social_tw, .icons-social_vk, .icons-support, .icons-visa {
+  background-image: url('/skin/frontend/alexdress/default/images/icons-s6eb5be3f05.png');
+  background-repeat: no-repeat;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-delivery {
+  background-position: 0 0;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-dhl {
+  background-position: 0 -25px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lang_cs {
+  background-position: 0 -52px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lang_de {
+  background-position: 0 -84px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lang_dropdown {
+  background-position: 0 -116px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lang_en {
+  background-position: 0 -133px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lang_fr {
+  background-position: 0 -165px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lang_ru {
+  background-position: 0 -197px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-lens {
+  background-position: 0 -229px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-mastercard {
+  background-position: 0 -257px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-minicart {
+  background-position: 0 -297px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-paypal {
+  background-position: 0 -336px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-return {
+  background-position: 0 -376px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-social_fb {
+  background-position: 0 -405px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-social_gp {
+  background-position: 0 -446px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-social_in {
+  background-position: 0 -487px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-social_th {
+  background-position: 0 -528px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-social_tw {
+  background-position: 0 -569px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-social_vk {
+  background-position: 0 -610px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-support {
+  background-position: 0 -651px;
+}
+
+/* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-visa {
+  background-position: 0 -677px;
+}
+
+/* ============================================ *
+ * SCAFFOLD FORM
+ * ============================================ */
+/* Scaffolding can not be applied globally to all forms, since some forms are best displayed in a stacked layout */
+/* line 35, ../scss/scaffold-forms.scss */
+.scaffold-form .form-list > li {
+  display: block;
+}
+/* line 38, ../scss/scaffold-forms.scss */
+.scaffold-form .form-list > li:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* line 43, ../scss/scaffold-forms.scss */
+.scaffold-form .fields {
+  margin: 0;
+  padding: 0;
+}
+/* line 46, ../scss/scaffold-forms.scss */
+.scaffold-form .fields:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* line 51, ../scss/scaffold-forms.scss */
+.scaffold-form .fields > .fields,
+.scaffold-form .field,
+.scaffold-form .wide,
+.scaffold-form .control {
+  margin-bottom: 7px;
+}
+/* line 56, ../scss/scaffold-forms.scss */
+.scaffold-form .fields > .fields:after,
+.scaffold-form .field:after,
+.scaffold-form .wide:after,
+.scaffold-form .control:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* line 61, ../scss/scaffold-forms.scss */
+.scaffold-form label:first-child {
+  float: left;
+  width: 135px;
+  padding: 7px 8px 0 0;
+}
+/* line 67, ../scss/scaffold-forms.scss */
+.scaffold-form select,
+.scaffold-form textarea,
+.scaffold-form input[type=email],
+.scaffold-form input[type=search],
+.scaffold-form input[type=number],
+.scaffold-form input[type=password],
+.scaffold-form input[type=tel],
+.scaffold-form input[type=text] {
+  width: 330px;
+  max-width: 100%;
+}
+/* line 79, ../scss/scaffold-forms.scss */
+.scaffold-form .input-box {
+  float: left;
+  max-width: 350px;
+}
+/* line 84, ../scss/scaffold-forms.scss */
+.scaffold-form .buttons-set {
+  padding-top: 5px;
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 93, ../scss/scaffold-forms.scss */
+  .scaffold-form label:first-child {
+    float: none;
+    width: auto;
+    padding: 0;
+  }
+  /* line 99, ../scss/scaffold-forms.scss */
+  .scaffold-form .input-box {
+    float: none;
+    max-width: 100%;
+  }
+  /* line 103, ../scss/scaffold-forms.scss */
+  .scaffold-form .control .input-box {
+    clear: none;
+    float: left;
+    display: inline;
+    width: auto;
+  }
+  /* line 109, ../scss/scaffold-forms.scss */
+  .scaffold-form .control label:first-child {
+    float: left;
+  }
+}
