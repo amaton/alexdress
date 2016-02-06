@@ -700,10 +700,7 @@ $j(document).ready(function () {
     var skipLinks = $j('.skip-link');
 
     skipLinks.on('click', function (e) {
-
-        if(!$j(this).hasClass('skip-cart')){
-	        e.preventDefault();
-				}
+        e.preventDefault();
 
         var self = $j(this);
         // Use the data-target-element attribute, if it exists. Fall back to href.
@@ -728,7 +725,7 @@ $j(document).ready(function () {
         }
     });
 
-    /*$j('#header-cart').on('click', '.skip-link-close', function(e) {
+    $j('#header-cart').on('click', '.skip-link-close', function(e) {
         var parent = $j(this).parents('.skip-content');
         var link = parent.siblings('.skip-link');
 
@@ -736,7 +733,7 @@ $j(document).ready(function () {
         link.removeClass('skip-active');
 
         e.preventDefault();
-    });*/
+    });
 
 
     // ==============================================
@@ -875,7 +872,7 @@ $j(document).ready(function () {
     // ==============================================
     // UI Pattern - Toggle Content (tabs and accordions in one setup)
     // ==============================================
-
+    
     $j('.toggle-content').each(function () {
         var wrapper = jQuery(this);
 
@@ -915,7 +912,6 @@ $j(document).ready(function () {
                 groups[i].removeClass('current');
                 groups[i].eq(index).addClass('current');
             }
-						clickedItem.toggleClass('clicked');
         }
 
         //Toggle on tab (dt) click.
@@ -1010,6 +1006,22 @@ $j(document).ready(function () {
             this.toggleElements.toggleSingle({destruct: true});
         }
     });
+
+
+    // ==============================================
+    // OPC - Progress Block
+    // ==============================================
+
+    if ($j('body.checkout-onepage-index').length) {
+        enquire.register('(max-width: ' + bp.large + 'px)', {
+            match: function () {
+                $j('#checkout-step-review').prepend($j('#checkout-progress-wrapper'));
+            },
+            unmatch: function () {
+                $j('.col-right').prepend($j('#checkout-progress-wrapper'));
+            }
+        });
+    }
 
 
     // ==============================================
@@ -1263,14 +1275,4 @@ var ProductMediaManager = {
 
 $j(document).ready(function() {
     ProductMediaManager.init();
-	// Magnet header
-	var navTop=171;
-    document.on('scroll',function(){
-	    if(window.pageYOffset>navTop){
-  	    	 document.body.addClassName('magnetHeader');
-		}
-		else{
-        	document.body.removeClassName('magnetHeader');
-		}
-	});
 });

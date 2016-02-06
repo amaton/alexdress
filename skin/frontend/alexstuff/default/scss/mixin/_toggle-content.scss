@@ -28,8 +28,8 @@
         display: block;
         width: 100%;
         position: relative;
-        border: 1px solid $c-lightgray;
-        background-color: $c-white;
+        border: 1px solid $c-module-border;
+        background-color: $c-module-background;
 
         li {
             float: left;
@@ -43,18 +43,19 @@
                 height: 40px;
                 line-height: 40px;
                 cursor: pointer;
-                font-size: 18px;
+                text-transform: uppercase;
+                font-size: $f-size-xs;
                 position: relative;
                 bottom: -1px;
             }
         }
 
         li.current {
-            border-right: 1px solid $c-lightgray;
-            border-left: 1px solid $c-lightgray;
+            border-right: 1px solid $c-module-border;
+            border-left: 1px solid $c-module-border;
 
             > span {
-                background-color: $c-white;
+                background-color: #FFFFFF;
                 z-index: 5;
             }
         }
@@ -84,9 +85,8 @@
             width: 100%;
             display: none;
             padding: 15px;
-            border: 1px solid $c-lightgray;
+            border: 1px solid $c-module-border;
             border-top: 0;
-            font-size: 18px;
         }
 
         > dd.current {
@@ -95,7 +95,7 @@
     }
 }
 
-@mixin accordionDtBase($arrow-direction: 'down', $border-color: $c-lightgray) {
+@mixin accordionDtBase($arrow-direction: 'down', $border-color: $c-module-border) {
     @include h4;
     @include not-selectable;
     font-weight: normal;

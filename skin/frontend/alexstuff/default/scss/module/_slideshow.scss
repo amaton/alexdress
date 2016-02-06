@@ -27,27 +27,20 @@
  * Slideshow
  * ============================================ */
 
-
-#home-top{
-  margin: 0 0 $gap;
-	display:-webkit-flex;
-  display:flex;
-	-webkit-flex-flow:row nowrap;
-	flex-flow:row nowrap;
-	-webkit-justify-content: space-between;
-	justify-content: space-between;
-}
-
 .slideshow-container {
     position: relative;
     display: block;
-    width: 74.5%;
+    width: 100%;
+    margin: $gap 0;
+    border: 1px solid $c-module-border-light;
+
     .slideshow {
         width: 100%;
         padding: 0;
         position: relative;
         margin: 0;
-         & > li {
+        border: 10px solid #FFFFFF;
+        & > li {
             position: absolute;
             top: 0;
             left: 0;
@@ -98,19 +91,17 @@
             top: 50%;
             margin-left: (-$pager-size/2);
             margin-top: (-$pager-size/2);
-						border:2px solid $c-lightgray;
             border-radius: 1px;
-            background-color: transparent;
+            background-color: #FFFFFF;
             position: relative;
-						border-radius: 8px;
         }
 
         &:hover:before {
-            background-color: $c-lightgray;
+            background-color: $c-button-hover;
         }
 
         &.cycle-pager-active:before {
-            background-color: $c-lightgray;
+            background-color: $c-button-active;
         }
     }
 
@@ -164,7 +155,7 @@
     }
 
     &:hover:before {
-        border-color: transparent $c-lightgray transparent transparent;
+        border-color: transparent $c-button-hover transparent transparent;
     }
 }
 
@@ -179,7 +170,7 @@
     }
 
     &:hover:before {
-        border-color: transparent transparent transparent $c-lightgray;
+        border-color: transparent transparent transparent $c-button-hover;
     }
 }
 

@@ -57,12 +57,19 @@
     }
 }
 
+.opc {
+    select {
+        width: (230px + 135px);
+    }
+}
+
 /* -------------------------------------------- *
  * Section Styling - Default
  */
 
 .opc .section .step-title {
     width: 100%;
+    border-top: 1px solid $c-divider-border;
     position: relative;
     @include not-selectable;
 
@@ -80,20 +87,79 @@
     background-color: $c-module-background;
 }
 
+.opc .section.active .step-title {
+    border-bottom: 1px solid $c-divider-border;
+}
+
 .opc .section .step-title a {
     display: none;
 }
 
-/*.opc .section.allow:not(.active) .step-title a {
+.opc .section.allow:not(.active) .step-title a {
     display: block;
     float: right;
     line-height: 40px;
     height: 40px;
     padding: 0px 10px;
-}*/
+}
 
 .no-touch .opc .section .step-title a:hover {
     text-decoration: none;
+}
+
+.opc .section .step-title .number,
+.opc .section.allow.active .step-title .number,
+.no-touch .opc .section.allow:hover .step-title .number {
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    line-height: 26px;
+    background-color: $c-action;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    margin-top: -13px;
+}
+
+.opc .section.allow .step-title .number {
+    background-color: tint($c-action, 50%);
+}
+
+.opc .section.allow .step-title h2 {
+    color: $c-text-gray;
+}
+
+.opc .section.allow .step-title:hover h2,
+.opc .section.active .step-title h2 {
+    color: $c-text-primary;
+}
+
+.opc .section .step-title h2 {
+    font-size: $f-size-xl;
+    font-weight: 400;
+    line-height: 40px;
+    height: 40px;
+    float: left;
+    margin: 0px 4px 0px 45px;
+}
+
+.opc .section .step {
+    padding: $box-spacing-large;
+
+    &:after {
+        @include clearfix;
+    }
+
+    @include bp(max-width, $bp-large) {
+        padding: $box-spacing;
+    }
+}
+
+.opc select {
+    max-width: 365px;
+    width: 100%;
 }
 
 .opc h3 {
@@ -101,7 +167,7 @@
 }
 
 .opc .buttons-set {
-    text-align: center;
+    text-align: left;
 
     button.button {
         float: left;
@@ -118,10 +184,11 @@
         float: right;
         margin: 0;
     }
-}
-
-#checkout-step-payment .buttons-set {
-    margin: $box-spacing*2 0;
+    a {
+        line-height: 20px;
+        display: inline-block;
+        padding: 5px 5px 5px 0;
+    }
 }
 
 @include bp(max-width, $bp-xsmall) {
@@ -167,17 +234,39 @@
     @include single-transition(opacity, 300ms);
 }
 
+.opc.opc-firststep-login .section#opc-login .step-title .number {
+    @include single-transition(width, 80ms);
+}
+
+.opc.opc-firststep-login .section#opc-login .step-title h2 {
+    @include single-transition(margin-left, 80ms);
+}
+
+/* When a user progresses from the "Checkout Method" to "Billing Information" for the first time, the              */
+/* "opc-has-progressed-from-login" class gets added to the body. Also, the .opc element will only have the         */
+/* "opc-firststep-login" class if the first step of the checkout is the "Checkout Method" (eg, not when logged in) */
+body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section:not(#opc-login) .step-title,
+body:not(.opc-has-progressed-from-login) .opc-block-progress-step-login {
+    opacity: 0;
+}
+
+body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-login .step-title .number {
+    width: 0px;
+    overflow: hidden;
+}
+
+body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-login .step-title h2 {
+    margin-left: 0px;
+}
+
 /* -------------------------------------------- *
  * Shipping and Payment methods
  */
 
 .sp-methods {
-    margin: 0 0 8px 45px;
-    @include bp('max-width', $bp-medium) {
-        margin-left: 0;
-    }
+    margin: 0 0 8px;
 
-        dt {
+    dt {
         margin: 13px 0 5px;
         font-weight: bold;
 
@@ -186,14 +275,12 @@
         }
     }
     dd li {
-        margin: 10px 0;
+        margin: 5px 0;
     }
-    label img {
-        // This applies to the Paypal Express label
+    label img { // This applies to the Paypal Express label
         float: left;
     }
-    label a {
-        // This applies to the Paypal Express label
+    label a { // This applies to the Paypal Express label
         margin-top: 6px;
         float: right;
         margin-left: 10px;
@@ -257,27 +344,35 @@
 
 /* One Page Checkout */
 .block-progress {
-    border-left: 1px solid $c-lightgray;
+    border: 0;
+    margin: 0;
+    border-left: 1px solid $c-module-border;
+    padding-left: 20px;
 
     .block-content {
         font-size: $f-size-s;
     }
     dt {
-        font-size: 22px;
-        padding: $gap/4 0 $gap/4 $gap*2.25;
-        margin-bottom: $gap/2;
+        padding-top: 6px;
+        @include h4;
+        margin-bottom: 6px;
         text-transform: uppercase;
-        color: $c-gray;
+        font-weight: normal;
+        color: $c-text-gray;
     }
 
     dt.complete {
-        background: $c-action;
-        color: $c-white;
+        color: $c-h4;
     }
     dd {
-        font-size: 20px;
-        padding-left: 45px;
+        padding-left: 15px;
         margin-bottom: 10px;
+        font-family: $f-stack-serif;
+        font-style: italic;
+
+        address {
+            font-style: italic;
+        }
     }
 
     #payment-progress-opcheckout .subtitle {
@@ -312,17 +407,6 @@
             @include clearfix;
         }
 
-    }
-
-    .change-lnk {
-        font-size: 18px;
-        padding: 2px 10px;
-        float: right;
-        text-decoration: none;
-        color: $c-white;
-        &:hover {
-            color: $c-lightgray;
-        }
     }
 }
 
@@ -427,7 +511,7 @@
 }
 
 #checkout-step-review .centinel {
-    & > p {
+    &> p {
         margin-bottom: $box-spacing;
     }
 
@@ -529,7 +613,7 @@
 @include bp('max-width', $bp-medium) {
     .gift-message-form {
 
-        .giftmessage-area {
+        .giftmessage-area{
             max-width: 100%;
         }
 
@@ -547,147 +631,5 @@
                 }
             }
         }
-    }
-}
-
-/**** Custom design ****/
-
-.page-title {
-    text-transform: uppercase;
-    font-size: 26px;
-    margin-bottom: $gap;
-    color: $c-action;
-    @media (min-width: $bp-medium) {
-        padding-left: $gap*2.25;
-    }
-}
-
-.step-title {
-    margin-bottom: $gap/2;
-    .number {
-        background: $c-action;
-        width: 2*$gap;
-        height: 2*$gap;
-        color: $c-white;
-        font-size: 26px;
-        padding-top: 7px;
-        float: left;
-        text-align: center;
-    }
-    .label {
-        font-size: 22px;
-        color: $c-action;
-        text-transform: uppercase;
-        position: relative;
-        padding: 8px 15px 0;
-        background: $c-lightgray;
-        height: 2*$gap;
-        margin-left: $gap*2.25;
-        .fa {
-            width: 30px;
-            height: 30px;
-            display: none;
-            position: absolute;
-            right: $box-spacing/2;
-            top: 50%;
-            transform: translateY(-50%);
-            text-align: center;
-            border-radius: 15px;
-        }
-    }
-}
-
-.section {
-    &:not(.allow) {
-        .fa-times {
-            padding: 4px;
-            display: block;
-            background: $c-white;
-            color: $c-lightgray;
-        }
-    }
-    &.allow {
-        .fa-plus {
-            padding: 5px;
-            display: block;
-            background: $c-action;
-            color: $c-lightgray;
-        }
-        &.active {
-            .fa-plus {
-                background: $c-lightgray;
-                color: $c-action;
-            }
-        }
-    }
-}
-
-.opc-progress-label {
-
-}
-
-.opc-form {
-    margin: $gap 0;
-    .std-input, .std-select, .checkbox-field, .fieldset select {
-        margin-bottom: $gap*3/4;
-    }
-    .std-btn {
-        margin-top: $box-spacing/2;
-    }
-    .back-lnk {
-        display: none;
-    }
-    &.form-2-col {
-        .std-btn {
-            min-width: 50%;
-        }
-    }
-}
-
-.fieldset-container {
-    &:after {
-        @include clearfix;
-    }
-}
-
-.fieldset {
-    @media (min-width: $bp-medium) {
-        width: 50%;
-        padding-left: $gap*2.25;
-        float: left;
-    }
-}
-
-.controls {
-    @media (min-width: $bp-medium) {
-        padding: $gap/4 0 0 $gap*2.25;
-    }
-}
-
-.form-title {
-    font-size: 20px;
-    margin-bottom: 2*$box-spacing;
-    text-transform: uppercase;
-}
-
-.opc-form {
-    &:after {
-        @include clearfix;
-    }
-    @media (max-width: $bp-medium - 1) {
-        &.form-2-col {
-            .fieldset + .fieldset {
-                margin-top: 3*$box-spacing;
-            }
-        }
-    }
-    .description {
-        font-size: 18px;
-        margin-bottom: 2*$box-spacing;
-    }
-    .login-lnk {
-        display: block;
-        font-size: 18px;
-        margin: -5px 0 15px;
     }
 }

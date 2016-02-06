@@ -41,22 +41,7 @@
     .icon {
         @extend .icon-sprite;
         background-position: -0px (-100px + ($toolbar-icon-padding-offset/2) + 1px);
-					&:after{
-            content:"";
-						position:absolute;
-						top:15px;
-						left:4px;
-						width:44px;
-						height:29px;
-						@include icons-sprite(minicart);
-						display:none;
-					}
-
     }
-
-		.count-subtotal{
-      display:none;
-		}
 }
 
 // ---------------------------------------------
@@ -65,52 +50,22 @@
 
     .skip-cart {
         width: auto;
-				height:58px;
-        font-size:18px;
-				position:relative;
-				outline:none;
-				.icon{
-					width:56px;
-					height:56px;
-          border:2px solid $c-action;
-					border-radius:28px;
-					background:$c-white;
-					position:relative;
-					vertical-align:top;
-					z-index:250;
-					.magnetHeader &{
-            border:none;
-						margin-top:1px;
-					}
-					&:after{
-            display:block;
-					}
-				}
+        padding: 0 10px;
     }
 
-    #header-cart {
-        border:2px solid $c-action;
-				border-top:none;
+    .skip-cart:hover {
+    }
+
+    #header-cart.skip-active {
+        @include menu;
+        display: block;
         position: absolute;
-        z-index: 260;
-        top: 100%;
-				margin-top:-10px;
-        left: 10px;
-        width: 230px;
-        background: $c-white;
-				.magnetHeader &{
-					left: 18px;
-			    margin-top: -18px;
-					width: 222px;
-				}
-				.header-minicart:hover &{
-	        display: block;
-				}
+        z-index: 200;
+        top: 40px;
+        right: 0;
+        width: 320px;
+        background: white;
     }
-
-.magnetHeader .header-minicart  .label{
-	display:none;
-}
 
 }
 
@@ -154,7 +109,7 @@
 @include bp(min-width, $bp-medium + 1) {
     .skip-cart {
         color: $c-action;
-
+        text-transform: uppercase;
 
         &:hover {
             text-decoration: none;
@@ -162,21 +117,23 @@
 
         .count {
             @include border-radius(0px);
-            position: absolute;
-						left:66px;
-						top:34px;
+            position: static;
             background: none;
-            margin-left: 0;
-            font-size: 18px;
+            margin-left: 0px;
+            font-size: $f-size;
             width: auto;
-						.count-subtotal{
-              display:inline;
-						}
+
+            &:before {
+                content: '(';
+            }
+            &:after {
+                content: ')';
+            }
         }
     }
     .skip-cart .count,
     .skip-link.skip-active .count {
-        color: $c-highlight;
+        color: $c-action;
     }
 }
 
@@ -242,11 +199,14 @@
 }
 
 .mini-cart-list .product-image {
-	display:block;
+    position: absolute;
+    left: 15px;
+    top: 15px;
 }
 
 .mini-cart-list .product-image img {
-	display:block;
+    width: 60px;
+    height: 60px;
 }
 
 //.mini-cart-list .details { }

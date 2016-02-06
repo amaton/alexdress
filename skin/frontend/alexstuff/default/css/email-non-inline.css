@@ -34,7 +34,7 @@ $mq-fixed-value: 1024;
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,500,700);
 /* line 208, icons/*.png */
 .icons-sprite, .icons-delivery, .icons-dhl, .icons-lang_cs, .icons-lang_de, .icons-lang_dropdown, .icons-lang_en, .icons-lang_fr, .icons-lang_ru, .icons-lens, .icons-mastercard, .icons-minicart, .icons-paypal, .icons-return, .icons-social_fb, .icons-social_gp, .icons-social_in, .icons-social_th, .icons-social_tw, .icons-social_vk, .icons-support, .icons-visa {
-  background-image: url('/skin/frontend/alexdress/default/images/icons-s6eb5be3f05.png');
+  background-image: url('/skin/frontend/alexstuff/default/images/icons-s6eb5be3f05.png');
   background-repeat: no-repeat;
 }
 

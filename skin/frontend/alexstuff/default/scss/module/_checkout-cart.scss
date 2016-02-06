@@ -27,15 +27,23 @@
  * Checkout - Layout
  * ============================================ */
 
+.cart-table {
+    float: left;
+    width: 60%;
+}
+
 .cart .button {
     white-space: normal;
 }
 
-.cart-forms {
-    width: calc(50% - 10px);
-    float: left;
+.cart-forms,
+.cart-totals-wrapper,
+.crosssell {
+    float: right;
+    clear: right;
+    width: 40%;
+    padding-left: $box-spacing-large;
 }
-
 
 .cart-totals,
 .cart-forms .discount,
@@ -43,7 +51,7 @@
 .cart-forms .shipping {
     padding: $box-spacing;
     background-color: $c-module-background;
-    border: 1px solid $c-lightgray;
+    border: 1px solid $c-module-border;
 }
 
 .cart-table,
@@ -58,11 +66,6 @@
     #postcode {
         width: 100%;
     }
-}
-
-.cart-totals-wrapper {
-    width: calc(50% - 10px);
-    float: right;
 }
 
 @mixin oneColumnCartItems {
@@ -82,6 +85,12 @@
         padding-left: $box-spacing;
     }
 
+    .cart-forms,
+    .cart-totals-wrapper,
+    .crosssell {
+        width: 50%;
+    }
+
     .crosssell {
         clear: right;
         float: right;
@@ -90,6 +99,12 @@
 
 .display-both-prices {
     @include oneColumnCartItems;
+}
+
+@include bp(max-width, $bp-large) {
+    .display-single-price {
+        @include oneColumnCartItems;
+    }
 }
 
 @include bp(max-width, 599px) {
@@ -121,6 +136,8 @@
  * ============================================ */
 
 .cart .page-title {
+    margin-bottom: 15px;
+    border-bottom: 1px solid $c-module-border-light;
 
     &:after {
         @include clearfix;
@@ -143,7 +160,7 @@
             @include clearfix;
         }
         vertical-align: top;
-        margin: 0;
+        margin: 0 0 5px 5px;
 
         img {
             display: inline;
@@ -201,11 +218,14 @@
     }
 }
 
+.cart-totals .checkout-types .btn-checkout {
+    margin-bottom: 7px;
+}
+
 @include bp(max-width, 740px) {
     .checkout-types {
         float: none;
         text-align: center;
-        margin-top: 10px;
 
         &.bottom,
         &.minicart {
@@ -230,6 +250,8 @@
 }
 
 .cart-table {
+    font-family: $f-stack-special;
+
     th,
     td,
     tbody td {
@@ -249,6 +271,7 @@
     tbody td {
         background-color: transparent;
         padding: 10px 5px;
+        font-family: $f-stack-special;
     }
 
     .product-cart-info,
@@ -257,7 +280,7 @@
     }
 
     tr {
-        border-bottom: 1px solid $c-lightgray;
+        border-bottom: 1px solid $c-table-border;
     }
 
     tfoot {
@@ -278,7 +301,7 @@
     }
 
     .product-cart-image .cart-links,
-    .product-cart-info .fa-times,
+    .product-cart-info .btn-remove,
     .product-cart-actions .button {
         display: none;
     }
@@ -298,6 +321,9 @@
     }
 
     .product-cart-sku {
+        font-family: $f-stack-serif;
+        font-style: italic;
+        font-size: $f-size-xs;
         margin: 5px 0 12px;
 
         .label {
@@ -364,7 +390,7 @@
         }
 
         .button {
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
     }
 
@@ -375,6 +401,11 @@
 
 @include bp(max-width, $bp-medium) {
     .cart-table {
+
+        th {
+            font-size: $f-size-xs;
+        }
+
         th,
         td {
             padding: 7px 6px;
@@ -511,7 +542,7 @@
         }
 
         .product-cart-image .cart-links,
-        .product-cart-info .fa-times {
+        .product-cart-info .btn-remove {
             display: block;
         }
 
@@ -522,7 +553,7 @@
 
         .product-cart-info {
 
-            .fa-times {
+            .btn-remove {
                 float: right;
                 margin: -4px 0px 2px 7px;
             }
@@ -620,16 +651,20 @@
         }
         li {
             float: left;
-            margin: 5px 0;
-            width: 50%;
-            padding: 0 5px;
-            input, select {
-                display: block;
-                width: 100%;
-            }
+            margin: 5px 2% 10px 0;
+        }
+
+        .shipping-country {
+            width: 37%;
+        }
+
+        .shipping-region {
+            width: 41%;
         }
 
         .shipping-postcode {
+            margin-right: 0;
+            width: 18%;
 
             input {
                 margin-top: 4px;
@@ -640,10 +675,9 @@
             padding-top: 0;
         }
 
-        input, select {
+        input {
             height: 30px;
-            margin-top: 5px;
-            padding: 0 5px;
+            margin-top: 4px;
         }
 
         label {
@@ -723,12 +757,12 @@
     table {
         font-family: $f-stack-special;
         font-size: $f-size-xs;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         text-transform: uppercase;
         width: 100%;
 
         td {
-            padding: 5px 0px;
+            padding: 2px 0px;
         }
         td:first-child {
             padding-right: 10px;
@@ -745,7 +779,7 @@
             border-bottom: 1px solid #E6E6E6;
             td {
                 font-size: 24px;
-                padding: 10px 5px;
+                padding: 2px 5px;
                 vertical-align: top;
             }
 
@@ -787,6 +821,7 @@
 
 #discount-coupon-form,
 .cart .giftcard {
+    width: 100%;
 
     h2 {
         display: none;
@@ -907,20 +942,6 @@
             .product-details .crosssell-actions {
                 padding: 0 5px;
             }
-        }
-    }
-}
-
-.btn-checkout {
-    font-size: 18px;
-}
-
-.cart-table .product-cart-remove {
-    padding-right: 0;
-    a {
-        text-decoration: none;
-        &:hover {
-            color: $c-red;
         }
     }
 }

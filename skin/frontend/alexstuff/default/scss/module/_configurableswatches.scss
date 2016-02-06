@@ -37,11 +37,30 @@
 }
 
 /* General Swatch Styling */
+.swatch-link,
+.swatch-label {
+    display: block;
+    border-radius: $default-border-radius - 2;
+    font-size: $f-size;
+    text-align: center;
+    color: $c-h4;
+    text-decoration: none;
+    box-sizing: content-box;
+}
 
 .swatch-link {
-	display:block;
-    text-decoration: none;
-	color:$c-text-gray;
+    border: 1px solid $c-module-border;
+    margin: 0 0 3px;
+
+    img {
+        border-radius: $default-border-radius - 3;
+    }
+
+    &:hover {
+        cursor: pointer;
+        text-decoration: none;
+    }
+
     .x {
         display: none;
         text-indent: -999em;
@@ -60,22 +79,31 @@
         }
 
         img {
-			width:100%;
-			height:auto;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
     }
 }
 
 .swatch-label {
-	display:block;
+    border: 1px solid #fff;
     margin: 0;
     white-space: nowrap;
+    background: $c-module-background;
 }
 
 .configurable-swatch-list {
+    margin-left: -3px;
     zoom: 1;
     clear: both;
     -webkit-transform: translateZ(0px);
+
+    li {
+        float: left;
+        zoom: 1;
+        margin: 0 0 0 3px;
+    }
 
     .products-grid & li {
         display: inline-block;
@@ -90,6 +118,7 @@
         }
 
         .swatch-link {
+            border-color: $c-module-border-light;
             position: relative;
 
             &.has-image img {
@@ -117,7 +146,6 @@
     .configurable-swatch-list li {
         margin: 0 0 0 3px;
         width: 47%;
-		float:left;
     }
 
     .swatch-link {
@@ -184,6 +212,8 @@
 
     .swatch-link {
         display: inline-block;
+        margin: 0 0 0 3px;
+
         &:hover {
             border-color: $c-module-border;
             cursor: default;
@@ -192,6 +222,11 @@
 }
 
 /* Other Swatch States */
+.configurable-swatch-list .hover .swatch-link,
+.configurable-swatch-list .selected .swatch-link,
+.swatch-link:hover {
+    border-color: $c-module-border-highlight;
+}
 
 .configurable-swatch-box {
     background: none !important;
@@ -242,10 +277,6 @@
                 padding-left: 5px;
             }
         }
-		dt.swatch-attr{
-			display:none;
-		}
-
 
         dd .input-box {
             width: auto;
@@ -261,48 +292,4 @@
         background-position: -80px -362px;
         cursor: default;
     }
-}
-
-
-#product-options-wrapper{
-	.configurable-swatch-list{
-	    li {
-			float:left;
-			margin-right:$gap/2;
-			position:relative;
-	    }
-	}
-}
-
-#configurable_swatch_color li{
-	width:26px;
-	height:26px;
-}
-
-#configurable_swatch_size li{
-	font-size:32px;
-	.swatch-link{
-		text-decoration:none;
-		padding:$gap/4;
-	}
-	&.selected .swatch-link{
-		color:$c-action;
-		background:$c-lightgray;
-	}
-}
-
-#configurable_swatch_color{
-	li:hover,li.selected{
-		.swatch-link.has-image{
-			&:after{
-				content:"";
-				position:absolute;
-				left:-3px;
-				right:-3px;
-				top:-3px;
-				bottom:-3px;
-				border:3px solid $c-highlight;
-			}
-		}
-	}
 }

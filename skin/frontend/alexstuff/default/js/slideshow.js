@@ -37,27 +37,8 @@ $j(document).ready(function () {
             speed: 600,
             pauseOnHover: true,
             swipe: true,
+            prev: '.slideshow-prev',
+            next: '.slideshow-next',
             fx: 'scrollHorz'
         });
-
-	if(document.querySelectorAll('#block-related .related-item').length>3){
-        $j('#block-related').cycle({
-            slides: '> .related-item',
-            fx:'carousel',
-			timeout:3000,
-			carouselVisible:3,
-			carouselFluid:true,
-            speed: 600,
-            pauseOnHover: true,
-            swipe: true,
-			prev:$j('#related-prev'),
-            next:$j('#related-next')
-        });
-	}
-	else{
-		if(document.getElementById('related-container')){
-			document.getElementById('related-container').classList.add('noCarousel');
-		}
-	}
-
 });

@@ -81,7 +81,7 @@
             margin: 0;
             word-wrap: break-word;
             text-align: left;
-			@include str-trim;
+			//@include str-trim;
             @include bp(max-width, $bp-xsmall) {
                 text-align: center;
             }
@@ -197,6 +197,16 @@
             padding-top: 0px;
         }
 
+        .price-box,
+        .price-box .special-price {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+        }
+
+        .price-box .minimal-price-link {
+            display: inline-block;
+        }
     }
 
     .map-popup-text {
@@ -209,4 +219,13 @@
     .map-popup-only-text {
         border-top: 1px solid $c-module-border-light;
     }
+}
+
+/* ============================================ *
+ * Catalog - MSRP Product Listing
+ * ============================================ */
+
+.price-box .map-link {
+    display: block;
+    text-align: center;
 }

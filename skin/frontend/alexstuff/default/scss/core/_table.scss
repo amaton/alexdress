@@ -47,12 +47,20 @@
 
 .data-table th {
     background: $c-table-background;
-    line-height: 1;
+    text-transform: uppercase;
+    font-family: $f-stack-special;
+    line-height: 1.4;
     white-space: nowrap;
 }
 
+.data-table thead th,
 .data-table tbody td {
     border-bottom: 1px solid $c-table-border;
+}
+
+.data-table tbody td,
+.data-table tfoot td {
+    font-family: $f-stack-serif;
 }
 
 .data-table tfoot tr {

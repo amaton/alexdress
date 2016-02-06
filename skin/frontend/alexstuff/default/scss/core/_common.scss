@@ -41,16 +41,6 @@
     width: device-width;
 }
 
-::-moz-selection {
-    color: $c-white;
-    background: $c-action;
-}
-
-::selection {
-    color: $c-white;
-    background: $c-action;
-}
-
 // Prevent 300ms delay in IE on touch devices
 a, button {
     -ms-touch-action: manipulation;
@@ -72,12 +62,16 @@ textarea {
 a {
     color: $c-link;
     text-decoration: none;
-		outline:none !important;
 }
 
 a:hover {
     color: $c-link-hover;
     text-decoration: underline;
+}
+
+a:focus {
+    outline-color: $c-link-active;
+    color: darken($c-action, 30%);
 }
 
 ol,
@@ -91,7 +85,7 @@ ul {
  * Typography
  * ============================================ */
 
-h1 { @include h1; }
+h1, .h1 { @include h1; }
 
 h2, .h2 { @include h2; }
 
@@ -140,7 +134,9 @@ h6, .h6 { @include h6; }
  */
 
 .page-title h1,
-.page-title h2 {
+.page-title h2,
+.product-name h1,
+.product-name .h1 {
     @include pageTitle;
 }
 
@@ -346,19 +342,23 @@ body:not(.customer-account) .block:first-child .block-title {
 .cart-table .product-cart-actions .button,
 #co-shipping-method-form .buttons-set .button,
 .footer .button {
-	display:block;
-    background: $c-action;
+    background: $c-button;
+    display: inline-block;
     padding: 7px 15px;
     border: 0;
-    color: $c-white;
-	line-height:1;
+    color: #FFFFFF;
+    font-size: $f-size-s;
     font-weight: normal;
+    font-family: $f-stack-special;
+    line-height: 19px;
     text-align: center;
     text-transform: uppercase;
     vertical-align: middle;
     white-space: nowrap;
+
     &:hover {
-        opacity:.75;
+        background: $c-button-hover;
+        cursor: pointer;
     }
     &:active {
         background: $c-button-active;
@@ -519,13 +519,31 @@ a.button:hover {
 
 .buttons-set {
     clear: both;
-
+    margin: $box-spacing 0 0;
+    padding-top: $box-spacing;
+    border-top: 1px solid $c-module-border-light;
+    text-align: right;
 
     p.required {
         margin: 0;
         margin-left: $gap;
         line-height: 33px;
         float: right;
+    }
+    .back-link {
+        float: left;
+        margin: 0;
+        line-height: 33px;
+    }
+    a:not(.button) {
+        line-height: 20px;
+        display: inline-block;
+        padding: 5px;
+    }
+    button.button {
+        float: right;
+        margin-left: 5px;
+        min-width: 140px;
     }
 
     &:after {
@@ -556,12 +574,14 @@ a.button:hover {
 
 .breadcrumbs {
     overflow: hidden;
-    margin: -20px 0 10px;
+    margin: -15px 0 15px;
 }
 
 .breadcrumbs li {
     float: left;
-    font-size: 16px;
+    font-size: $f-size-xs;
+    font-family: $f-stack-special;
+    text-transform: uppercase;
 }
 
 .breadcrumbs a {
@@ -580,7 +600,7 @@ a.button:hover {
 
 .breadcrumbs span {
     float: left;
-    padding: 0 2px;
+    padding: 0 7px;
 }
 
 @include bp(max-width, $bp-medium) {
@@ -740,14 +760,13 @@ a.button:hover {
 .col-left,
 .col-right,
 .col-main {
-    padding: 0;
+    padding: 0 10px;
 }
 
 .col-left {
     float: left;
-    width: 20%;
+    width: percentage(240px/960px);
     padding-left: 0; /* Remove the 15px padding */
-		padding-right:20px;
     clear: left;
 
     img {
@@ -767,7 +786,7 @@ a.button:hover {
 
 .col-main {
     float: left;
-    width: 80%;
+    width: percentage(720px/960px);
 }
 
 .col1-layout {
@@ -781,7 +800,7 @@ a.button:hover {
 .col2-left-layout {
     .col-main {
         float: right;
-        padding: 0;
+        padding-right: 0; /* Remove the 15px padding */
     }
 }
 
@@ -882,7 +901,7 @@ a.button:hover {
     .col-1,
     .col-2 {
         width: 50%;
-       // padding-right: $box-spacing-large;
+        padding: $box-spacing-large;
 
         @include bp(max-width, $bp-medium) {
             padding: $box-spacing;
@@ -944,14 +963,16 @@ a.button:hover {
     font-size: $f-size-xxs;
 
     .notice-inner {
+        padding-left: 120px;
         width: 100%;
         max-width: $max-content-width;
         margin-left: auto;
         margin-right: auto;
-        font-size:18px;
+        line-height: $f-size-xxs;
         min-height: 40px;
         padding-top: (40px - $f-size-xxs) / 2;
         padding-bottom: (40px - $f-size-xxs) / 2;
+        background-image: url('../images/demo-logo.png');
         background-position: left;
         background-repeat: no-repeat;
     }
@@ -1092,9 +1113,6 @@ a.button:hover {
 
 .payment-methods {
     margin-bottom: 20px;
-    &:last-child {
-        margin-bottom: 0;
-    }
 }
 
 .payment-methods dt {
@@ -1150,6 +1168,94 @@ a.button:hover {
     }
 }
 
+/* -------------------------------------------- *
+ * Price Box - Standard
+ */
+
+.price-box {
+    margin: $element-spacing 0;
+    font-family: $f-stack-sans;
+}
+
+.price-box p {
+    margin-bottom: 0;
+}
+
+.price-notice {
+    color: $c-text-gray;
+}
+
+.price-box .price {
+    color: $c-text-primary;
+    font-size: $f-size-xl;
+}
+
+.price-box .price,
+.price {
+    font-family: $f-stack-sans;
+}
+
+.price-box .price-label {
+    color: $c-text-gray;
+    white-space: nowrap;
+    font-family: $f-stack-special;
+}
+
+.price-box .minimal-price-link {
+    padding-left: 1em;
+    color: $c-text-primary;
+    display: block; /* We want this to show on its own line, otherwise the layout looks funky */
+
+    .label {
+        color: $c-text-gray;
+    }
+}
+
+/* -------------------------------------------- *
+ * Price Box - Special
+ */
+
+.price-box .old-price,
+.price-box .special-price {
+    display: inline-block;
+
+    .price-label {
+        display: none;
+    }
+
+    .price {
+        display: inline-block;
+    }
+}
+
+.price-box .old-price {
+    .price {
+        color: $c-text-gray;
+        text-decoration: line-through;
+    }
+}
+
+.price-box .special-price {
+    color: $c-text-primary;
+    padding-left: 1em;
+
+    .price-label {
+        color: #D84D3C;
+    }
+}
+
+/* -------------------------------------------- *
+ * Price Box - Taxes
+ */
+
+.price-box .price-excluding-tax,
+.price-box .price-including-tax {
+    display: block;
+}
+
+span.weee {
+    display: block;
+}
 
 /* -------------------------------------------- *
  * Tier Prices
@@ -1181,6 +1287,7 @@ a.button:hover {
 
 .item-options {
     font-size: $f-size;
+    font-family: $f-stack-special;
 
     &:after {
         @include clearfix;
@@ -1191,6 +1298,7 @@ a.button:hover {
         clear: left;
         font-weight: 600;
         padding-right: 5px;
+        font-style: italic;
 
         &:after {
             content: ': ';
@@ -1318,6 +1426,7 @@ a.button:hover {
 .no-touch .product-img-box .product-image:not(.zoom-available):hover {
     position: relative;
     display: block;
+    border: 1px solid $c-module-border-light;
 }
 
 @include bp (max-width, $bp-medium) {
@@ -1806,86 +1915,4 @@ body.customer-account .data-table {
     float: none;
     max-height: 50px;
     width: auto;
-}
-
-
-
-/**** CUSTOM DESIGN ****/
-
-
-/**** Form elements ****/
-
-.std-input{
-	display:block;
-	width:100%;
-	height:35px;
-	background:$c-lightgray;
-	border:none;
-	outline:none;
-	padding:0 $gap/2;
-	font-size:18px;
-	color:$c-black;
-}
-
-.std-btn{
-	color:$c-white;
-	background:$c-action;
-	height:35px;
-	border:0;
-    font-size: 24px;
-	padding:0 $gap;
-	text-transform:uppercase;
-	&:hover{
-		opacity:.75;
-	}
-}
-
-.std-select, .fieldset select {
-    display:block;
-    width:100%;
-    height:35px;
-    background:$c-lightgray;
-    border:none;
-    outline:none;
-    padding:0 $gap/2;
-    font-size:18px;
-    color:$c-black;
-}
-
-.checkbox-field{
-	label{
-		font-size:18px;
-	}
-	input{
-		width:18px;
-		height:18px;
-		margin-right:$gap/4;
-		vertical-align:text-bottom;
-	}
-}
-
-.validation-failed {
-	box-shadow: 0 0 5px $c-danger;
-}
-
-.validation-advice{
-	display:none;
-}
-
-
-/**** Social icons ****/
-
-.socialIcon{
-	background:$c-lightgray;
-	color:$c-white;
-	width:32px;
-	height:32px;
-    text-align: center;
-	font-size:22px;
-	padding-top:6px;
-	&:hover{
-		color:$c-white;
-		background:$c-action;
-        text-decoration:none;
-	}
 }
