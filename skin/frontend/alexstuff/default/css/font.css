@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/Avenir Roman.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Blanch Condensed';
+    src: url('../fonts/BLANCH_CONDENSED.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bravo RG';
+    src: url('../fonts/BravoRG.otf');
+    font-weight: normal;
+    font-style: normal;
+}

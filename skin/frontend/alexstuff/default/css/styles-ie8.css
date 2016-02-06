@@ -31,11 +31,11 @@ $mq-fixed-value: 1024;
 
 // ----------------------------------------------
 */
-@import url(opengost.css);
+@import url(font.css);
 @import url(font-awesome.css);
 /* line 208, icons/*.png */
 .icons-sprite, .icons-delivery, .icons-dhl, .icons-lang_cs, .icons-lang_de, .icons-lang_dropdown, .icons-lang_en, .icons-lang_fr, .icons-lang_ru, .icons-lens, .icons-mastercard, .icons-minicart, .icons-paypal, .icons-return, .icons-social_fb, .icons-social_gp, .icons-social_in, .icons-social_th, .icons-social_tw, .icons-social_vk, .icons-support, .icons-visa, .header-link--delivery, .header-link--return, .header-link--support, .lang-current:after, .lang-icon--default, .lang-icon--en, .lang-icon--german, .lang-icon--de, .lang-icon--french, .lang-icon--fr, .lang-icon--russian, .lang-icon--ru, #search_mini_form .search-button:before, .skip-cart .icon:after, .footer-payment.payment--visa, .footer-payment.payment--mastercard, .footer-payment.payment--paypal, .footer-dhl, .footer-social-link.social--fb, .footer-social-link.social--vk, .footer-social-link.social--th, .footer-social-link.social--in, .footer-social-link.social--tw, .footer-social-link.social--gp, .sharingLink.sharing--fb, .sharingLink.sharing--vk, .sharingLink.sharing--th, .sharingLink.sharing--in, .sharingLink.sharing--tw, .sharingLink.sharing--gp {
-  background-image: url('/skin/frontend/alexdress/default/images/icons-s6eb5be3f05.png');
+  background-image: url('/skin/frontend/alexstuff/default/images/icons-s6eb5be3f05.png');
   background-repeat: no-repeat;
 }
 
