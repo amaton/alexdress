@@ -155,8 +155,16 @@ body.cms-home .main-container {
 /* line 40, ../scss/content/_home.scss */
 body.cms-home .slideshow-container {
   margin-top: 0;
+  width:100% !important;
 }
-
+body.cms-home .slideshow-container img{
+  width:100% !important;
+  height: 100% !important;
+}
+.slideshow-container .slideshow > li{
+  width:100% !important;
+  height: 100% !important;
+}
 /* line 45, ../scss/content/_home.scss */
 .slideshow .banner-msg {
   position: absolute;
