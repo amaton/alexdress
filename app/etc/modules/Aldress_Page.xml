@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Aldress_Page>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <Uni_Banner/>
+            </depends>
+        </Aldress_Page>
+    </modules>
+</config>

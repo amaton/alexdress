@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Aldress_Page>
+            <version>0.1.1</version>
+        </Aldress_Page>
+    </modules>
+    <global>
+        <blocks>
+            <aldress_page>
+                <class>Aldress_Page_Block</class>
+            </aldress_page>
+        </blocks>
+        <resources>
+            <aldress_page_setup>
+                <setup>
+                    <module>Aldress_Page</module>
+                </setup>
+            </aldress_page_setup>
+        </resources>
+    </global>
+</config>

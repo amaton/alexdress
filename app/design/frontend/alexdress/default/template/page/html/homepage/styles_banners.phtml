@@ -1,0 +1,11 @@
+<div class="home-widgets-btm">
+    <?php $groupData = $this->getDataByGroupCode() ?>
+    <?php if (isset($groupData['banner_data'])): ?>
+        <?php foreach ($groupData['banner_data'] as $banner): ?>
+            <a class="home-widget-btm" href="<?php echo $banner->getLink() ?>">
+                <img alt="<?php echo $banner->getTitle() ?>" src="<?php echo $this->getBannerImageUrl($banner) ?>" />
+                <span class="home-widget-overlay"><?php echo $banner->getTitle() ?></span>
+            </a>
+        <?php endforeach; ?>
+    <?php endif; ?>
+</div>

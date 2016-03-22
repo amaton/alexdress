@@ -1,0 +1,16 @@
+<div id="home-top">
+    <?php $groupData = $this->getDataByGroupCode() ?>
+    <?php if (isset($groupData['banner_data'])): ?>
+        <div class="slideshow-container">
+            <ul class="slideshow">
+                <?php foreach ($groupData['banner_data'] as $banner): ?>
+                    <li><a href="<?php echo $banner->getLink() ?>"><img
+                                src="<?php echo $this->getBannerImageUrl($banner) ?>"
+                                alt="<?php echo $banner->getTitle() ?>"/></a></li>
+                <?php endforeach; ?>
+            </ul>
+            <div class="slideshow-pager">&nbsp;</div>
+<!--            <span class="slideshow-prev">&nbsp;</span> <span class="slideshow-next">&nbsp;</span>-->
+        </div>
+    <?php endif; ?>
+</div>
