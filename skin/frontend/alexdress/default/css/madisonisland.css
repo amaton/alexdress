@@ -357,13 +357,8 @@ body .promos > li {
 /* Home widgets */
 /* line 212, ../scss/content/_home.scss */
 .home-widgets-top, .home-widgets-btm {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  margin: 20px 0;
+
+  margin: 20px -10px 20px 10px;
 }
 
 /* line 222, ../scss/content/_home.scss */
@@ -372,20 +367,27 @@ body .promos > li {
   width: 23.5%;
   position: relative;
   overflow: hidden;
-  border: 1px solid #deddde;
+  margin: 0 20px 0 0;
+
+
 }
 /* line 228, ../scss/content/_home.scss */
 .home-widget-top img, .home-widget-btm img, .home-widget-banner img {
   width: 100%;
-}
+  border: 1px solid #deddde;
 
+}
+.slick-arrow{
+  position: absolute;
+  display: none !important;
+}
 /* line 233, ../scss/content/_home.scss */
 .home-widget-overlay {
   position: absolute;
   text-transform: uppercase;
   color: #fff;
-  left: 0;
-  right: 0;
+  left: 1px;
+  right: 1px;
   background: #712c6b;
   text-align: center;
 }
@@ -439,7 +441,7 @@ body .promos > li {
 @media only screen and (max-width: 770px) {
   /* line 293, ../scss/content/_home.scss */
   .home-widget-btm .home-widget-overlay {
-    font-size: 32px;
+    font-size: 26px;
   }
 
   /* line 298, ../scss/content/_home.scss */
